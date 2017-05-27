@@ -10,5 +10,5 @@ repo for all web components created
 * [The Calculator Live Demo](https://bruceleeo.github.io/web-components/blob/master/calculator/)
 
 #### Introduction to the DOMProject Assignment 5:
-* [Web Component: Store](https://github.com/bruceLeeO/web-components/store)
+* [Web Component: Store](https://github.com/bruceLeeO/web-components/blob/master/store)
 * [Store Live Demo](https://bruceleeo.github.io/web-components/store/product-list.html)
