@@ -7,7 +7,7 @@ repo for all web components created
 
 #### Introduction to the DOM Project Assignment 4:
 * [Web Component: The Calculator](https://github.com/bruceLeeO/web-components/blob/master/calculator/)
-* [The Calculator Live Demo](https://bruceleeo.github.io/web-components/blob/master/calculator/)
+* [The Calculator Live Demo](https://bruceleeo.github.io/web-components/calculator/the-calculator.html)
 
 #### Introduction to the DOMProject Assignment 5:
 * [Web Component: Store](https://github.com/bruceLeeO/web-components/blob/master/store)
