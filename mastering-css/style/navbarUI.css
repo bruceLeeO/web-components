@@ -1,0 +1,48 @@
+body {
+  width: 45%;
+}
+
+.topnav {
+ /* border: 2px solid;*/
+}
+
+/* select all the topnav-list classes */
+.topnav-list {
+  display: block;
+  margin: 0;
+  padding:0;
+  list-style: none;
+  background-color: #f3f4f5;
+}
+
+/* select all the topnav-item classes */
+.topnav-item {
+  display: inline-block;
+  margin-left: 0;
+ /* border: 2px solid;*/
+}
+
+/* select all the topnav-link classes */
+.topnav-link {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  padding: 12px 20px;
+  color: #aaaa75;
+}
+
+/* select all link that's been visited */
+.topnav-link:visited {
+  color: #aaaa75;
+}
+
+/* select the link that's hovered over  */
+.topnav-link:hover {
+  background-color: #a3f5f8;
+  color: #ffcb45;
+}
+
+/* select the currently active link */
+.active {
+  background-color: #a3f5f8;
+}

@@ -1,0 +1,273 @@
+label {
+  perspective: 1000px;
+  /*transform-style: preserve-3d;*/
+  display: block;
+  width: 340px;
+  height: 200px;
+  position: absolute;
+ /* left: 50%;*/
+ /* top: 50%;*/
+ /* transform: translate(-50%, -50%);*/
+  cursor: pointer;
+  color: #eee;
+  font-family: Arial;
+}
+
+.card {
+ /* position: relative;*/
+  height: 102%;
+  /*width: 100%;*/
+  transform-style: preserve-3d;
+  transition: all 2s;
+  /*z-index: 20;*/
+}
+
+.card div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /*background: #FFFccc;*/
+  text-align: center;
+  /*line-height: 200px;*/
+  backface-visibility: hidden;
+  border-radius: 2px;
+  /*border: 1px solid;*/
+}
+
+.card .back {
+  /*background: #222eee;*/
+  color: #eee;
+  transform: rotateX(180deg);
+  background: url(../img/dbc/wall-of-lawn.png) no-repeat;
+}
+
+label:hover .card {
+  transform: rotateX(25deg);
+  box-shadow: 20px 20px 20px rgba(50,50,50,.2);
+}
+
+:checked + .card {
+  transform: rotateX(180deg);
+}
+
+label:hover :checked + .card {
+  transform: rotateX(160deg);
+  box-shadow: 0 20px 20px rgba(255,255,255,.2);
+}
+
+div.front{
+  background: url(../img/dbc/bg1.png) no-repeat;
+}
+
+label input {
+  display: none;
+}
+
+.card .back header canvas {
+  /*background: red;*/
+  display: inline-block;
+  /*border: 2px solid silver;*/
+  border-radius: 4px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 10px;
+  left: 300px;
+  color: red;
+  margin: 0; 
+  z-index: 25;
+}
+
+.card .back section {
+  width: 300px;
+  height: 180px;
+}
+
+.card .back footer {
+  text-align: left;
+  background: #bbb;
+  margin:0;
+  padding:0;
+  width:40%;
+}
+
+.card .front h2 {
+  text-align: left;
+  /*background: yellow;*/
+  /*width: 65px;*/
+  display: inline;
+  margin: 15px 100px 0 0;
+  padding: 0 0 0 0;
+  position: absolute;
+  top: 0;
+  left: 10px;
+}
+/*
+.card .front span {
+  background: red;
+  display: inline-block;
+  border: 2px solid silver;
+  border-radius: 4px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 10px;
+  left: 305px;
+}*/
+
+.card .front canvas {
+  /*background: red;*/
+  display: inline-block;
+  /*border: 2px solid silver;*/
+  border-radius: 4px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 10px;
+  left: 300px;
+  color: red;
+  margin: 0;
+}
+
+.card .front section p:first-of-type {
+  /*background: green;*/
+  position: absolute;
+  top: 32px;
+  left: 10px;
+  font-size: 12px;
+}
+ 
+.card .front section p:last-of-type {
+  /*background: red;*/
+  position: absolute;
+  top: 62px;
+  left: 10px;
+  width: 90%;
+  font-size: 10px;
+  text-align: left;
+}
+
+.card .front section:last-of-type ul {
+  position: absolute;
+  top: 120px;
+  left: 10px;
+  /*background: orange;*/
+  font-size: 10px;
+  padding: 0 0 0 0;
+}
+
+.card .front section:last-of-type li {
+  display: inline;
+  /*background: violet;*/
+  padding: 2px 15px 0 0;
+}
+
+.card .front section:last-of-type li a {
+  text-decoration: none;
+  color: pink;
+}
+
+.card .front footer div:first-of-type{
+  position: absolute;
+  top: 165px;
+  left: 10px;
+  /*background: transparent;*/
+  padding: 0 0 0 0;
+  margin-left: 0 0 0 0;
+  width: 10px;
+  height: 10px;
+}
+
+.card .front footer div:first-of-type img {
+  width: 25px;
+  height: 25px;
+}
+
+.card .front footer div:last-of-type {
+  position: absolute;
+  width: 30%;
+  height: 10%;
+  top: 165px;
+  left: 40px;
+  font-size: 10px;
+  margin-left: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+.card .front footer div:last-of-type p:first-of-type {
+  margin: 0 0 0 0;
+  /*background: red;*/
+  text-align: left;
+}
+
+.card .front footer div:last-of-type p:last-of-type {
+  margin: 0 0 0 0;
+  /*background: yellow;*/
+  text-align: left;
+}
+
+.card .front footer div:last-of-type p:last-of-type a {
+  margin: 0 0 0 0;
+  /*background: yellow;*/
+  text-decoration: none;
+  color: pink;
+}
+
+.card .front footer ul:only-of-type li{
+  display: inline;
+}
+
+.card .front footer ul:only-of-type li:first-of-type {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 167px;
+  left: 220px;
+  /*border-radius: 20px;*/
+}
+
+.card .front footer ul:only-of-type li:first-of-type img {
+  width: 20px;
+  height: 20px;
+}
+
+.card .front footer ul:only-of-type li:nth-of-type(2) {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 167px;
+  left: 250px;
+}
+
+.card .front footer ul:only-of-type li:nth-of-type(2) img {
+  width: 20px;
+  height: 20px;
+}
+
+.card .front footer ul:only-of-type li:nth-of-type(3) {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 167px;
+  left: 280px;
+}
+
+.card .front footer ul:only-of-type li:nth-of-type(3) img {
+  width: 20px;
+  height: 20px;
+}
+
+.card .front footer ul:only-of-type li:nth-of-type(4) {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 167px;
+  left: 310px;
+}
+
+.card .front footer ul:only-of-type li:nth-of-type(4) img {
+  /*border:1px solid silver;*/
+  /*border-radius: 90% ;*/
+  width: 20px;
+  height: 20px;
+}

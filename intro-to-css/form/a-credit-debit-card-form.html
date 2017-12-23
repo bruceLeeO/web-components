@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Project Assignment 4 - A Credit/Debit Card Form</title>
+	<link rel="stylesheet" type="text/css" href="a-credit-debit-card-form.css">
+</head>
+<body>
+	<div id="container">
+		<div id="topbar">
+			<ul>
+				<li class="top-menu"><a href="../index.html">Home</a></li>
+				<li class="	top-menu"><a href="a-signup-form.html">Signup Form</a></li>
+				<li class="	top-menu"><a href="a-search-form.html">Search Form</a></li>
+				<li class="	top-menu"><a href="a-questionnaire.html">Questionnaire Form</a></li>
+				<li class="	top-menu"><a href="a-login-form.html">Login Form</a></li>
+				<li class="	top-menu"><a href="a-color-building-form.html">Color Building Form</a></li>
+				<li class="	top-menu"><a href="a-shipping-and-billing-address-form.html">Shipping & Billing</a></li>
+				<li class="	top-menu"><a href="a-scheduling-form.html">Scheduling Form</a></li>
+				<li class="	top-menu"><a href="a-credit-debit-card-form.html">Credit/Debit</a></li>
+			</ul>
+		</div>
+	</div>
+	<div>
+		<form>
+			<fieldset>
+			<legend>Payment Form</legend>
+			<div>
+				<label for="name">Name on card:</label>
+				<input type="text" name="full-name">
+			</div>
+			<div>
+				<label for="card">Card number:</label>
+				<input type="number" name="card-number" maxlength="16">
+			</div>
+			<div>
+				<label for="csv">CSV:</label>
+				<input type="number" name="csv" maxlength="3" size="3" class="cvs">
+			</div>
+			<div>
+				<label>Card expiration:</label>
+				<select name="month" class="month">
+					<option value="jan">January</option>
+					<option value="feb">February</option>
+					<option value="mar">March</option>
+					<option value="apr">April</option>
+					<option value="may">May</option>
+					<option value="jun">June</option>
+					<option value="jul">July</option>
+					<option value="aug">August</option>
+					<option value="sep">September</option>
+					<option value="oct">October</option>
+					<option value="nov">November</option>
+					<option value="dec">December</option>
+				</select>
+				<select name="year" class="year">
+					<option value="2016">2016</option>
+					<option value="2017">2017</option>
+					<option value="2018">2018</option>
+					<option value="2019">2019</option>
+					<option value="2020">2020</option>
+					<option value="2021">2021</option>
+					<option value="2022">2022</option>
+					<option value="2023">2023</option>
+					<option value="2024">2024</option>
+					<option value="2025">2025</option>
+					<option value="2026">2026</option>
+					<option value="2027">2027</option>
+					<option value="2028">2028</option>
+					<option value="2029">2029</option>
+					<option value="2030">2030</option>
+					<option value="2031">2031</option>
+					<option value="2032">2032</option>
+					<option value="2033">2033</option>
+					<option value="2034">2034</option>
+					<option value="2035">2035</option>
+				</select>
+			</div>
+			<div class="button">
+				<button type="submit">Send your payment</button>
+			</div>
+			</fieldset>
+		</form>
+	</div>	
+</body>
+</html>

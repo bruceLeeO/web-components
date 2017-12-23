@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Mastering CSS UI Component: Tabpanel with JavaScript
+    </title>
+    <link rel="stylesheet" type="text/css" href="../style/tabPanelUI.css">
+  </head>
+  <body>
+    <div class="tab">
+      <button class="tabLinks" onclick="tabPanel.openItem(event, 'Home Decor')">Home Decor</button>
+      <button class="tabLinks" onclick="tabPanel.openItem(event, 'Furniture')">Furniture</button>
+      <button class="tabLinks" onclick="tabPanel.openItem(event, 'Kitchen')">Kitchen</button>
+      <button class="tabLinks" onclick="tabPanel.openItem(event, 'Clearance')">Clearance</button>
+      <div class="tabList">
+        <div id="Home Decor" class="tabContent">
+          <p>Browse through our list of Home Decor Items.</p>
+        </div>
+        <div id="Furniture" class="tabContent">
+          <p>Flash Sale on Living Room and Bedroom Furniture.</p> 
+        </div>
+        <div id="Kitchen" class="tabContent">
+          <p>Bring the best out of the masterchef in you!</p>
+        </div>
+        <div id="Clearance" class="tabContent">
+          <p>Red hot deals at affordable prices.  Check out our clearance section for more details.</p>
+        </div>
+      </div>
+    </div>
+    <script src="../scripts/tabPanelUI.js"></script>
+  </body>
+</html>

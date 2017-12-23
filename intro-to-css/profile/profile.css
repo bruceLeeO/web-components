@@ -1,0 +1,168 @@
+* {
+	box-sizing: border-box;
+}
+
+#container {
+	width: 1200px;
+	height: 1600px;
+	margin: 0 auto;
+	font-family: sans-serif;
+}
+
+#topbar {
+	background-color: #1a1aff;
+}
+
+#topbar img {
+	width: 1200px;
+	height: 400px;
+}
+
+#top-menu {
+	float: left;
+	padding: 12px;
+	color: #fcefce;
+}
+
+#my-selfie {
+	width: 50px;
+	height: 50px;
+}
+
+.icon-button {
+	color: #0fe0fe;
+	font-size: 36px;
+}
+
+.icon-button:hover {
+	color: #ce0ce0;
+}
+
+i:hover {
+	transform: scale(1.25);
+}
+
+#leftbar {
+	background-color: #1ae6e0;
+	height: 1400px;
+}
+
+#at-a-glance-card {
+	background-color: #ff8c1a;
+	margin: 1em 1em 1em 6em;
+	height: 1360px;
+}
+
+#midbar {
+	background-color: #f7d909;
+	height: 1400px;
+}
+
+#achievement-card {
+	background-color: #00e600;
+	margin: 1em 1em 1em 1em;
+	height: 1360px;
+}
+
+#sidebar {
+	background-color: #c2c2a3;
+	height: 1400px;
+}
+
+#profile-card {
+	background-color: #9966ff;
+	margin: 1em 6em 1em 1em;
+	height: 1360px;
+}
+
+#profile-card div {
+	display: inline-block;
+}
+
+#profile-card i {
+	font-size: 16px;
+	color: #eeefff;
+}
+
+#profile-card a {
+	text-decoration: none;
+	color: #eeefff;
+	font-size: 20px;
+}
+
+
+#bottombar {
+	background-color: #ffff4d;
+}
+
+.float-left {
+	float: left;
+}
+
+.w30 {
+	width: 360px;
+}
+
+.w40 {
+	width: 480px;
+}
+
+.clear-all {
+	clear: both;
+}
+
+#bottombar div	{
+	text-align: center;
+}
+
+#at-a-glance-card h2 {
+	margin: .15em .15em .15em .05em;
+}
+
+#at-a-glance-card h3 {
+	margin: .15em .15em .15em .05em;	
+}
+
+#at-a-glance-card p {
+	margin: .15em .15em .15em 2em;
+}
+
+hr	{
+	margin: 1em .05em 1em .05em;
+}
+
+#achievement-card .title {
+	text-align: center;
+}
+
+#achievement-card h2 {
+	margin: .15em .15em .15em .05em;
+}
+
+#achievement-card p {
+	margin: .15em .15em .15em .15em;
+}
+
+#achievement-card .achievement-projects {
+	margin: .15em .15em .15em .15em;
+}
+
+#achievement-card .achievement-writeup {
+	margin: .15em .15em .15em 2em;
+}
+
+#profile-card h1 {
+	margin: .15em .15em .15em .05em;
+}
+
+#profile-card h2 {
+	margin: .15em .15em .15em .05em;
+}
+
+#profile-card img {
+	margin: .15em .15em .15em 2em;
+}
+
+#profile-card p {
+	margin: .15em .15em .15em 2em;
+}

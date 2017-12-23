@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Project Assignment 4 - A Color Building Form</title>
+	<link rel="stylesheet" type="text/css" href="a-color-building-form.css">
+</head>
+<body>
+
+<!-- cool but only works on single slider
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+<input type="range" id="a" value="50">100
++<input type="number" id="b" value="50">
+=<output name="x" for="a b"></output>
+</form>
+-->
+	<div id="container">
+		<div id="topbar">
+			<ul>
+				<li class="top-menu"><a href="../index.html">Home</a></li>
+				<li class="	top-menu"><a href="a-signup-form.html">Signup Form</a></li>
+				<li class="	top-menu"><a href="a-search-form.html">Search Form</a></li>
+				<li class="	top-menu"><a href="a-questionnaire.html">Questionnaire Form</a></li>
+				<li class="	top-menu"><a href="a-login-form.html">Login Form</a></li>
+				<li class="	top-menu"><a href="a-color-building-form.html">Color Building Form</a></li>
+				<li class="	top-menu"><a href="a-shipping-and-billing-address-form.html">Shipping & Billing</a></li>
+				<li class="	top-menu"><a href="a-scheduling-form.html">Scheduling Form</a></li>
+				<li class="	top-menu"><a href="a-credit-debit-card-form.html">Credit/Debit</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<form>
+		<fieldset>
+		<legend>A Color Building Form</legend>
+		<div>
+			<label class="label w25" for="red" id="red">red</label>
+			<input class="dimma w25" type="range" name="red" min="0" max="255" step="5">
+		</div>
+		<div>
+			<label class="label w25" for="green" id="green">green</label>
+			<input class="dimma w25" type="range" name="green" min="0" max="255" step="5">
+		</div>
+		<div>
+			<label class="label w25" for="blue" id="blue">blue</label>
+			<input class="dimma w25" type="range" name="blue"	min="0" max="255" step="5">
+		</div>
+		<div>
+			<label class="label w25" for="alpha" id="alpha">alpha</label>
+			<input class="dimma w25" type="range" name="alpha" min="0" max="1" step="0.01">
+		</div>
+		<div>
+			<label class="colo w50" id="colo" for="color">color</label>
+			<input class="colo w50" id="colo-output" type="text" name="color">
+		</div>
+		</fieldset>
+	</form>
+</body>
+</html>
+
+<!-- use with floats
+		<div>
+			<label class="label w25" for="red" id="red">red</label>
+
+			<label class="label w25" for="green" id="green">green</label>
+
+			<label class="label w25" for="blue" id="blue">blue</label>
+
+			<label class="label w25" for="alpha" id="alpha">alpha</label>
+		</div>
+		<div>
+			<input class="dimma w25" type="range" name="red" min="0" max="255" step="5">
+
+			<input class="dimma w25" type="range" name="green" min="0" max="255" step="5">
+
+			<input class="dimma w25" type="range" name="blue"	min="0" max="255" step="5">
+
+			<input class="dimma w25" type="range" name="alpha" min="0" max="1" step="0.01">
+		</div>
+		<div>
+			<label class="colo w50" for="color">color</label>
+
+			<input class="colo w50" type="text" name="color">
+		</div>
+-->

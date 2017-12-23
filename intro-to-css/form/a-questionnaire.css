@@ -1,0 +1,108 @@
+body {
+	background: url(fish-in-tank-2.jpg);
+	background-size: 1400px 800px;
+	background-repeat: no-repeat;
+}
+
+#topbar ul {
+  list-style-type: none;
+  /*background-color: #fcf000;*/
+  background-color: transparent;
+  overflow: hidden; 
+  position: fixed; 
+  top: 10px;
+  margin: 0;
+  padding: 0; 
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+#topbar .top-menu {
+ float: left; 
+}
+
+#topbar .top-menu a {
+  display: block;
+  text-decoration: none;
+  padding: 12px;
+  color: #ffff1a;
+  font-weight: 700;
+}
+
+#topbar .top-menu a:hover {
+  transform: scale(1.15);
+  color: #ce0ce0;
+}
+
+legend {
+	font-family: serif, monospace, sans-serif;
+	text-transform: uppercase;
+	background-color: #bfb;
+	border: 5px	solid #eee;
+	color: #aaf;
+}
+
+form {
+	margin: 100px auto;
+	width: 400px;
+	padding: 1em;
+	border:	1px solid #cba;
+	border-radius: 1em;
+	background-color: #ffff33;
+}
+
+form div + div {
+	margin-top: .75em;
+}
+
+label {
+	background-color: #bfff00;
+	border: 1.5px solid	#eee;
+	border-radius: .75em;
+	font-family: fantasy;
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #aba;
+	width: 120px;
+	display: inline-block;
+	text-align: left;
+}
+
+input[type="radio"]:hover+label {
+	background-color: #ff0000;
+}
+
+input[type="radio"]:checked+label {
+	background-color: #ff0000;
+}
+
+label:hover {
+	background-color: #ff0000;	
+}
+
+.other-txt {
+	font-family: monospace;, cursive, sans-serif;
+	font-size: 16px;
+	font-weight: 800;
+	color: #bfa;
+	text-transform: uppercase;
+	background-color: #aae;
+}
+
+.other-txt:hover {
+	background-color: #ff0000;
+}
+
+button {
+	font-family: cursive;
+	font-size: 16px;
+	font-weight: 800px;
+	text-transform: uppercase;
+	color: #ddd;
+	background-color: #bbb;
+	border: 5px inset #eee;
+}
+
+button:hover {
+	background-color: #ff0000;
+}

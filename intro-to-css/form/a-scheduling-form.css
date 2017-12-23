@@ -1,0 +1,95 @@
+body {
+	background: url(coral-in-tank.jpg);
+	background-size: 1400px 800px;
+	background-repeat: no-repeat;
+}
+
+#topbar ul {
+  list-style-type: none;
+  /*background-color: #fcf000;*/
+  background-color: transparent;
+  overflow: hidden; 
+  position: fixed; 
+  top: 10px;
+  margin: 0;
+  padding: 0; 
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+#topbar .top-menu {
+ float: left; 
+}
+
+#topbar .top-menu a {
+  display: block;
+  text-decoration: none;
+  padding: 12px;
+  color: #ffff1a;
+  font-weight: 700;
+}
+
+#topbar .top-menu a:hover {
+  transform: scale(1.15);
+  color: #ce0ce0;
+}
+
+form {
+	margin: 70px auto;
+	width: 500px;
+	padding: 1em;
+	border:	1px solid #ccc000;
+	border-radius: 1em;
+	background-color: #ccc;
+	top: 150px;
+}
+
+form div + div {
+	/*margin-top: .25em;*/
+}
+
+label {
+	font-family: cursive;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 1em;
+	color: #bcbc00;
+}
+
+input, textarea {
+	font: 1em sans-serif;
+	width: 480px;
+	box-sizing: border-box;
+}
+
+textarea:hover {
+	border: 3px solid #00ffcc;
+}
+
+select {
+	font: .9em sans-serif;	
+}
+
+#button {
+	text-transform: uppercase;
+	font: 1em cursive;
+	font-weight: 700;
+	color: #ff0023;
+	background-color: #ceb;
+	border: 3px inset #afc;
+	border-radius: 1em;
+}
+
+#button:hover {
+	background-color: #008000;
+	color: #ffff00;
+}
+
+h2 {
+	background-color: #abc;
+	color: #feb;
+	font-family: cursive;
+	text-transform: uppercase;
+	text-align: center;
+	border-radius: 1em;
+}

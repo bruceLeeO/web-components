@@ -1,0 +1,40 @@
+/* select the list of contents */
+div.tabList{
+  border: 1px solid black;
+  margin-top: -1px;
+}
+
+/* select the button */
+div.tab button{
+  margin-left: 3px;
+  margin-right: 3px;
+  padding: 3px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  border: 1px solid;
+  border-radius: 4px 4px 0 0;
+  background: none;
+  font-family: serif; /* override default font of sans-serif */
+  font-size: 16px;
+}
+
+/* select the button when hovered over */
+div.tab button:hover{
+  background-color: #000000; /* black bg */
+  color: #ff0000;            /* red font */
+}
+
+/* select the button when active */
+div.tab button.active{
+  background-color: #ffffff;     /* white bg */
+  border-bottom-color: #ffffff;  /* white bottom border */
+}
+
+/* select the tab contents */
+div.tabContent {
+  display: none;
+  position: relative;
+  margin: 3px;
+  padding: .5em;
+}

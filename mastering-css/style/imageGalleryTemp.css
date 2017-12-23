@@ -1,0 +1,45 @@
+/*.container {
+	border: 5px solid green;
+	width: 50%;
+	height: auto;
+}
+
+.container:hover {
+	border: 5px solid red;
+}
+
+.container img {
+	width: 10%;
+	height: auto;
+}
+
+.container a:focus {
+	width: 100;
+	height: auto;
+}
+*/
+*{ 
+  box-sizing: border-box;
+}
+
+.container a img{
+	width: 100px;
+	/*height: 500px;*/
+	height: auto;
+	
+}
+
+.thumbnails a{
+	position: relative;
+	z-index: 1;
+}
+/*
+.thumbnails img {
+	width: 10%;
+	height: auto;
+}
+
+.thumbnails a:focus {
+	width: 10%;
+	height: auto;
+}*/

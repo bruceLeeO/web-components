@@ -1,0 +1,98 @@
+body {
+	background: url(dory.jpg);
+	background-size: 1400px 900px;
+	background-repeat: no-repeat;
+}
+
+#topbar ul {
+  list-style-type: none;
+  /*background-color: #fcf000;*/
+  background-color: transparent;
+  overflow: hidden; 
+  position: fixed; 
+  top: 10px;
+  margin: 0;
+  padding: 0; 
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+#topbar .top-menu {
+ float: left; 
+}
+
+#topbar .top-menu a {
+  display: block;
+  text-decoration: none;
+  padding: 12px;
+  color: #ffff1a;
+  font-weight: 700;
+}
+
+#topbar .top-menu a:hover {
+  transform: scale(1.15);
+  color: #ce0ce0;
+}
+
+legend {
+	font-family: sans-serif;
+}
+
+form {
+	margin: 75px auto;
+	width: 500px;
+	padding: 1em;
+	border: 1px solid #ccc;
+	border-radius: 1em;
+	background-color: #ccc;
+}
+
+form div + div {
+	margin-top: 1em;
+}
+
+h2 {
+	/*border: 1px solid #000;*/
+	width: 325px;
+	font-family: sans-serif;
+}
+
+.lable {
+	display: inline-block;
+	width: 125px;
+	text-align: right;
+	/*border: 1px solid #000;*/
+	font: 1em sans-serif;
+}
+
+input {
+	font: 1em sans-serif;
+	width: 250px;
+	box-sizing: border-box;
+	border: 5px solid #999;
+}
+
+#button {
+	font-family: cursive;
+	font-size: 24px;
+	text-transform: capitalize;
+	border: 2px inset #eee;
+	background-color: #abc;
+	color: #fee;
+	font-weight: 800;
+}
+
+#chekbox {
+	width: 15px;
+}
+
+.checkbox {
+	border:	3px solid #aaa;
+}
+
+.checkbox-label {
+	width: 350px;
+	text-align: left;
+	/*border: 3px solid #000;*/
+	font: 1em sans-serif;	
+}

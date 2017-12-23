@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Project Assignment 4: A Questionnaire</title>
+	<link rel="stylesheet" type="text/css" href="a-questionnaire.css">
+</head>
+<body>
+	<div id="container">
+		<div id="topbar">
+			<ul>
+				<li class="top-menu"><a href="../index.html">Home</a></li>
+				<li class="	top-menu"><a href="a-signup-form.html">Signup Form</a></li>
+				<li class="	top-menu"><a href="a-search-form.html">Search Form</a></li>
+				<li class="	top-menu"><a href="a-questionnaire.html">Questionnaire Form</a></li>
+				<li class="	top-menu"><a href="a-login-form.html">Login Form</a></li>
+				<li class="	top-menu"><a href="a-color-building-form.html">Color Building Form</a></li>
+				<li class="	top-menu"><a href="a-shipping-and-billing-address-form.html">Shipping & Billing</a></li>
+				<li class="	top-menu"><a href="a-scheduling-form.html">Scheduling Form</a></li>
+				<li class="	top-menu"><a href="a-credit-debit-card-form.html">Credit/Debit</a></li>
+			</ul>
+		</div>
+	</div>
+	<form>
+	<fieldset>
+	<legend>Your favorite Greek Meal</legend>
+		<div>
+			<input type="radio" name="meal" id="meal-1" value="lemon-chicken" checked> <label for="meal-1">Lemon Chicken</label>	
+		</div>
+		<div>
+			<input type="radio" name="meal" id="meal-2" value="babaganoush"> <label for="meal-2">Babaganoush</label>	
+		</div>
+		<div>
+			<input type="radio" name="meal" id="meal-3" value="gyro"> <label for="meal-3">Gyro</label>
+		</div>
+		<div>
+			<input type="radio" name="meal" id="meal-4" value="kabob"> <label for="meal-4">Kabob</label>
+		</div>
+		<div>
+			<input type="radio" name="meal" id="meal-5" value="other"> <label for="meal-5">Other</label>
+			<input type="text" name="other" value="Type your fave here!" id="meal-5" class="other-txt">
+		</div>
+		<div>
+			<!--
+			<input type="submit" value="Submit" id="button">	
+			-->
+			<button name="submit" id="submit">Submit</button>
+		</div>
+	</fieldset>
+	</form>
+</body>
+</html>

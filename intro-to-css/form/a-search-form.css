@@ -1,0 +1,94 @@
+body {
+	background: url(coral-in-tank.jpg);
+	background-size: 1400px 800px;
+	background-repeat: no-repeat;
+}
+
+#topbar ul {
+  list-style-type: none;
+  /*background-color: #fcf000;*/
+  background-color: transparent;
+  overflow: hidden; 
+  position: fixed; 
+  top: 10px;
+  margin: 0;
+  padding: 0; 
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+#topbar .top-menu {
+ float: left; 
+}
+
+#topbar .top-menu a {
+  display: block;
+  text-decoration: none;
+  padding: 12px;
+  color: #ffff1a;
+  font-weight: 700;
+}
+
+#topbar .top-menu a:hover {
+  transform: scale(1.15);
+  color: #ce0ce0;
+}
+
+
+legend {
+	border: 2px solid #faf;
+	text-transform: capitalize;
+	background-color: #ebe;
+	font-size: 16px;
+	font-style: italic;
+	color: #dff;
+	font-family: cursive;
+}
+
+form {
+	margin: 100px auto;
+	width: 400px;
+	padding: 1em;
+	border: 1px solid #ccc;
+	border-radius: 1em;
+	background-color: #ebe;
+}
+
+form div + div {
+	margin-top: 1em;
+}
+
+label {
+	display: block;
+	width: 	100px;
+	text-align: right;
+	font-size: 16px;
+	font-style: italic;
+	color: #dff;	
+	font-family: cursive;
+}
+
+input {
+	font-size: 20px;
+	color: #fbc;
+	width: 210px;
+}
+
+select {
+	width: 215px;
+}
+
+.flavors {
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #bac;
+}
+
+button {
+	text-transform: capitalize;
+	font-size: 20px;
+	color: #dff;
+	background-color: #ff0066;
+	font-family: cursive;
+	font-style: italic;
+}

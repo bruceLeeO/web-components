@@ -1,0 +1,123 @@
+body {
+	background: url(pikachu.jpg);
+	background-size: 1400px 800px;
+	background-repeat: no-repeat;
+}
+
+#topbar ul {
+  list-style-type: none;
+  /*background-color: #fcf000;*/
+  background-color: transparent;
+  overflow: hidden; 
+  position: fixed; 
+  top: 10px;
+  margin: 0;
+  padding: 0; 
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+#topbar .top-menu {
+ float: left; 
+}
+
+#topbar .top-menu a {
+  display: block;
+  text-decoration: none;
+  padding: 12px;
+  color: #ffff1a;
+  font-weight: 700;
+}
+
+#topbar .top-menu a:hover {
+  transform: scale(1.15);
+  color: #ce0ce0;
+}
+
+form {
+	margin: 75px auto;
+	width: 400px;
+	padding: 1em;
+	border: 1px solid #00ffff;
+	border-radius: 1em;
+	background-color: #baa;
+}
+
+form div + div {
+	margin-top: 1em;
+}
+
+label {
+	display: inline-block;
+    width: 120px;
+    text-align: right;
+    font: 1em cursive;
+    text-transform: capitalize;
+}
+
+input {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 1em cursive;
+
+    /* To give the same size to all text field */
+    width: 220px;
+    box-sizing: border-box;
+
+    /* To harmonize the look & feel of text field border */
+    border: 1px solid #999;
+}
+
+input:focus {
+    /* To give a little highlight on active elements */
+    border-color: #00ff00;
+}
+
+#prompt {
+	font-family: cursive;
+	font-style: italic;
+	font-size: 14px;
+	color: #ff0000;
+	text-transform: capitalize;
+}
+
+a {
+	font-family: cursive;
+	font-style: italic;
+	font-size: 14px;
+}
+
+button {
+	color: #aaa000;
+	background-color: #bcd;
+	border: 3px inset #ff0000;
+	text-transform: capitalize;
+	font-family: cursive;
+	font-style: italic;
+	width: 100px;
+	border-radius: 1em;
+}
+
+legend	{
+	border: 2px	solid #aaa;
+	background-color: #def;
+	font-family: cursive;
+	text-transform: capitalize;
+	font-style: italic;
+	border-radius: 1em;
+	color: #aba;
+}
+
+
+#txt {
+	color: #abc;
+	background-color: #fed;
+	font-family: cursive;
+	font-size: 16px;
+}
+
+#pswd {
+	color: #bcd;
+	background-color: #fed;
+	font-size: 16px;
+}
