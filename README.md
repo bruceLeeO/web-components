@@ -31,3 +31,13 @@ Build several more web ui components such tab panel ui component, accordion ui c
 ### `intro-to-responsive-design` 
 
 Re-do previous project assignments and turn them responsive or mobile friendly.  Create a student portfolio showcasing all the project assignments done.  The student portfolio includes section such as About, Projects, Skill, and Contact. 
+
+##### Project Assignment 1 
+
+Turn previous web ui component projects responsive.
+
+- See [Log In Form Demo](https://bruceleeo.github.io/web-components/intro-to-responsive-design/web/ui/form/login.html "Log In Form").
+- See [Sign Up Form Demo](https://bruceleeo.github.io/web-components/intro-to-responsive-design/web/ui/form/signup.html "Sign Up Form").
+- See [Search Form Demo](https://bruceleeo.github.io/web-components/intro-to-responsive-design/web/ui/form/search.html "Search Form").
+- See [Credit or Debit Card Form Demo](https://bruceleeo.github.io/web-components/intro-to-responsive-design/web/ui/form/ccdc.html "Credit or Debit Card Form").
+- See [RGB Color Picker Form Demo](https://bruceleeo.github.io/web-components/intro-to-responsive-design/web/ui/form/rgbColor.html "RGB Color Picker").
