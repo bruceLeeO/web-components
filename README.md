@@ -41,3 +41,5 @@ Turn previous web ui component projects responsive.
 - See [Search Form Demo](https://bruceleeo.github.io/web-components/intro-to-responsive-design/web/ui/form/search.html "Search Form").
 - See [Credit or Debit Card Form Demo](https://bruceleeo.github.io/web-components/intro-to-responsive-design/web/ui/form/ccdc.html "Credit or Debit Card Form").
 - See [RGB Color Picker Form Demo](https://bruceleeo.github.io/web-components/intro-to-responsive-design/web/ui/form/rgbColor.html "RGB Color Picker").
+- See [Schedule Form Demo](https://bruceleeo.github.io/web-components/intro-to-responsive-design/web/ui/form/schedule.html "Schedule Form").
+- See [Shipping and Billing Address Form Demo](https://bruceleeo.github.io/web-components/intro-to-responsive-design/web/ui/form/sbAddress.html "Shipping and Billing Form").
