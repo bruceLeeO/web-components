@@ -52,4 +52,4 @@ Re-do previous project assignments and turn them responsive or mobile friendly. 
 
 **Profile**
 
-See [Profile or Card Demo](https://bruceleeo.github.io/web-components/intro-to-responsive-design/web/ui/profile/profile.html "Profile or Card UI Component").
+- See [Profile or Card Demo](https://bruceleeo.github.io/web-components/intro-to-responsive-design/web/ui/profile/profile.html "Profile or Card UI Component").
