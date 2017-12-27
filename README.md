@@ -38,7 +38,9 @@ Re-do previous project assignments and turn them responsive or mobile friendly. 
 
 ##### Project Assignment 1 
 
-Turn previous web ui component projects responsive.
+### Turn previous web ui component projects responsive.
+
+** Forms & Inputs **
 
 - See [Log In Form Demo](https://bruceleeo.github.io/web-components/intro-to-responsive-design/web/ui/form/login.html "Log In Form").
 - See [Sign Up Form Demo](https://bruceleeo.github.io/web-components/intro-to-responsive-design/web/ui/form/signup.html "Sign Up Form").
@@ -47,3 +49,7 @@ Turn previous web ui component projects responsive.
 - See [RGB Color Picker Form Demo](https://bruceleeo.github.io/web-components/intro-to-responsive-design/web/ui/form/rgbColor.html "RGB Color Picker").
 - See [Schedule Form Demo](https://bruceleeo.github.io/web-components/intro-to-responsive-design/web/ui/form/schedule.html "Schedule Form").
 - See [Shipping and Billing Address Form Demo](https://bruceleeo.github.io/web-components/intro-to-responsive-design/web/ui/form/sbAddress.html "Shipping and Billing Form").
+
+** Profile **
+
+See [Profile or Card Demo](https://bruceleeo.github.io/web-components/intro-to-responsive-design/web/ui/profile/profile.html "Profile or Card UI Component").
