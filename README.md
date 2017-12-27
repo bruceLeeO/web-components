@@ -40,7 +40,7 @@ Re-do previous project assignments and turn them responsive or mobile friendly. 
 
 ### Turn previous web ui component projects responsive.
 
-** Forms & Inputs **
+**Forms & Inputs**
 
 - See [Log In Form Demo](https://bruceleeo.github.io/web-components/intro-to-responsive-design/web/ui/form/login.html "Log In Form").
 - See [Sign Up Form Demo](https://bruceleeo.github.io/web-components/intro-to-responsive-design/web/ui/form/signup.html "Sign Up Form").
@@ -50,6 +50,6 @@ Re-do previous project assignments and turn them responsive or mobile friendly. 
 - See [Schedule Form Demo](https://bruceleeo.github.io/web-components/intro-to-responsive-design/web/ui/form/schedule.html "Schedule Form").
 - See [Shipping and Billing Address Form Demo](https://bruceleeo.github.io/web-components/intro-to-responsive-design/web/ui/form/sbAddress.html "Shipping and Billing Form").
 
-** Profile **
+**Profile**
 
 See [Profile or Card Demo](https://bruceleeo.github.io/web-components/intro-to-responsive-design/web/ui/profile/profile.html "Profile or Card UI Component").
