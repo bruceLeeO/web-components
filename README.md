@@ -10,6 +10,10 @@ Create different types of form (e.g. signup form, login form, search form, etc.)
 
 Learn to manipulate the DOM and add functions to all previous web component projects above such as validating user input, add functions to the calculator, add functions to the product-listing page such as adding and removing product from shopping cart, and add functions to the color picker form.
 
+### `style-guide-driven-development`
+
+Learn about pattern or style guide driven approach in developing website and its ui components.  Introduced to the [Pattern-Primer-Jekyll](https://github.com/opattison/Pattern-Primer-Jekyll "Pattern-Primer-Jekyll") repository, where we we see first hand how pattern or style guide is created.  Since the repository is highly customizable, it is a good starting point for those who want to expand on or create their own pattern or style guide.  We have, in fact, gone in that direction and the result is our very own [home-grown, generic style guide](https://bruceleeo.github.io/ "Home grown, generic style guide") which currently is being developed.
+
 ### `mastering-html`
 
 Learn HTML5 and create a semantic html structure using `html`, `head`, `body`, `header`, and `footer` tags.
