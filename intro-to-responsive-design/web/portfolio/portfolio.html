@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Leonardo de Leon Portfolio</title>
+	<link rel="stylesheet" href="../../style/grid/grid.css">
+	<link rel="stylesheet" href="../../style/icon/icon.css">
+	<link rel="stylesheet" href="../../style/portfolio/navbar-portfolio.css">
+	<link rel="stylesheet" href="../../style/portfolio/tabpanel.css">
+</head>
+<body>
+	<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="icon-search" viewBox="0 0 512 512">
+      <path d="m503 463l-93-94c32-40 49-92 49-141 0-126-103-230-231-230-128 0-230 102-230 230 0 126 102 231 230 231 51 0 103-17 141-49l94 93c6 7 13 9 19 9 7 0 13-2 19-9 13-12 13-29 2-40z m-98-233c0 96-79 175-175 175-96 0-175-79-175-175 0-96 79-175 175-175 99 0 175 79 175 175z"/>
+    </symbol>
+		<symbol id="icon-menu" viewBox="0 0 24 24">
+		<path d="M21 11h-18c-0.6 0-1 0.4-1 1s0.4 1 1 1h18c0.6 0 1-0.4 1-1s-0.4-1-1-1z"></path>
+		<path d="M3 7h18c0.6 0 1-0.4 1-1s-0.4-1-1-1h-18c-0.6 0-1 0.4-1 1s0.4 1 1 1z"></path>
+		<path d="M21 17h-18c-0.6 0-1 0.4-1 1s0.4 1 1 1h18c0.6 0 1-0.4 1-1s-0.4-1-1-1z"></path>
+		</symbol>
+		<symbol id="icon-twitter" viewBox="0 0 24 24">
+		<path d="M23.6 2.2c-0.3-0.2-0.8-0.2-1.1 0-0.7 0.5-1.5 0.9-2.3 1.2-2-1.8-5.1-1.9-7.2-0.1-1.3 1.1-2 2.6-2 4.2-2.9-0.2-5.5-1.7-7.2-4.1-0.2-0.3-0.5-0.4-0.9-0.4s-0.7 0.3-0.8 0.6c-0.1 0.1-1.1 2.5-1 5.4 0.1 2.5 1.1 5.7 4.8 8-1.5 0.7-3.2 1-4.9 1-0.4 0-0.9 0.3-1 0.7s0.1 0.9 0.5 1.1c2.5 1.4 5.2 2.1 7.7 2.1s4.9-0.6 7.1-1.9c4.3-2.4 6.7-7 6.7-12.5 0-0.2 0-0.3 0-0.5 1-1.1 1.7-2.4 2-3.8 0.1-0.4-0.1-0.8-0.4-1zM20.2 6c-0.2 0.2-0.3 0.6-0.3 0.9 0.1 0.2 0.1 0.4 0.1 0.6 0 4.8-2.1 8.7-5.7 10.8-2.8 1.6-6.1 2-9.4 1.2 1.3-0.4 2.5-0.9 3.6-1.7 0.4-0.2 0.5-0.5 0.5-0.9s-0.3-0.7-0.6-0.8c-5.8-2.6-5.6-7.5-5-10 2.2 2.2 5.3 3.5 8.6 3.4 0.5 0 1-0.5 1-1v-1c0-1 0.4-2 1.2-2.7 1.4-1.3 3.7-1.1 4.9 0.3 0.3 0.3 0.7 0.4 1 0.3 0.2-0.1 0.5-0.1 0.7-0.2-0.2 0.3-0.4 0.5-0.6 0.8z"></path>
+		</symbol>
+		<symbol id="icon-github" viewBox="0 0 24 24">
+		<path d="M22.5 8.5c0-1.5-0.5-2.8-1.4-4 0.3-1.3 0.2-2.7-0.3-3.9-0.1-0.3-0.3-0.5-0.6-0.6-0.4-0.1-1.7-0.3-4.4 1.4-2.2-0.5-4.5-0.5-6.6 0-2.7-1.7-4-1.5-4.4-1.4-0.3 0.1-0.5 0.3-0.6 0.6-0.6 1.3-0.7 2.6-0.3 3.9-0.9 1.2-1.4 2.6-1.4 4 0 5.4 3 7.1 5.8 7.7-0.2 0.7-0.3 1.3-0.3 1.9v0.1c-2.1 0.4-2.8-0.4-3.6-1.5-0.5-0.7-1.1-1.5-2.2-1.7-0.5-0.1-1.1 0.2-1.2 0.7s0.2 1.1 0.7 1.2c0.3 0.1 0.7 0.5 1.1 1 0.9 1.2 2.2 2.8 5.2 2.4v1.7c0 0.6 0.4 1 1 1s1-0.4 1-1v-2.9c0 0 0-0.1 0-0.1v-0.9c0-0.7 0.2-1.3 0.7-1.8 0.3-0.3 0.4-0.7 0.2-1-0.1-0.4-0.4-0.6-0.8-0.7-2.9-0.4-5.6-1.3-5.6-6 0-1.2 0.4-2.2 1.2-3.1 0.3-0.3 0.3-0.7 0.2-1-0.3-0.9-0.3-1.7-0.1-2.5 0.5 0.1 1.4 0.4 2.6 1.3 0.3 0.2 0.6 0.2 0.9 0.1 2.1-0.6 4.4-0.6 6.5 0 0.3 0.1 0.6 0 0.8-0.1 1.3-0.9 2.2-1.2 2.6-1.3 0.2 0.8 0.2 1.6-0.1 2.4-0.1 0.4-0.1 0.8 0.2 1 0.8 0.8 1.2 1.9 1.2 3.1 0 4.7-2.7 5.7-5.6 6-0.4 0-0.7 0.3-0.8 0.7s0 0.8 0.2 1c0.5 0.5 0.7 1.2 0.7 1.9v3.9c0 0.6 0.4 1 1 1s1-0.4 1-1v-3.8c0.1-0.7 0-1.3-0.3-1.9 2.4-0.5 5.8-2.1 5.8-7.8z"></path>
+		</symbol>	
+		<symbol id="icon-linkedin2" viewBox="0 0 32 32">
+		<path d="M12 12h5.535v2.837h0.079c0.77-1.381 2.655-2.837 5.464-2.837 5.842 0 6.922 3.637 6.922 8.367v9.633h-5.769v-8.54c0-2.037-0.042-4.657-3.001-4.657-3.005 0-3.463 2.218-3.463 4.509v8.688h-5.767v-18z"></path>
+		<path d="M2 12h6v18h-6v-18z"></path>
+		<path d="M8 7c0 1.657-1.343 3-3 3s-3-1.343-3-3c0-1.657 1.343-3 3-3s3 1.343 3 3z"></path>
+		</symbol>				
+  </svg>
+	<header class="siteheader">
+	<div class="row">
+		<div class="col3 topnav-font" style="/*border: 1px solid;*/">
+			<h2 style="margin: 0; margin-top: .25em; /*border: 1px solid;*/">LEODELEON</h2>
+		</div>
+	  <nav role="navigation" class="col6" style="background-color: #1e2226;">
+	  	<div class="topnav topnav-font" id="topnav">
+	  		<ul class="topnav-list">
+	  			<li class="topnav-item">
+	  				<a class="topnav-link" href="#aboutMe">About Me</a>
+	  			</li>
+	  			<li class="topnav-item">
+	  				<a class="topnav-link" href="#projects">Projects</a>
+	  			</li>
+	  			<li class="topnav-item">
+	  				<a class="topnav-link" href="#skills">Skills</a>
+	  			</li>
+	  			<li class="topnav-item">
+	  				<a class="topnav-link" href="#contact">Contact</a>
+	  			</li>
+	  		</ul>	  		
+	  	</div>
+	  </nav>
+		<form action="#!" class="topnav-searchform col3 topnav-font">
+	    <label for="searchform" class="topnav-form-label-hidden">Search this Website</label>
+	    <input class="topnav-searchform-input" type="search" id="searchform" placeholder="Search this Website">
+	    <svg class="topnav-searchform-icon icon-search" style="color: #58616b;"><use xlink:href="#icon-search"></use></svg>
+	  </form>	 
+	</div> 		
+	</header>
+  <main>
+	  <section>
+	    <h3 id="aboutMe" tabindex="-1">About Me</h3>
+	    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+	  </section>
+	  <section>
+	    <h3 id="projects" tabindex="-1">Projects</h3>
+	    <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+	    <div class="tabpanel tabpanel-vertical" role="tabpanel">
+	    	<input class="tabpanel-input" type="radio" id="tabpanel-3-input-1" name="tabpanel-3" checked>
+	    	<input class="tabpanel-input" type="radio" id="tabpanel-3-input-2" name="tabpanel-3">
+	    	<input class="tabpanel-input" type="radio" id="tabpanel-3-input-3" name="tabpanel-3">
+	    	<div class="tabpanel-nav">
+	    		<label class="tabpanel-label" for="tabpanel-3-input-1">First Tab</label>
+	    		<label class="tabpanel-label" for="tabpanel-3-input-2">Second Tab</label>
+	    		<label class="tabpanel-label" for="tabpanel-3-input-3">Third Tab</label>
+	    	</div>
+	    	<div class="tabpanel-list">
+	    		<div class="tabpanel-item">
+	    			<div class="tabpanel-item-panel">
+	    				<p>Item panel 1</p>
+	    			</div>
+	    		</div>
+	    		<div class="tabpanel-item">
+	    			<div class="tabpanel-item-panel">
+	    				<p>Item panel 2</p>
+	    			</div>
+	    		</div>
+	    		<div class="tabpanel-item">
+	    			<div class="tabpanel-item-panel">
+	    				<p>Item panel 3</p>
+	    			</div>
+	    		</div>
+	    	</div>
+	    	
+	    </div>
+	  </section>
+	  <section>
+	    <h3 id="skills" tabindex="-1">Skills</h3>
+	    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+	  </section>
+	  <section>
+	    <h3 id="contact" tabindex="-1">Contact</h3>
+	    <ul>
+	      <li>email</li>
+	      <li>phone</li>
+	      <li>address</li>
+	    </ul>
+	  </section>  	
+  </main>
+  <footer class="sitefooter topnav-font">
+  	<div class="sitefooter__top">
+  		<p><a href="#topnav">Back to top</a></p>
+  	</div>
+  	<div class="sitefooter__bottom">
+  		<div class="container">
+  			<div class="row">
+  				<div class="sitefooter__me col6">
+  					<div class="media">
+  						<img width="50" height="50" class="media__img" src="../../img/pa2/avatar-leonardo-deleon.jpg">
+  						<div class="media__body">
+  							<h2 class="title-footer">Leo de Leon</h2>
+  							<p>
+  								Fullstack Engineer student at BOV Academy, aspiring to become a competent and confident Fullstack Engineer.   
+  							</p>
+  							<p></p>
+  							<p>
+  								<a class="more" href="#!">More</a>
+  							</p>
+  						</div>
+  					</div>		
+  				</div>
+  				<div class="sitefooter__connect col3">
+  					<h2 class="title-footer">Connect</h2>
+  					<ul class="list-social">
+  						<li class="list-social__item">
+  							<a href="#!">
+  								<svg class="icon-small"><use xlink:href="#icon-twitter"></use></svg>
+  								Twitter
+  							</a>
+  						</li>
+  						<li class="list-social__item">
+  							<a href="#!">
+  								<svg class="icon-small"><use xlink:href="#icon-github"></use></svg>
+  								Github
+  							</a>
+  						</li>
+  						<li class="list-social__item">
+  							<a href="#!">
+  								<svg class="icon-small"><use xlink:href="#icon-linkedin2"></use></svg>
+  								LinkedIn
+  							</a>
+  						</li>  						  						
+  					</ul>
+  				</div>
+  				<div class="sitefooter__contact col3">
+  					<h2 class="title-footer">Contact</h2>
+  					<p>
+  						Want more information? Reach me at:
+  					</p>
+  					<p>
+  						<a href="#!">hello@leodeleon.com</a>
+  					</p>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  	<div class="sitefooter__legal">
+  		<small>&copy; 2018 Leonardo de Leon - All rights reserved</small>
+  	</div>
+  </footer>
+  <script src="../../scripts/portfolio/navbarUI.js"></script>
+</body>
+</html>
