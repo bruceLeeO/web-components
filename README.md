@@ -58,6 +58,10 @@ Re-do previous project assignments and turn them responsive or mobile friendly. 
 
 	- See [Calculator Demo](https://bruceleeo.github.io/web-components/intro-to-responsive-design/web/ui/calculator/calculator.html "Calculator").
 
+- **Product Listing**
+
+	- See [Product Listing Demo](https://bruceleeo.github.io/web-components/intro-to-responsive-design/web/ui/product-listing/productListing.html "Product Listing Page")
+
 ##### Project Assignment 2 - Portfolio
 
 - **Portfolio**
