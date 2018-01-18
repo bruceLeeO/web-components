@@ -1,0 +1,71 @@
+.foursided-carousel {
+	border: 5px solid red;
+	margin: 3px auto;
+	padding: 3px;
+	width: 650px;
+	height: 400px;
+	position: relative;
+	perspective: 1750px;
+}
+
+.foursided-carousel-axis {
+	border: 1px solid blue;
+	margin: 3px;
+	padding: 3px;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transform-style: preserve-3d;
+	transition: 1s;
+}
+
+.foursided-carousel-outerside {
+	border: 1px solid;
+	display: block;
+	position: absolute;
+	width: 250px;
+	height: 200px;
+  line-height: 200px;
+  font-size: 5em;
+  align-items: center;
+  opacity: .95;
+  text-align: center;
+  top: 100px;
+  left: 185px;
+}
+
+.foursided-first {
+	transform: rotateY(0deg) translateZ(160px);
+	background: #ed1c24;
+}
+
+.foursided-second {
+	transform: rotateY(90deg) translateZ(160px);
+	background: #0072bc;
+}
+
+.foursided-third {
+	transform: rotateY(180deg) translateZ(160px);
+	background: #39b54a;
+}
+
+.foursided-fourth {
+	transform: rotateY(270deg) translateZ(160px);
+	background: #f26522;
+}
+
+.foursided-carousel-next, .foursided-carousel-prev {
+  color: #444;
+  position: absolute;
+  top: 100px;
+  padding: 1em 2em;
+  cursor: pointer;
+  background: #CCC;
+  border-radius: 5px;
+  border-top: 1px solid #FFF;
+  box-shadow: 0 5px 0 #999;
+  transition: box-shadow 0.1s, top 0.1s;	
+}
+
+.foursided-carousel-next { top: 12em; right: 2em; }
+.foursided-carousel-prev { top: 12em; left: 2em; }
