@@ -1,11 +1,11 @@
 (function(window){
 
  /* The contents of your JS file */
-  var acc = document.getElementsByClassName("accordionindex");
+  var ai = document.getElementsByClassName("accordionindex");
   var i;
 
-  for (i = 0; i < acc.length; i++) {
-    acc[i].onclick = function() {
+  for (i = 0; i < ai.length; i++) {
+    ai[i].onclick = function() {
       this.classList.toggle("active");
       console.log(this);
       var panel = this.nextElementSibling;

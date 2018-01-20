@@ -4,12 +4,15 @@
 	flex-direction: column;
 	margin: .2em auto;
 	padding: 3px;
-	max-width: 1240px;
+	/* tested good v.1.01 */ /*max-width: 500px; */
 	position: relative;
 }
 
 .accordionpanel {
 	display: flex;
+	flex: 1;
+	flex-flow: column wrap;
+	/* tested good v.1.01 */ /*width: 100%;*/
 }
 
 .accordionindex {
@@ -17,7 +20,8 @@
 	border: 1px solid;
 	margin: 3px;
 	padding: 3px;
-	width: 320px;
+	/*width: 320px*/
+	/* tested good v.1.01 */ /*width: 70%;*/
 	margin-right: 0;
 }
 
@@ -34,17 +38,25 @@
 }
 
 .accordioncontent {
+	flex: 1;
 	position: relative;
-	border: 1px solid;
+	/*border: 1px solid;*/
 	margin: 3px;
 	padding: 6px;
-	width: 900px;
-	/*height: 500px;*/
-	/*margin-left: -1px;*/
+	margin-top: 0;
+	padding-top: 0;	
+	margin-bottom: 0;
+	padding-bottom: 0;
+	width: 100%;
+	/*width: 900px;*/
+	/*tested good v.1.01*/ /*width: 70%;*/
 	background: #eee;
-	/*display: none;*/
 	max-height: 0;
 	overflow: hidden;
+}
+
+.accordioncontent--active {
+	border: 1px solid;
 }
 
 .accordioncontent-title {
@@ -69,6 +81,29 @@
   
 	.accordioncontent {
 		width: 98.5%;
+		height: 100%;
 		margin-left: 3px;
+	}
+}
+
+@media (max-width: 550px) {
+	.accordion {
+		display: flex;
+	}
+
+	.accordionpanel {
+		flex-flow: column wrap;
+		height: 100%;
+	}
+}
+
+@media (max-width: 500px) {
+	.accordion {
+		display: flex;
+	}
+
+	.accordionpanel {
+		flex-flow: column wrap;
+		height: 100%;
 	}
 }

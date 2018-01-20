@@ -11,7 +11,7 @@
 	border: 1px solid;
 	margin: 3px;
 	padding: 3px;
-	width: 320px;
+	max-width: 320px;
 	margin-right: 0;
 }
 
@@ -51,9 +51,9 @@
 	position: relative;
 	border: 1px solid;
 	margin: 3px;
-	padding: 6px;
+	padding-left: 2em;
 	max-width: 100%;
-	height: 500px;
+	max-height: 100%;
 	margin-left: -2px;
 	background: #eee;
 	display: none;
@@ -109,3 +109,25 @@
 		width: 320px;
 	}
 }*/
+
+.tabcontent-list-social {
+	/*border: 1px solid;*/
+  padding: 0;
+  list-style-type: none;
+} 
+
+.tabcontent-list-social__item {
+	/*border: 1px solid;*/
+	margin: 0;
+  padding: 5px 12px 8px 0;
+  display: inline-block;
+}
+
+.tabcontent-list-social__item a {
+	text-decoration: none;
+	color: #ff9948;
+}
+
+.tabcontent-list-social__item a:hover {
+  color: #58616b;
+}

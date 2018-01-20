@@ -80,8 +80,11 @@
 		<div><span>Width: <span class="width"></span></span></div><br>
 		<!-- Tab components -->
 	    <div class="tab tab-font" id="tab">
-	    	<div class="tabear">
-		      <div class="tabindex tabindex--active" id="London">
+	    	<div class="tabear">	    
+		      <div class="tabindex tabindex--active" id="Calculator">
+		      	<h2 class="tabindex-title">Calculator</h2>
+		      </div>	 		
+		      <div class="tabindex" id="London">
 		      	<h2 class="tabindex-title">London</h2>
 		      </div>
 		      <div class="tabindex" id="Tokyo">
@@ -89,13 +92,56 @@
 		      </div>
 		      <div class="tabindex" id="Paris">
 		      	<h2 class="tabindex-title">Paris</h2>
-		      </div>	
-		      <div class="tabindex" id="Calculator">
-		      	<h2 class="tabindex-title">Calculator</h2>
-		      </div>			      
+		      </div>				      
 	    	</div>
 	    	<div class="tabbody">
-		      <div class="tabcontent" style="display: block;" id="london">
+		      <!-- Calculator carousel -->
+		      <div class="tabcontent" style="display: block;" id="calculator">
+		      	<h2 class="tabcontent-title">Calculator</h2>
+				    <div class="foursided-carousel">
+				    	<div class="foursided-carousel-axis" id="foursided-carousel-axis">
+					    		<div class="foursided-carousel-outerside foursided-first">
+					    			<div class="foursided-carousel-media">
+					    				<img width="200" height="300" class="foursided-carousel-media__img" src="../../img/portfolio/calculator.jpg">
+					    			</div>
+					    		</div>
+					    		<div class="foursided-carousel-outerside foursided-second">
+					    			<div class="foursided-carousel-media">
+					    				<img width="200" height="300" class="foursided-carousel-media__img" src="../../img/portfolio/calculator.jpg">
+					    			</div>				    			
+					    		</div>
+					    		<div class="foursided-carousel-outerside foursided-third">
+					    			<div class="foursided-carousel-media">
+					    				<img width="200" height="300" class="foursided-carousel-media__img" src="../../img/portfolio/calculator.jpg">
+					    			</div>				    			
+					    		</div>
+					    		<div class="foursided-carousel-outerside foursided-fourth">
+					    			<div class="foursided-carousel-media">
+					    				<img width="200" height="300" class="foursided-carousel-media__img" src="../../img/portfolio/calculator.jpg">
+					    			</div>				    			
+					    		</div>	
+				    	</div>
+				    	<div class="foursided-carousel-next"><svg class="icon-medium"><use xlink:href="#icon-chevron-right"></use></svg></div>
+				    	<div class="foursided-carousel-prev"><svg class="icon-medium"><use xlink:href="#icon-chevron-left"></use></svg></div>
+				    </div>	
+		      	<h2 class="tabcontent-title">Technologies: html5, css3, and Vanilla Javascript</h2>
+		      	<p>
+		      		This is an android inspired calculator.  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+		      	</p>  					
+		      	<ul class="tabcontent-list-social">
+		      		<li class="tabcontent-list-social__item">
+		      			<a href="#!">View live demo</a>
+		      		</li>
+  						<li class="tabcontent-list-social__item">
+  							<a href="#!">
+  								<svg class="icon-small"><use xlink:href="#icon-github"></use></svg>
+  								Github
+  							</a>
+  						</li> 						  						
+  					</ul>		      				    	      	
+		      </div>
+		      <!-- end of calculator carousel -->		    		
+		      <div class="tabcontent" id="london">
 		      	<h2 class="tabcontent-title">London</h2>
 		      	<p>
 		      		London is the capital city of England.
@@ -113,17 +159,63 @@
 		      		Paris is the capital city of France.
 		      	</p>
 		      </div>
-		      <div class="tabcontent" id="calculator">
-		      	<h2 class="tabcontent-title">Calculator</h2>
-		      	<p>
-		      		This is an android inspired calculator.
-		      	</p>
-		      </div>			      	 		      
+		      <!-- 
+		       -->			      	 		      
 	    	</div>
 		</div>
 
 <!-- accordion component -->
 	  <div class="accordion" id="accordion">
+      <!-- start of calculator accordion panel -->
+    	<div class="accordionpanel">
+	      <div class="accordionindex accordionindex--active" id="Accordioncalculator">
+	      	<h2 class="accordionindex-title">Calculator</h2>
+	      </div>
+	      <div class="accordioncontent" id="accordioncalculator">
+			    <div class="foursided-carousel">
+			    	<div class="foursided-carousel-axis" id="accordion-foursided-carousel-axis">
+				    		<div class="foursided-carousel-outerside foursided-first">
+				    			<div class="foursided-carousel-media">
+				    				<img width="200" height="300" class="foursided-carousel-media__img" src="../../img/portfolio/calculator.jpg">
+				    			</div>
+				    		</div>
+				    		<div class="foursided-carousel-outerside foursided-second">
+				    			<div class="foursided-carousel-media">
+				    				<img width="200" height="300" class="foursided-carousel-media__img" src="../../img/portfolio/calculator.jpg">
+				    			</div>				    			
+				    		</div>
+				    		<div class="foursided-carousel-outerside foursided-third">
+				    			<div class="foursided-carousel-media">
+				    				<img width="200" height="300" class="foursided-carousel-media__img" src="../../img/portfolio/calculator.jpg">
+				    			</div>				    			
+				    		</div>
+				    		<div class="foursided-carousel-outerside foursided-fourth">
+				    			<div class="foursided-carousel-media">
+				    				<img width="200" height="300" class="foursided-carousel-media__img" src="../../img/portfolio/calculator.jpg">
+				    			</div>				    			
+				    		</div>	
+			    	</div>
+			    	<div class="accordion-foursided-carousel-next"><svg class="icon-medium"><use xlink:href="#icon-chevron-right"></use></svg></div>
+			    	<div class="accordion-foursided-carousel-prev"><svg class="icon-medium"><use xlink:href="#icon-chevron-left"></use></svg></div>
+			    </div>	
+	      	<h2 class="tabcontent-title">Technologies: html5, css3, and Vanilla Javascript</h2>
+	      	<p>
+	      		This is an android inspired calculator.  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+	      	</p>  					
+	      	<ul class="tabcontent-list-social">
+	      		<li class="tabcontent-list-social__item">
+	      			<a href="#!">See demo</a>
+	      		</li>
+						<li class="tabcontent-list-social__item">
+							<a href="#!">
+								<svg class="icon-small"><use xlink:href="#icon-github"></use></svg>
+								Github
+							</a>
+						</li> 						  						
+					</ul>		      	
+	      </div>
+	    </div>
+		  <!-- end of calculator accordion panel -->  	  	
 	    	<div class="accordionpanel">
 		      <div class="accordionindex accordionindex--active" id="Accordionlondon">
 		      	<h2 class="accordionindex-title">London</h2>
@@ -156,49 +248,12 @@
 		      		Paris is the capital city of France.
 		      	</p>
 		      </div>		      
-	    	</div>
-		    <div class="accordionpanel">
-		      <div class="accordionindex" id="Accordioncalculator">
-		      	<h2 class="accordionindex-title">Calculator</h2>
-		      </div>
-		      <div class="accordioncontent" id="accordionparis">
-		      	<h2 class="accordioncontent-title">Calculator</h2>
-		      	<p>
-		      		This is an android inspired calculator.
-		      	</p>
-		      </div>		      
 	    	</div>	    	
 		</div>
 
 
 
-		<!-- 6 sided Carousel component  -->
-		<div class="carousel-container">
-			<div class="carousel" id="carouselo">
-				<div class="item a">A</div>
-				<div class="item b">B</div>
-				<div class="item c">C</div>
-				<div class="item d">D</div>
-				<div class="item e">E</div>
-				<div class="item f">F</div>
-			</div>
-			<div class="next">Next</div>
-			<div class="prev">Prev</div>
-		</div>
 
-
-    <!-- 4 sided Carousel component 619-321-2636 mid city clinic  brianna-->
-
-    <div class="foursided-carousel">
-    	<div class="foursided-carousel-axis" id="foursided-carousel-axis">
-    		<div class="foursided-carousel-outerside foursided-first">A</div>
-    		<div class="foursided-carousel-outerside foursided-second">B</div>
-    		<div class="foursided-carousel-outerside foursided-third">C</div>
-    		<div class="foursided-carousel-outerside foursided-fourth">D</div>
-    	</div>
-    	<div class="foursided-carousel-next"><svg class="icon-medium"><use xlink:href="#icon-chevron-right"></use></svg></div>
-    	<div class="foursided-carousel-prev"><svg class="icon-medium"><use xlink:href="#icon-chevron-left"></use></svg></div>
-    </div>
 
 	  </section>
 	  <section>
@@ -281,5 +336,6 @@
   <script src="../../scripts/portfolio/foursided-carousel.js"></script>
   <script src="../../scripts/portfolio/accordion.js"></script>
   <script src="../../scripts/portfolio/mediaQuerryEventListener.js"></script>
+  <script src="../../scripts/portfolio/accordion-foursided-carousel.js"></script>
 </body>
 </html>
