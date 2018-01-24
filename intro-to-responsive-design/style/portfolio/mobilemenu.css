@@ -1,0 +1,139 @@
+
+/**
+ * mobilemenu 
+ *
+ */
+.mobilemenu {
+ /*border: 2px solid red;*/
+  line-height: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.mobilemenu-item {
+  /*border: 1px solid;*/
+}
+
+/* select all the topnav-list classes */
+.mobilemenu-list {
+  display: flex;
+  /*flex-direction: row;*/
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  line-height: 1;
+  /*border: 1px solid;*/
+  flex-flow: column wrap;
+  flex: 1;
+}
+
+/* select all the topnav-link classes */
+.mobilemenu-link {
+  position: relative;
+  text-decoration: none;
+  color: #f2f5fa;
+  transition: color 0.33s ease, border-color 0.33s ease;
+}
+
+.mobilemenu-link:hover { 
+  color: #acb6bf;
+  border-color: #acb6bf;
+}
+/*
+.mobilemenu-link--active {
+  color: #ff9948;
+  border-color: #ff9948;
+}*/
+
+.mobilemenu-font {
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Roboto",
+    "Oxygen",
+    "Ubuntu",
+    "Cantarell",
+    "Fira Sans",
+    "Droid Sans",
+    "Helvetica Neue",
+    sans-serif;
+  font-size: 100%;
+  line-height: 1;
+  /*background-color: #f3f5f8;*/
+  /*color: #58616b;*/
+  color: #f2f5fa;
+}
+
+.text-align__center {
+  text-align: center;
+}
+
+@media (max-width: 650px) {
+
+  .mobilemenu-item {
+    padding: 12px;
+  }
+  .mobilemenu-link {
+    /*text-align: center;*/ 
+  }
+  .mobilemenu-item:first-of-type {
+    background-color: #34383c;
+  }
+  .mobilemenu-item:first-of-type .mobilemenu-link {
+    border-bottom: 4px solid #34383c;
+  }
+  .mobilemenu-item:nth-of-type(2) {
+    background-color: #1e2226;
+  }
+  .mobilemenu-item:nth-of-type(2) .mobilemenu-link {
+    border-bottom: 4px solid #1e2226;
+  }
+  .mobilemenu-item:nth-of-type(3) {
+    background-color: #34383c;
+  }
+  .mobilemenu-item:nth-of-type(3) .mobilemenu-link {
+    border-bottom: 4px solid #34383c;
+  }
+  .mobilemenu-item:nth-of-type(4) {
+    background-color: #1e2226;    
+  }
+  .mobilemenu-item:nth-of-type(4) .mobilemenu-link {
+    border-bottom: 4px solid #1e2226;
+  }  
+  .mobilemenu-item:first-of-type .mobilemenu-link:hover {
+    color: #acb6bf;
+    border-color: #acb6bf;
+  }  
+  .mobilemenu-item:nth-of-type(2) .mobilemenu-link:hover {
+    color: #acb6bf;
+    border-color: #acb6bf;
+  }  
+  .mobilemenu-item:nth-of-type(3) .mobilemenu-link:hover {
+    color: #acb6bf;
+    border-color: #acb6bf;
+  }    
+  .mobilemenu-item:nth-of-type(4) .mobilemenu-link:hover {
+    color: #acb6bf;
+    border-color: #acb6bf;
+  }   
+
+  .mobilemenu-item:first-of-type .mobilemenu-link--active {
+    color: #ff9948;
+    border-color: #ff9948;
+  } 
+  .mobilemenu-item:nth-of-type(2) .mobilemenu-link--active {
+    color: #ff9948;
+    border-color: #ff9948;
+  } 
+  .mobilemenu-item:nth-of-type(3) .mobilemenu-link--active {
+    color: #ff9948;
+    border-color: #ff9948;
+  }   
+  .mobilemenu-item:nth-of-type(4) .mobilemenu-link--active {
+    color: #ff9948;
+    border-color: #ff9948;
+  }   
+}

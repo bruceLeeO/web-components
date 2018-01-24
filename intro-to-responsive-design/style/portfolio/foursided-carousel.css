@@ -386,6 +386,9 @@
 	}
 }
 
+/**
+ * @media to handle changing 3d carousel widthas it decrease to 300px
+ */   
 @media (max-width: 600px) {
 	.foursided-carousel-outerside {
 		left: 84px;

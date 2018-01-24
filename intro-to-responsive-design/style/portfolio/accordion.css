@@ -23,6 +23,7 @@
 	/*width: 320px*/
 	/* tested good v.1.01 */ /*width: 70%;*/
 	margin-right: 0;
+	cursor: pointer;
 }
 
 .accordionindex--active {
