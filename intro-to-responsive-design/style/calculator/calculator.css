@@ -7,7 +7,8 @@
 	border: 1px solid;
 	display: flex;
 	flex-direction: column;
-	width: 320px;
+	/*width: 320px;*/ max-width: 320px;
+	/*max-height: 300px;*/
 	padding: 1em;
 	background-color: rgb(169,174,169);
 	border-radius: 1em;
@@ -49,4 +50,22 @@
 	padding-top: 5px;
 	padding-bottom: 9px;
 }
+	
 
+.calculator-title {
+	margin: 1px;
+	text-transform: uppercase;
+
+}
+
+.calculator-form-input {
+	text-align: right;
+	font-size: 18px;
+}
+
+@media (max-width: 1460px) {
+	.calculator-button {
+		padding: 5px;
+		font-size: 20px;
+	}
+}

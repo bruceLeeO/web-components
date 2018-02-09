@@ -1,0 +1,162 @@
+
+
+.rgbLabel {
+	margin: 1em 0 1em 0;
+	/*border: 1px solid;*/
+}
+.rgbInputRange {
+	/*border: 1px solid;*/
+	width: 100%;
+	background-color: rgb(226,194,35);
+	/*max-height: 1.75em;*/
+}
+.rgbInputText {
+	width: 100%;
+	/*margin: 1em 0 1em 0;*/
+}
+.rgbForm {
+	border: 1px solid;
+	width: 320px;
+	background-color: rgb(251,251,229);
+	padding: 2em;
+	/*box-sizing: border-box;*/
+	text-align: left;
+}
+.rgbform-group {
+	display: flex;
+	align-items: center;
+	/*flex: 1;*/
+	/*border: 1px solid red;*/
+	width: 100%;
+	/*flex-flow: column wrap;*/
+}
+
+.rgb-font {
+  font-family:
+  -apple-system,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  "Roboto",
+  "Oxygen",
+  "Ubuntu",
+  "Cantarell",
+  "Fira Sans",
+  "Droid Sans",
+  "Helvetica Neue",
+  sans-serif;
+font-size: 100%;
+line-height: 1.5;
+/*background-color: #f3f5f8;*/
+color: #58616b;
+}
+
+.rgb-tooltip {
+  position: relative;
+  display: inline-block;
+  /*border-top: 1px transparent;*/
+  border-bottom: 1px dashed;
+  margin: 0 5px 0 8px;
+  color: #ff9948;
+  /*border: 1px solid;*/
+}
+
+.rgb-tooltip .rgb-tooltiptext {
+  visibility: hidden;
+  width: 320px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: -90%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.rgb-tooltip .rgb-tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.rgb-tooltip:hover .rgb-tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.rgb-tooltip .rgb-tooltiptext {
+	left: 40%;
+	width: 180px;
+}
+
+.rgbred {
+	background: rgb(255,0,0);
+	color: rgb(255,255,255);
+}
+.rgbgreen {
+	background: rgb(0,255,0);
+	color: rgb(255,255,255);
+}
+.rgbblue {
+	background: rgb(0,0,255);
+	color: rgb(255,255,255);
+}
+
+.rgb-header-title {
+  font-weight: 400;
+  line-height: 1.2;
+  color: #1e2226;
+  margin-top: 32px;
+}
+
+.rgbdesc {
+	/*border: 1px solid;*/
+	margin: 0;
+	margin-bottom: 1em;
+}
+
+@media (max-width: 1460px) {
+	.rgbForm {
+		max-width: 200px;
+		max-height: 300px;
+		padding-top: .5em;
+		padding-left: 1em;
+		padding-right: 1em;
+		padding-bottom: 2em;
+	}
+
+	.rgbform-group {
+		padding-top: .5em;
+		padding-bottom: .5em;
+	}
+
+	.rgbLabel {
+		margin: .5em 0 .5em 0;
+	}
+
+	.rgb-header-title {
+		font-size: 100%;
+	}
+	.rgbdesc {
+		font-size: 55%;
+	}
+
+	.rgbLabel , .rgbInputRange, .rgbInputText {
+		font-size: 55%;
+	}
+  .rgbred, .rgbgreen, .rgbblue {
+		width: 45%;
+	}
+	.rgbInputRange {
+		padding: 0;
+	}
+}

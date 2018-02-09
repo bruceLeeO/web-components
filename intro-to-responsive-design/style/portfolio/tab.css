@@ -1,25 +1,29 @@
 .tab {
-	border: 1px solid red;
+	/*border: 1px solid red;*/
 	display: flex;
 	margin: .2em auto;
 	padding: 3px;
-	max-width: 1240px;
+	/*max-width: 1240px;*/
+	max-width: 824px;
 }
 
 .tabindex {
 	position: relative;
-	border: 1px solid;
+	border: 1px solid #dce8fa;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
 	margin: 3px;
 	padding: 3px;
-	max-width: 320px;
+	width: 200px;
 	margin-right: 0;
 	cursor: pointer;
+	background-color: #f2f5fa;
 }
 
 .tabindex--active {
-	border-right-color: #ffffff;
-	background-color: #ffffff;	
-	z-index: 1;
+	border-right-color: #dce8fa;
+	background-color: #dce8fa;	
+		z-index: 2;
 }
 
 .tabindex-title {
@@ -44,20 +48,22 @@
   font-size: 100%;
   line-height: 1;
   /*background-color: #f3f5f8;*/
-  color: #58616b;
+  /*color: #58616b;*/
   /*color: #f2f5fa; whitish bright color*/
+  color: #1e2226;
 }
 
 .tabcontent {
 	position: relative;
-	border: 1px solid;
+	border: 1px solid #dce8fa;
 	margin: 3px;
 	padding-left: 2em;
-	max-width: 100%;
-	max-height: 100%;
-	margin-left: -2px;
-	background: #eee;
+	width: 100%;
+	/*max-height: 100%;*/ max-height:100%;
+	/*margin-left: -1.521px;*/margin-left: -1.5298px;
+	/*background: #eee;*/
 	display: none;
+	background-color: #dce8fa;
 }
 
 .tabcontent-title {
