@@ -5,22 +5,13 @@
   window.addEventListener('resize', go);
 
   function go() {
+
+    /* useful debugging tool */
     document.querySelector('.width').innerText = document.documentElement.clientWidth;
     console.log("clientWidth: "+document.documentElement.clientWidth);
     console.log("document.getElementById('tab-calculator'): "+document.getElementById("tab-calculator"));
-    //console.log("document.getElementById('tab-calculator-id'): "+document.getElementById("tab-calculator-id"));
     console.log("document.getElementById('accordion-calculator'): "+document.getElementById("accordion-calculator"));
-    //console.log("document.getElementById('accordion-calculator-id'): "+document.getElementById("accordion-calculator-id"));
     console.log("document.getElementById('calculator-id'): "+document.getElementById("calculator-id"));
-
-    //console.log("document.getElementById('tab-calculator').value: "+document.getElementById("tab-calculator").value);
-    //console.log("document.getElementById('accordion-calculator').value: "+document.getElementById("accordion-calculator").value);    
-
-    //document.getElementById('tab-calculator').value = null;
-    //document.getElementById('accordion-calculator').value = null;
-
-    //console.log("after null document.getElementById('tab-calculator').value: "+document.getElementById("tab-calculator").value);
-    //console.log("after null document.getElementById('accordion-calculator').value: "+document.getElementById("accordion-calculator").value); 
 
     /**
      * close the mobile menu while browser is being widened
@@ -38,128 +29,107 @@
     	document.getElementById("sidenav").style.maxHeight = "0";
     }
 
-    //if (document.documentElement.clientWidth < 600 && document.getElementById("accordion-calculator") != null) {
-    if (document.documentElement.clientWidth < 600 /*&& document.getElementById("calculator-id") == null*/) {
-
-      /* not recommended since appendChild only works when it's not null
-      if (document.getElementById("tab-calculator") != null) {
-        var element = document.getElementById("tab-calculator");
-        element.parentNode.removeChild(element);        
-      }
-      */
+    /**
+     * load or append the calculator component to the accordion component
+     */
+    if (document.documentElement.clientWidth < 600) {
       
       if (document.getElementById("calculator-id") != null) {
+        /* useful debugging tool */
+        console.log("ci: "+document.getElementById("calculator-id"));
+        var ci = document.getElementById("calculator-id");
+        var ac = document.getElementById("accordion-calculator");
+        var tc = document.getElementById("tab-calculator");        
+
         /**
          *  since calculator components already exist, append it to accordion components
          */
-        console.log("ci: "+document.getElementById("calculator-id"));
-        var ci = document.getElementById("calculator-id");
-        var ac = document.getElementById("accordion-calculator");
-        var tc = document.getElementById("tab-calculator");
         ac.appendChild(ci);        
       } else {
+
+        /* useful debugging tool */
         console.log("before build...");
         console.log("document.getElementById('tab-calculator'): "+document.getElementById("tab-calculator"));
         console.log("document.getElementById('accordion-calculator'): "+document.getElementById("accordion-calculator"));
         console.log("document.getElementById('calculator-id'): "+document.getElementById("calculator-id"));
+
+        /**
+         * build the calculator component when browser fires up
+         */
         var calculatorComponent = buildCalculatorComponent();
+
+        /* useful debugging tool */
         console.log("after build...");
         console.log("document.getElementById('calculator-id'): "+document.getElementById("calculator-id"));
-        /* console.log("document.getElementById('calculator-id').value: "+document.getElementById("calculator-id").value);  throws an error */
-
-        /* probably not needed since no longer setting it to null
-        console.log("ac b4 if (document.getElementById('accordion-calculator') == null): "+document.getElementById("accordion-calculator"));
-        if (document.getElementById("accordion-calculator") == null) {
-          var ac = document.createElement("p");
-          ac.id = "accordion-calculator";
-          document.getElementById("ac").appendChild(ac);        
-          console.log("ac after appendChild(ac): "+document.getElementById("accordion-calculator"));
-        } else {
-          var element = document.getElementById("accordion-calculator");
-          element.parentNode.removeChild(element);        
-        }*/
-
         console.log("ac before appendChild(calculatorComponent): "+document.getElementById("accordion-calculator"));
         console.log("ac.value before appendChild(calculatorComponent): "+document.getElementById("accordion-calculator").value);
         
-        //document.getElementById("tab-calculator").appendChild(calculatorComponent);    
+        /**
+         * load the calculator component on the accordion component 
+         */   
         document.getElementById("accordion-calculator").appendChild(calculatorComponent);
           
+        /* useful debugging tool */
         console.log("ac after appendChild(calculatorComponent)build: "+document.getElementById("accordion-calculator"));
         console.log("ac.value after appendChild(calculatorComponent): "+document.getElementById("accordion-calculator").value);
-        
-        /* not recommended since appendChild only works when it's not null
-        if (document.getElementById("tab-calculator") != null) {
-          var element = document.getElementById("tab-calculator");
-          element.parentNode.removeChild(element);         
-        }
-        */          
+                
       }  
-      
-           
+         
     }
 
-    if (document.documentElement.clientWidth > 600 /*&& document.getElementById("calculator-id") == null*/) {
+    /**
+     * load or append the calculator component to the tab component
+     */
+    if (document.documentElement.clientWidth > 600) {
 
-      /* not recommended since appendChild only works when it's not null
-      if (document.getElementById("accordion-calculator") != null) {
-        var element = document.getElementById("accordion-calculator");
-        element.parentNode.removeChild(element); 
-      }
-      */
 
       if (document.getElementById("calculator-id") != null) {
-        /**
-         * since calculator component already exist, append it to tab component
-         */
+        /** useful debugging tool **/
         console.log("ci: "+document.getElementById("calculator-id"));
         var ci = document.getElementById("calculator-id");
         var ac = document.getElementById("accordion-calculator");
         var tc = document.getElementById("tab-calculator");
+
+        /**
+         *  since calculator components already exist, append it to tab components
+         */        
         tc.appendChild(ci);       
 
       } else {
+
+        /* useful debugging tool */
         console.log("before build...");
         console.log("document.getElementById('tab-calculator'): "+document.getElementById("tab-calculator"));
         console.log("document.getElementById('accordion-calculator'): "+document.getElementById("accordion-calculator"));
         console.log("document.getElementById('calculator-id'): "+document.getElementById("calculator-id"));
+
+        /**
+         * build the calculator component when browser fires up
+         */
         var calculatorComponent = buildCalculatorComponent();
+
+        /* useful debugging tool */
         console.log("after build...");
         console.log("document.getElementById('calculator-id'): "+document.getElementById("calculator-id"));
-
-        /* probably not needed since no longer setting it to null
-        console.log("tc b4 if (document.getElementById('tab-calculator') == null): "+document.getElementById("tab-calculator"));
-        if (document.getElementById("tab-calculator") == null) {
-          var tc = document.createElement("p");
-          tc.id = "tab-calculator";
-          document.getElementById("tc").appendChild(tc);        
-        }
-        */
         console.log("tc before appendChild(calculatorComponent): "+document.getElementById("tab-calculator"));
         console.log("tc.value before appendChild(calculatorComponent): "+document.getElementById("tab-calculator").value);
 
-        //document.getElementById("accordion-calculator").appendChild(calculatorComponent);  
+        /**
+         * load the calculator component on the tab component
+         */   
         document.getElementById("tab-calculator").appendChild(calculatorComponent);
         
-
+        /* useful debugging tool */
         console.log("tc before appendChild(calculatorComponent): "+document.getElementById("tab-calculator"));
         console.log("tc.value before appendChild(calculatorComponent): "+document.getElementById("tab-calculator").value);
-
-        /* not recommended since appendChild only work when it's not null
-        if (document.getElementById("accordion-calculator") != null ) {
-          var element = document.getElementById("accordion-calculator");
-          element.parentNode.removeChild(element);        
-        }
-        */                   
+                  
       }
 
     }
-
 
   }
 
   function buildCalculatorComponent() {
-    console.log("start buildCalculatorComponent...");
     var cal = document.createElement("div");
     cal.className = "calculator";
     cal.id = "calculator-id";
@@ -201,9 +171,10 @@
                      </div>\
                      <div class="calculator-panel">\
                        <span><small>2017 v.1.01</small></span>\
-                     </div>';
-    console.log("before return cal...");                    
-    return cal;                       
+                     </div>';      
+
+    return cal;   
+
   }
 
 
