@@ -6,18 +6,21 @@
 
   function go() {
 
-    /* useful debugging tool */
+    /* useful debugging tool 
     document.querySelector('.width').innerText = document.documentElement.clientWidth;
     console.log("clientWidth: "+document.documentElement.clientWidth);
     console.log("document.getElementById('tab-calculator'): "+document.getElementById("tab-calculator"));
     console.log("document.getElementById('accordion-calculator'): "+document.getElementById("accordion-calculator"));
-    console.log("document.getElementById('calculator-id'): "+document.getElementById("calculator-id"));
+    console.log("document.getElementById('calculator-id'): "+document.getElementById("calculator-id")); */
 
     /**
      * close the mobile menu while browser is being widened
      */
     if (document.documentElement.clientWidth >= 600 && document.documentElement.clientWidth <= 625) {
-      console.log("its between 600 and 625px...");
+
+      /* useful debugging tool
+      console.log("its between 600 and 625px..."); */
+      
       document.getElementById("sidenav").style.maxHeight = "0";
     }
 
@@ -25,7 +28,10 @@
      *  close the mobile menu just in case user decide to maximize the browser
      */
     if (document.documentElement.clientWidth > 1010) {
-    	console.log("screen is over 1010px... ");
+    	
+      /* useful debugging tool
+      console.log("screen is over 1010px... "); */
+
     	document.getElementById("sidenav").style.maxHeight = "0";
     }
 
@@ -35,43 +41,45 @@
     if (document.documentElement.clientWidth < 600) {
       
       if (document.getElementById("calculator-id") != null) {
-        /* useful debugging tool */
+        /* useful debugging tool 
         console.log("ci: "+document.getElementById("calculator-id"));
-        var ci = document.getElementById("calculator-id");
-        var ac = document.getElementById("accordion-calculator");
-        var tc = document.getElementById("tab-calculator");        
+        var tc = document.getElementById("tab-calculator");   */   
+
+        var ci = document.getElementById("calculator-id");  
+        var ac = document.getElementById("accordion-calculator");  
 
         /**
          *  since calculator components already exist, append it to accordion components
          */
-        ac.appendChild(ci);        
+        ac.appendChild(ci);  
+
       } else {
 
-        /* useful debugging tool */
+        /* useful debugging tool 
         console.log("before build...");
         console.log("document.getElementById('tab-calculator'): "+document.getElementById("tab-calculator"));
         console.log("document.getElementById('accordion-calculator'): "+document.getElementById("accordion-calculator"));
-        console.log("document.getElementById('calculator-id'): "+document.getElementById("calculator-id"));
+        console.log("document.getElementById('calculator-id'): "+document.getElementById("calculator-id")); */
 
         /**
          * build the calculator component when browser fires up
          */
         var calculatorComponent = buildCalculatorComponent();
 
-        /* useful debugging tool */
+        /* useful debugging tool 
         console.log("after build...");
         console.log("document.getElementById('calculator-id'): "+document.getElementById("calculator-id"));
         console.log("ac before appendChild(calculatorComponent): "+document.getElementById("accordion-calculator"));
-        console.log("ac.value before appendChild(calculatorComponent): "+document.getElementById("accordion-calculator").value);
+        console.log("ac.value before appendChild(calculatorComponent): "+document.getElementById("accordion-calculator").value); */
         
         /**
          * load the calculator component on the accordion component 
          */   
         document.getElementById("accordion-calculator").appendChild(calculatorComponent);
           
-        /* useful debugging tool */
+        /* useful debugging tool 
         console.log("ac after appendChild(calculatorComponent)build: "+document.getElementById("accordion-calculator"));
-        console.log("ac.value after appendChild(calculatorComponent): "+document.getElementById("accordion-calculator").value);
+        console.log("ac.value after appendChild(calculatorComponent): "+document.getElementById("accordion-calculator").value); */
                 
       }  
          
@@ -84,10 +92,11 @@
 
 
       if (document.getElementById("calculator-id") != null) {
-        /** useful debugging tool **/
+        /** useful debugging tool 
         console.log("ci: "+document.getElementById("calculator-id"));
+        var ac = document.getElementById("accordion-calculator"); */
+
         var ci = document.getElementById("calculator-id");
-        var ac = document.getElementById("accordion-calculator");
         var tc = document.getElementById("tab-calculator");
 
         /**
@@ -97,31 +106,31 @@
 
       } else {
 
-        /* useful debugging tool */
+        /* useful debugging tool 
         console.log("before build...");
         console.log("document.getElementById('tab-calculator'): "+document.getElementById("tab-calculator"));
         console.log("document.getElementById('accordion-calculator'): "+document.getElementById("accordion-calculator"));
-        console.log("document.getElementById('calculator-id'): "+document.getElementById("calculator-id"));
+        console.log("document.getElementById('calculator-id'): "+document.getElementById("calculator-id")); */
 
         /**
          * build the calculator component when browser fires up
          */
         var calculatorComponent = buildCalculatorComponent();
 
-        /* useful debugging tool */
+        /* useful debugging tool 
         console.log("after build...");
         console.log("document.getElementById('calculator-id'): "+document.getElementById("calculator-id"));
         console.log("tc before appendChild(calculatorComponent): "+document.getElementById("tab-calculator"));
-        console.log("tc.value before appendChild(calculatorComponent): "+document.getElementById("tab-calculator").value);
+        console.log("tc.value before appendChild(calculatorComponent): "+document.getElementById("tab-calculator").value); */
 
         /**
          * load the calculator component on the tab component
          */   
         document.getElementById("tab-calculator").appendChild(calculatorComponent);
         
-        /* useful debugging tool */
+        /* useful debugging tool 
         console.log("tc before appendChild(calculatorComponent): "+document.getElementById("tab-calculator"));
-        console.log("tc.value before appendChild(calculatorComponent): "+document.getElementById("tab-calculator").value);
+        console.log("tc.value before appendChild(calculatorComponent): "+document.getElementById("tab-calculator").value); */
                   
       }
 
