@@ -9,10 +9,10 @@
 	<link rel="stylesheet" href="../../style/portfolio/navbar-portfolio.css">
 	<link rel="stylesheet" href="../../style/portfolio/tab.css">
 	<link rel="stylesheet" href="../../style/portfolio/carousel.css">
-	<link rel="stylesheet" href="../../style/portfolio/foursided-carousel.css"><link rel="stylesheet" href="../../style/portfolio/accordion.css">
+	<link rel="stylesheet" href="../../style/portfolio/foursided-carousel.css">
+	<link rel="stylesheet" href="../../style/portfolio/accordion.css">
 	<link rel="stylesheet" href="../../style/portfolio/modal.css">
-	<link rel="stylesheet" href="../../style/portfolio/accordionproject
-	.css">
+	<link rel="stylesheet" href="../../style/portfolio/accordionproject.css">
 	<link rel="stylesheet" href="../../style/portfolio/mobilemenu.css">
 	<link rel="stylesheet" href="../../style/portfolio/sidenav.css">
 	<link rel="stylesheet" href="../../style/calculator/calculator.css">
@@ -198,44 +198,12 @@
 		      </div>	
 	    	</div>
 	    	<div class="tabbody">
-		      <!-- Calculator carousel -->
+		      <!-- start of tab calculator  -->
 		      <div class="tabcontent" style="display: block;" id="calculator">
 		      	<h2 class="tabcontent-title">Calculator</h2>
-				    <div class="foursided-carousel foursided-carousel-font">
-				    	<div class="foursided-carousel-axis" id="foursided-carousel-axis">
-					    		<div class="foursided-carousel-outerside foursided-first">
-					    			<div class="foursided-carousel-media">
-					    				<img width="200" height="300" class="foursided-carousel-media__img" src="../../img/portfolio/calculator/calculator.jpg">
-					    			</div>
-					    		</div>
-					    		<div class="foursided-carousel-outerside foursided-second">
-					    			<div class="foursided-carousel-media">
-					    				<img width="200" height="300" class="foursided-carousel-media__img" src="../../img/portfolio/calculator/calculator-2.jpg">
-					    			</div>				    			
-					    		</div>
-					    		<div class="foursided-carousel-outerside foursided-third">
-					    			<div class="foursided-carousel-media">
-					    				<img width="200" height="300" class="foursided-carousel-media__img" src="../../img/portfolio/calculator/calculator-3.jpg">
-					    			</div>				    			
-					    		</div>
-					    		<div class="foursided-carousel-outerside foursided-fourth">
-					    			<div class="foursided-carousel-media">
-					    				<!-- start tab real calculator -->
-					    				<p id="tc"></p>
-					    				<p id="tab-calculator"></p>
-					    				<!-- end tab real calculator -->
-					    			</div>				    			
-					    		</div>	
-				    	</div>
-				    	<div class="foursided-carousel-next"><svg class="icon-medium"><use xlink:href="#icon-chevron-right"></use></svg></div>
-				    	<div class="foursided-carousel-prev"><svg class="icon-medium"><use xlink:href="#icon-chevron-left"></use></svg></div>
-				    	<div class="foursided-carousel-dots">
-				    		<span class="dot dot--active" id="dot1">1</span>
-				    		<span class="dot" id="dot2">2</span>
-				    		<span class="dot" id="dot3">3</span>
-				    		<span class="dot" id="dot4">4</span>
-				    	</div>
-				    </div>	
+		      	<!-- start of tab calculator carousel -->
+		      	<p id="tab-calculator"></p>
+				    <!-- end of tab calculator carousel -->	
 		      	<h2 class="tabcontent-title">Technologies: html5, css3, and Vanilla Javascript</h2>
 		      	<p>
 		      		This is an android inspired calculator.  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
@@ -252,67 +220,13 @@
   						</li> 						  						
   					</ul>		      				    	      	
 		      </div>
-		      <!-- end of calculator carousel -->	
-		      <!-- start of RGB color -->
+		      <!-- end of tab calculator -->	
+		      <!-- start of tab RGB color -->
 		      <div class="tabcontent" id="rgbcolor">
 		      	<h2 class="tabcontent-title">RGB Color Picker</h2>
-				    <div class="foursided-carousel foursided-carousel-font">
-				    	<div class="foursided-carousel-axis" id="rgb-foursided-carousel-axis">
-					    		<div class="foursided-carousel-outerside foursided-first">
-					    			<div class="foursided-carousel-media">
-					    				<img width="200" height="300" class="foursided-carousel-media__img" src="../../img/portfolio/rgb/rgb-color-picker.jpg">
-					    			</div>
-					    		</div>
-					    		<div class="foursided-carousel-outerside foursided-second">
-					    			<div class="foursided-carousel-media">
-					    				<img width="200" height="300" class="foursided-carousel-media__img" src="../../img/portfolio/rgb/rgb-color-picker-2.jpg">
-					    			</div>				    			
-					    		</div>
-					    		<div class="foursided-carousel-outerside foursided-third">
-					    			<div class="foursided-carousel-media">
-					    				<img width="200" height="300" class="foursided-carousel-media__img" src="../../img/portfolio/rgb/rgb-color-picker-3.jpg">
-					    			</div>				    			
-					    		</div>
-					    		<div class="foursided-carousel-outerside foursided-fourth">
-					    			<div class="foursided-carousel-media">
-					    				<!-- start of rgb color picker -->
-											<div class="rgbForm rgb-font">
-												<h2 class="rgb-header-title">RGB Color Picker</h2>
-												<p class="rgbdesc">RGB color values are supported in all browsers.  An RGB color value is specified with:<span class="rgb-tooltip">rgb(red, green, blue)
-												  <span class="rgb-tooltiptext">Each param (red, green, blue) defines the intensity of the color as an integer between 0 and 255 (e.g. rgb(0,0,255) is rendered blue since blue param is set to its highest whereas the others are set to 0).</span></span>.</p>
-												<div class="rgbform-group">
-													<label class="rgbLabel">r: </label>
-													<input class="rgbInputRange" type="range" name="rangeInput" min="0" max="255" onchange="rgbColor.updateRed(this.value);">
-												  <input class="rgbInputText rgbred" type="text" id="redInput" value="255" disabled>			
-												</div>
-												<div class="rgbform-group">
-												  <label class="rgbLabel">g: </label>
-													<input class="rgbInputRange" type="range" name="rangeInput" min="0" max="255" onchange="rgbColor.updateGreen(this.value);">
-													<input class="rgbInputText rgbgreen" type="text" id="greenInput" value="255" disabled>			
-												</div>
-												<div class="rgbform-group">
-													<label class="rgbLabel">b: </label>
-													<input class="rgbInputRange" type="range" name="rangeInput" min="0" max="255" onchange="rgbColor.updateBlue(this.value);">
-													<input class="rgbInputText rgbblue" type="text" id="blueInput" value="255" disabled>			
-												</div>
-												<div class="rgbform-group">
-													<label class="rgbLabel">rgb: </label>
-													<input class="rgbInputText rgbColor" type="text" id="rgbOutput" disabled>			
-												</div>
-											</div>
-											<!-- end of rgb color picker -->
-					    			</div>				    			
-					    		</div>	
-				    	</div>
-				    	<div class="rgb-foursided-carousel-next"><svg class="icon-medium"><use xlink:href="#icon-chevron-right"></use></svg></div>
-				    	<div class="rgb-foursided-carousel-prev"><svg class="icon-medium"><use xlink:href="#icon-chevron-left"></use></svg></div>
-				    	<div class="foursided-carousel-dots">
-				    		<span class="rgb-dot dot--active" id="rgb-dot1">1</span>
-				    		<span class="rgb-dot" id="rgb-dot2">2</span>
-				    		<span class="rgb-dot" id="rgb-dot3">3</span>
-				    		<span class="rgb-dot" id="rgb-dot4">4</span>
-				    	</div>
-				    </div>	
+		      	<!-- start of tab rgb color picker foursided-carousel -->
+		      	<p id="tab-rgbcolor"></p>
+				    <!-- end of tab rgb color picker foursided-carousel -->
 		      	<h2 class="tabcontent-title">Technologies: html5, css3, and Vanilla Javascript</h2>
 		      	<p>
 		      		This is an RGB color picker.  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
@@ -329,7 +243,7 @@
   						</li> 						  						
   					</ul>		      				    	      	
 		      </div>		     
-		      <!-- end of RGB color -->	    		
+		      <!-- end of tab RGB color -->	 
 		      <div class="tabcontent" id="london">
 		      	<h2 class="tabcontent-title">London</h2>
 		      	<p>
@@ -352,8 +266,7 @@
 		       -->			      	 		      
 	    	</div>
 		</div>
-
-<!-- accordion component -->
+		<!-- accordion component -->
 	  <div class="accordion accordion-font" id="accordion">
       <!-- start of calculator accordion panel -->
     	<div class="accordionpanel">
@@ -362,42 +275,35 @@
 	      </div>
 	      <div class="accordioncontent" id="accordioncalculator">
 	      	<!-- start of the calculator foursided-carousel -->
-				    <div class="foursided-carousel foursided-carousel-font">
-				    	<div class="foursided-carousel-axis" id="accordion-foursided-carousel-axis">
-					    		<div class="foursided-carousel-outerside foursided-first">
-					    			<div class="foursided-carousel-media">
-					    				<img width="200" height="300" class="foursided-carousel-media__img" src="../../img/portfolio/calculator/calculator.jpg">
-					    			</div>
-					    		</div>
-					    		<div class="foursided-carousel-outerside foursided-second">
-					    			<div class="foursided-carousel-media">
-					    				<img width="200" height="300" class="foursided-carousel-media__img" src="../../img/portfolio/calculator/calculator-2.jpg">
-					    			</div>				    			
-					    		</div>
-					    		<div class="foursided-carousel-outerside foursided-third">
-					    			<div class="foursided-carousel-media">
-					    				<img width="200" height="300" class="foursided-carousel-media__img" src="../../img/portfolio/calculator/calculator-3.jpg">
-					    			</div>				    			
-					    		</div>
-					    		<div class="foursided-carousel-outerside foursided-fourth">
-					    			<div class="foursided-carousel-media">
-					    				<!-- start accordion calculator -->
-					    				<p id="ac"></p>
-					    				<p id="accordion-calculator"></p>
-					    				<!-- end accordion calculator -->
-					    			</div>				    			
-					    		</div>	
-				    	</div>
-				    	<div class="accordion-foursided-carousel-next"><svg class="icon-medium"><use xlink:href="#icon-chevron-right"></use></svg></div>
-				    	<div class="accordion-foursided-carousel-prev"><svg class="icon-medium"><use xlink:href="#icon-chevron-left"></use></svg></div>
-				    	<div class="accordion-foursided-carousel-dots">
-				    		<span class="afca-dot dot--active" id="afca-dot1">1</span>
-				    		<span class="afca-dot" id="afca-dot2">2</span>
-				    		<span class="afca-dot" id="afca-dot3">3</span>
-				    		<span class="afca-dot" id="afca-dot4">4</span>
-				    	</div>
-				    </div>	
+	      	<p id="accordion-calculator"></p>
 			    <!-- end of the calculator foursided-carousel -->	
+	      	<h2 class="tabcontent-title">Technologies: html5, css3, and Vanilla Javascript</h2>
+	      	<p>
+	      		This is an RGB color picker.  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+	      	</p>  					
+	      	<ul class="tabcontent-list-social">
+	      		<li class="tabcontent-list-social__item">
+	      			<a href="#!">See demo</a>
+	      		</li>
+						<li class="tabcontent-list-social__item">
+							<a href="#!">
+								<svg class="icon-small"><use xlink:href="#icon-github"></use></svg>
+								Github
+							</a>
+						</li> 						  						
+					</ul>		      	
+	      </div>
+	    </div>
+		  <!-- end of calculator accordion panel -->  	
+		  <!-- start of rgbcolor picker accordion panel --> 
+    	<div class="accordionpanel">
+	      <div class="accordionindex accordionindex--active" id="Accordionrgb">
+	      	<h2 class="accordionindex-title">RGB Color Picker</h2>
+	      </div>
+	      <div class="accordioncontent" id="accordionrgb">
+		      <!-- start of accordion rgb foursided-carousel -->
+		      <p id="accordion-rgbcolor"></p>		  
+		      <!-- end of accordion rgb foursided-carousel -->	
 	      	<h2 class="tabcontent-title">Technologies: html5, css3, and Vanilla Javascript</h2>
 	      	<p>
 	      		This is an android inspired calculator.  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
@@ -414,47 +320,42 @@
 						</li> 						  						
 					</ul>		      	
 	      </div>
+	    </div>	      	   	  
+		  <!-- end of rgb color picker accordion panel --> 
+    	<div class="accordionpanel">
+	      <div class="accordionindex accordionindex--active" id="Accordionlondon">
+	      	<h2 class="accordionindex-title">London</h2>
+	      </div>
+	      <div class="accordioncontent" id="accordionlondon">
+	      	<h2 class="accordioncontent-title">London</h2>
+	      	<p>
+	      		London is the capital city of England.
+	      	</p>
+	      </div>
 	    </div>
-		  <!-- end of calculator accordion panel -->  	  	
-	    	<div class="accordionpanel">
-		      <div class="accordionindex accordionindex--active" id="Accordionlondon">
-		      	<h2 class="accordionindex-title">London</h2>
-		      </div>
-		      <div class="accordioncontent" id="accordionlondon">
-		      	<h2 class="accordioncontent-title">London</h2>
-		      	<p>
-		      		London is the capital city of England.
-		      	</p>
-		      </div>
-		    </div>
-		    <div class="accordionpanel">
-		      <div class="accordionindex" id="Accordiontokyo">
-		      	<h2 class="accordionindex-title">Tokyo</h2>
-		      </div>
-		      <div class="accordioncontent" id="accordiontokyo">
-		      	<h2 class="accordioncontent-title">Tokyo</h2>
-		      	<p>
-		      		Tokyo is the capital city of Japan.
-		      	</p>
-		      </div>		           	
-		    </div>	
-		    <div class="accordionpanel">
-		      <div class="accordionindex" id="Accordionparis">
-		      	<h2 class="accordionindex-title">Paris</h2>
-		      </div>
-		      <div class="accordioncontent" id="accordionparis">
-		      	<h2 class="accordioncontent-title">Paris</h2>
-		      	<p>
-		      		Paris is the capital city of France.
-		      	</p>
-		      </div>		      
-	    	</div>	    	
+	    <div class="accordionpanel">
+	      <div class="accordionindex" id="Accordiontokyo">
+	      	<h2 class="accordionindex-title">Tokyo</h2>
+	      </div>
+	      <div class="accordioncontent" id="accordiontokyo">
+	      	<h2 class="accordioncontent-title">Tokyo</h2>
+	      	<p>
+	      		Tokyo is the capital city of Japan.
+	      	</p>
+	      </div>		           	
+	    </div>	
+	    <div class="accordionpanel">
+	      <div class="accordionindex" id="Accordionparis">
+	      	<h2 class="accordionindex-title">Paris</h2>
+	      </div>
+	      <div class="accordioncontent" id="accordionparis">
+	      	<h2 class="accordioncontent-title">Paris</h2>
+	      	<p>
+	      		Paris is the capital city of France.
+	      	</p>
+	      </div>		      
+    	</div>	    	
 		</div>
-
-
-
-
-
 	  </section>
 	  <section>
 	    <h3 id="skills" tabindex="-1">Skills</h3>
@@ -532,11 +433,9 @@
   </footer>
   <script src="../../scripts/portfolio/navbarUI.js"></script>
   <script src="../../scripts/portfolio/tab.js"></script>
-  <!--<script src="../../scripts/portfolio/carousel.js"></script>-->
-  <script src="../../scripts/portfolio/foursided-carousel.js"></script>
   <script src="../../scripts/portfolio/accordion.js"></script>
   <script src="../../scripts/portfolio/mediaQuerryEventListener.js"></script>
-  <script src="../../scripts/portfolio/accordion-foursided-carousel.js"></script>
+  <script src="../../scripts/portfolio/foursided-carousel.js"></script>
   <script src="../../scripts/portfolio/modal.js"></script>
   <script src="../../scripts/portfolio/accordionproject.js"></script>
   <script src="../../scripts/portfolio/sidenav.js"></script>
