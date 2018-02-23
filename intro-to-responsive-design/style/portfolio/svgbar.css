@@ -1,0 +1,139 @@
+
+/*
+#sitemain {
+	position: relative;
+}
+
+.skill {
+	position: relative;
+	border: 1px solid green;
+	height: 100%;
+	width: 100%;
+}*/
+
+.svgstackedbar {
+	font-size: 28px;
+	line-height: 2.5;
+	font-weight: 600;
+
+}
+.svgpercentbar {
+	/*border: 1px solid;*/
+	margin-left: 108px;
+
+}
+
+.svgpercentbarunder800 {
+	/*border: 1px solid;*/
+	margin: auto;
+	display: none;
+
+}
+
+.skillpanel {
+	display:flex;
+}
+
+.svgbar {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+	/*border: 1px solid red;*/
+
+	z-index: 2;
+}
+
+#svgcont, #svgcont2, #svgcont3 {
+	margin: 0;
+	padding: 0;
+	/*border: 1px solid;*/
+	text-align: center;	
+}
+
+@media (max-width: 1100px) {
+	.skillpanel {
+		flex-flow: column wrap;
+		flex: 1;
+	}
+
+}
+
+@media	(max-width: 800px) {
+	.svgpercentbar {
+		display: none;
+	}	
+	.svgpercentbarunder800 {
+		display: block;
+	}		
+}
+
+.svgbc-font {
+  font-family:
+  -apple-system,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  "Roboto",
+  "Oxygen",
+  "Ubuntu",
+  "Cantarell",
+  "Fira Sans",
+  "Droid Sans",
+  "Helvetica Neue",
+  sans-serif;
+font-size: 100%;
+line-height: 1.5;
+/*background-color: #f3f5f8;*/
+color: #58616b;
+}
+
+/*
+.bc-tooltip {
+  position: relative;
+  display: inline-block;
+  border-top: 1px transparent;
+  border-bottom: 1px dashed;
+  margin: 0 5px 0 8px;
+  color: #ff9948;
+  border: 1px solid;
+}
+
+.bc-tooltip .bc-tooltiptext {
+ 	visibility: hidden;
+  width: 320px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: -90%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.bc-tooltip .bc-tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.bc-tooltip:hover .bc-tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.bc-tooltip .bc-tooltiptext {
+	left: 40%;
+	width: 180px;
+}
+
+*/
