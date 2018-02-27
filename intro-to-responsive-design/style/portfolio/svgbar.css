@@ -40,8 +40,6 @@
 	align-content: center;
 	align-items: center;
 	/*border: 1px solid red;*/
-
-	z-index: 2;
 }
 
 #svgcont, #svgcont2, #svgcont3 {
@@ -87,15 +85,15 @@ line-height: 1.5;
 color: #58616b;
 }
 
-/*
+
 .bc-tooltip {
   position: relative;
   display: inline-block;
   border-top: 1px transparent;
-  border-bottom: 1px dashed;
+  /*border-bottom: 1px dashed;*/
   margin: 0 5px 0 8px;
   color: #ff9948;
-  border: 1px solid;
+  /*border: 1px solid;*/
 }
 
 .bc-tooltip .bc-tooltiptext {
@@ -108,8 +106,9 @@ color: #58616b;
   padding: 5px 0;
   position: absolute;
   z-index: 1;
+  /*bottom: 115%;*/
   bottom: 125%;
-  left: -90%;
+  left: -60%;
   margin-left: -60px;
   opacity: 0;
   transition: opacity 1s;
@@ -132,8 +131,9 @@ color: #58616b;
 }
 
 .bc-tooltip .bc-tooltiptext {
-	left: 40%;
+	left: -17px;
 	width: 180px;
 }
 
-*/
+
+

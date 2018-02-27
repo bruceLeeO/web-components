@@ -2,13 +2,20 @@
 	box-sizing: border-box;
 }
 
+body { 
+  /*border: 6px solid red; */
+  margin: 0;
+  padding: 0;
+}
+
 .siteheader {
 	background-color: #1e2226;
 	color: #acb6bf;
+  /*border: 3px solid red;*/
 }
 
 .topnav {
- /* border: 2px solid;*/
+ /*border: 2px solid red;*/
  line-height: 0;
  margin-left: auto;
  margin-right: auto;
@@ -88,7 +95,7 @@
   padding: 0 12px 0 12px;
   height: 40px;
   background-color: #ffffff;
-  border: 1px solid #c3ced9;
+  /*border: 1px solid #c3ced9;*/
   border-radius: 4px;
   /*box-sizing: border-box;*/
 }
@@ -107,7 +114,7 @@
 .topnav-searchform {
   position: relative;
   max-width: 320px;
-  border: 1px solid silver;
+  /*border: 1px solid silver;*/
 }
 
 .topnav-searchform-input {
@@ -243,6 +250,7 @@
 	background-color: #171717; /* d35400 orange */ /* #34383c*/
 	color: #acb6bf;
 	text-align: center;
+  padding-bottom: 10px;
 }
 
 .sitefooter__top {
