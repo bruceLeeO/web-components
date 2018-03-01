@@ -232,7 +232,9 @@
 	    }
 	    svg.appendChild(rect);
 	} 
-
+	/**
+	 * masking the rect bar chart with span element to enable tooltip component
+	 */
 	function addToolTip(x,y,wd,ht,index) {
 		//var tooltip = document.createElementNS("http://www.w3.org/2000/svg", 'span');
 		var tooltip = document.createElement('span');
