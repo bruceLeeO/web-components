@@ -1,5 +1,5 @@
 .accordion {
-	border: 1px solid red;
+	/*border: 1px solid red;*/
 	display: none;
 	flex-direction: column;
 	margin: .2em auto;
@@ -63,7 +63,6 @@
 .accordioncontent-title {
 	/*border: 1px solid;*/
 	margin-top: 9px;
-
 }
 
 .accordion-font {

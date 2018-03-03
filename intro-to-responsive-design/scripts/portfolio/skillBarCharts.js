@@ -41,6 +41,48 @@
 	// the axis properties
 	var totalLabelOnYAxis;
 
+	var today = new Date();
+	var mm = today.getMonth()+1;
+	var dd = today.getDate();
+	var yyyy = today.getFullYear();
+
+	//console.log("dd is "+dd);
+	//console.log("mm is "+mm);
+	//console.log("yyyy is "+yyyy);
+
+	function getMonthName(m) {
+		if (m == 1)
+			return "January";
+		if (m == 2)
+			return "February";
+		if (m == 3)
+			return "March";
+		if (m == 4)
+			return "April";
+		if (m == 5)
+			return "May";
+		if (m == 6)
+			return "June";
+		if (m == 7)
+			return "July";
+		if (m == 8)
+			return "August";
+		if (m == 9)
+			return "September";
+		if (m == 10)
+			return "October";
+		if (m == 11)
+			return "November";
+		if (m == 12)
+			return "December";
+	}
+
+	var currDate = getMonthName(mm)+" "+dd+" "+yyyy;
+
+	//console.log("currDate is "+currDate);
+
+	document.getElementById("current-date").innerHTML = currDate;
+
 	// function to set bar charts
 	//function barChartSettings()
 	function barChartSettings(skillArr) {

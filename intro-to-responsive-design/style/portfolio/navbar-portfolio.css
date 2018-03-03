@@ -259,6 +259,7 @@ body {
 	padding: 1px;
 	opacity: .95;
 	transition: opacity 0.33s ease;	
+  margin-top: 5px;
 }
 
 /*

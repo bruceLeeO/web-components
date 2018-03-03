@@ -19,6 +19,7 @@
 	<link rel="stylesheet" href="../../style/portfolio/rgbColorPicker.css">
 	<link rel="stylesheet" href="../../style/portfolio/svgbar.css">
 	<link rel="stylesheet" href="../../style/portfolio/dbcard.css">
+	<link rel="stylesheet" href="../../style/portfolio/portfolio.css">
 </head>
 <body>
 	<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -186,309 +187,331 @@
   <!-- end of modal component -->
   <main id="sitemain">
 	  <section>
-	    <h3 id="aboutMe" tabindex="-1">About Me</h3>
-	    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+	  	<div class="section-container section-container-font">
+	  		<div class="section-container-media">
+			    <h3 class="section-header" id="aboutMe" tabindex="-1">About Me</h3>
+			    <div class="section-media-img">
+			    	<img class="aboutme-img" width="700" height="700" src="../../img/portfolio/about/aboutme.jpg">
+			    </div>
+			    <p>Hello! My name is Leonardo de Leon.  Not only do I have a lot of passion for building nice looking, tasteful website, I also have a knack for solving rather complex problem.  I strive for excellence in what I do and that is why I am currently going through the rigorous Fullstack Engineering course work at BOV Academy.</p>
+			    <p>I am hopeful that within a few short months I will have obtained the skills needed to take on more ambitious projects, be proficient at what I do, and continue to grow.  Who knows I might just end up with the right skills you are looking for. Whatever it may be I would like to hear from you.  Let me know how I can be of service.</p>
+			    <p>When I'm not in front of a computer hacking, chances are you might spot me having a nice, long stroll with friends and/or family on the sunny beaches of Southern California.</p>
+	  		</div>
+	  	</div>
 	  </section>
 	  <section>
-	    <h3 id="projects" tabindex="-1">Projects</h3>
-	    <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-		<div><span>Width: <span class="width"></span></span></div><br>
-		<!-- Tab components -->
-	    <div class="tab tab-font" id="tab">
-	    	<div class="tabear">	    
-		      <div class="tabindex tabindex--active" id="Calculator">
-		      	<h2 class="tabindex-title">Calculator</h2>
-		      </div>	
-		      <div class="tabindex" id="Rgbcolor">
-		      	<h2 class="tabindex-title">RGB Color Picker</h2>
-		      </div>		       		
-		      <div class="tabindex" id="London">
-		      	<h2 class="tabindex-title">London</h2>
-		      </div>
-		      <div class="tabindex" id="Tokyo">
-		      	<h2 class="tabindex-title">Tokyo</h2>
-		      </div>
-		      <div class="tabindex" id="Paris">
-		      	<h2 class="tabindex-title">Paris</h2>
-		      </div>	
-	    	</div>
-	    	<div class="tabbody">
-		      <!-- start of tab calculator  -->
-		      <div class="tabcontent" style="display: block;" id="calculator">
-		      	<h2 class="tabcontent-title">Calculator</h2>
-		      	<!-- start of tab calculator carousel -->
-		      	<p id="tab-calculator"></p>
-				    <!-- end of tab calculator carousel -->	
-		      	<h2 class="tabcontent-title">Technologies: html5, css3, and Vanilla Javascript</h2>
-		      	<p>
-		      		This is an android inspired calculator.  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-		      	</p>  					
-		      	<ul class="tabcontent-list-social">
-		      		<li class="tabcontent-list-social__item">
-		      			<a href="#!">View live demo</a>
-		      		</li>
-  						<li class="tabcontent-list-social__item">
-  							<a href="#!">
-  								<svg class="icon-small"><use xlink:href="#icon-github"></use></svg>
-  								Github
-  							</a>
-  						</li> 						  						
-  					</ul>		      				    	      	
-		      </div>
-		      <!-- end of tab calculator -->	
-		      <!-- start of tab RGB color -->
-		      <div class="tabcontent" id="rgbcolor">
-		      	<h2 class="tabcontent-title">RGB Color Picker</h2>
-		      	<!-- start of tab rgb color picker foursided-carousel -->
-		      	<p id="tab-rgbcolor"></p>
-				    <!-- end of tab rgb color picker foursided-carousel -->
-		      	<h2 class="tabcontent-title">Technologies: html5, css3, and Vanilla Javascript</h2>
-		      	<p>
-		      		This is an RGB color picker.  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-		      	</p>  					
-		      	<ul class="tabcontent-list-social">
-		      		<li class="tabcontent-list-social__item">
-		      			<a href="#!">View live demo</a>
-		      		</li>
-  						<li class="tabcontent-list-social__item">
-  							<a href="#!">
-  								<svg class="icon-small"><use xlink:href="#icon-github"></use></svg>
-  								Github
-  							</a>
-  						</li> 						  						
-  					</ul>		      				    	      	
-		      </div>		     
-		      <!-- end of tab RGB color -->	 
-		      <div class="tabcontent" id="london">
-		      	<h2 class="tabcontent-title">London</h2>
-		      	<p>
-		      		London is the capital city of England.
-		      	</p>
-		      </div>	   
-		      <div class="tabcontent" id="tokyo">
-		      	<h2 class="tabcontent-title">Tokyo</h2>
-		      	<p>
-		      		Tokyo is the capital city of Japan.
-		      	</p>
-		      </div>	 		
-		      <div class="tabcontent" id="paris">
-		      	<h2 class="tabcontent-title">Paris</h2>
-		      	<p>
-		      		Paris is the capital city of France.
-		      	</p>
-		      </div>
-		      <!-- 
-		       -->			      	 		      
-	    	</div>
-		</div>
-		<!-- accordion component -->
-	  <div class="accordion accordion-font" id="accordion">
-      <!-- start of calculator accordion panel -->
-    	<div class="accordionpanel">
-	      <div class="accordionindex accordionindex--active" id="Accordioncalculator" tabindex="-1">
-	      	<h2 class="accordionindex-title">Calculator</h2>
-	      </div>
-	      <div class="accordioncontent" id="accordioncalculator">
-	      	<!-- start of the calculator foursided-carousel -->
-	      	<p id="accordion-calculator"></p>
-			    <!-- end of the calculator foursided-carousel -->	
-	      	<h2 class="tabcontent-title">Technologies: html5, css3, and Vanilla Javascript</h2>
-	      	<p>
-	      		This is an RGB color picker.  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-	      	</p>  					
-	      	<ul class="tabcontent-list-social">
-	      		<li class="tabcontent-list-social__item">
-	      			<a href="#!">See demo</a>
-	      		</li>
-						<li class="tabcontent-list-social__item">
-							<a href="#!">
-								<svg class="icon-small"><use xlink:href="#icon-github"></use></svg>
-								Github
-							</a>
-						</li> 						  						
-					</ul>		      	
-	      </div>
-	    </div>
-		  <!-- end of calculator accordion panel -->  	
-		  <!-- start of rgbcolor picker accordion panel --> 
-    	<div class="accordionpanel">
-	      <div class="accordionindex accordionindex--active" id="Accordionrgb" tabindex="-1">
-	      	<h2 class="accordionindex-title">RGB Color Picker</h2>
-	      </div>
-	      <div class="accordioncontent" id="accordionrgb">
-		      <!-- start of accordion rgb foursided-carousel -->
-		      <p id="accordion-rgbcolor"></p>		  
-		      <!-- end of accordion rgb foursided-carousel -->	
-	      	<h2 class="tabcontent-title">Technologies: html5, css3, and Vanilla Javascript</h2>
-	      	<p>
-	      		This is an android inspired calculator.  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-	      	</p>  					
-	      	<ul class="tabcontent-list-social">
-	      		<li class="tabcontent-list-social__item">
-	      			<a href="#!">See demo</a>
-	      		</li>
-						<li class="tabcontent-list-social__item">
-							<a href="#!">
-								<svg class="icon-small"><use xlink:href="#icon-github"></use></svg>
-								Github
-							</a>
-						</li> 						  						
-					</ul>		      	
-	      </div>
-	    </div>	      	   	  
-		  <!-- end of rgb color picker accordion panel --> 
-    	<div class="accordionpanel">
-	      <div class="accordionindex accordionindex--active" id="Accordionlondon" tabindex="-1">
-	      	<h2 class="accordionindex-title">London</h2>
-	      </div>
-	      <div class="accordioncontent" id="accordionlondon">
-	      	<h2 class="accordioncontent-title">London</h2>
-	      	<p>
-	      		London is the capital city of England.
-	      	</p>
-	      </div>
-	    </div>
-	    <div class="accordionpanel">
-	      <div class="accordionindex" id="Accordiontokyo" tabindex="-1">
-	      	<h2 class="accordionindex-title">Tokyo</h2>
-	      </div>
-	      <div class="accordioncontent" id="accordiontokyo">
-	      	<h2 class="accordioncontent-title">Tokyo</h2>
-	      	<p>
-	      		Tokyo is the capital city of Japan.
-	      	</p>
-	      </div>		           	
-	    </div>	
-	    <div class="accordionpanel">
-	      <div class="accordionindex" id="Accordionparis" tabindex="-1">
-	      	<h2 class="accordionindex-title">Paris</h2>
-	      </div>
-	      <div class="accordioncontent" id="accordionparis">
-	      	<h2 class="accordioncontent-title">Paris</h2>
-	      	<p>
-	      		Paris is the capital city of France.
-	      	</p>
-	      </div>		      
-    	</div>	    	
-		</div>
+	  	<div class="section-container section-container-font">
+	  		<div class="section-container-media">
+	    		<h3 class="section-header" id="projects" tabindex="-1">Projects</h3>
+	    		<p>	Below are fun projects I have completed at BOV academy.  More projects to come, notably the real-world, pinnacle project which is required in order to graduate.</p>
+					<div><span>Width: <span class="width"></span></span></div><br>	  			
+					<!-- Tab components -->
+			    <div class="tab tab-font" id="tab">
+			    	<div class="tabear">	    
+				      <div class="tabindex tabindex--active" id="Calculator">
+				      	<h2 class="tabindex-title">Calculator</h2>
+				      </div>	
+				      <div class="tabindex" id="Rgbcolor">
+				      	<h2 class="tabindex-title">RGB Color Picker</h2>
+				      </div>		       		
+				      <div class="tabindex" id="London">
+				      	<h2 class="tabindex-title">London</h2>
+				      </div>
+				      <div class="tabindex" id="Tokyo">
+				      	<h2 class="tabindex-title">Tokyo</h2>
+				      </div>
+				      <div class="tabindex" id="Paris">
+				      	<h2 class="tabindex-title">Paris</h2>
+				      </div>	
+			    	</div>
+			    	<div class="tabbody">
+				      <!-- start of tab calculator  -->
+				      <div class="tabcontent" style="display: block;" id="calculator">
+				      	<h2 class="tabcontent-title">Calculator</h2>
+				      	<!-- start of tab calculator carousel -->
+				      	<p id="tab-calculator"></p>
+						    <!-- end of tab calculator carousel -->	
+				      	<h2 class="tabcontent-title">Technologies: html5, css3, and Vanilla Javascript</h2>
+				      	<p>
+				      		This is an android inspired calculator.  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+				      	</p>  					
+				      	<ul class="tabcontent-list-social">
+				      		<li class="tabcontent-list-social__item">
+				      			<a href="#!">View live demo</a>
+				      		</li>
+		  						<li class="tabcontent-list-social__item">
+		  							<a href="#!">
+		  								<svg class="icon-small"><use xlink:href="#icon-github"></use></svg>
+		  								Github
+		  							</a>
+		  						</li> 						  						
+		  					</ul>		      				    	      	
+				      </div>
+				      <!-- end of tab calculator -->	
+				      <!-- start of tab RGB color -->
+				      <div class="tabcontent" id="rgbcolor">
+				      	<h2 class="tabcontent-title">RGB Color Picker</h2>
+				      	<!-- start of tab rgb color picker foursided-carousel -->
+				      	<p id="tab-rgbcolor"></p>
+						    <!-- end of tab rgb color picker foursided-carousel -->
+				      	<h2 class="tabcontent-title">Technologies: html5, css3, and Vanilla Javascript</h2>
+				      	<p>
+				      		This is an RGB color picker.  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+				      	</p>  					
+				      	<ul class="tabcontent-list-social">
+				      		<li class="tabcontent-list-social__item">
+				      			<a href="#!">View live demo</a>
+				      		</li>
+		  						<li class="tabcontent-list-social__item">
+		  							<a href="#!">
+		  								<svg class="icon-small"><use xlink:href="#icon-github"></use></svg>
+		  								Github
+		  							</a>
+		  						</li> 						  						
+		  					</ul>		      				    	      	
+				      </div>		     
+				      <!-- end of tab RGB color -->	 
+				      <div class="tabcontent" id="london">
+				      	<h2 class="tabcontent-title">London</h2>
+				      	<p>
+				      		London is the capital city of England.
+				      	</p>
+				      </div>	   
+				      <div class="tabcontent" id="tokyo">
+				      	<h2 class="tabcontent-title">Tokyo</h2>
+				      	<p>
+				      		Tokyo is the capital city of Japan.
+				      	</p>
+				      </div>	 		
+				      <div class="tabcontent" id="paris">
+				      	<h2 class="tabcontent-title">Paris</h2>
+				      	<p>
+				      		Paris is the capital city of France.
+				      	</p>
+				      </div>
+				      <!-- 
+				       -->			      	 		      
+			    	</div>
+					</div>
+					<!-- accordion component -->
+				  <div class="accordion accordion-font" id="accordion">
+			      <!-- start of calculator accordion panel -->
+			    	<div class="accordionpanel">
+				      <div class="accordionindex accordionindex--active" id="Accordioncalculator" tabindex="-1">
+				      	<h2 class="accordionindex-title">Calculator</h2>
+				      </div>
+				      <div class="accordioncontent" id="accordioncalculator">
+				      	<!-- start of the calculator foursided-carousel -->
+				      	<p id="accordion-calculator"></p>
+						    <!-- end of the calculator foursided-carousel -->	
+				      	<h2 class="tabcontent-title">Technologies: html5, css3, and Vanilla Javascript</h2>
+				      	<p>
+				      		This is an RGB color picker.  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+				      	</p>  					
+				      	<ul class="tabcontent-list-social">
+				      		<li class="tabcontent-list-social__item">
+				      			<a href="#!">See demo</a>
+				      		</li>
+									<li class="tabcontent-list-social__item">
+										<a href="#!">
+											<svg class="icon-small"><use xlink:href="#icon-github"></use></svg>
+											Github
+										</a>
+									</li> 						  						
+								</ul>		      	
+				      </div>
+				    </div>
+					  <!-- end of calculator accordion panel -->  	
+					  <!-- start of rgbcolor picker accordion panel --> 
+			    	<div class="accordionpanel">
+				      <div class="accordionindex accordionindex--active" id="Accordionrgb" tabindex="-1">
+				      	<h2 class="accordionindex-title">RGB Color Picker</h2>
+				      </div>
+				      <div class="accordioncontent" id="accordionrgb">
+					      <!-- start of accordion rgb foursided-carousel -->
+					      <p id="accordion-rgbcolor"></p>		  
+					      <!-- end of accordion rgb foursided-carousel -->	
+				      	<h2 class="tabcontent-title">Technologies: html5, css3, and Vanilla Javascript</h2>
+				      	<p>
+				      		This is an android inspired calculator.  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+				      	</p>  					
+				      	<ul class="tabcontent-list-social">
+				      		<li class="tabcontent-list-social__item">
+				      			<a href="#!">See demo</a>
+				      		</li>
+									<li class="tabcontent-list-social__item">
+										<a href="#!">
+											<svg class="icon-small"><use xlink:href="#icon-github"></use></svg>
+											Github
+										</a>
+									</li> 						  						
+								</ul>		      	
+				      </div>
+				    </div>	      	   	  
+					  <!-- end of rgb color picker accordion panel --> 
+			    	<div class="accordionpanel">
+				      <div class="accordionindex accordionindex--active" id="Accordionlondon" tabindex="-1">
+				      	<h2 class="accordionindex-title">London</h2>
+				      </div>
+				      <div class="accordioncontent" id="accordionlondon">
+				      	<h2 class="accordioncontent-title">London</h2>
+				      	<p>
+				      		London is the capital city of England.
+				      	</p>
+				      </div>
+				    </div>
+				    <div class="accordionpanel">
+				      <div class="accordionindex" id="Accordiontokyo" tabindex="-1">
+				      	<h2 class="accordionindex-title">Tokyo</h2>
+				      </div>
+				      <div class="accordioncontent" id="accordiontokyo">
+				      	<h2 class="accordioncontent-title">Tokyo</h2>
+				      	<p>
+				      		Tokyo is the capital city of Japan.
+				      	</p>
+				      </div>		           	
+				    </div>	
+				    <div class="accordionpanel">
+				      <div class="accordionindex" id="Accordionparis" tabindex="-1">
+				      	<h2 class="accordionindex-title">Paris</h2>
+				      </div>
+				      <div class="accordioncontent" id="accordionparis">
+				      	<h2 class="accordioncontent-title">Paris</h2>
+				      	<p>
+				      		Paris is the capital city of France.
+				      	</p>
+				      </div>		      
+			    	</div>	    	
+					</div>
+	  		</div>
+	  	</div>		
 	  </section>
-	  <section class="skill  svgbc-font">
-	    <h3 id="skills" tabindex="-1">Skills</h3>
-	    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
-	    <div class="svgstackedbar">
-	    	<svg class="svgpercentbar" width="600" height="50">
-				  <rect class="svgpercentbar-rect" x="0" y="20" width="420" height="30" fill="red">
-				  </rect>
-				  <text x="15" y="40" font-size="16" text-anchor="middle" fill="white">70%</text>
-				  <rect class="svgpercentbar-rect" x="420" y="20" width="180" height="30" fill="blue">
-				  </rect>
-				  <text x="585" y="40" font-size="16" text-anchor="middle" fill="white">30%</text>		    		
-	    	</svg>
-	    	<svg class="svgpercentbarunder800" width="360" height="50">
-				  <rect class="svgpercentbar-rect" x="0" y="20" width="252" height="30" fill="red">
-				  </rect>
-				  <text x="15" y="40" font-size="14" text-anchor="middle" fill="white">70%</text>
-				  <rect class="svgpercentbar-rect" x="252" y="20" width="108" height="30" fill="blue">
-				  </rect>
-				  <text x="345" y="40" font-size="14" text-anchor="middle" fill="white">30%</text>		    		
-	    	</svg>	    	
-	    </div>
-	    <div class="skillpanel">
-				<div class="svgbar">					
-					<h3 style="color: red;">Frontend Development</h3>
-					<div id="svgcontainer1" style="position: relative; /*border: 1px solid green;*/">
-						<svg id="svgbc1" height="260" width="360"></svg>	
-					</div>
-				</div>
-				<div class="svgbar">
-					<h3 style="color: blue;">Backend Development</h3>
-					<div id="svgcontainer2" style="position: relative; /*border: 1px solid green;*/">
-						<svg id="svgbc2" height="260" width="360"></svg>	
-					</div>
-				</div>	
-				<div class="svgbar">
-					<h3>Other Skills</h3>
-					<div id="svgcontainer3" style="position: relative; /*border: 1px solid green;*/">
-						<svg id="svgbc3" height="260" width="360">
-						</svg>	
-					</div>
-				</div>					 	    	
-	    </div>
+	  <section class="skill">
+	  	<div class="section-container section-container-font">
+	  		<div class="section-container-media">	  	
+			    <h3 class="section-header" id="skills" tabindex="-1">Skills</h3>
+			    <p>As of <span id="current-date"></span>, the bar charts below represent my current skill as a Frontend and Backend Developer.  I also have other tangible skills that you might find useful.</p>
+			    <div class="svgstackedbar">
+			    	<svg class="svgpercentbar" width="600" height="50">
+						  <rect class="svgpercentbar-rect" x="0" y="20" width="420" height="30" fill="red">
+						  </rect>
+						  <text x="15" y="40" font-size="16" text-anchor="middle" fill="white">70%</text>
+						  <rect class="svgpercentbar-rect" x="420" y="20" width="180" height="30" fill="blue">
+						  </rect>
+						  <text x="585" y="40" font-size="16" text-anchor="middle" fill="white">30%</text>		    		
+			    	</svg>
+			    	<svg class="svgpercentbarunder800" width="360" height="50">
+						  <rect class="svgpercentbar-rect" x="0" y="20" width="252" height="30" fill="red">
+						  </rect>
+						  <text x="15" y="40" font-size="14" text-anchor="middle" fill="white">70%</text>
+						  <rect class="svgpercentbar-rect" x="252" y="20" width="108" height="30" fill="blue">
+						  </rect>
+						  <text x="345" y="40" font-size="14" text-anchor="middle" fill="white">30%</text>		    		
+			    	</svg>	    	
+			    </div>
+			    <div class="skillpanel">
+						<div class="svgbar">					
+							<h3 style="color: red;">Frontend Development</h3>
+							<div id="svgcontainer1" style="position: relative; /*border: 1px solid green;*/">
+								<svg id="svgbc1" height="260" width="360"></svg>	
+							</div>
+						</div>
+						<div class="svgbar">
+							<h3 style="color: blue;">Backend Development</h3>
+							<div id="svgcontainer2" style="position: relative; /*border: 1px solid green;*/">
+								<svg id="svgbc2" height="260" width="360"></svg>	
+							</div>
+						</div>	
+						<div class="svgbar">
+							<h3>Other Skills</h3>
+							<div id="svgcontainer3" style="position: relative; /*border: 1px solid green;*/">
+								<svg id="svgbc3" height="260" width="360">
+								</svg>	
+							</div>
+						</div>					 	    	
+			    </div>
+			  </div>
+			</div>
 	  </section>
 	  <section>
-	    <h3 id="contact" tabindex="-1">Contact</h3>
-	    <div id="dbcard-container">
-	    	<label class="for-dbcard-toggle" for="dbcard">
-	    	<input class="dbcard-toggle" type="checkbox" name="dbcard" id="dbcard" />
-	    	<div class="dbcard-card">
-					<div class="dbcard-front">
-						<header>
-							<h2 class="dbcard-title">Leonardo De Leon</h2>	
-							<svg class="icon-medium"><use xlink:href="#icon-repeat"></use></svg>
-						</header>
-						<section>
-							<p>Fullstack Engineer</p>
-							<p>Fullstack Engineer student at BOV Academy, aspiring to become a competent and confident Fullstack Engineer.</p>		
-						</section>
-						<section>
-							<ul>
-				    		<li>
-				    			<a href="#!">hello@leodeleon.com</a>
-				    		</li>
-				    		<li>
-				    			<a href="#!">leodeleon.com</a>
-				    		</li>	    			
-		    			</ul>							
-						</section>
-						<footer>
-			    		<div>
-			    			<a href="#!">
-			    				<!--<img src="../../img/portfolio/dbcard/enc1.png"></a>-->
-			    				<svg class="icon-1upsmall"><use xlink:href="#icon-book-open"></use></svg>
-			    			</a>
-			    		</div>
-			    		<div>
-			    			<p>Leonardo De Leon</p>
-			    			<p>on <a href="#!">Encyclopedia.MD</a></p>
-			    		</div>
-			    		<ul>
-			    			<li>
-			    				<a href="#!">
-			    					<!--<img src="../../img/portfolio/dbcard/twitter.png">-->
-			    					<svg class="icon-1upsmall"><use xlink:href="#icon-twitter"></use></svg>
-			    				</a>
-			    			</li>
-			    			<li>
-			    				<a href="#!">
-			    					<!--<img src="../../img/portfolio/dbcard/github1.png">-->
-			    					<svg class="icon-1upsmall"><use xlink:href="#icon-github"></use></svg>	
-			    				</a>
-			    			</li>
-			    			<li>
-			    				<a href="#!">
-			    					<!--<img src="../../img/portfolio/dbcard/facebook.png">-->
-			    					<svg class="icon-1upsmall"><use xlink:href="#icon-facebook"></use></svg>	
-			    				</a>
-			    			</li>
-			    			<li>
-			    				<a href="#!">
-			    					<!--<img src="../../img/portfolio/dbcard/linkedin.png">-->
-			    					<svg class="icon-1downsmall"><use xlink:href="#icon-linkedin2"></use></svg>
-			    			</a>
-			    			</li>
-			    		</ul>
-						</footer>
-					</div>	
-					<div class="dbcard-back">
-			      <header>
-			      	<svg class="icon-medium"><use xlink:href="#icon-repeat"></use></svg>	
-			      </header>
-			      <section></section>
-			      <footer><h2>Leonardo De Leon</h2></footer>											
-					</div>    		
-	    	</div>
-	    </label>
-	    </div>
+	  	<div class="section-container section-container-font">
+	  		<div class="section-container-media">	  	
+			    <h3 class="section-header" id="contact" tabindex="-1">Contact</h3>
+			    <p>This digital busicard card is another fun project I have completed.  No JavaScript is used here, only HTML5 and CSS3 and lots and lots of SVG icons.</p>
+			    <div id="dbcard-container">
+			    	<label class="for-dbcard-toggle" for="dbcard">
+			    	<input class="dbcard-toggle" type="checkbox" name="dbcard" id="dbcard" />
+			    	<div class="dbcard-card">
+							<div class="dbcard-front">
+								<header>
+									<h2 class="dbcard-title">Leonardo De Leon</h2>	
+									<svg class="icon-medium"><use xlink:href="#icon-repeat"></use></svg>
+								</header>
+								<section>
+									<p>Aspiring Fullstack Engineer</p>
+									<p>In a few short months, you can count on me to take on ambitious project, perhaps even something as grand as a start up.  Whatever your dreams are tell me about it.  I might just have the skills you require on your team.  Let's do it.</p>		
+								</section>
+								<section>
+									<ul>
+						    		<li>
+						    			<a href="#!">hello@leodeleon.com</a>
+						    		</li>
+						    		<li>
+						    			<a href="#!">leodeleon.com</a>
+						    		</li>	    			
+				    			</ul>							
+								</section>
+								<footer>
+					    		<div>
+					    			<a href="#!">
+					    				<!--<img src="../../img/portfolio/dbcard/enc1.png"></a>-->
+					    				<svg class="icon-1upsmall"><use xlink:href="#icon-book-open"></use></svg>
+					    			</a>
+					    		</div>
+					    		<div>
+					    			<p>Leonardo De Leon</p>
+					    			<p>on <a href="#!">Encyclopedia.MD</a></p>
+					    		</div>
+					    		<ul>
+					    			<li>
+					    				<a href="#!">
+					    					<!--<img src="../../img/portfolio/dbcard/twitter.png">-->
+					    					<svg class="icon-1upsmall"><use xlink:href="#icon-twitter"></use></svg>
+					    				</a>
+					    			</li>
+					    			<li>
+					    				<a href="#!">
+					    					<!--<img src="../../img/portfolio/dbcard/github1.png">-->
+					    					<svg class="icon-1upsmall"><use xlink:href="#icon-github"></use></svg>	
+					    				</a>
+					    			</li>
+					    			<li>
+					    				<a href="#!">
+					    					<!--<img src="../../img/portfolio/dbcard/facebook.png">-->
+					    					<svg class="icon-1upsmall"><use xlink:href="#icon-facebook"></use></svg>	
+					    				</a>
+					    			</li>
+					    			<li>
+					    				<a href="#!">
+					    					<!--<img src="../../img/portfolio/dbcard/linkedin.png">-->
+					    					<svg class="icon-1downsmall"><use xlink:href="#icon-linkedin2"></use></svg>
+					    			</a>
+					    			</li>
+					    		</ul>
+								</footer>
+							</div>	
+							<div class="dbcard-back">
+					      <header>
+					      	<svg class="icon-medium"><use xlink:href="#icon-repeat"></use></svg>	
+					      </header>
+					      <section></section>
+					      <footer><h2>Leonardo De Leon</h2></footer>											
+							</div>    		
+			    	</div>
+			    </label>
+			    </div>
+			  </div>
+			</div>
 	  </section>  	
   </main>
   <footer class="sitefooter topnav-font">

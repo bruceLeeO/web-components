@@ -4,7 +4,8 @@
 	margin: .2em auto;
 	padding: 3px;
 	/*max-width: 1240px;*/
-	max-width: 824px;
+	/*max-width: 824px;*/
+	max-width: 1050px;
 }
 
 .tabindex {
@@ -23,7 +24,7 @@
 .tabindex--active {
 	border-right-color: #dce8fa;
 	background-color: #dce8fa;	
-		z-index: 2;
+	z-index: 2;
 }
 
 .tabindex-title {
@@ -56,6 +57,7 @@
 .tabcontent {
 	position: relative;
 	border: 1px solid #dce8fa;
+	/*border: 1px solid;*/
 	margin: 3px;
 	padding-left: 2em;
 	width: 100%;

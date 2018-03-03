@@ -1,15 +1,16 @@
 #dbcard-container {
 	position: relative;
 	/*border: 1px solid;*/
-	width: 380px;
+	max-width: 360px;
 	height: 220px;
 	margin: auto;
+	margin-bottom: 25px;
 }
 
 .for-dbcard-toggle {
   perspective: 1000px;
   display: block;
-  width: 370px;
+  width: 360px;
   height: 210px;
   position: absolute;
   cursor: pointer;
@@ -27,10 +28,10 @@
   border: 1px solid #ff9948;
   border-radius: 5px;
  	position: absolute;
-  width: 340px;
+  width: 95%;
   height: 200px;	
   top: 4px;
-  left: 4px;  
+  left: 0;  
 }
 
 .dbcard-card div {
@@ -296,3 +297,33 @@
   height: 20px;
 }
 */
+
+@media (max-width: 380px) {
+	.dbcard-card {
+		width: 93%;
+	}
+
+	.dbcard-front svg {
+		left: 300px;
+	}
+
+	.dbcard-back svg {
+		left: 300px;
+	}
+
+	.dbcard-front footer ul:only-of-type li:first-of-type svg {
+		left: 210px;
+	}
+
+	.dbcard-front footer ul:only-of-type li:nth-of-type(2) svg {
+		left: 240px;
+	}
+
+	.dbcard-front footer ul:only-of-type li:nth-of-type(3) svg {
+		left: 270px;
+	}
+
+	.dbcard-front footer ul:only-of-type li:nth-of-type(4) svg {
+		left: 300px;
+	}		
+}
