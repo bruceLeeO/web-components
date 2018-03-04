@@ -1,4 +1,15 @@
 (function(window) {
+  /*
+  window.onload = function() {
+    console.log("loading....");
+    document.getElementById('loading').hide();
+  };*/
+  document.onreadystatechange = function () {
+    if (document.readyState === "complete") {
+      console.log(document.readyState);
+      document.getElementById("PreLoaderBar").style.display = "none";
+    }
+  }
 
   go();
 
