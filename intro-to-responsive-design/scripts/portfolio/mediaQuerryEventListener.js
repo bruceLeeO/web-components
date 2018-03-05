@@ -1,9 +1,5 @@
 (function(window) {
-  /*
-  window.onload = function() {
-    console.log("loading....");
-    document.getElementById('loading').hide();
-  };*/
+
   document.onreadystatechange = function () {
     if (document.readyState === "complete") {
       console.log(document.readyState);
@@ -14,10 +10,26 @@
   go();
 
   window.addEventListener('resize', go);
+  window.addEventListener('scroll', go);
 
   function go() {
 
     document.querySelector('.width').innerText = document.documentElement.clientWidth;
+    
+    /**
+     * show the height of the scroll for debug purpose
+     */
+    //document.querySelector('.scrollheight').innerText = window.scrollY;
+    
+
+    /**
+     * show the fixed scroll to return to top 
+     */
+    if (window.scrollY > 300) { 
+      document.getElementById("return-to-top").style.display = "block";
+    } else {
+      document.getElementById("return-to-top").style.display = "none";
+    }
 
     /**
      * close the mobile menu while browser is being widened

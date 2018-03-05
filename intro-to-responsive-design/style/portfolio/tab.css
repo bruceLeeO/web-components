@@ -66,6 +66,9 @@
 	/*background: #eee;*/
 	display: none;
 	background-color: #dce8fa;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
 }
 
 .tabcontent-title {

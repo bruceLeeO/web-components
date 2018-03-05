@@ -11,9 +11,20 @@
 }
 
 /* Sizes */
+
+.icon-1downsmall {
+  width: 0.0125em;
+  height: 0.0125em;
+}
+
 .icon-small {
   width: 0.75em;
   height: 0.75em;
+}
+
+.icon-1upsmall {
+  width: 1em
+  height: 1em;
 }
 
 .icon-medium {
@@ -26,10 +37,16 @@
   height: 2em;
 }
 
+.icon-1uplarge {
+  width: 3em;
+  height: 3em;
+}
+
 /* Alignment */
 .icon-left,
 .icon-right {
-  vertical-align: -0.125em;
+  /*vertical-align: -0.125em;*/
+  vertical-align: -0.275em;
 }
 
 .icon-left {
