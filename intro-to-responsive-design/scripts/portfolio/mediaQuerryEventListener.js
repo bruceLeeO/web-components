@@ -14,7 +14,7 @@
 
   function go() {
 
-    document.querySelector('.width').innerText = document.documentElement.clientWidth;
+    //document.querySelector('.width').innerText = document.documentElement.clientWidth;
     
     /**
      * show the height of the scroll for debug purpose
