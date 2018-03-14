@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <title>ARIA Accordion Demo</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="aria-accordion-demo.css">
+</head>
+<body>
+  <div class="accordion" role="tablist">
+    <!-- note: header text, i.e., 'Heading 1. Heading 2, Heading and Heading 4' is wrap in anchor tag so KeyboardEvent.keyCode can be implemented 
+         and enabke the use of shortcut keys 
+
+         also, keyCode has been deprecated. 
+    -->
+    <h3 id="heading1" role="tab" class="accordion-heading" aria-selected="true" aria-controls="panel1"><a href="#">Heading 1</a></h3>
+    <div id="panel1" role="tabpanel" class="accordion-panel" aria-labelledby="heading1" aria-expanded="true" aria-hidden="false">Content for panel 1</div>
+    <h3 id="heading2" role="tab" class="accordion-heading" aria-selected="false" aria-controls="panel2"><a href="#">Heading 2</a></h3>
+    <div id="panel2" role="tabpanel" class="accordion-panel" aria-labelledby="heading2" aria-expanded="false" aria-hidden="true">Content for panel 2</div>
+    <h3 id="heading3" role="tab" class="accordion-heading" aria-selected="false" aria-controls="panel3"><a href="#">Heading 3</a></h3>
+    <div id="panel3" role="tabpanel" class="accordion-panel" aria-labelledby="heading3" aria-expanded="false" aria-hidden="true">Content for panel 3</div>
+    <h3 id="heading4" role="tab" class="accordion-heading" aria-selected="false" aria-controls="panel4"><a href="#">Heading 4</a></h3>
+    <div id="panel4" role="tabpanel" class="accordion-panel" aria-labelledby="heading4" aria-expanded="false" aria-hidden="true">Content for panel 4</div>
+  </div>
+  <script type="text/javascript" src="aria-accordion-demo.js"></script>
+</body>
+</html>
