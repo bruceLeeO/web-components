@@ -1,0 +1,46 @@
+/**
+ * Site header - Nesting basic top nav menu 
+ */
+.topnav {
+  //border: 1px solid green;
+  margin-top: 2.5em;
+}
+.topnav-list {
+  margin: 0;
+  //padding: 27px 0 20px 0;
+  //padding: 20px 0 15px 0;
+  padding: 0;
+  list-style: none;
+  //background-color: $light-grey;
+  background-color: $dull-black;
+  //border: 1px solid red;
+}
+
+.topnav-item { display: block; }
+ 
+.topnav-item-horizontal { display: inline-block; /*border: 1px solid green;*/}
+ 
+.topnav-link {
+  display: block;
+  margin: 0;
+  padding: 0;
+  //padding: 6px 12px;
+  //padding: 6px;
+  text-decoration: none;
+  color: $light-yellow-orange;
+  //border: 1px solid yellow;
+
+  &:visited {
+    color: $light-yellow-orange;
+  }
+
+  &:hover {
+    //background-color: $light-teal;
+    color: $mid-grey;
+    border-bottom: 2px solid $mid-grey;
+  }  
+
+  &:active {
+    color: $mid-grey;
+  }
+}

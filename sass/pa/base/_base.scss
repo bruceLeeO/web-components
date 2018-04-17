@@ -1,0 +1,29 @@
+/**
+ * reset box-sizing to border box for all element 
+ */
+html {
+	box-sizing: border-box;
+	//border: 5px solid orange;
+}
+
+//*,
+//*:before,
+//*:after {
+//	box-sizing: inherit;
+//}
+
+//* { @extend html; }
+
+//* ::before { @extend html; }
+
+//* ::after { @extend html; }
+
+* {
+	@extend html;
+	& ::before {
+		@extend html;
+	}
+	& ::after {
+		@extend html;
+	}
+}

@@ -1,0 +1,81 @@
+/**
+ * logo component 
+ * example usage: 
+ * <a class="site-header-logo">
+ *   <span class="site-header-logo-icon">
+ *     <svg 
+ */ 
+.header-logo {
+    display: flex;
+    text-decoration: none;
+    color: $white;
+    fill: currentColor;
+    //border: 1px solid blue;
+
+    @media (min-width: 1140px) {
+      /*float: left;
+      margin-top: 22px;*/
+    }    
+}
+
+.header-logo-icon {
+  display: inline-block;
+  vertical-align: middle;
+  //padding: 20px;
+  padding: 25px;
+  background-color: $teal;
+  border-radius: 50%;
+  line-height: 0;
+  margin-right: 0.5em;  
+  //border: 1px solid yellow;
+  //margin-top: 10px;
+}
+
+.header-logo-text {
+  color: $teal;
+  //vertical-align: middle;
+
+  @media (min-width: 1140px) {
+    position: relative;
+    //top: 8px;
+    display: inline-block;
+    //line-height: 1;
+    margin: 0;
+    padding: 0; 
+    //border: 1px solid yellow;
+    //vertical-align: middle;
+  }
+  & h1 {
+    //border: 1px solid green;
+    color: $teal;
+    margin: 0;
+    padding: 0;
+    margin-top: 1.5em;
+  }
+  & span {
+    //color: $dull-black;
+    color: $white;
+    //border: 1px solid orange;
+  }        
+}
+
+/**
+ * snail body icon
+ */
+.snail-body-icon {
+  width: 2.25em;
+  height: 2.5em;
+  margin: 0;
+  border-bottom: 2px solid $white;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+
+/**
+ * snail head icon 
+ */
+.snail-head-icon {
+  width: 1.25em;
+  height: 1.25em;
+  transform: rotate(180deg);
+}

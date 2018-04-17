@@ -1,0 +1,64 @@
+/// add 2px, solid border mixin
+@mixin border2-solid {
+	-web-kit-border: 2px solid $dull-black;
+	-moz-border: 2px solid $dull-black;
+	-ms-border: 2px solid $dull-black;
+	border: 2px solid $dull-black;
+}
+
+/// reshape container into pill shape mixin
+@mixin pill-shape {
+	-web-kit-border-radius: 9999em;
+	-moz-border-radius: 9999em;
+	-ms-border-radius: 9999em;
+	border-radius: 9999em;
+}
+
+/// add clearfix when you need it
+@mixin clearfix() {
+  	// http://nicolasgallagher.com/micro-clearfix-hack/ 
+	// USAGE: @include clearfix(); 
+	& {
+		*zoom: 1;
+	}
+
+	&:before,
+	&:after {
+	  content: "\00A0";
+	  display: block;
+	} 	
+	
+	&:after {
+	  clear: both;
+	  visibility: hidden;
+	  line-height: 0;
+	  height: 0;
+  	}
+}
+
+// another way to write micro-clearfix hack
+//@mixin clearfix {
+//  &::after{
+//  	content: '';
+//  	display: table;
+//  	clear: both;
+//  }
+//}
+
+/// resize container to small 
+@mixin size-small {
+	width: 1em;
+	height: 1em;
+}
+
+/// resize container to medium
+@mixin size-medium {
+	width: 1.5em;
+	height: 1.5em;
+}
+
+/// resize container to large
+@mixin size-large {
+	width: 2em;
+	height: 2em;
+}

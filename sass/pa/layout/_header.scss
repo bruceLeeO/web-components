@@ -1,0 +1,23 @@
+/**
+ * Site-header layout contains the logo and name of the page,
+ * the menu bar, search form, drop-down menus and more
+ */
+.site-header {
+  padding: .25em 1em;
+  text-align: center;
+  background-color: $dull-black;
+} 
+
+/**
+ * Site header basic logo
+ */
+.site-header-container {
+  //border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-container-item {
+  //border: 1px solid red;
+  //padding: 2em 0;
+}

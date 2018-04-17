@@ -1,0 +1,594 @@
+/**
+ * reset box-sizing to border box for all element 
+ */
+html, *, * ::before, * ::after {
+  box-sizing: border-box;
+}
+
+/**
+ * TYPOGRAPHY
+ */
+/* Body Text */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Karla", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  /*  -apple-system,
+    BlinkMacSystemFont,
+    "Karla",
+    "Segoe UI",
+    "Roboto",
+    "Oxygen",
+    "Ubuntu",
+    "Cantarell",
+    "Fira Sans",
+    "Droid Sans",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;*/
+  font-size: 135%;
+  line-height: 1.5;
+  background-color: white;
+  color: #34383c;
+  margin: 0;
+}
+
+/* Vertical Rhythm */
+blockquote,
+dl,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+menu,
+ol,
+p,
+pre,
+summary,
+table,
+ul {
+  margin-bottom: 24px;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  line-height: 1.2;
+  color: #1e2226;
+  margin-top: 32px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+/* Paragraphs */
+p {
+  margin-top: 0;
+}
+
+/* Lists */
+dl dt {
+  font-weight: 700;
+  color: #34383c;
+}
+
+dl dd {
+  margin: 0;
+}
+
+ol,
+ul {
+  padding: 0;
+}
+
+ol li,
+ul li {
+  margin-left: 18px;
+}
+
+ol {
+  list-style-: decimal;
+}
+
+ol ol {
+  list-style: upper-alpha;
+}
+
+ol ol ol {
+  list-style: lower-roman;
+}
+
+ol ol ol ol {
+  list-style: lower-alpha;
+}
+
+ol ol,
+ul ul {
+  margin-bottom: 0;
+}
+
+/* Inline Elements */
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+  color: #ff9948;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+/* Horizontal Rules */
+hr {
+  display: block;
+  padding: 0;
+  border: 0;
+  border-top: 2px solid #f2f5fa;
+  margin-top: 32px;
+}
+
+/* Preformatted Text */
+code,
+kbd,
+pre,
+samp {
+  font-family: Monaco, Consolas, "Liberation Mono", Courier, monospace;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #f2f5fa;
+  border: 1px solid #c3ced9;
+  border-radius: 4px;
+}
+
+code,
+kbd,
+samp {
+  white-space: nowrap;
+  padding: 1px 8px;
+  margin: 0;
+}
+
+pre {
+  position: relative;
+  overflow: auto;
+  white-space: pre;
+  word-wrap: normal;
+  word-break: normal;
+  tab-size: 4;
+  hyphens: none;
+  border-radius: 4px;
+  padding: 24px;
+  margin-top: 0;
+}
+
+pre code {
+  display: block;
+  overflow: auto;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  color: inherit;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea,
+select {
+  background-color: white;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+span {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/**
+ * Site-header layout contains the logo and name of the page,
+ * the menu bar, search form, drop-down menus and more
+ */
+.site-header {
+  padding: .25em 1em;
+  text-align: center;
+  background-color: #34383c;
+}
+
+/**
+ * Site header basic logo
+ */
+.site-header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/**
+ * add shade on about section
+ */
+.about-section {
+  background-color: #e50050;
+  border: 2px solid #e50050;
+}
+
+.projects-section {
+  background-color: #a3f5f8;
+  border: 2px solid #a3f5f8;
+}
+
+.skills-section {
+  background-color: #999999;
+  border: 2px solid #999999;
+}
+
+.contact-section {
+  background-color: #ededed;
+  border: 2px solid #ededed;
+}
+
+.site-footer {
+  background-color: #48bfdc;
+  border: 2px solid #48bfdc;
+  text-align: center;
+}
+
+/**
+ * Site header - Nesting basic top nav menu 
+ */
+.topnav {
+  margin-top: 2.5em;
+}
+
+.topnav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #34383c;
+}
+
+.topnav-item {
+  display: block;
+}
+
+.topnav-item-horizontal {
+  display: inline-block;
+  /*border: 1px solid green;*/
+}
+
+.topnav-link {
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #ffcb45;
+}
+.topnav-link:visited {
+  color: #ffcb45;
+}
+.topnav-link:hover {
+  color: #999999;
+  border-bottom: 2px solid #999999;
+}
+.topnav-link:active {
+  color: #999999;
+}
+
+/**
+ * Add nice style to the default buttons
+ * default color to the lightest-grey color
+ */
+.my-nice-button {
+  display: inline-block;
+  width: auto;
+  vertical-align: middle;
+  border: 0 none;
+  background-color: #b0bcc7;
+  color: #ffffff;
+  white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-decoration: none;
+  margin: 0;
+  cursor: pointer;
+  font-size: 100%;
+  font-family: inherit;
+  line-height: 1.5;
+  padding: 8px 24px;
+  border-radius: 4px;
+  transition: background-color 0.95s ease, color 0.95s ease;
+}
+.my-nice-button:hover {
+  background-color: #999999;
+}
+
+/**
+ * nice teal button
+ */
+.button-color-teal {
+  background-color: #51d0ef;
+  color: white;
+}
+.button-color-teal:hover {
+  background-color: #48bfdc;
+}
+
+/**
+ * nice light teal button
+ */
+.button-color-teal-lightest {
+  background-color: #edfafd;
+  color: #51d0ef;
+}
+.button-color-teal-lightest:hover {
+  background-color: #def1f5;
+  color: #48bfdc;
+}
+
+/**
+ * nice pill shape button
+ */
+.button-shape-pill {
+  -web-kit-border-radius: 9999em;
+  -moz-border-radius: 9999em;
+  -ms-border-radius: 9999em;
+  border-radius: 9999em;
+}
+
+/**
+ * nice bordered style button
+ */
+.button-border {
+  -web-kit-border: 2px solid #34383c;
+  -moz-border: 2px solid #34383c;
+  -ms-border: 2px solid #34383c;
+  border: 2px solid #34383c;
+  background-color: white;
+  color: #34383c;
+}
+.button-border:hover {
+  background-color: #34383c;
+  color: white;
+}
+
+/**
+ * nice style for default form
+ */
+.form {
+  display: block;
+  margin-bottom: 12px;
+  background-color: #ffcb45;
+  max-width: 600px;
+  margin: 3rem auto 3rem auto;
+  border-radius: 0.5em;
+  padding: 1em;
+}
+
+.form-field {
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.form-field-span {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 8px 8px 8px 8px;
+  background-color: white;
+  border-radius: 50%;
+  line-height: 0;
+  margin: 5px 5px 5px 0;
+  border: 1px solid #c3ced9;
+  color: #58616b;
+  fill: #76818c;
+}
+
+.form-icon {
+  position: absolute;
+  fill: #76818c;
+}
+
+.form-icon-position-left {
+  top: 9px;
+  left: 12px;
+}
+
+.form-input {
+  display: block;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  color: #58616b;
+  padding: 0 12px 0 12px;
+  height: 40px;
+  background-color: white;
+  border: 1px solid #c3ced9;
+  border-radius: 4px;
+}
+.form-input:focus {
+  border-color: #51d0ef;
+  box-shadow: 3px 3px 8px rgba(81, 208, 239, 0.5);
+  outline: none;
+}
+
+.form-icon + .form-input {
+  padding-left: 40px;
+}
+
+.form-icon + .form-input-textarea {
+  padding-left: 40px;
+}
+
+.form-label-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  border: 0;
+}
+
+.form-input-textarea {
+  display: block;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  color: #58616b;
+  padding: 7px 12px 0 12px;
+  height: 150px;
+  background-color: white;
+  border: 1px solid #c3ced9;
+  border-radius: 4px;
+  font-family: inherit;
+}
+.form-input-textarea:focus {
+  border-color: #51d0ef;
+  box-shadow: 3px 3px 8px rgba(81, 208, 239, 0.5);
+  outline: none;
+}
+
+.form-icon-small {
+  width: 1em;
+  height: 1em;
+}
+
+.form-icon-medium {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.form-icon-large {
+  width: 2em;
+  height: 2em;
+}
+
+/**
+ * Site header basic search form component
+ */
+.searchform {
+  position: relative;
+  max-width: 320px;
+  margin: 0;
+  padding: 0;
+  margin-top: 2.5em;
+}
+
+.searchform-label-hidden {
+  visibility: hidden;
+}
+
+.searchform-input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  line-height: 1;
+  font-size: 100%;
+  padding: 12px 12px 12px 36px;
+  /*background-color: $dull-black;*/
+  background-color: white;
+  color: #acb6bf;
+  border-radius: 4px;
+}
+
+.searchform-icon-left {
+  position: absolute;
+  top: 36px;
+  left: 12px;
+}
+
+/**
+ * logo component 
+ * example usage: 
+ * <a class="site-header-logo">
+ *   <span class="site-header-logo-icon">
+ *     <svg 
+ */
+.header-logo {
+  display: flex;
+  text-decoration: none;
+  color: white;
+  fill: currentColor;
+}
+@media (min-width: 1140px) {
+  .header-logo {
+    /*float: left;
+    margin-top: 22px;*/
+  }
+}
+
+.header-logo-icon {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 25px;
+  background-color: #51d0ef;
+  border-radius: 50%;
+  line-height: 0;
+  margin-right: 0.5em;
+}
+
+.header-logo-text {
+  color: #51d0ef;
+}
+@media (min-width: 1140px) {
+  .header-logo-text {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+}
+.header-logo-text h1 {
+  color: #51d0ef;
+  margin: 0;
+  padding: 0;
+  margin-top: 1.5em;
+}
+.header-logo-text span {
+  color: white;
+}
+
+/**
+ * snail body icon
+ */
+.snail-body-icon {
+  width: 2.25em;
+  height: 2.5em;
+  margin: 0;
+  border-bottom: 2px solid white;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+
+/**
+ * snail head icon 
+ */
+.snail-head-icon {
+  width: 1.25em;
+  height: 1.25em;
+  transform: rotate(180deg);
+}
+
+/*# sourceMappingURL=main.css.map */
