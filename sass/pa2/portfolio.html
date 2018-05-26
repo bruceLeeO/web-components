@@ -48,7 +48,7 @@
   <a id="return-to-top" href="#topmain">
     <span class="scrolly-height"></span>
     <svg class="form-icon-large"><use xlink:href="#icon-chevron-up"></use></svg>    
-  </a><!--
+  </a>
   <span class="scrollspy" id="scrollspy-id">
     <ul class="scrollnav-list">
       <li class="scrollnav-item"><a class="scrollnav-link" href="#about">About</a></li>
@@ -56,7 +56,7 @@
       <li class="scrollnav-item"><a class="scrollnav-link" href="#skills">Skills</a></li>
       <li class="scrollnav-item"><a class="scrollnav-link" href="#contact">Contact</a></li>
     </ul>
-  </span>-->
+  </span>
   <div>
     <nav id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -314,48 +314,81 @@
         </div>
 <!--tab content 4-->  
         <div class="tab-body-content" id="tabindex4">
+          <section class="tab-content--carousel-section">          
           <div class="carousel-3d-4">
             <div class="carousel-3d-4-axis">
 <!--fourth carousel item face #1 content--> 
               <div class="carousel-3d-4-item f1-of-3d-4">
                 <div class="carousel-3d-4-content">
-                  <blockquote>1</blockquote>
 <!--contents goes here-->
+                    <div>
+                      <img width="375" height="200" src="../img/pa2/accordion/non-js/accordion1.jpg" alt="Non-JS Accordion">
+                    </div>
                 </div>
               </div>
 <!--fourth carousel item face #2 content--> 
               <div class="carousel-3d-4-item f2-of-3d-4">
                 <div class="carousel-3d-4-content">
-                  <blockquote>2</blockquote>
 <!--contents goes here-->
+                    <div>
+                      <!--<video width="375" height="333.5" controls autoplay loop>-->
+                      <video width="375" height="280" controls autoplay loop>
+                        <source src="../img/pa2/accordion/non-js/accordion2.mp4">
+                      </video>
+                    </div>
                 </div>                
               </div>
 <!--fourth carousel item face #3 content--> 
               <div class="carousel-3d-4-item f3-of-3d-4">
                 <div class="carousel-3d-4-content">
-                  <blockquote>3</blockquote>
 <!--contents goes here-->
+                    <div>
+                      <img width="375" height="200" src="../img/pa2/accordion/accordion3.jpg" alt="Accordion UI">
+                    </div>
                 </div>                
               </div>
 <!--fourth carousel item face #4 content--> 
               <div class="carousel-3d-4-item f4-of-3d-4">
                 <div class="carousel-3d-4-content">
-                  <blockquote>4</blockquote>
 <!--contents goes here-->
+                    <div>
+                      <video width="375" height="280" controls autoplay loop>
+                        <source src="../img/pa2/accordion/accordion4.mp4">
+                      </video>
+                    </div>
                 </div>
               </div>
             </div>
-            <span class="carousel-3d-4-item--indicator"></span>
-            <span class="carousel-3d-4-item--indicator"></span>
-            <span class="carousel-3d-4-item--indicator"></span>
-            <span class="carousel-3d-4-item--indicator"></span>
+            <span class="carousel-3d-4-item--indicator itemsIn3d-4--active" id="c-3d-4-item-1"></span>
+            <span class="carousel-3d-4-item--indicator" id="c-3d-4-item-2" ></span>
+            <span class="carousel-3d-4-item--indicator" id="c-3d-4-item-3"></span>
+            <span class="carousel-3d-4-item--indicator" id="c-3d-4-item-4"></span>
             <span class="carousel-3d-4-item--next">
               <svg class="form-icon-small"><use xlink:href="#icon-chevron-right"></use></svg>
             </span>
             <span class="carousel-3d-4-item--prev">
               <svg class="form-icon-small"><use xlink:href="#icon-chevron-left"></use></svg>
             </span>
-          </div>          
+          </div>
+          </section>          
+          <section class="tab-content--desc-section">
+            <h3 class="tab-content-title">Technologies: HTML5, CSS3, & Sass Only</h3>
+            <p class="tab-content-desc">This is a great accordion ui for when no JS is needed.</p>
+            <p></p>
+            <ul class="tab-content-list">
+              <li class="tab-content-item-inline">
+                <a class="tab-content-link" href="https://bruceleeo.github.io/webcomponents/ui/nonjs-ui/accordion/accordion-nonjs-ui.html">View Live Demo</a>
+              </li>
+              <li class="tab-content-item-inline">
+                <a class="tab-content-link" href="https://github.com/bruceLeeO/webcomponents/blob/master/ui/nonjs-ui/accordion/accordion-nonjs-ui.html">
+                  <span>
+                    <svg class="tab-social-icon"><use xlink:href="#icon-github"></use></svg>   
+                  </span>
+                   View Source on Github
+                </a>
+              </li>
+            </ul>            
+          </section>                   
         </div>
 <!--tab content 5-->
         <div class="tab-body-content" id="tabindex5">
@@ -502,7 +535,7 @@
                   <div class="carousel-3d-8-content">
 <!--contents goes here-->
                     <div>
-                      <img width="375" height="200" src="../img/pa2/real-calculator1.jpg" alt="Real Calculator">
+                      <img width="375" height="200" src="../img/pa2/calculator/real-calculator1.jpg" alt="Real Calculator">
                     </div>
                   </div>
                 </div>
@@ -511,7 +544,7 @@
                   <div class="carousel-3d-8-content">
 <!--contents goes here-->
                     <div>
-                      <img src="../img/pa2/real-calculator2.jpg" alt="Real Calculator">
+                      <img src="../img/pa2/calculator/real-calculator2.jpg" alt="Real Calculator">
                     </div>
                   </div>                
                 </div>
@@ -522,7 +555,7 @@
                     <div>
                       <!--<video width="375" height="333.5" controls autoplay loop>-->
                       <video width="375" height="280" controls autoplay loop>
-                        <source src="../img/pa2/real-calc-video.mp4">
+                        <source src="../img/pa2/calculator/real-calc-video.mp4">
                       </video>
                     </div>
                   </div>                
@@ -575,10 +608,10 @@
                   </div>
                 </div>
               </div>
-              <span class="carousel-3d-8-item--indicator"></span>
-              <span class="carousel-3d-8-item--indicator"></span>
-              <span class="carousel-3d-8-item--indicator"></span>
-              <span class="carousel-3d-8-item--indicator"></span>
+              <span class="carousel-3d-8-item--indicator itemsIn3d-8--active" id="c-3d-8-item-1"></span>
+              <span class="carousel-3d-8-item--indicator" id="c-3d-8-item-2"></span>
+              <span class="carousel-3d-8-item--indicator" id="c-3d-8-item-3"></span>
+              <span class="carousel-3d-8-item--indicator" id="c-3d-8-item-4"></span>
               <span class="carousel-3d-8-item--next">
                 <svg class="form-icon-small"><use xlink:href="#icon-chevron-right"></use></svg>
               </span>
@@ -593,10 +626,10 @@
             <p></p>
             <ul class="tab-content-list">
               <li class="tab-content-item-inline">
-                <a class="tab-content-link" href="#!">View Demo</a>
+                <a class="tab-content-link" href="https://bruceleeo.github.io/webcomponents/projects/calculator/calculator.html" target="_blank">View Live Demo</a>
               </li>
               <li class="tab-content-item-inline">
-                <a class="tab-content-link" href="#!">
+                <a class="tab-content-link" href="https://github.com/bruceLeeO/webcomponents/blob/master/projects/calculator/calculator.html" target="_blank">
                   <span>
                     <svg class="tab-social-icon"><use xlink:href="#icon-github"></use></svg>   
                   </span>
@@ -870,6 +903,31 @@
   </footer>
   <script type="text/javascript">
 
+  /* utility function */
+  var isExpressionInArrs = function(arrs,exp) {
+     //console.log("arrs.... "+arrs);
+     var arrLen = arrs.length;
+     //console.log("exp.length: "+exp.length+" --- arrLen: "+arrLen);
+    var frg = "";
+     var subStr = arrs;
+     while (arrLen > 0) {
+        for (var i = 0; i < arrLen; i++) {
+           subStr = arrs.slice(i);
+           //console.log("subStr is currently.... "+subStr);
+           frg = subStr.slice(0,exp.length);
+           //console.log("fragments.... "+frg);
+           //console.log("exp.... "+exp);
+           
+           if (frg === exp)
+              return true;
+        }      
+        //console.log(arrLen);
+        arrLen--;
+     }
+    return false;
+  }
+
+
     /* digital business card flip logic */
     var currDeg = 0;
     var rotateCard = document.getElementsByClassName("digital-business-card-rotate-icon");
@@ -1001,13 +1059,118 @@
     var nex4 = document.getElementsByClassName("carousel-3d-4-item--next");
     var pre4 = document.getElementsByClassName("carousel-3d-4-item--prev");
     var currdeg4 = 0;
+
+    var itemsIn3d4 = document.getElementsByClassName("carousel-3d-4-item--indicator");
+
+    var item1Of3d4 = document.getElementById("c-3d-4-item-1");
+    var item2Of3d4 = document.getElementById("c-3d-4-item-2");
+    var item3Of3d4 = document.getElementById("c-3d-4-item-3");
+    var item4Of3d4 = document.getElementById("c-3d-4-item-4");
+
+    item1Of3d4.onclick = function(evt) {
+      for (var i = 0; i < itemsIn3d4.length; i++) {
+
+        if (isExpressionInArrs(itemsIn3d4[i].className,"itemsIn3d-4--active")) {
+          if (itemsIn3d4[i].id === "c-3d-4-item-2") {
+            currdeg4 += 90;
+          }
+          if (itemsIn3d4[i].id === "c-3d-4-item-3") {
+            currdeg4 += 180;
+          }
+          if (itemsIn3d4[i].id === "c-3d-4-item-4") {
+            currdeg4 += 270;
+          }
+          itemsIn3d4[i].className = itemsIn3d4[i].className.replace(" itemsIn3d-4--active","");
+          evt.currentTarget.className += " itemsIn3d-4--active";
+        }
+      }
+      document.getElementsByClassName("carousel-3d-4-axis")[0].style.transform = "rotateY("+currdeg4+"deg)";
+    }
+
+    item2Of3d4.onclick = function(evt) {
+      for (var i = 0; i < itemsIn3d4.length; i++) {
+
+        if (isExpressionInArrs(itemsIn3d4[i].className,"itemsIn3d-4--active")) {
+          if (itemsIn3d4[i].id === "c-3d-4-item-1") {
+            currdeg4 -= 90;
+          }
+          if (itemsIn3d4[i].id === "c-3d-4-item-3") {
+            currdeg4 += 90;
+          }
+          if (itemsIn3d4[i].id === "c-3d-4-item-4") {
+            currdeg4 += 180;
+          }
+          itemsIn3d4[i].className = itemsIn3d4[i].className.replace(" itemsIn3d-4--active","");
+          evt.currentTarget.className += " itemsIn3d-4--active";
+        }
+      }
+      document.getElementsByClassName("carousel-3d-4-axis")[0].style.transform = "rotateY("+currdeg4+"deg)";
+    }
+
+    item3Of3d4.onclick = function(evt) {
+      for (var i = 0; i < itemsIn3d4.length; i++) {
+
+        if (isExpressionInArrs(itemsIn3d4[i].className,"itemsIn3d-4--active")) {
+          if (itemsIn3d4[i].id === "c-3d-4-item-1") {
+            currdeg4 -= 180;
+          }
+          if (itemsIn3d4[i].id === "c-3d-4-item-2") {
+            currdeg4 -= 90;
+          }
+          if (itemsIn3d4[i].id === "c-3d-4-item-4") {
+            currdeg4 += 90;
+          }
+          itemsIn3d4[i].className = itemsIn3d4[i].className.replace(" itemsIn3d-4--active","");
+          evt.currentTarget.className += " itemsIn3d-4--active";
+        }
+      }
+      document.getElementsByClassName("carousel-3d-4-axis")[0].style.transform = "rotateY("+currdeg4+"deg)";
+    }
+
+    item4Of3d4.onclick = function(evt) {
+      for (var i = 0; i < itemsIn3d4.length; i++) {
+
+        if (isExpressionInArrs(itemsIn3d4[i].className,"itemsIn3d-4--active")) {
+          if (itemsIn3d4[i].id === "c-3d-4-item-1") {
+            currdeg4 -= 270;
+          }
+          if (itemsIn3d4[i].id === "c-3d-4-item-2") {
+            currdeg4 -= 180;
+          }
+          if (itemsIn3d4[i].id === "c-3d-4-item-3") {
+            currdeg4 -= 90;
+          }
+          itemsIn3d4[i].className = itemsIn3d4[i].className.replace(" itemsIn3d-4--active","");
+          evt.currentTarget.className += " itemsIn3d-4--active";
+        }
+      }
+      document.getElementsByClassName("carousel-3d-4-axis")[0].style.transform = "rotateY("+currdeg4+"deg)";
+    }
+
     nex4[0].onclick = function(evt) {
 
       //document.getElementsByClassName("carousel-3d-4-axis")[0].style.transform = "scale(1)";
       currdeg4 -= 90; console.log("currdeg: "+currdeg4);
       document.getElementsByClassName("carousel-3d-4-axis")[0].style.transform = "rotateY("+currdeg4+"deg)";
       //document.getElementsByClassName("carousel-3d-4-axis")[0].style.transform = "rotateY("+currdeg4+"deg) scale(2)";
-      document.getElementsByClassName("carousel-3d-4")[0].style.transform = "scale(1.75)";
+
+      for (var i = 0; i < itemsIn3d4.length; i++) {
+
+        if (isExpressionInArrs(itemsIn3d4[i].className,"itemsIn3d-4--active")) {
+          itemsIn3d4[i].className = itemsIn3d4[i].className.replace(" itemsIn3d-4--active","");
+          if (itemsIn3d4[i].id === "c-3d-4-item-1" || itemsIn3d4[i].id === "c-3d-4-item-2" || itemsIn3d4[i].id === "c-3d-4-item-3") {
+            itemsIn3d4[i+1].className += " itemsIn3d-4--active";
+            break;
+          } else {
+            if (itemsIn3d4[i].id === "c-3d-4-item-4") {
+              itemsIn3d4[0].className += " itemsIn3d-4--active";
+              break;
+            }
+          }
+        }
+      }
+
+      document.getElementsByClassName("carousel-3d-4")[0].style.transform = "scale(1.5)";
     }
 
     pre4[0].onclick = function(evt) {
@@ -1016,7 +1179,24 @@
       currdeg4 = currdeg4 + 90; //console.log("currdeg: "+currdeg4);
       document.getElementsByClassName("carousel-3d-4-axis")[0].style.transform = "rotateY("+currdeg4+"deg)";
       //document.getElementsByClassName("carousel-3d-4-axis")[0].style.transform = "rotateY("+currdeg4+"deg) scale(2)";
-      document.getElementsByClassName("carousel-3d-4")[0].style.transform = "scale(1.75)";
+
+      for (var i = 0; i < itemsIn3d4.length; i++) {
+
+        if (isExpressionInArrs(itemsIn3d4[i].className,"itemsIn3d-4--active")) {
+          itemsIn3d4[i].className = itemsIn3d4[i].className.replace(" itemsIn3d-4--active","");
+          if (itemsIn3d4[i].id === "c-3d-4-item-4" || itemsIn3d4[i].id === "c-3d-4-item-3" || itemsIn3d4[i].id === "c-3d-4-item-2") {
+            itemsIn3d4[i-1].className += " itemsIn3d-4--active";
+            break;
+          } else {
+            if (itemsIn3d4[i].id === "c-3d-4-item-1") {
+              itemsIn3d4[3].className += " itemsIn3d-4--active";
+              break;
+            }
+          }
+        }
+      }
+
+      document.getElementsByClassName("carousel-3d-4")[0].style.transform = "scale(1.5)";
     }
 
     document.getElementsByClassName("carousel-3d-4-item")[0].onclick = function(evt) {
@@ -1148,17 +1328,121 @@
     document.getElementsByClassName("carousel-3d-7-item")[3].onclick = function(evt) {
       document.getElementsByClassName("carousel-3d-7")[0].style.transform = "scale(1)";
     } 
-
 /** carousel 3d-8 */
     var nex8 = document.getElementsByClassName("carousel-3d-8-item--next");
     var pre8 = document.getElementsByClassName("carousel-3d-8-item--prev");
     var currdeg8 = 0;
+
+    var itemsIn3d8 = document.getElementsByClassName("carousel-3d-8-item--indicator");
+
+    var item1Of3d8 = document.getElementById("c-3d-8-item-1");
+    var item2Of3d8 = document.getElementById("c-3d-8-item-2");
+    var item3Of3d8 = document.getElementById("c-3d-8-item-3");
+    var item4Of3d8 = document.getElementById("c-3d-8-item-4");
+
+    item1Of3d8.onclick = function(evt) {
+      for (var i = 0; i < itemsIn3d8.length; i++) {
+
+        if (isExpressionInArrs(itemsIn3d8[i].className,"itemsIn3d-8--active")) {
+          if (itemsIn3d8[i].id === "c-3d-8-item-2") {
+            currdeg8 += 90;
+          }
+          if (itemsIn3d8[i].id === "c-3d-8-item-3") {
+            currdeg8 += 180;
+          }
+          if (itemsIn3d8[i].id === "c-3d-8-item-4") {
+            currdeg8 += 270;
+          }
+          itemsIn3d8[i].className = itemsIn3d8[i].className.replace(" itemsIn3d-8--active","");
+          evt.currentTarget.className += " itemsIn3d-8--active";
+        }
+      }
+      document.getElementsByClassName("carousel-3d-8-axis")[0].style.transform = "rotateY("+currdeg8+"deg)";
+    }
+
+    item2Of3d8.onclick = function(evt) {
+      for (var i = 0; i < itemsIn3d8.length; i++) {
+
+        if (isExpressionInArrs(itemsIn3d8[i].className,"itemsIn3d-8--active")) {
+          if (itemsIn3d8[i].id === "c-3d-8-item-1") {
+            currdeg8 -= 90;
+          }
+          if (itemsIn3d8[i].id === "c-3d-8-item-3") {
+            currdeg8 += 90;
+          }
+          if (itemsIn3d8[i].id === "c-3d-8-item-4") {
+            currdeg8 += 180;
+          }
+          itemsIn3d8[i].className = itemsIn3d8[i].className.replace(" itemsIn3d-8--active","");
+          evt.currentTarget.className += " itemsIn3d-8--active";
+        }
+      }
+      document.getElementsByClassName("carousel-3d-8-axis")[0].style.transform = "rotateY("+currdeg8+"deg)";
+    }
+
+    item3Of3d8.onclick = function(evt) {
+      for (var i = 0; i < itemsIn3d8.length; i++) {
+
+        if (isExpressionInArrs(itemsIn3d8[i].className,"itemsIn3d-8--active")) {
+          if (itemsIn3d8[i].id === "c-3d-8-item-1") {
+            currdeg8 -= 180;
+          }
+          if (itemsIn3d8[i].id === "c-3d-8-item-2") {
+            currdeg8 -= 90;
+          }
+          if (itemsIn3d8[i].id === "c-3d-8-item-4") {
+            currdeg8 += 90;
+          }
+          itemsIn3d8[i].className = itemsIn3d8[i].className.replace(" itemsIn3d-8--active","");
+          evt.currentTarget.className += " itemsIn3d-8--active";
+        }
+      }
+      document.getElementsByClassName("carousel-3d-8-axis")[0].style.transform = "rotateY("+currdeg8+"deg)";
+    }
+
+    item4Of3d8.onclick = function(evt) {
+      for (var i = 0; i < itemsIn3d8.length; i++) {
+
+        if (isExpressionInArrs(itemsIn3d8[i].className,"itemsIn3d-8--active")) {
+          if (itemsIn3d8[i].id === "c-3d-8-item-1") {
+            currdeg8 -= 270;
+          }
+          if (itemsIn3d8[i].id === "c-3d-8-item-2") {
+            currdeg8 -= 180;
+          }
+          if (itemsIn3d8[i].id === "c-3d-8-item-3") {
+            currdeg8 -= 90;
+          }
+          itemsIn3d8[i].className = itemsIn3d8[i].className.replace(" itemsIn3d-8--active","");
+          evt.currentTarget.className += " itemsIn3d-8--active";
+        }
+      }
+      document.getElementsByClassName("carousel-3d-8-axis")[0].style.transform = "rotateY("+currdeg8+"deg)";
+    }
+
     nex8[0].onclick = function(evt) {
 
       //document.getElementsByClassName("carousel-3d-8-axis")[0].style.transform = "scale(1)";
       currdeg8 -= 90; console.log("currdeg: "+currdeg8);
       document.getElementsByClassName("carousel-3d-8-axis")[0].style.transform = "rotateY("+currdeg8+"deg)";
       //document.getElementsByClassName("carousel-3d-8-axis")[0].style.transform = "rotateY("+currdeg8+"deg) scale(2)";
+
+      for (var i = 0; i < itemsIn3d8.length; i++) {
+
+        if (isExpressionInArrs(itemsIn3d8[i].className,"itemsIn3d-8--active")) {
+          itemsIn3d8[i].className = itemsIn3d8[i].className.replace(" itemsIn3d-8--active","");
+          if (itemsIn3d8[i].id === "c-3d-8-item-1" || itemsIn3d8[i].id === "c-3d-8-item-2" || itemsIn3d8[i].id === "c-3d-8-item-3") {
+            itemsIn3d8[i+1].className += " itemsIn3d-8--active";
+            break;
+          } else {
+            if (itemsIn3d8[i].id === "c-3d-8-item-4") {
+              itemsIn3d8[0].className += " itemsIn3d-8--active";
+              break;
+            }
+          }
+        }
+      }
+
       document.getElementsByClassName("carousel-3d-8")[0].style.transform = "scale(1.5)";
     }
 
@@ -1168,6 +1452,23 @@
       currdeg8 = currdeg8 + 90; //console.log("currdeg: "+currdeg8);
       document.getElementsByClassName("carousel-3d-8-axis")[0].style.transform = "rotateY("+currdeg8+"deg)";
       //document.getElementsByClassName("carousel-3d-8-axis")[0].style.transform = "rotateY("+currdeg8+"deg) scale(2)";
+
+      for (var i = 0; i < itemsIn3d8.length; i++) {
+
+        if (isExpressionInArrs(itemsIn3d8[i].className,"itemsIn3d-8--active")) {
+          itemsIn3d8[i].className = itemsIn3d8[i].className.replace(" itemsIn3d-8--active","");
+          if (itemsIn3d8[i].id === "c-3d-8-item-4" || itemsIn3d8[i].id === "c-3d-8-item-3" || itemsIn3d8[i].id === "c-3d-8-item-2") {
+            itemsIn3d8[i-1].className += " itemsIn3d-8--active";
+            break;
+          } else {
+            if (itemsIn3d8[i].id === "c-3d-8-item-1") {
+              itemsIn3d8[3].className += " itemsIn3d-8--active";
+              break;
+            }
+          }
+        }
+      }
+
       document.getElementsByClassName("carousel-3d-8")[0].style.transform = "scale(1.5)";
     }
 
@@ -1187,6 +1488,167 @@
       document.getElementsByClassName("carousel-3d-8")[0].style.transform = "scale(1)";
     }
 */
+/** carousel 3d-8 */
+    var nex8 = document.getElementsByClassName("carousel-3d-8-item--next");
+    var pre8 = document.getElementsByClassName("carousel-3d-8-item--prev");
+    var currdeg8 = 0;
+
+    var itemsIn3d8 = document.getElementsByClassName("carousel-3d-8-item--indicator");
+
+    var item1Of3d8 = document.getElementById("c-3d-8-item-1");
+    var item2Of3d8 = document.getElementById("c-3d-8-item-2");
+    var item3Of3d8 = document.getElementById("c-3d-8-item-3");
+    var item4Of3d8 = document.getElementById("c-3d-8-item-4");
+
+    item1Of3d8.onclick = function(evt) {
+      for (var i = 0; i < itemsIn3d8.length; i++) {
+
+        if (isExpressionInArrs(itemsIn3d8[i].className,"itemsIn3d-8--active")) {
+          if (itemsIn3d8[i].id === "c-3d-8-item-2") {
+            currdeg8 += 90;
+          }
+          if (itemsIn3d8[i].id === "c-3d-8-item-3") {
+            currdeg8 += 180;
+          }
+          if (itemsIn3d8[i].id === "c-3d-8-item-4") {
+            currdeg8 += 270;
+          }
+          itemsIn3d8[i].className = itemsIn3d8[i].className.replace(" itemsIn3d-8--active","");
+          evt.currentTarget.className += " itemsIn3d-8--active";
+        }
+      }
+      document.getElementsByClassName("carousel-3d-8-axis")[0].style.transform = "rotateY("+currdeg8+"deg)";
+    }
+
+    item2Of3d8.onclick = function(evt) {
+      for (var i = 0; i < itemsIn3d8.length; i++) {
+
+        if (isExpressionInArrs(itemsIn3d8[i].className,"itemsIn3d-8--active")) {
+          if (itemsIn3d8[i].id === "c-3d-8-item-1") {
+            currdeg8 -= 90;
+          }
+          if (itemsIn3d8[i].id === "c-3d-8-item-3") {
+            currdeg8 += 90;
+          }
+          if (itemsIn3d8[i].id === "c-3d-8-item-4") {
+            currdeg8 += 180;
+          }
+          itemsIn3d8[i].className = itemsIn3d8[i].className.replace(" itemsIn3d-8--active","");
+          evt.currentTarget.className += " itemsIn3d-8--active";
+        }
+      }
+      document.getElementsByClassName("carousel-3d-8-axis")[0].style.transform = "rotateY("+currdeg8+"deg)";
+    }
+
+    item3Of3d8.onclick = function(evt) {
+      for (var i = 0; i < itemsIn3d8.length; i++) {
+
+        if (isExpressionInArrs(itemsIn3d8[i].className,"itemsIn3d-8--active")) {
+          if (itemsIn3d8[i].id === "c-3d-8-item-1") {
+            currdeg8 -= 180;
+          }
+          if (itemsIn3d8[i].id === "c-3d-8-item-2") {
+            currdeg8 -= 90;
+          }
+          if (itemsIn3d8[i].id === "c-3d-8-item-4") {
+            currdeg8 += 90;
+          }
+          itemsIn3d8[i].className = itemsIn3d8[i].className.replace(" itemsIn3d-8--active","");
+          evt.currentTarget.className += " itemsIn3d-8--active";
+        }
+      }
+      document.getElementsByClassName("carousel-3d-8-axis")[0].style.transform = "rotateY("+currdeg8+"deg)";
+    }
+
+    item4Of3d8.onclick = function(evt) {
+      for (var i = 0; i < itemsIn3d8.length; i++) {
+
+        if (isExpressionInArrs(itemsIn3d8[i].className,"itemsIn3d-8--active")) {
+          if (itemsIn3d8[i].id === "c-3d-8-item-1") {
+            currdeg8 -= 270;
+          }
+          if (itemsIn3d8[i].id === "c-3d-8-item-2") {
+            currdeg8 -= 180;
+          }
+          if (itemsIn3d8[i].id === "c-3d-8-item-3") {
+            currdeg8 -= 90;
+          }
+          itemsIn3d8[i].className = itemsIn3d8[i].className.replace(" itemsIn3d-8--active","");
+          evt.currentTarget.className += " itemsIn3d-8--active";
+        }
+      }
+      document.getElementsByClassName("carousel-3d-8-axis")[0].style.transform = "rotateY("+currdeg8+"deg)";
+    }
+
+    nex8[0].onclick = function(evt) {
+
+      //document.getElementsByClassName("carousel-3d-8-axis")[0].style.transform = "scale(1)";
+      currdeg8 -= 90; console.log("currdeg: "+currdeg8);
+      document.getElementsByClassName("carousel-3d-8-axis")[0].style.transform = "rotateY("+currdeg8+"deg)";
+      //document.getElementsByClassName("carousel-3d-8-axis")[0].style.transform = "rotateY("+currdeg8+"deg) scale(2)";
+
+      for (var i = 0; i < itemsIn3d8.length; i++) {
+
+        if (isExpressionInArrs(itemsIn3d8[i].className,"itemsIn3d-8--active")) {
+          itemsIn3d8[i].className = itemsIn3d8[i].className.replace(" itemsIn3d-8--active","");
+          if (itemsIn3d8[i].id === "c-3d-8-item-1" || itemsIn3d8[i].id === "c-3d-8-item-2" || itemsIn3d8[i].id === "c-3d-8-item-3") {
+            itemsIn3d8[i+1].className += " itemsIn3d-8--active";
+            break;
+          } else {
+            if (itemsIn3d8[i].id === "c-3d-8-item-4") {
+              itemsIn3d8[0].className += " itemsIn3d-8--active";
+              break;
+            }
+          }
+        }
+      }
+
+      document.getElementsByClassName("carousel-3d-8")[0].style.transform = "scale(1.5)";
+    }
+
+    pre8[0].onclick = function(evt) {
+      console.log("p is clicked");
+      //document.getElementsByClassName("carousel-3d-8-axis")[0].style.transform = "scale(1)";
+      currdeg8 = currdeg8 + 90; //console.log("currdeg: "+currdeg8);
+      document.getElementsByClassName("carousel-3d-8-axis")[0].style.transform = "rotateY("+currdeg8+"deg)";
+      //document.getElementsByClassName("carousel-3d-8-axis")[0].style.transform = "rotateY("+currdeg8+"deg) scale(2)";
+
+      for (var i = 0; i < itemsIn3d8.length; i++) {
+
+        if (isExpressionInArrs(itemsIn3d8[i].className,"itemsIn3d-8--active")) {
+          itemsIn3d8[i].className = itemsIn3d8[i].className.replace(" itemsIn3d-8--active","");
+          if (itemsIn3d8[i].id === "c-3d-8-item-4" || itemsIn3d8[i].id === "c-3d-8-item-3" || itemsIn3d8[i].id === "c-3d-8-item-2") {
+            itemsIn3d8[i-1].className += " itemsIn3d-8--active";
+            break;
+          } else {
+            if (itemsIn3d8[i].id === "c-3d-8-item-1") {
+              itemsIn3d8[3].className += " itemsIn3d-8--active";
+              break;
+            }
+          }
+        }
+      }
+
+      document.getElementsByClassName("carousel-3d-8")[0].style.transform = "scale(1.5)";
+    }
+
+    document.getElementsByClassName("carousel-3d-8-item")[0].onclick = function(evt) {
+      document.getElementsByClassName("carousel-3d-8")[0].style.transform = "scale(1)";
+    }
+
+    document.getElementsByClassName("carousel-3d-8-item")[1].onclick = function(evt) {
+      document.getElementsByClassName("carousel-3d-8")[0].style.transform = "scale(1)";
+    }
+
+    document.getElementsByClassName("carousel-3d-8-item")[2].onclick = function(evt) {
+      document.getElementsByClassName("carousel-3d-8")[0].style.transform = "scale(1)";
+    }
+/*
+    document.getElementsByClassName("carousel-3d-8-item")[3].onclick = function(evt) {
+      document.getElementsByClassName("carousel-3d-8")[0].style.transform = "scale(1)";
+    }
+*/
+
     /* search form hover efffect transformation */
     var searchInput = document.getElementsByClassName("searchform-input")[0];
     searchInput.onclick = function() {

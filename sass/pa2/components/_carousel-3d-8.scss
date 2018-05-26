@@ -26,14 +26,29 @@
 	height: 100%;
 	display: block;
 	cursor: pointer;
-	border: 5px solid;
+	//border: 5px solid;
 
-	& img {
+	div	{
 		width: 100%;
-		height: auto;
+		//height: 100%;
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+
+		video {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	//img {
+		//width: 100%;
+		//height: auto;
 		//width: 35vw;
 		//height: 18vw;
-	}
+	//}
 }
 
 .f1-of-3d-8 {
@@ -62,13 +77,19 @@
 }
 
 .carousel-3d-8-item--indicator {
-	//position: absolute;
+	position: absolute;
 	border: 1px solid crimson;
 	border-radius: 50px;
-	padding: 0 0.55em 0 0.55em;
+	//padding: 0 0.55em 0 0.55em;
 	margin-right: 0.25em;
-	position: absolute;
-
+	width: 0.5em;
+	height: 0.5em;
+	z-index: 1;
+	cursor: pointer;	
+	&:hover {
+		background-color: orange;
+		border-color: silver;
+	}
 	&:first-of-type {
 		top: 275px;
 		left: 110px;
@@ -139,10 +160,15 @@
 	//height: auto;
 	height: 100%;
 	//border: 2px solid green;
-	border: 2px solid #e1332d;
+	border: 5px solid #e1332d;
 	overflow: hidden;
 
 	img {
 		width: 100%;
 	}
+}
+
+.itemsIn3d-8--active {
+	border-color: blue;
+	background-color: crimson;
 }
