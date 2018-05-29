@@ -1,25 +1,35 @@
+/**
+ * side tool for development purpose
+ * useful during responsive design task 
+ */
 .screen-width {
 	display: none;
-	padding: 50px;
+	//padding: 50px;
+	padding: 20px;
 	background-color: $teal;
 	color: $dull-black;
 	border-radius: 50%;
 	position: fixed;
-	top: 150px;
-	left: 25px;
+	//top: 150px;
+	top: 60px;
+	//left: 25px;
+	right: 0;
 	cursor: pointer;
 	z-index: 3;
 }
 
 .scrollheight{
 	display: none;
-	padding: 50px;
+	//padding: 50px;
+	padding: 20px;
 	background-color: $light-yellow-orange;
 	color: $dull-black;
 	border-radius: 50%;
 	position: fixed;
-	top: 150px;
-	left: 150px;
+	//top: 150px;
+	//left: 150px;
+	top: 130px;
+	right: 0;
 	cursor: pointer;
 	z-index: 3;
 }
@@ -31,10 +41,14 @@
 	color: $dull-black;
 	border-radius: 50%;
 	position: fixed;
-	top: 110px;
-	left: 25px;
+	//top: 110px;
+	top: 60px;
+	//left: 25px;
+	right: 0;
 	cursor: pointer;
 	z-index: 3;	
+	width: 5px;
+	height: 5px;
 }
 
 .show-scrollheight-bubble {
@@ -44,8 +58,10 @@
 	color: $dull-black;
 	border-radius: 50%;
 	position: fixed;
-	top: 110px;
-	left: 60px;
+	//top: 110px;
+	//left: 60px;
+	top: 130px;
+	right: 0;
 	cursor: pointer;
 	z-index: 3;
 }
@@ -53,7 +69,8 @@
 #return-to-top {
 	position: fixed;
 	bottom: 20px;
-	right: 20px;
+	//right: 20px;
+	right: 0;
 	/*background: rgb(0, 0, 0);
 	//background: rgba(0, 0, 0, 0.7);*/
 	background-color: #ff9948;

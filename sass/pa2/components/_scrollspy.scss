@@ -1,36 +1,50 @@
+/**
+ * scrollspy component
+ */
 .scrollspy {
 	position: fixed;
-	width: 100px;
+	width: 110px;
 	height: 175px;
-	bottom: 200px;
-	right: 10px;
+	//bottom: 200px;
+	//bottom: 75px;
+	bottom: 150px;
+	right: -93px;
+	//right: 0;
 	z-index: 3;
 	//background-color: #ff9948;
 	background-color: blue;
 	color: $white;
 	opacity: 0.75;
-	border-radius: 10px;
-	border: 1px solid red;
+	border-radius: 0.2em;
+	//border: 3px solid red;
 	margin: 0;
-	padding: 0.25em;
+	padding: 0;
+	//padding: 0.1em;
+	letter-spacing: 1.25px;
+	line-height: 1.85;
+	&:hover {
+		right: 0;
+	}
 }
 
 .scrollnav-list {
 	list-style: none;
-	border: 1px solid;
-	margin: 1px;
-	padding: 1px;
+	//border: 3px solid yellow;
+	margin: 0;
+	padding: 0;
+	//margin-bottom: 0.2em;
+	//padding: 1px;
 }
 
 .scrollnav-item {
-	border: 1px solid green;
+	//border: 1px solid green;
 	margin: 1px;
 	padding: 1px;
 }
 
 .scrollnav-link {
 	text-decoration: none;
-	padding: 0.025em;
+	padding: 0.1em;
 	margin: 0;
 	&:hover {
 		color: $white;
@@ -40,4 +54,5 @@
 .scrollnav-link--active {
 	color: brown;
 	background-color: yellow;
+	border-radius: 0.2em;
 }

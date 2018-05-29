@@ -3,12 +3,13 @@
 	margin: auto;
 	//top: 28.75%;
 	top: 22%;
-	width: 375px;
+	max-width: 375px;
 	height: 275px;
 	//height: 215px;
 	perspective: 1300px;
 	//border: 4px solid pink;
 	border-radius: 0.25em;
+		display:none;
 }		
 
 .carousel-3d-1-axis {

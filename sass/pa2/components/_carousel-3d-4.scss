@@ -2,11 +2,12 @@
 	position: relative;
 	margin: auto;
 	top: 22%;
-	width: 375px;
+	max-width: 375px;
 	height: 275px;
 	perspective: 1300px;
 	//border: 4px solid pink;
 	border-radius: 0.25em;
+	display: none;
 }		
 
 .carousel-3d-4-axis {

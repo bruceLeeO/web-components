@@ -443,8 +443,13 @@ blockquote {
     flex-flow: column wrap;
   }
 
+  /*
   [class*="col"] {
     margin: 0;
+    width: 100%;
+    flex-grow: 1;
+  } */
+  .col9 {
     width: 100%;
     flex-grow: 1;
   }
@@ -668,7 +673,7 @@ blockquote {
 }
 
 .digital-business-card {
-  width: 550px;
+  max-width: 550px;
   height: 325px;
   position: relative;
   perspective: 1000px;
@@ -676,7 +681,7 @@ blockquote {
 }
 
 .digital-business-card-axis {
-  width: 550px;
+  width: 100%;
   height: 325px;
   position: absolute;
   transform-style: preserve-3d;
@@ -1093,28 +1098,32 @@ blockquote {
 	}
 }
 */
+/**
+ * side tool for development purpose
+ * useful during responsive design task 
+ */
 .screen-width {
   display: none;
-  padding: 50px;
+  padding: 20px;
   background-color: #51d0ef;
   color: #34383c;
   border-radius: 50%;
   position: fixed;
-  top: 150px;
-  left: 25px;
+  top: 60px;
+  right: 0;
   cursor: pointer;
   z-index: 3;
 }
 
 .scrollheight {
   display: none;
-  padding: 50px;
+  padding: 20px;
   background-color: #ffcb45;
   color: #34383c;
   border-radius: 50%;
   position: fixed;
-  top: 150px;
-  left: 150px;
+  top: 130px;
+  right: 0;
   cursor: pointer;
   z-index: 3;
 }
@@ -1126,10 +1135,12 @@ blockquote {
   color: #34383c;
   border-radius: 50%;
   position: fixed;
-  top: 110px;
-  left: 25px;
+  top: 60px;
+  right: 0;
   cursor: pointer;
   z-index: 3;
+  width: 5px;
+  height: 5px;
 }
 
 .show-scrollheight-bubble {
@@ -1139,8 +1150,8 @@ blockquote {
   color: #34383c;
   border-radius: 50%;
   position: fixed;
-  top: 110px;
-  left: 60px;
+  top: 130px;
+  right: 0;
   cursor: pointer;
   z-index: 3;
 }
@@ -1148,7 +1159,7 @@ blockquote {
 #return-to-top {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  right: 0;
   /*background: rgb(0, 0, 0);
   //background: rgba(0, 0, 0, 0.7);*/
   background-color: #ff9948;
@@ -1229,38 +1240,43 @@ blockquote {
     font-size: 18px;
   }
 }
+/**
+ * scrollspy component
+ */
 .scrollspy {
   position: fixed;
-  width: 100px;
+  width: 110px;
   height: 175px;
-  bottom: 200px;
-  right: 10px;
+  bottom: 150px;
+  right: -93px;
   z-index: 3;
   background-color: blue;
   color: white;
   opacity: 0.75;
-  border-radius: 10px;
-  border: 1px solid red;
+  border-radius: 0.2em;
   margin: 0;
-  padding: 0.25em;
+  padding: 0;
+  letter-spacing: 1.25px;
+  line-height: 1.85;
+}
+.scrollspy:hover {
+  right: 0;
 }
 
 .scrollnav-list {
   list-style: none;
-  border: 1px solid;
-  margin: 1px;
-  padding: 1px;
+  margin: 0;
+  padding: 0;
 }
 
 .scrollnav-item {
-  border: 1px solid green;
   margin: 1px;
   padding: 1px;
 }
 
 .scrollnav-link {
   text-decoration: none;
-  padding: 0.025em;
+  padding: 0.1em;
   margin: 0;
 }
 .scrollnav-link:hover {
@@ -1270,6 +1286,7 @@ blockquote {
 .scrollnav-link--active {
   color: brown;
   background-color: yellow;
+  border-radius: 0.2em;
 }
 
 .tab {
@@ -1397,9 +1414,14 @@ blockquote {
   height: 1em;
 }
 
+@media screen and (max-width: 725px) {
+  .tab {
+    display: none;
+  }
+}
 .accordion {
   padding: 0;
-  max-width: 720px;
+  max-width: 420px;
   height: auto;
   background-color: white;
   margin: auto;
@@ -1435,7 +1457,7 @@ blockquote {
   position: relative;
   margin: auto;
   top: 28.75%;
-  width: 375px;
+  max-width: 375px;
   height: 275px;
   perspective: 1000px;
 }
@@ -1556,10 +1578,11 @@ blockquote {
   position: relative;
   margin: auto;
   top: 22%;
-  width: 375px;
+  max-width: 375px;
   height: 275px;
   perspective: 1300px;
   border-radius: 0.25em;
+  display: none;
 }
 
 .carousel-3d-1-axis {
@@ -1669,11 +1692,12 @@ blockquote {
   position: relative;
   margin: auto;
   top: 28.75%;
-  width: 375px;
+  max-width: 375px;
   height: 275px;
   perspective: 1300px;
   border: 4px solid pink;
   border-radius: 0.25em;
+  display: none;
 }
 
 .carousel-3d-2-axis {
@@ -1786,11 +1810,12 @@ blockquote {
   position: relative;
   margin: auto;
   top: 28.75%;
-  width: 375px;
+  max-width: 375px;
   height: 275px;
   perspective: 1300px;
   border: 4px solid pink;
   border-radius: 0.25em;
+  display: none;
 }
 
 .carousel-3d-3-axis {
@@ -1903,10 +1928,11 @@ blockquote {
   position: relative;
   margin: auto;
   top: 22%;
-  width: 375px;
+  max-width: 375px;
   height: 275px;
   perspective: 1300px;
   border-radius: 0.25em;
+  display: none;
 }
 
 .carousel-3d-4-axis {
@@ -2039,11 +2065,12 @@ blockquote {
   position: relative;
   margin: auto;
   top: 28.75%;
-  width: 375px;
+  max-width: 375px;
   height: 275px;
   perspective: 1300px;
   border: 4px solid pink;
   border-radius: 0.25em;
+  display: none;
 }
 
 .carousel-3d-5-axis {
@@ -2156,11 +2183,12 @@ blockquote {
   position: relative;
   margin: auto;
   top: 28.75%;
-  width: 375px;
+  max-width: 375px;
   height: 275px;
   perspective: 1300px;
   border: 4px solid pink;
   border-radius: 0.25em;
+  display: none;
 }
 
 .carousel-3d-6-axis {
@@ -2273,11 +2301,12 @@ blockquote {
   position: relative;
   margin: auto;
   top: 28.75%;
-  width: 375px;
+  max-width: 375px;
   height: 275px;
   perspective: 1300px;
   border: 4px solid pink;
   border-radius: 0.25em;
+  display: none;
 }
 
 .carousel-3d-7-axis {
@@ -2297,8 +2326,8 @@ blockquote {
   cursor: pointer;
 }
 .carousel-3d-7-item img {
-  width: 35vw;
-  height: 18vw;
+  width: 100%;
+  height: auto;
 }
 
 .f1-of-3d-7 {
@@ -2390,7 +2419,7 @@ blockquote {
   position: relative;
   margin: auto;
   top: 22%;
-  width: 375px;
+  max-width: 375px;
   height: 275px;
   perspective: 1300px;
   border-radius: 0.25em;
@@ -2648,7 +2677,7 @@ body {
   flex-direction: column;
   /*width: 320px;*/
   /*max-height: 300px;*/
-  width: 346px;
+  max-width: 346px;
   height: 423px;
   padding: 1em;
   background-color: #e1332d;

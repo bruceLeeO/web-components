@@ -244,11 +244,13 @@
   .row-till-680 {
     flex-flow: column wrap;
   }
+  /*
   [class*="col"] {
     margin: 0;
     width: 100%;
     flex-grow: 1;
-  }    
+  } */
+  .col9 { width: 100%; flex-grow: 1;}   
   //.col3 { width: 320px; } 
 }
 
