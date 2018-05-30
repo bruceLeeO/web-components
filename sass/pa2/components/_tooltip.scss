@@ -1,3 +1,6 @@
+/**
+ * tooltip component use on the skill bar chart
+ */
 .bc-tooltip {
   position: relative;
   display: inline-block;
@@ -5,10 +8,22 @@
   /*border-bottom: 1px dashed;*/
   margin: 0 5px 0 8px;
   color: #ff9948;
-  border: 1px solid;
+  //border: 2px solid violet;
 }
 
-.bc-tooltip .bc-tooltiptext {
+
+.bc-tooltip-decresendo {
+  display: none;
+  position: relative;
+  //display: inline-block;
+  border-top: 1px transparent;
+  /*border-bottom: 1px dashed;*/
+  margin: 0 5px 0 8px;
+  color: #ff9948;
+  //border: 2px solid blue;
+}
+
+.bc-tooltip .bc-tooltiptext, .bc-tooltip-decresendo .bc-tooltiptext {
  	visibility: hidden;
   width: 320px;
   background-color: #555;
@@ -18,15 +33,19 @@
   padding: 5px 0;
   position: absolute;
   z-index: 1;
-  /*bottom: 115%;*/
-  bottom: 125%;
-  left: -60%;
+  //bottom: 105%;
+  //bottom: 0;
+  //top: -80px;
+  top: -83px;
+  //left: 60%;
+  //margin-left: -60px;
   margin-left: -60px;
   opacity: 0;
   transition: opacity 1s;
+  //border: 5px solid pink;
 }
 
-.bc-tooltip .bc-tooltiptext::after {
+.bc-tooltip .bc-tooltiptext::after, .bc-tooltip-decresendo .bc-tooltiptext::after {
   content: "";
   position: absolute;
   top: 100%;
@@ -37,12 +56,25 @@
   border-color: #555 transparent transparent transparent;
 }
 
-.bc-tooltip:hover .bc-tooltiptext {
+.bc-tooltip:hover .bc-tooltiptext, .bc-tooltip-decresendo:hover .bc-tooltiptext {
   visibility: visible;
   opacity: 1;
 }
 
-.bc-tooltip .bc-tooltiptext {
+.bc-tooltip .bc-tooltiptext, .bc-tooltip-decresendo .bc-tooltiptext {
 	left: -17px;
 	width: 180px;
+}
+
+
+@media screen and (max-width: 500px) {
+  .bc-tooltip {
+    display: none;
+  }
+  .bc-tooltip-decresendo {
+    display: block;
+  }
+  .bc-tooltip-decresendo .bc-tooltiptext {
+    margin-left: -63px;
+  }
 }
