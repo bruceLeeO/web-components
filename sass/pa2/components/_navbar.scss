@@ -5,6 +5,10 @@
   //@include border2-solid($white);
   //add padding-top of 30px to compensate with search form
   padding-top: 30px;
+
+  @media screen and (max-width: 680px) {
+    display: none;
+  }
 }
 
 .topnav-list {
@@ -38,13 +42,21 @@
 //  background-color: yellow;
 //}
 
+/**
+ * mobile topnav component
+ */
 .m-topnav {
   display: none;
-  color:$white;
+  color: $white;
   //padding-top: 0.5em;
-  border: 1px solid white;
+  //border: 1px solid white;
+  //vertical-align: middle;
+  padding: 0;
+  //line-height: 4;
+  //border: 2px solid green;
+  margin: 0;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 680px) {
     display: block;
     //border: 1px solid green;
     margin: 0;

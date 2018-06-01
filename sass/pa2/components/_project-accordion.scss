@@ -1,0 +1,59 @@
+/**
+ * sidenav project-accordion component
+ */
+.project-accordion {
+	padding: 0;
+	//max-width: 420px;
+	//width: 100%;
+	//height: auto;
+	//border: 1px solid blue;
+	//background-color: $white;
+	//margin: auto;
+	//margin-top: 0.25em;
+	margin: 0;
+	height: 100%;
+}
+
+.project-accordion-panel {
+	margin: 0;
+	//border: 1px solid red;
+	//width: 100%;
+	position: relative;
+	//border: 1px solid green;	
+}
+
+.project-accordion-label {
+	//border: 1px solid violet;
+	cursor: pointer;
+	background-color: #111;
+	margin: 0;
+	padding: 0;
+	
+	p {
+		color: #818181;
+		font-size: 85%;
+		border-right: 5px solid #818181;
+		margin: 0 5px 0 0;
+		padding: 8px 8px 8px 32px;			
+	}
+
+	&:hover {
+		//font-weight: 700;
+		//color: brown;
+	}
+}
+
+.project-accordion-content {
+	//border: 1px solid silver;  this removes the 2px height
+	//border: 1px solid silver;
+	//height: 100%;
+	//height: 150px;
+	height: auto;
+	overflow: hidden;
+	background-color: silver;
+	padding-left: 12px;
+}
+
+.project-accordion-label--active {
+
+}

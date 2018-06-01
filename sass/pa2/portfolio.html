@@ -40,7 +40,7 @@
     <path d="M15.7 11.3l-6-6c-0.4-0.4-1-0.4-1.4 0s-0.4 1 0 1.4l5.3 5.3-5.3 5.3c-0.4 0.4-0.4 1 0 1.4 0.2 0.2 0.4 0.3 0.7 0.3s0.5-0.1 0.7-0.3l6-6c0.4-0.4 0.4-1 0-1.4z"></path>
     </symbol>         
   </svg>
-  <div id="topmain"></div>  
+  <div id="topmain">  
   <span class="show-width-bubble"></span>
   <span class="show-scrollheight-bubble"></span>
   <span class="screen-width"></span>
@@ -57,22 +57,15 @@
       <li class="scrollnav-item"><a class="scrollnav-link" href="#contact">Contact</a></li>
     </ul>
   </span>
-  <div>
-    <nav id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>  
   <header class="site-header">
-    <p></p>
+    <p class="header-p-spacer"></p>
     <div class="header-logo">
       <h1>Leonardo <span>de Leon</span></h1>
     </div>
-    <div class="row-till-968">
-      <nav class="topnav col8">
+    <!--<div class="row-till-968">-->
+    <!--<div class="row-till-768 force-row">-->
+    <div class="row-till-680 force-row">
+      <nav class="topnav col6">
         <!--<ul class="topnav-list row force-row">-->
           <ul class="topnav-list just-row">
           <li class="topnav-item">
@@ -89,8 +82,14 @@
           </li>
         </ul>
       </nav>
-      <nav class="m-topnav">
-        <span onclick="openNav()">&#9776;</span>
+      <nav class="m-topnav col2">
+        <!--<span onclick="openNav()">&#9776;</span>-->
+        <!--<span class="sidenav-icon">&#9776;</span>-->
+        <div class="sidenav-icon">
+				  <div class="sidenav-icon-bar1"></div>
+				  <div class="sidenav-icon-bar2"></div>
+				  <div class="sidenav-icon-bar3"></div>
+				</div>
       </nav>      
       <form class="searchform col4" action="#!">
         <label class="searchform-label" for="search-form">Search</label>
@@ -109,7 +108,41 @@
       </div>
     </span>
   </header>
-  <section class="about-section container" id="about">
+	<nav id="mySidenav" class="sidenav">
+	  <!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
+	  <!--<a href="javascript:void(0)" class="sidenav-x-icon">&times;</a>-->
+    <header class="sidenav-logo">
+      <h2>Leonardo <span>de Leon</span></h2>
+    </header>
+    <section  class="sidenav-navbar">
+		  <a class="sidenav-menu" href="#about">About</a>
+		  <div class="project-accordion">
+		  	<div class="project-accordion-panel">
+		  		<div class="project-accordion-label" id="Project-accordion-panel1"><p>Projects</p></div>
+		  		<div class="project-accordion-content" id="project-accordion-panel1">
+		  			<a class="sidenav-project-menu" href="#Accordion-panel1">Menu Bars</a>
+		  			<a class="sidenav-project-menu" href="#Accordion-panel2">Image Gallery</a>
+		  			<a class="sidenav-project-menu" href="#Accordion-panel3">Tabs</a>
+		  			<a class="sidenav-project-menu" href="#Accordion-panel4">Accordion</a>
+		  			<a class="sidenav-project-menu" href="#Accordion-panel5">Business Card</a>
+		  			<a class="sidenav-project-menu" href="#Accordion-panel6">UI Framework</a>
+		  			<a class="sidenav-project-menu" href="#Accordion-panel7">Books.MD UI Design</a>
+		  			<a class="sidenav-project-menu" href="#Accordion-panel8">Calculator</a>
+		  			<a class="sidenav-project-menu" href="#Accordion-panel9">Product Listing</a>
+		  			<a class="sidenav-project-menu" href="#Accordion-panel10">Multiple Forms</a>
+		  			<a class="sidenav-project-menu" href="#Accordion-panel11">Profile Card</a>
+		  			<a class="sidenav-project-menu" href="#Accordion-panel12">Multi-Page Website</a>
+		  		</div>
+		  	</div>
+		  </div>
+		  <a class="sidenav-menu" href="#skills">Skills</a>
+		  <a class="sidenav-menu" href="#contact">Contact</a>   	
+    </section>
+    <footer class="sidenav-footer">
+    	<p>© 2018 Leonardo de Leon - All rights reserved.</p>
+    </footer>
+	</nav>    
+  <section class="about-section container" id="about" tabindex="-1">
     <h1 class="section-title">About</h1>
     <h1></h1>
     <blockquote class="font-size-150 centered italized"><q><cite>Absorb what is useful, discard what is not, add what is uniquely your own.</cite></q> - Bruce Lee</blockquote>
@@ -835,7 +868,7 @@
       <p>© 2018 Leonardo de Leon - All rights reserved.</p>
     </div>
   </footer>
-
+  </div>
   <script src="../scripts/mediaQueryEventListener.js"></script>
   <script src="../scripts/calculator/calculator.js"></script>
   <script type="text/javascript">
@@ -874,6 +907,42 @@
         } else {
           document.getElementById("scrollspy-id").style.display = "none";
         }
+
+        /**
+         * shut down sidenav when window screen is greater than 600px 
+         */
+	      if (document.documentElement.clientWidth > 600) {
+	      	/**
+	      	 * if sidenav is still open, then shut it off
+	      	 * after shutting, make sure to unset screen width of 500px
+	      	 * to restore responsive effect of the topmain container
+	      	 */
+	        if (document.getElementById("mySidenav").style.width != "") {
+	        	document.getElementsByClassName("sidenav-icon")[0].classList.toggle("change");
+		        document.getElementById("mySidenav").style.width = "";
+		        document.getElementById("topmain").style.marginLeft = "";
+		        document.getElementById("topmain").style.width = "";  
+		      } else {
+		      	/**
+		      	 * either way unset screen width of 500px
+		      	 */
+		        document.getElementById("topmain").style.width = "";	      	
+		      }
+        } else {
+        	/**
+        	 * here, it's okay to leave sidenav open and keep the container's
+        	 * screen width in check at 500px, so do nothing
+        	 */
+ 	        if (document.getElementById("mySidenav").style.width != "") {
+ 						//do nothing
+		      } else {
+	        	/**
+	        	 * else, if sidenav is shut, then unset screen width of 500px 
+	        	 * to return responsive effect
+	        	 */		      	
+		        document.getElementById("topmain").style.width = "";	      	
+		      }      	
+        }
     }
 
     var screenWidth = document.getElementsByClassName("screen-width")[0];
@@ -896,14 +965,43 @@
       scrollHeight.style.display = "none";
     }
 
-    // mobile sidenav opening and closing function
-    function openNav() {
-        document.getElementById("mySidenav").style.width = "340px";
+    var sideNavIcon = document.getElementsByClassName("sidenav-icon");
+    //var sideNavXIcon = document.getElementsByClassName("sidenav-x-icon");
+
+    sideNavIcon[0].addEventListener("click", toggleSideNav, false);
+    //sideNavXIcon[0].addEventListener("click", closeSideNav, false);
+
+    function toggleSideNav(evt) {
+    	//console.log("toggling side nav");
+    	//console.log("document.getElementById('mySidenav').style.width = "+document.getElementById("mySidenav").style.width);
+    	evt.currentTarget.classList.toggle("change");
+    	if (document.getElementById("mySidenav").style.width === "") {
+    		//console.log("opening side nav");
+        document.getElementById("mySidenav").style.width = "250px";
+        //document.getElementById("mySidenav").style.height = "100%";
+        document.getElementById("topmain").style.marginLeft = "250px";
+        document.getElementById("topmain").style.width = "375px"; 
+        document.getElementById("project-accordion-panel1").style.height = "0";		
+    	} else {
+    		//console.log("closing side nav");
+        document.getElementById("mySidenav").style.width = "";
+        //sdocument.getElementById("mySidenav").style.height = "";
+        document.getElementById("topmain").style.marginLeft = "";
+        //document.getElementById("topmain").style.width = "";  		
+    	}
     }
 
-    function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-    }
+    // mobile sidenav opening and closing function
+    //function openNav() {
+        //document.getElementById("mySidenav").style.width = "340px";        
+        //document.getElementById("mySidenav").style.width = "100%";
+        //document.getElementById("mySidenav").style.height = "100%";
+    //}
+
+    //function closeSideNav() {
+    //    document.getElementById("mySidenav").style.width = "";
+    //    document.getElementById("mySidenav").style.height = "";
+    //}
 
     /**
      * getPosition takes in an element, el, as param and returns
@@ -1161,6 +1259,109 @@
          */
         document.getElementById(evt.currentTarget.id.toLowerCase()).style.height = "0";             
       }
+    }
+
+    /**
+     * Get the CSS class named project-accordion-label
+     */
+    var projectAccordionLabel = document.getElementsByClassName("project-accordion-label");
+
+    /**
+     * add click event on the tab components
+     */
+    for (var i = 0; i < projectAccordionLabel.length; i++) {
+    
+      projectAccordionLabel[i].addEventListener("click", updateProjectAccordionContent, false);
+
+    }
+
+    function updateProjectAccordionContent(evt) {
+
+      //console.log("what class: "+evt.currentTarget.id.toLowerCase());
+      /**
+       * get the current target element and then look up the value of its 
+       * height
+       */
+      var el = document.getElementById(evt.currentTarget.id.toLowerCase());
+      //console.log("el.className = "+el.className);
+      var styleOfContent = window.getComputedStyle(el);
+      //console.log("stylesOfContent = "+styleOfContent);
+      var heightOfContent = styleOfContent.getPropertyValue('height');
+
+      console.log("heigthOfContent = "+heightOfContent);
+
+      /**
+       * by default the height is reduced to 0, however, due to 
+       * added css styling of 2px on padding-top, the actual height of 
+       * the element is 2px 
+       */
+      //if (heightOfContent == "2px") {
+      if (heightOfContent == "0px") {
+        /**
+         * reset all the active CSS class
+         */
+        for (i = 0; i < projectAccordionLabel.length; i++) {
+          projectAccordionLabel[i].className = projectAccordionLabel[i].className.replace(" project-accordion-label--active", "");
+
+          document.getElementById(projectAccordionLabel[i].id.toLowerCase()).style.height = "0";
+        }
+
+        evt.currentTarget.className += " project-accordion-label--active";
+
+        /**
+         * perform a hack to retrieve a specific accordion content id and then reveal its content by increasing its height 
+         */
+        document.getElementById(evt.currentTarget.id.toLowerCase()).style.height = "450px"; 
+        document.getElementById(evt.currentTarget.id.toLowerCase()).style.marginTop = "5px";
+      } else {
+
+        /**
+         * perform a hack to retrieve a specific accordion content id and 
+         * then close it if its already opened
+         */
+        document.getElementById(evt.currentTarget.id.toLowerCase()).style.height = "0";
+        document.getElementById(evt.currentTarget.id.toLowerCase()).style.marginTop = "0";            
+      }
+    }
+
+    /**
+     * Add click event listener on sidenav-menu
+     * When any menu is click sidenav shutdown and bring anchored link into focus
+     */
+    var sideNavMenu = document.getElementsByClassName("sidenav-menu");
+    for (var i = 0; i < sideNavMenu.length; i++) {
+    	sideNavMenu[i].addEventListener("click", shutdownSideNav, false);
+    }
+  
+    /**
+     * Shut down sidenav on sidenav menu click event
+     */
+    function shutdownSideNav() {
+      if (document.getElementById("mySidenav").style.width != "") {
+      	document.getElementsByClassName("sidenav-icon")[0].classList.toggle("change");
+        document.getElementById("mySidenav").style.width = "";
+        document.getElementById("topmain").style.marginLeft = "";
+        //document.getElementById("topmain").style.width = "";  
+      }	
+    }
+
+    /**
+     * Add click event listener on sidenav-project-menu
+     */
+    var sideNavProjMenu = document.getElementsByClassName("sidenav-project-menu");
+    for (var i = 0; i < sideNavProjMenu.length; i++) {
+    	sideNavProjMenu[i].addEventListener("click", shutdownSideNavProjMenu, false);
+    }
+    /**
+     * Shut down sidenav on sidenav project menu click event
+     */
+    function shutdownSideNavProjMenu() {
+      if (document.getElementById("mySidenav").style.width != "") {
+      	document.getElementsByClassName("sidenav-icon")[0].classList.toggle("change");
+        document.getElementById("mySidenav").style.width = "";
+        document.getElementById("topmain").style.marginLeft = "";
+    //    document.getElementById("topmain").style.width = "";  
+      }	
     }
 
 
