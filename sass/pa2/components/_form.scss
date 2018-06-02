@@ -4,7 +4,8 @@
 .searchform {
 	position: relative;
 	//@include border2-solid($white);
-	width: 310px;
+	//width: 310px;
+	width: 250px;
 	height: 80px;
 	padding-top: 23px;
 	padding-bottom: 15px;
@@ -16,9 +17,11 @@
 		//@include border2-solid($lighter-grey);
 		color: $lighter-grey;
 		fill: currentColor;
-		padding: 0.5em;
+		//padding: 0.25em 0 0 1em;
+		padding: 0.25em 1.15em 0.125em 0.25em;
 		margin: 0;
 		text-decoration: none;
+		position: relative;
 
 		&:hover {
 			//@include border2-solid($light-yellow-orange);
@@ -28,6 +31,7 @@
 			@include size-medium;
 			vertical-align: middle;
 			position: absolute;
+			left: 0;
 
 			&:hover {
 				color: $light-yellow-orange;
@@ -50,6 +54,7 @@
 	border: 0;
 	background-color: $dull-black;
 	@include border2-bottom-solid($lighter-grey);
+	width: 200px;
 	height: 32px;
 	//line-height: 1;
 	font-size: 100%;

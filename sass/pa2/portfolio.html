@@ -91,7 +91,7 @@
 				  <div class="sidenav-icon-bar3"></div>
 				</div>
       </nav>      
-      <form class="searchform col4" action="#!">
+      <form class="searchform col3" action="#!">
         <label class="searchform-label" for="search-form">Search</label>
         <input class="searchform-input" type="search" name="search-form" id="search-form">
         <a href="#!" class="searchform-open-modal">
@@ -987,7 +987,7 @@
         document.getElementById("mySidenav").style.width = "";
         //sdocument.getElementById("mySidenav").style.height = "";
         document.getElementById("topmain").style.marginLeft = "";
-        //document.getElementById("topmain").style.width = "";  		
+        document.getElementById("topmain").style.width = "";  		
     	}
     }
 
@@ -1311,7 +1311,7 @@
         /**
          * perform a hack to retrieve a specific accordion content id and then reveal its content by increasing its height 
          */
-        document.getElementById(evt.currentTarget.id.toLowerCase()).style.height = "450px"; 
+        document.getElementById(evt.currentTarget.id.toLowerCase()).style.height = "auto "; 
         document.getElementById(evt.currentTarget.id.toLowerCase()).style.marginTop = "5px";
       } else {
 
