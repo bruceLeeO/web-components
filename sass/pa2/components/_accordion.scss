@@ -10,6 +10,7 @@
 	background-color: $white;
 	margin: auto;
 	margin-top: 0.25em;
+	display: none;
 }
 
 .accordion-panel {
@@ -38,4 +39,146 @@
 	overflow: hidden;
 	background-color: silver;
 	//padding: 0.25em;
+}
+
+@media screen and (max-width: 700px) {	
+	.accordion { display: block; }
+}
+
+.accordion-content--carousel-section {
+  position: relative;
+  //border: 5px solid green;
+  overflow: hidden;
+  width: 100%;
+  //height: 77%;
+  height: auto;
+  //height: 100%;
+}
+.accordion-content--desc-section {
+  position: relative;
+  //border: 5px solid red;
+}
+.accordion-content-title {
+  margin: 5px 5px;
+  line-height: 1.25;
+  //border: 1px solid;
+  font-size: 80%;
+}
+
+.accordion-content-desc {
+  margin: 5px 5px;
+  font-size: 65%;
+  line-height: 1.25;
+  //border: 1px solid;
+}
+
+.accordion-content-p-spacer {
+	line-height: 0.5;
+	border: 1px solid transparent;
+	margin: 6px;
+}
+
+.accordion-content-list {
+  list-style: none;
+  margin: 0;
+  margin-bottom: 5px;
+  //margin: 5px 5px;
+  font-size: 65%;
+  //line-height: 1.25;
+  //border: 1px solid green;
+}
+
+.accordion-content-item {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.accordion-content-item-inline {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  //border: 1px solid violet;
+  //list-style: none;
+}
+
+.accordion-content-link {
+  margin: 0 0 0 5px;
+  //padding: 0 30px 0 0;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  //border: 1px solid green;
+  z-index: 3;
+
+  &:hover {
+  	text-decoration: underline;
+  	color: black;
+
+  	span {
+  		background-color: black;
+    	border-color: black;
+    	//text-decoration: hidden;
+
+    	svg {
+	      	color: silver;
+	      	border-color: silver;
+	      	fill: currentColor;
+	      	//text-decoration: none;
+      }
+  	}
+  }
+  span {
+    margin: 0;
+    padding:0;
+    border-radius: 50px;
+    //padding: 10px 1px 5px 0.5px;
+    //padding: 8px 0.25px 10px 0.01px;
+    //padding-top: 5px;
+    padding: 8px 0 11px 0;
+    border: 1px solid silver;
+    margin-right: 5px;
+    //&:hover {
+    //	background-color: black;
+    //	border-color: black;
+    //}
+    svg {
+      margin: 0;
+      margin-left: 4px;
+      //margin-bottom: 3px;
+      vertical-align: middle;
+      @include size-large;
+      border: 1px solid black;
+      border-radius: 50px;
+      //padding: 0 1px 0.25px 0.5px;
+      //padding: 0 1.25px 0.1px 0.65px;
+      padding: 2px 4px 0 3px;
+      //padding-top: 1px;
+      //padding: 1px;
+
+      //&:hover {
+      //	color: silver;
+      //	border-color: silver;
+      //	fill: currentColor;
+      //}
+    }
+  }
+}
+
+.build-accordion-carousel-content {
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  //border: 5px solid pink;
+  vertical-align: middle;
+  height: auto;
+}
+
+@media screen and (max-width: 360px) {	
+
+	//.accordion-content-title { font-size: 85%; }
+
+	.accordion-content-desc { font-size: 50%; }
+
+	.accordion-content-list { font-size: 50%; }
 }

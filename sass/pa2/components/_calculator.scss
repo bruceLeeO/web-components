@@ -120,3 +120,27 @@
 		font-size: 20px;
 	}
 }
+
+@media (max-width: 500px) {
+	.calculator-button {
+	//	padding: 4px;
+		font-size: 18px;
+	}
+	.calculator-title {
+		font-size: 24px;
+		line-height: 1.5;
+		letter-spacing: 13px;
+	}
+	.calculator {
+		max-width: 320px;
+		height: 368px;
+		padding: 0.75em;
+	}
+	.calculator-panel span small { 
+		font-size: 60%; 
+	}
+	.calculator-form-input { 
+		font-size: 16px;
+		line-height: 1.5;
+	}
+}

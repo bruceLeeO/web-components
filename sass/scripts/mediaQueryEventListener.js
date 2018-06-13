@@ -5,12 +5,37 @@
 	window.addEventListener('resize', go2);
 
 	function go2() {
+
+	/**
+	 * scale it down to .75 when below 500px width
+	 */
+	//if (document.documentElement.clientWidth < 500) {
+	//	console.log("document.documentElement.clientWidth < 500 "+document.documentElement.clientWidth);
+	//	document.getElementsByClassName("carousel-3d-8")[0].style.maxWidth = "300px";
+	//	document.getElementsByClassName("carousel-3d-8")[0].style.height = "200px"
+	//}
+
     /**
-     * load or append the calculator component and rgbcolor carousel component to the accordion component
+     * load or append the carousel component to the accordion component
      */
     if (document.documentElement.clientWidth < 700) {
 
-      console.log("document.documentElement.clientWidth = "+document.documentElement.clientWidth);
+    	//if (document.documentElement.clientWidth > 650) {
+    		//document.getElementsByClassName("carousel-3d-1")[0].style.transform = "scale(1)";
+    		//document.getElementsByClassName("carousel-3d-2")[0].style.transform = "scale(1)";
+    		//document.getElementsByClassName("carousel-3d-3")[0].style.transform = "scale(1)";
+    		//document.getElementsByClassName("carousel-3d-4")[0].style.transform = "scale(1)";
+    		//document.getElementsByClassName("carousel-3d-5")[0].style.transform = "scale(1)";
+    		//document.getElementsByClassName("carousel-3d-6")[0].style.transform = "scale(1)";
+    		//document.getElementsByClassName("carousel-3d-7")[0].style.transform = "scale(1)";
+    		//document.getElementsByClassName("carousel-3d-8")[0].style.transform = "scale(1)";
+    		//document.getElementsByClassName("carousel-3d-9")[0].style.transform = "scale(1)";
+    		//document.getElementsByClassName("carousel-3d-10")[0].style.transform = "scale(1)";
+    		//document.getElementsByClassName("carousel-3d-11")[0].style.transform = "scale(1)";
+    		//document.getElementsByClassName("carousel-3d-12")[0].style.transform = "scale(1)";    		   		   		    		
+    	//}
+
+      //console.log("document.documentElement.clientWidth = "+document.documentElement.clientWidth);
 
       if (document.getElementById("calculator-id") != null) {  
 
@@ -43,7 +68,7 @@
      */
     if (document.documentElement.clientWidth > 700) {
 
-    	console.log("document.documentElement.clientWidth = "+document.documentElement.clientWidth);
+    	//console.log("document.documentElement.clientWidth = "+document.documentElement.clientWidth);
 
       if (document.getElementById("calculator-id") != null) {
 
@@ -152,9 +177,15 @@
 		                <span class="carousel-3d-8-item--indicator" id="c-3d-8-item-3"></span>\
 		                <span class="carousel-3d-8-item--indicator" id="c-3d-8-item-4"></span>\
 		                <span class="carousel-3d-8-item--next">\
-		                  <svg class="form-icon-small"><use xlink:href="#icon-chevron-right"></use></svg>\
+		                  <svg class="tab-next-chevron form-icon-small"><use xlink:href="#icon-chevron-right"></use></svg>\
 		                </span>\
 		                <span class="carousel-3d-8-item--prev">\
+		                  <svg class="form-icon-small"><use xlink:href="#icon-chevron-left"></use></svg>\
+		                </span>\
+		                <span class="carousel-3d-8-item--next-a">\
+		                  <svg class="tab-next-chevron form-icon-small"><use xlink:href="#icon-chevron-right"></use></svg>\
+		                </span>\
+		                <span class="carousel-3d-8-item--prev-a">\
 		                  <svg class="form-icon-small"><use xlink:href="#icon-chevron-left"></use></svg>\
 		                </span>\
 		              </div>';
