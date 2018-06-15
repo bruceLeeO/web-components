@@ -20,23 +20,37 @@
      */
     if (document.documentElement.clientWidth < 700) {
 
-    	//if (document.documentElement.clientWidth > 650) {
-    		//document.getElementsByClassName("carousel-3d-1")[0].style.transform = "scale(1)";
-    		//document.getElementsByClassName("carousel-3d-2")[0].style.transform = "scale(1)";
-    		//document.getElementsByClassName("carousel-3d-3")[0].style.transform = "scale(1)";
-    		//document.getElementsByClassName("carousel-3d-4")[0].style.transform = "scale(1)";
-    		//document.getElementsByClassName("carousel-3d-5")[0].style.transform = "scale(1)";
-    		//document.getElementsByClassName("carousel-3d-6")[0].style.transform = "scale(1)";
-    		//document.getElementsByClassName("carousel-3d-7")[0].style.transform = "scale(1)";
-    		//document.getElementsByClassName("carousel-3d-8")[0].style.transform = "scale(1)";
-    		//document.getElementsByClassName("carousel-3d-9")[0].style.transform = "scale(1)";
-    		//document.getElementsByClassName("carousel-3d-10")[0].style.transform = "scale(1)";
-    		//document.getElementsByClassName("carousel-3d-11")[0].style.transform = "scale(1)";
-    		//document.getElementsByClassName("carousel-3d-12")[0].style.transform = "scale(1)";    		   		   		    		
-    	//}
-
       //console.log("document.documentElement.clientWidth = "+document.documentElement.clientWidth);
 
+      /**
+       * build or load the menu carousel component
+       */
+      if (document.getElementById("menu-id") != null) {  
+
+        var mi = document.getElementById("menu-id");  
+        var am = document.getElementById("accordion-menu");  
+
+        /**
+         *  since menu components already exist, append it to accordion components
+         */
+        am.appendChild(mi);  
+
+      } else {
+
+        /**
+         * build the menu component when browser fires up
+         */
+        var menuComponent = buildMenuComponent();
+        
+        /**
+         * load the menu component on the accordion component 
+         */   
+        document.getElementById("accordion-menu").appendChild(menuComponent);      
+                
+      }
+      /**
+       * build or load the calculator carousel component
+       */
       if (document.getElementById("calculator-id") != null) {  
 
         var ci = document.getElementById("calculator-id");  
@@ -70,6 +84,36 @@
 
     	//console.log("document.documentElement.clientWidth = "+document.documentElement.clientWidth);
 
+    	/**
+    	 * build or load the menu carousel components
+    	 */
+      if (document.getElementById("menu-id") != null) {
+
+        var mi = document.getElementById("menu-id");
+        var tm = document.getElementById("tab-menu");
+
+        /**
+         *  since menu components already exist, append it to tab components
+         */        
+        tm.appendChild(mi);       
+
+      } else {
+
+        /**
+         * build the menu component when browser fires up
+         */
+        var menuComponent = buildMenuComponent();
+
+        /**
+         * load the menu component on the tab component
+         */   
+        document.getElementById("tab-menu").appendChild(menuComponent);
+                  
+      }
+
+    	/**
+    	 * build or load the calculator carousel components
+    	 */
       if (document.getElementById("calculator-id") != null) {
 
         var ci = document.getElementById("calculator-id");
@@ -92,11 +136,70 @@
          */   
         document.getElementById("tab-calculator").appendChild(calculatorComponent);
                   
-      }
+      }      
 
     }
 
 	}
+
+  function buildMenuComponent() {
+    var cal = document.createElement("div");
+    cal.className = "carousel-3d-1";
+    cal.id = "menu-id";
+    cal.innerHTML ='<div class="carousel-3d-1-axis">\
+                      <div class="carousel-3d-1-item f1-of-3d-1">\
+                        <div class="carousel-3d-1-content">\
+                          <div>\
+                            <img width="375" height="200" src="../img/pa2/drop-down-menu/drop-down-menu.jpg" alt="Drop-down Menu">\
+                          </div>\
+                        </div>\
+                      </div>\
+                      <div class="carousel-3d-1-item f2-of-3d-1">\
+                        <div class="carousel-3d-1-content">\
+                          <div>\
+                            <video width="375" height="280" controls autoplay loop>\
+                              <source src="../img/pa2/drop-down-menu/drop-down-menu.mp4">\
+                            </video>\
+                          </div>\
+                        </div>\
+                      </div>\
+                      <div class="carousel-3d-1-item f3-of-3d-1">\
+                        <div class="carousel-3d-1-content">\
+                          <div>\
+                            <img width="375" height="200" src="../img/pa2/flipnav/flipnav.jpg" alt="Flipnav Menu">\
+                          </div>\
+                        </div>\
+                      </div>\
+                      <div class="carousel-3d-1-item f4-of-3d-1">\
+                        <div class="carousel-3d-1-content">\
+                          <div>\
+                            <video width="375" height="280" controls autoplay loop>\
+                              <source src="../img/pa2/flipnav/flipnav.mp4">\
+                            </video>\
+                          </div>\
+                        </div>\
+                      </div>\
+                    </div>\
+                    <span class="carousel-3d-1-item--indicator itemsIn3d-1--active" id="c-3d-1-item-1"></span>\
+                    <span class="carousel-3d-1-item--indicator" id="c-3d-1-item-2"></span>\
+                    <span class="carousel-3d-1-item--indicator" id="c-3d-1-item-3"></span>\
+                    <span class="carousel-3d-1-item--indicator" id="c-3d-1-item-4"></span>\
+                    <span class="carousel-3d-1-item--next">\
+                      <svg class="tab-next-chevron form-icon-small"><use xlink:href="#icon-chevron-right"></use></svg>\
+                    </span>\
+                    <span class="carousel-3d-1-item--prev">\
+                      <svg class="form-icon-small"><use xlink:href="#icon-chevron-left"></use></svg>\
+                    </span>\
+                    <span class="carousel-3d-1-item--next-a">\
+                      <svg class="tab-next-chevron form-icon-small"><use xlink:href="#icon-chevron-right"></use></svg>\
+                    </span>\
+                    <span class="carousel-3d-1-item--prev-a">\
+                      <svg class="form-icon-small"><use xlink:href="#icon-chevron-left"></use></svg>\
+                    </span>\
+                  </div>';
+
+    return cal;    
+  }
 
   function buildCalculatorComponent() {
     var cal = document.createElement("div");
