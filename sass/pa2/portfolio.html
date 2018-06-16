@@ -199,7 +199,7 @@
             <p  class="tab-content-p-spacer"></p>
             <ul class="tab-content-list">
               <li class="tab-content-item-inline">
-                <a class="tab-content-link" href="https://bruceleeo.github.io/webcomponents/ui/nonjs-ui/drop-down-menu/drop-down-menu.html" target="_blank">
+                <a class="tab-content-link" href="https://bruceleeo.github.io/webcomponents/ui/nonjs-ui/drop-down-menu/drop-down-menu-nonjs-ui.html" target="_blank">
                   <span>
                     <svg class="tab-social-icon"><use xlink:href="#icon-external-link"></use></svg>   
                   </span>                	
@@ -207,7 +207,7 @@
               	</a>
               </li>
               <li class="tab-content-item-inline">
-                <a class="tab-content-link" href="https://github.com/bruceLeeO/webcomponents/blob/master/ui/nonjs-ui/drop-down-menu/drop-down-menu.html" target="_blank">
+                <a class="tab-content-link" href="https://github.com/bruceLeeO/webcomponents/blob/master/ui/nonjs-ui/drop-down-menu/drop-down-menu-nonjs-ui.html" target="_blank">
                   <span>
                     <svg class="tab-social-icon"><use xlink:href="#icon-github"></use></svg>   
                   </span>
@@ -226,11 +226,11 @@
           <section class="tab-content--desc-section">
             <h3 class="tab-content-title">Technologies: HTML5, CSS3 & Sass</h3>
             <p  class="tab-content-p-spacer"></p>            
-            <p class="tab-content-desc">A simple drop-down menu, all done with HTML5, CSS3 and Sass.</p>
+            <p class="tab-content-desc">A thumbnail gallery, built with HTML5, CSS3 and Sass.</p>
             <p  class="tab-content-p-spacer"></p>
             <ul class="tab-content-list">
               <li class="tab-content-item-inline">
-                <a class="tab-content-link" href="https://bruceleeo.github.io/webcomponents/ui/nonjs-ui/image-gallery/image-gallery.html" target="_blank">
+                <a class="tab-content-link" href="https://bruceleeo.github.io/webcomponents/ui/nonjs-ui/image-gallery/image-gallery-nonjs-ui.html" target="_blank">
                   <span>
                     <svg class="tab-social-icon"><use xlink:href="#icon-external-link"></use></svg>   
                   </span>                	
@@ -238,7 +238,7 @@
               	</a>
               </li>
               <li class="tab-content-item-inline">
-                <a class="tab-content-link" href="https://github.com/bruceLeeO/webcomponents/blob/master/ui/nonjs-ui/image-gallery/image-gallery.html" target="_blank">
+                <a class="tab-content-link" href="https://github.com/bruceLeeO/webcomponents/blob/master/ui/nonjs-ui/image-gallery/image-gallery-nonjs-ui.html" target="_blank">
                   <span>
                     <svg class="tab-social-icon"><use xlink:href="#icon-github"></use></svg>   
                   </span>
@@ -589,8 +589,36 @@
         </div>        
       </div>  
       <div class="accordion-panel">
-        <div class="accordion-label" id="Accordion-panel2">Accordion Panel 2</div>
-        <div class="accordion-content" id="accordion-panel2">Accordion Content 2</div>        
+        <div class="accordion-label" id="Accordion-panel2">Image Gallery</div>
+        <div class="accordion-content" id="accordion-panel2">
+          <section class="accordion-content--carousel-section"> 
+            <div class="build-accordion-carousel-content" id="accordion-image-gallery"></div>
+          </section>          
+          <section class="accordion-content--desc-section">
+            <h3 class="accordion-content-title">Technologies: HTML5, CSS3, & Sass</h3>
+            <p class="accordion-content-p-spacer"></p>
+            <p class="accordion-content-desc">A thumbnail gallery, built with HTML5, CSS3 and Sass.</p>
+            <p class="accordion-content-p-spacer"></p>
+            <ul class="accordion-content-list">
+              <li class="accordion-content-item-inline">
+                <a class="accordion-content-link" href="https://bruceleeo.github.io/webcomponents/ui/nonjs-ui/image-gallery/image-gallery.html" target="_blank">
+                  <span>
+                    <svg class="accordion-social-icon"><use xlink:href="#icon-external-link"></use></svg>   
+                  </span>                 
+                  View Demo
+                </a>
+              </li>
+              <li class="accordion-content-item-inline">
+                <a class="accordion-content-link" href="https://bruceleeo.github.io/webcomponents/ui/nonjs-ui/image-gallery/image-gallery.html" target="_blank">
+                  <span>
+                    <svg class="accordion-social-icon"><use xlink:href="#icon-github"></use></svg>   
+                  </span>
+                  View Source on Github
+                </a>
+              </li>
+            </ul>
+          </section>               
+        </div>        
       </div>  
       <div class="accordion-panel">
         <div class="accordion-label" id="Accordion-panel3">Accordion Panel 3</div>
@@ -613,7 +641,7 @@
         <div class="accordion-content" id="accordion-panel7">Accordion Content 7</div>        
       </div>  
       <div class="accordion-panel">
-        <div class="accordion-label" id="Accordion-panel8">Accordion Panel 8</div>
+        <div class="accordion-label" id="Accordion-panel8">Real Calculator</div>
         <div class="accordion-content" id="accordion-panel8">
           <section class="accordion-content--carousel-section"> 
             <div class="build-accordion-carousel-content" id="accordion-calculator"></div>
@@ -880,6 +908,7 @@
   <script src="../scripts/mediaQueryEventListener.js"></script>
   <script src="../scripts/calculator/calculator.js"></script>
   <script src="../scripts/carousel-3d-1.js"></script>
+  <script src="../scripts/carousel-3d-2.js"></script>
   <script src="../scripts/carousel-3d-8.js"></script>
   <script type="text/javascript">
 
@@ -1456,44 +1485,6 @@
       console.log("rotate card after....");
     }
   
-/** carousel 3d-2 *//*
-    var nex2 = document.getElementsByClassName("carousel-3d-2-item--next");
-    var pre2 = document.getElementsByClassName("carousel-3d-2-item--prev");
-    var currdeg2 = 0;
-    nex2[0].onclick = function(evt) {
-
-      //document.getElementsByClassName("carousel-3d-2-axis")[0].style.transform = "scale(1)";
-      currdeg2 -= 90; console.log("currdeg: "+currdeg2);
-      document.getElementsByClassName("carousel-3d-2-axis")[0].style.transform = "rotateY("+currdeg2+"deg)";
-      //document.getElementsByClassName("carousel-3d-2-axis")[0].style.transform = "rotateY("+currdeg2+"deg) scale(2)";
-      document.getElementsByClassName("carousel-3d-2")[0].style.transform = "scale(1.75)";
-    }
-
-    pre2[0].onclick = function(evt) {
-      console.log("p is clicked");
-      //document.getElementsByClassName("carousel-3d-2-axis")[0].style.transform = "scale(1)";
-      currdeg2 = currdeg2 + 90; //console.log("currdeg: "+currdeg2);
-      document.getElementsByClassName("carousel-3d-2-axis")[0].style.transform = "rotateY("+currdeg2+"deg)";
-      //document.getElementsByClassName("carousel-3d-2-axis")[0].style.transform = "rotateY("+currdeg2+"deg) scale(2)";
-      document.getElementsByClassName("carousel-3d-2")[0].style.transform = "scale(1.75)";
-    }
-
-    document.getElementsByClassName("carousel-3d-2-item")[0].onclick = function(evt) {
-      document.getElementsByClassName("carousel-3d-2")[0].style.transform = "scale(1)";
-    }
-
-    document.getElementsByClassName("carousel-3d-2-item")[1].onclick = function(evt) {
-      document.getElementsByClassName("carousel-3d-2")[0].style.transform = "scale(1)";
-    }
-
-    document.getElementsByClassName("carousel-3d-2-item")[2].onclick = function(evt) {
-      document.getElementsByClassName("carousel-3d-2")[0].style.transform = "scale(1)";
-    }
-
-    document.getElementsByClassName("carousel-3d-2-item")[3].onclick = function(evt) {
-      document.getElementsByClassName("carousel-3d-2")[0].style.transform = "scale(1)";
-    }       
-*/
 /** carousel 3d-3 *//*
     var nex3 = document.getElementsByClassName("carousel-3d-3-item--next");
     var pre3 = document.getElementsByClassName("carousel-3d-3-item--prev");

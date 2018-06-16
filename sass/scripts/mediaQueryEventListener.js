@@ -48,6 +48,34 @@
         document.getElementById("accordion-menu").appendChild(menuComponent);      
                 
       }
+
+      /**
+       * build or load the image-gallery carousel component
+       */
+      if (document.getElementById("image-gallery-id") != null) {  
+
+        var igi = document.getElementById("image-gallery-id");  
+        var aig = document.getElementById("accordion-image-gallery");  
+
+        /**
+         *  since image-gallery components already exist, append it to accordion components
+         */
+        aig.appendChild(igi);  
+
+      } else {
+
+        /**
+         * build the image-gallery component when browser fires up
+         */
+        var imageGalleryComponent = buildImageGalleryComponent();
+        
+        /**
+         * load the image-gallery component on the accordion component 
+         */   
+        document.getElementById("accordion-image-gallery").appendChild(imageGalleryComponent);      
+                
+      }
+
       /**
        * build or load the calculator carousel component
        */
@@ -108,6 +136,33 @@
          * load the menu component on the tab component
          */   
         document.getElementById("tab-menu").appendChild(menuComponent);
+                  
+      }
+
+      /**
+       * build or load the image-gallery carousel components
+       */
+      if (document.getElementById("image-gallery-id") != null) {
+
+        var igi = document.getElementById("image-gallery-id");
+        var tig = document.getElementById("tab-image-gallery");
+
+        /**
+         *  since image-gallery components already exist, append it to tab components
+         */        
+        tig.appendChild(igi);       
+
+      } else {
+
+        /**
+         * build the image-gallery component when browser fires up
+         */
+        var imageGalleryComponent = buildImageGalleryComponent();
+
+        /**
+         * load the image-gallery component on the tab component
+         */   
+        document.getElementById("tab-image-gallery").appendChild(imageGalleryComponent);
                   
       }
 
@@ -194,6 +249,65 @@
                       <svg class="tab-next-chevron form-icon-small"><use xlink:href="#icon-chevron-right"></use></svg>\
                     </span>\
                     <span class="carousel-3d-1-item--prev-a">\
+                      <svg class="form-icon-small"><use xlink:href="#icon-chevron-left"></use></svg>\
+                    </span>\
+                  </div>';
+
+    return cal;    
+  }
+
+  function buildImageGalleryComponent() {
+    var cal = document.createElement("div");
+    cal.className = "carousel-3d-2";
+    cal.id = "image-gallery-id";
+    cal.innerHTML ='<div class="carousel-3d-2-axis">\
+                      <div class="carousel-3d-2-item f1-of-3d-2">\
+                        <div class="carousel-3d-2-content">\
+                          <div>\
+                            <img width="375" height="200" src="../img/pa2/image-gallery/image-gallery-nonjs.jpg" alt="Non JS Image Gallery">\
+                          </div>\
+                        </div>\
+                      </div>\
+                      <div class="carousel-3d-2-item f2-of-3d-2">\
+                        <div class="carousel-3d-2-content">\
+                          <div>\
+                            <video width="375" height="280" controls autoplay loop>\
+                              <source src="../img/pa2/image-gallery/image-gallery-nonjs.mp4">\
+                            </video>\
+                          </div>\
+                        </div>\
+                      </div>\
+                      <div class="carousel-3d-2-item f3-of-3d-2">\
+                        <div class="carousel-3d-2-content">\
+                          <div>\
+                            <img width="375" height="200" src="../img/pa2/image-gallery/image-gallery.jpg" alt="Image Gallery JS">\
+                          </div>\
+                        </div>\
+                      </div>\
+                      <div class="carousel-3d-2-item f4-of-3d-2">\
+                        <div class="carousel-3d-2-content">\
+                          <div>\
+                            <video width="375" height="280" controls autoplay loop>\
+                              <source src="../img/pa2/image-gallery/image-gallery.mp4">\
+                            </video>\
+                          </div>\
+                        </div>\
+                      </div>\
+                    </div>\
+                    <span class="carousel-3d-2-item--indicator itemsIn3d-2--active" id="c-3d-2-item-1"></span>\
+                    <span class="carousel-3d-2-item--indicator" id="c-3d-2-item-2"></span>\
+                    <span class="carousel-3d-2-item--indicator" id="c-3d-2-item-3"></span>\
+                    <span class="carousel-3d-2-item--indicator" id="c-3d-2-item-4"></span>\
+                    <span class="carousel-3d-2-item--next">\
+                      <svg class="tab-next-chevron form-icon-small"><use xlink:href="#icon-chevron-right"></use></svg>\
+                    </span>\
+                    <span class="carousel-3d-2-item--prev">\
+                      <svg class="form-icon-small"><use xlink:href="#icon-chevron-left"></use></svg>\
+                    </span>\
+                    <span class="carousel-3d-2-item--next-a">\
+                      <svg class="tab-next-chevron form-icon-small"><use xlink:href="#icon-chevron-right"></use></svg>\
+                    </span>\
+                    <span class="carousel-3d-2-item--prev-a">\
                       <svg class="form-icon-small"><use xlink:href="#icon-chevron-left"></use></svg>\
                     </span>\
                   </div>';
