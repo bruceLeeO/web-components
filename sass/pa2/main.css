@@ -2230,13 +2230,11 @@ blockquote {
 .carousel-3d-3 {
   position: relative;
   margin: auto;
-  top: 28.75%;
+  top: 22%;
   max-width: 375px;
   height: 275px;
   perspective: 1300px;
-  border: 4px solid pink;
   border-radius: 0.25em;
-  display: none;
 }
 
 .carousel-3d-3-axis {
@@ -2245,7 +2243,6 @@ blockquote {
   height: 100%;
   transform-style: preserve-3d;
   transition: 1s;
-  background-color: lime;
 }
 
 .carousel-3d-3-item {
@@ -2255,9 +2252,16 @@ blockquote {
   display: block;
   cursor: pointer;
 }
-.carousel-3d-3-item img {
-  width: 35vw;
-  height: 18vw;
+.carousel-3d-3-item div {
+  width: 100%;
+}
+.carousel-3d-3-item div img {
+  width: 100%;
+  height: auto;
+}
+.carousel-3d-3-item div video {
+  width: 100%;
+  height: auto;
 }
 
 .f1-of-3d-3 {
@@ -2281,70 +2285,162 @@ blockquote {
 }
 
 .carousel-3d-3-item--indicator {
-  border: 1px solid crimson;
-  border-radius: 50px;
-  padding: 0 0.55em 0 0.55em;
-  margin-right: 0.25em;
   position: absolute;
+  border: 1px solid #ededed;
+  border-radius: 50px;
+  background-color: #34383c;
+  margin-right: 0.25em;
+  width: 0.5em;
+  height: 0.5em;
+  z-index: 1;
+  cursor: pointer;
+}
+.carousel-3d-3-item--indicator:hover {
+  background-color: orange;
+  border-color: silver;
 }
 .carousel-3d-3-item--indicator:first-of-type {
-  top: 275px;
-  left: 110px;
+  top: 285px;
+  left: 123px;
 }
 .carousel-3d-3-item--indicator:nth-of-type(2) {
-  top: 275px;
-  left: 150px;
+  top: 285px;
+  left: 163px;
 }
 .carousel-3d-3-item--indicator:nth-of-type(3) {
-  top: 275px;
-  left: 190px;
+  top: 285px;
+  left: 203px;
 }
 .carousel-3d-3-item--indicator:nth-of-type(4) {
-  top: 275px;
-  left: 230px;
+  top: 285px;
+  left: 243px;
 }
 
-.carousel-3d-3-item--next {
-  padding: 0;
+.carousel-3d-3-item--next, .carousel-3d-3-item--next-a {
   margin: 0;
   cursor: pointer;
   position: absolute;
   top: 125px;
-  left: 363px;
-  vertical-align: middle;
+  left: 346px;
+  padding: 6.25px 9.25px 0 9.25px;
+  border-radius: 50px;
+  background-color: yellow;
+  opacity: 0.5;
 }
-.carousel-3d-3-item--next svg {
-  padding: 0;
-  vertical-align: middle;
+.carousel-3d-3-item--next svg, .carousel-3d-3-item--next-a svg {
+  padding: 1px;
   margin: 0;
   border: 1px solid;
   border-radius: 50px;
 }
+.carousel-3d-3-item--next:hover, .carousel-3d-3-item--next-a:hover {
+  background-color: black;
+  opacity: 1;
+}
+.carousel-3d-3-item--next:hover svg, .carousel-3d-3-item--next-a:hover svg {
+  color: yellow;
+  fill: currentColor;
+}
 
-.carousel-3d-3-item--prev {
-  padding: 0;
+.carousel-3d-3-item--prev, .carousel-3d-3-item--prev-a {
+  padding: 6.25px 9px 0 9.25px;
+  border-radius: 50px;
   margin: 0;
   cursor: pointer;
   position: absolute;
   top: 125px;
-  left: -18px;
+  left: -12px;
+  background-color: yellow;
+  opacity: 0.5;
 }
-.carousel-3d-3-item--prev svg {
-  padding: 0;
+.carousel-3d-3-item--prev svg, .carousel-3d-3-item--prev-a svg {
+  padding: 1px;
   border: 1px solid;
   border-radius: 50px;
+}
+.carousel-3d-3-item--prev:hover, .carousel-3d-3-item--prev-a:hover {
+  background-color: black;
+  opacity: 1;
+}
+.carousel-3d-3-item--prev:hover svg, .carousel-3d-3-item--prev-a:hover svg {
+  color: yellow;
+  fill: currentColor;
+}
+
+.carousel-3d-3-item--next-a, .carousel-3d-3-item--prev-a {
+  display: none;
 }
 
 .carousel-3d-3-content {
   position: absolute;
-  border: 1px solid;
-  top: 0;
   width: 100%;
   height: 100%;
-  border: 5px solid green;
+  border: 2px solid #e1332d;
   overflow: hidden;
 }
+.carousel-3d-3-content img {
+  width: 100%;
+}
 
+.itemsIn3d-3--active {
+  border-color: #34383c;
+  background-color: #ededed;
+}
+
+@media screen and (max-width: 700px) {
+  .carousel-3d-3-item--next, .carousel-3d-3-item--prev {
+    display: none;
+  }
+
+  .carousel-3d-3-item--next-a, .carousel-3d-3-item--prev-a {
+    display: block;
+  }
+}
+@media screen and (max-width: 500px) {
+  .carousel-3d-3 {
+    max-width: 300px;
+    height: 245px;
+  }
+
+  .carousel-3d-3-item div {
+    width: 100%;
+  }
+  .carousel-3d-3-item div img {
+    width: 100%;
+    height: auto;
+  }
+  .carousel-3d-3-item div video {
+    width: 100%;
+    height: auto;
+  }
+
+  .carousel-3d-3-item--prev-a {
+    top: 100px;
+    left: -4px;
+  }
+
+  .carousel-3d-3-item--next-a {
+    top: 100px;
+    left: 260px;
+  }
+
+  .carousel-3d-3-item--indicator:first-of-type {
+    top: 245px;
+    left: 83px;
+  }
+  .carousel-3d-3-item--indicator:nth-of-type(2) {
+    top: 245px;
+    left: 123px;
+  }
+  .carousel-3d-3-item--indicator:nth-of-type(3) {
+    top: 245px;
+    left: 163px;
+  }
+  .carousel-3d-3-item--indicator:nth-of-type(4) {
+    top: 245px;
+    left: 203px;
+  }
+}
 .carousel-3d-4 {
   position: relative;
   margin: auto;
@@ -2353,7 +2449,6 @@ blockquote {
   height: 275px;
   perspective: 1300px;
   border-radius: 0.25em;
-  display: none;
 }
 
 .carousel-3d-4-axis {
@@ -2371,8 +2466,15 @@ blockquote {
   display: block;
   cursor: pointer;
 }
-.carousel-3d-4-item img {
-  width: 100;
+.carousel-3d-4-item div {
+  width: 100%;
+}
+.carousel-3d-4-item div img {
+  width: 100%;
+  height: auto;
+}
+.carousel-3d-4-item div video {
+  width: 100%;
   height: auto;
 }
 
@@ -2397,10 +2499,11 @@ blockquote {
 }
 
 .carousel-3d-4-item--indicator {
-  border: 1px solid crimson;
-  border-radius: 50px;
-  margin-right: 0.25em;
   position: absolute;
+  border: 1px solid #ededed;
+  border-radius: 50px;
+  background-color: #34383c;
+  margin-right: 0.25em;
   width: 0.5em;
   height: 0.5em;
   z-index: 1;
@@ -2411,87 +2514,155 @@ blockquote {
   border-color: silver;
 }
 .carousel-3d-4-item--indicator:first-of-type {
-  top: 275px;
-  left: 110px;
+  top: 285px;
+  left: 123px;
 }
 .carousel-3d-4-item--indicator:nth-of-type(2) {
-  top: 275px;
-  left: 150px;
+  top: 285px;
+  left: 163px;
 }
 .carousel-3d-4-item--indicator:nth-of-type(3) {
-  top: 275px;
-  left: 190px;
+  top: 285px;
+  left: 203px;
 }
 .carousel-3d-4-item--indicator:nth-of-type(4) {
-  top: 275px;
-  left: 230px;
+  top: 285px;
+  left: 243px;
 }
 
-.carousel-3d-4-item--next {
-  padding: 0;
+.carousel-3d-4-item--next, .carousel-3d-4-item--next-a {
   margin: 0;
   cursor: pointer;
   position: absolute;
   top: 125px;
-  left: 363px;
-  vertical-align: middle;
+  left: 346px;
+  padding: 6.25px 9.25px 0 9.25px;
+  border-radius: 50px;
+  background-color: yellow;
+  opacity: 0.5;
 }
-.carousel-3d-4-item--next svg {
-  padding: 0;
-  vertical-align: middle;
+.carousel-3d-4-item--next svg, .carousel-3d-4-item--next-a svg {
+  padding: 1px;
   margin: 0;
   border: 1px solid;
   border-radius: 50px;
 }
+.carousel-3d-4-item--next:hover, .carousel-3d-4-item--next-a:hover {
+  background-color: black;
+  opacity: 1;
+}
+.carousel-3d-4-item--next:hover svg, .carousel-3d-4-item--next-a:hover svg {
+  color: yellow;
+  fill: currentColor;
+}
 
-.carousel-3d-4-item--prev {
-  padding: 0;
+.carousel-3d-4-item--prev, .carousel-3d-4-item--prev-a {
+  padding: 6.25px 9px 0 9.25px;
+  border-radius: 50px;
   margin: 0;
   cursor: pointer;
   position: absolute;
   top: 125px;
-  left: -18px;
+  left: -12px;
+  background-color: yellow;
+  opacity: 0.5;
 }
-.carousel-3d-4-item--prev svg {
-  padding: 0;
+.carousel-3d-4-item--prev svg, .carousel-3d-4-item--prev-a svg {
+  padding: 1px;
   border: 1px solid;
   border-radius: 50px;
+}
+.carousel-3d-4-item--prev:hover, .carousel-3d-4-item--prev-a:hover {
+  background-color: black;
+  opacity: 1;
+}
+.carousel-3d-4-item--prev:hover svg, .carousel-3d-4-item--prev-a:hover svg {
+  color: yellow;
+  fill: currentColor;
+}
+
+.carousel-3d-4-item--next-a, .carousel-3d-4-item--prev-a {
+  display: none;
 }
 
 .carousel-3d-4-content {
   position: absolute;
   width: 100%;
   height: 100%;
-  border: 5px solid green;
+  border: 2px solid #e1332d;
   overflow: hidden;
 }
-.carousel-3d-4-content div {
+.carousel-3d-4-content img {
   width: 100%;
-}
-.carousel-3d-4-content div img {
-  width: 100%;
-  height: auto;
-}
-.carousel-3d-4-content div video {
-  width: 100%;
-  height: auto;
 }
 
 .itemsIn3d-4--active {
-  border-color: blue;
-  background-color: crimson;
+  border-color: #34383c;
+  background-color: #ededed;
 }
 
+@media screen and (max-width: 700px) {
+  .carousel-3d-4-item--next, .carousel-3d-4-item--prev {
+    display: none;
+  }
+
+  .carousel-3d-4-item--next-a, .carousel-3d-4-item--prev-a {
+    display: block;
+  }
+}
+@media screen and (max-width: 500px) {
+  .carousel-3d-4 {
+    max-width: 300px;
+    height: 245px;
+  }
+
+  .carousel-3d-4-item div {
+    width: 100%;
+  }
+  .carousel-3d-4-item div img {
+    width: 100%;
+    height: auto;
+  }
+  .carousel-3d-4-item div video {
+    width: 100%;
+    height: auto;
+  }
+
+  .carousel-3d-4-item--prev-a {
+    top: 100px;
+    left: -4px;
+  }
+
+  .carousel-3d-4-item--next-a {
+    top: 100px;
+    left: 260px;
+  }
+
+  .carousel-3d-4-item--indicator:first-of-type {
+    top: 245px;
+    left: 83px;
+  }
+  .carousel-3d-4-item--indicator:nth-of-type(2) {
+    top: 245px;
+    left: 123px;
+  }
+  .carousel-3d-4-item--indicator:nth-of-type(3) {
+    top: 245px;
+    left: 163px;
+  }
+  .carousel-3d-4-item--indicator:nth-of-type(4) {
+    top: 245px;
+    left: 203px;
+  }
+}
 .carousel-3d-5 {
   position: relative;
   margin: auto;
-  top: 28.75%;
+  top: 22%;
   max-width: 375px;
   height: 275px;
   perspective: 1300px;
-  border: 4px solid pink;
   border-radius: 0.25em;
-  display: none;
 }
 
 .carousel-3d-5-axis {
@@ -2500,7 +2671,6 @@ blockquote {
   height: 100%;
   transform-style: preserve-3d;
   transition: 1s;
-  background-color: lime;
 }
 
 .carousel-3d-5-item {
@@ -2510,9 +2680,16 @@ blockquote {
   display: block;
   cursor: pointer;
 }
-.carousel-3d-5-item img {
-  width: 35vw;
-  height: 18vw;
+.carousel-3d-5-item div {
+  width: 100%;
+}
+.carousel-3d-5-item div img {
+  width: 100%;
+  height: auto;
+}
+.carousel-3d-5-item div video {
+  width: 100%;
+  height: auto;
 }
 
 .f1-of-3d-5 {
@@ -2521,85 +2698,164 @@ blockquote {
 }
 
 .f2-of-3d-5 {
-  transform: rotateY(90deg) translateZ(200px);
+  transform: rotateY(120deg) translateZ(200px);
   background-color: #ededed;
 }
 
 .f3-of-3d-5 {
-  transform: rotateY(180deg) translateZ(200px);
-  background-color: #ededed;
-}
-
-.f4-of-3d-5 {
-  transform: rotateY(270deg) translateZ(200px);
+  transform: rotateY(240deg) translateZ(200px);
   background-color: #ededed;
 }
 
 .carousel-3d-5-item--indicator {
-  border: 1px solid crimson;
-  border-radius: 50px;
-  padding: 0 0.55em 0 0.55em;
-  margin-right: 0.25em;
   position: absolute;
+  border: 1px solid #ededed;
+  border-radius: 50px;
+  background-color: #34383c;
+  margin-right: 0.25em;
+  width: 0.5em;
+  height: 0.5em;
+  z-index: 1;
+  cursor: pointer;
+}
+.carousel-3d-5-item--indicator:hover {
+  background-color: orange;
+  border-color: silver;
 }
 .carousel-3d-5-item--indicator:first-of-type {
-  top: 275px;
-  left: 110px;
+  top: 285px;
+  left: 143px;
 }
 .carousel-3d-5-item--indicator:nth-of-type(2) {
-  top: 275px;
-  left: 150px;
+  top: 285px;
+  left: 183px;
 }
 .carousel-3d-5-item--indicator:nth-of-type(3) {
-  top: 275px;
-  left: 190px;
-}
-.carousel-3d-5-item--indicator:nth-of-type(4) {
-  top: 275px;
-  left: 230px;
+  top: 285px;
+  left: 233px;
 }
 
-.carousel-3d-5-item--next {
-  padding: 0;
+.carousel-3d-5-item--next, .carousel-3d-5-item--next-a {
   margin: 0;
   cursor: pointer;
   position: absolute;
   top: 125px;
-  left: 363px;
-  vertical-align: middle;
+  left: 346px;
+  padding: 6.25px 9.25px 0 9.25px;
+  border-radius: 50px;
+  background-color: yellow;
+  opacity: 0.5;
 }
-.carousel-3d-5-item--next svg {
-  padding: 0;
-  vertical-align: middle;
+.carousel-3d-5-item--next svg, .carousel-3d-5-item--next-a svg {
+  padding: 1px;
   margin: 0;
   border: 1px solid;
   border-radius: 50px;
 }
+.carousel-3d-5-item--next:hover, .carousel-3d-5-item--next-a:hover {
+  background-color: black;
+  opacity: 1;
+}
+.carousel-3d-5-item--next:hover svg, .carousel-3d-5-item--next-a:hover svg {
+  color: yellow;
+  fill: currentColor;
+}
 
-.carousel-3d-5-item--prev {
-  padding: 0;
+.carousel-3d-5-item--prev, .carousel-3d-5-item--prev-a {
+  padding: 6.25px 9px 0 9.25px;
+  border-radius: 50px;
   margin: 0;
   cursor: pointer;
   position: absolute;
   top: 125px;
-  left: -18px;
+  left: -12px;
+  background-color: yellow;
+  opacity: 0.5;
 }
-.carousel-3d-5-item--prev svg {
-  padding: 0;
+.carousel-3d-5-item--prev svg, .carousel-3d-5-item--prev-a svg {
+  padding: 1px;
   border: 1px solid;
   border-radius: 50px;
+}
+.carousel-3d-5-item--prev:hover, .carousel-3d-5-item--prev-a:hover {
+  background-color: black;
+  opacity: 1;
+}
+.carousel-3d-5-item--prev:hover svg, .carousel-3d-5-item--prev-a:hover svg {
+  color: yellow;
+  fill: currentColor;
+}
+
+.carousel-3d-5-item--next-a, .carousel-3d-5-item--prev-a {
+  display: none;
 }
 
 .carousel-3d-5-content {
   position: absolute;
-  border: 1px solid;
-  top: 0;
   width: 100%;
   height: 100%;
-  border: 5px solid green;
+  border: 2px solid #e1332d;
   overflow: hidden;
 }
+.carousel-3d-5-content img {
+  width: 100%;
+}
 
+.itemsIn3d-5--active {
+  border-color: #34383c;
+  background-color: #ededed;
+}
+
+@media screen and (max-width: 700px) {
+  .carousel-3d-5-item--next, .carousel-3d-5-item--prev {
+    display: none;
+  }
+
+  .carousel-3d-5-item--next-a, .carousel-3d-5-item--prev-a {
+    display: block;
+  }
+}
+@media screen and (max-width: 500px) {
+  .carousel-3d-5 {
+    max-width: 300px;
+    height: 245px;
+  }
+
+  .carousel-3d-5-item div {
+    width: 100%;
+  }
+  .carousel-3d-5-item div img {
+    width: 100%;
+    height: auto;
+  }
+  .carousel-3d-5-item div video {
+    width: 100%;
+    height: auto;
+  }
+
+  .carousel-3d-5-item--prev-a {
+    top: 100px;
+    left: -4px;
+  }
+
+  .carousel-3d-5-item--next-a {
+    top: 100px;
+    left: 260px;
+  }
+
+  .carousel-3d-5-item--indicator:first-of-type {
+    top: 245px;
+    left: 103px;
+  }
+  .carousel-3d-5-item--indicator:nth-of-type(2) {
+    top: 245px;
+    left: 143px;
+  }
+  .carousel-3d-5-item--indicator:nth-of-type(3) {
+    top: 245px;
+    left: 183px;
+  }
+}
 .carousel-3d-6 {
   position: relative;
   margin: auto;

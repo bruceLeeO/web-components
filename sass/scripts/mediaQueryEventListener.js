@@ -77,6 +77,87 @@
       }
 
       /**
+       * build or load the tabpanel carousel component
+       */
+      if (document.getElementById("tabpanel-id") != null) {  
+
+        var tpi = document.getElementById("tabpanel-id");  
+        var atp = document.getElementById("accordion-tabpanel");  
+
+        /**
+         *  since tabpanel components already exist, append it to accordion components
+         */
+        atp.appendChild(tpi);  
+
+      } else {
+
+        /**
+         * build the tabpanel component when browser fires up
+         */
+        var tabpanelComponent = buildTabpanelComponent();
+        
+        /**
+         * load the tabpanel component on the accordion component 
+         */   
+        document.getElementById("accordion-tabpanel").appendChild(tabpanelComponent);      
+                
+      }
+
+      /**
+       * build or load the accordion carousel component
+       */
+      if (document.getElementById("accordion-id") != null) {  
+
+        var ai = document.getElementById("accordion-id");  
+        var aa = document.getElementById("accordion-accordion");  
+
+        /**
+         *  since accordion components already exist, append it to accordion components
+         */
+        aa.appendChild(ai);  
+
+      } else {
+
+        /**
+         * build the accordion component when browser fires up
+         */
+        var accordionComponent = buildAccordionComponent();
+        
+        /**
+         * load the accordion component on the accordion component 
+         */   
+        document.getElementById("accordion-accordion").appendChild(accordionComponent);      
+                
+      }
+
+      /**
+       * build or load the business-card carousel component
+       */
+      if (document.getElementById("business-card-id") != null) {  
+
+        var ai = document.getElementById("business-card-id");  
+        var aa = document.getElementById("accordion-business-card");  
+
+        /**
+         *  since business-card components already exist, append it to business-card components
+         */
+        aa.appendChild(ai);  
+
+      } else {
+
+        /**
+         * build the business-card component when browser fires up
+         */
+        var businessCardComponent = buildBusinessCardComponent();
+        
+        /**
+         * load the business-card component on the business-card component 
+         */   
+        document.getElementById("accordion-business-card").appendChild(businessCardComponent);      
+                
+      }
+
+      /**
        * build or load the calculator carousel component
        */
       if (document.getElementById("calculator-id") != null) {  
@@ -163,6 +244,87 @@
          * load the image-gallery component on the tab component
          */   
         document.getElementById("tab-image-gallery").appendChild(imageGalleryComponent);
+                  
+      }
+
+      /**
+       * build or load the tabpanel carousel components
+       */
+      if (document.getElementById("tabpanel-id") != null) {
+
+        var tpi = document.getElementById("tabpanel-id");
+        var ttp = document.getElementById("tab-tabpanel");
+
+        /**
+         *  since image-gallery components already exist, append it to tab components
+         */        
+        ttp.appendChild(tpi);       
+
+      } else {
+
+        /**
+         * build the image-gallery component when browser fires up
+         */
+        var tabpanelComponent = buildTabpanelComponent();
+
+        /**
+         * load the image-gallery component on the tab component
+         */   
+        document.getElementById("tab-tabpanel").appendChild(tabpanelComponent);
+                  
+      }
+
+      /**
+       * build or load the accordion carousel components
+       */
+      if (document.getElementById("accordion-id") != null) {
+
+        var ai = document.getElementById("accordion-id");
+        var ta = document.getElementById("tab-accordion");
+
+        /**
+         *  since image-gallery components already exist, append it to tab components
+         */        
+        ta.appendChild(ai);       
+
+      } else {
+
+        /**
+         * build the image-gallery component when browser fires up
+         */
+        var accordionComponent = buildAccordionComponent();
+
+        /**
+         * load the image-gallery component on the tab component
+         */   
+        document.getElementById("tab-accordion").appendChild(accordionComponent);
+                  
+      }
+
+      /**
+       * build or load the business-card carousel components
+       */
+      if (document.getElementById("business-card-id") != null) {
+
+        var bci = document.getElementById("business-card-id");
+        var tbc = document.getElementById("tab-business-card");
+
+        /**
+         *  since image-gallery components already exist, append it to tab components
+         */        
+        tbc.appendChild(bci);       
+
+      } else {
+
+        /**
+         * build the image-gallery component when browser fires up
+         */
+        var businessCardComponent = buildBusinessCardComponent();
+
+        /**
+         * load the image-gallery component on the tab component
+         */   
+        document.getElementById("tab-business-card").appendChild(businessCardComponent);
                   
       }
 
@@ -308,6 +470,173 @@
                       <svg class="tab-next-chevron form-icon-small"><use xlink:href="#icon-chevron-right"></use></svg>\
                     </span>\
                     <span class="carousel-3d-2-item--prev-a">\
+                      <svg class="form-icon-small"><use xlink:href="#icon-chevron-left"></use></svg>\
+                    </span>\
+                  </div>';
+
+    return cal;    
+  }
+
+  function buildTabpanelComponent() {
+    var cal = document.createElement("div");
+    cal.className = "carousel-3d-3";
+    cal.id = "tabpanel-id";
+    cal.innerHTML ='<div class="carousel-3d-3-axis">\
+                      <div class="carousel-3d-3-item f1-of-3d-3">\
+                        <div class="carousel-3d-3-content">\
+                          <div>\
+                            <img width="375" height="200" src="../img/pa2/tab/tab-nonjs.jpg" alt="Tab Ui Component">\
+                          </div>\
+                        </div>\
+                      </div>\
+                      <div class="carousel-3d-3-item f2-of-3d-3">\
+                        <div class="carousel-3d-3-content">\
+                          <div>\
+                            <video width="375" height="280" controls autoplay loop>\
+                              <source src="../img/pa2/tab/tab-nonjs.mp4">\
+                            </video>\
+                          </div>\
+                        </div>\
+                      </div>\
+                      <div class="carousel-3d-3-item f3-of-3d-3">\
+                        <div class="carousel-3d-3-content">\
+                          <div>\
+                            <img width="375" height="200" src="../img/pa2/tab/tab-nonjs2.jpg" alt="Tab UI Component">\
+                          </div>\
+                        </div>\
+                      </div>\
+                      <div class="carousel-3d-3-item f4-of-3d-3">\
+                        <div class="carousel-3d-3-content">\
+                          <div>\
+                            <video width="375" height="280" controls autoplay loop>\
+                              <source src="../img/pa2/tab/tab-nonjs2.mp4">\
+                            </video>\
+                          </div>\
+                        </div>\
+                      </div>\
+                    </div>\
+                    <span class="carousel-3d-3-item--indicator itemsIn3d-3--active" id="c-3d-3-item-1"></span>\
+                    <span class="carousel-3d-3-item--indicator" id="c-3d-3-item-2"></span>\
+                    <span class="carousel-3d-3-item--indicator" id="c-3d-3-item-3"></span>\
+                    <span class="carousel-3d-3-item--indicator" id="c-3d-3-item-4"></span>\
+                    <span class="carousel-3d-3-item--next">\
+                      <svg class="tab-next-chevron form-icon-small"><use xlink:href="#icon-chevron-right"></use></svg>\
+                    </span>\
+                    <span class="carousel-3d-3-item--prev">\
+                      <svg class="form-icon-small"><use xlink:href="#icon-chevron-left"></use></svg>\
+                    </span>\
+                    <span class="carousel-3d-3-item--next-a">\
+                      <svg class="tab-next-chevron form-icon-small"><use xlink:href="#icon-chevron-right"></use></svg>\
+                    </span>\
+                    <span class="carousel-3d-3-item--prev-a">\
+                      <svg class="form-icon-small"><use xlink:href="#icon-chevron-left"></use></svg>\
+                    </span>\
+                  </div>';
+
+    return cal;    
+  }
+
+  function buildAccordionComponent() {
+    var cal = document.createElement("div");
+    cal.className = "carousel-3d-4";
+    cal.id = "accordion-id";
+    cal.innerHTML ='<div class="carousel-3d-4-axis">\
+                      <div class="carousel-3d-4-item f1-of-3d-4">\
+                        <div class="carousel-3d-4-content">\
+                          <div>\
+                            <img width="375" height="200" src="../img/pa2/accordion/non-js/accordion1.jpg" alt="Tab Ui Component">\
+                          </div>\
+                        </div>\
+                      </div>\
+                      <div class="carousel-3d-4-item f2-of-3d-4">\
+                        <div class="carousel-3d-4-content">\
+                          <div>\
+                            <video width="375" height="280" controls autoplay loop>\
+                              <source src="../img/pa2/accordion/non-js/accordion2.mp4">\
+                            </video>\
+                          </div>\
+                        </div>\
+                      </div>\
+                      <div class="carousel-3d-4-item f3-of-3d-4">\
+                        <div class="carousel-3d-4-content">\
+                          <div>\
+                            <img width="375" height="200" src="../img/pa2/accordion/accordion3.jpg" alt="Tab UI Component">\
+                          </div>\
+                        </div>\
+                      </div>\
+                      <div class="carousel-3d-4-item f4-of-3d-4">\
+                        <div class="carousel-3d-4-content">\
+                          <div>\
+                            <video width="375" height="280" controls autoplay loop>\
+                              <source src="../img/pa2/accordion/accordion4.mp4">\
+                            </video>\
+                          </div>\
+                        </div>\
+                      </div>\
+                    </div>\
+                    <span class="carousel-3d-4-item--indicator itemsIn3d-4--active" id="c-3d-4-item-1"></span>\
+                    <span class="carousel-3d-4-item--indicator" id="c-3d-4-item-2"></span>\
+                    <span class="carousel-3d-4-item--indicator" id="c-3d-4-item-3"></span>\
+                    <span class="carousel-3d-4-item--indicator" id="c-3d-4-item-4"></span>\
+                    <span class="carousel-3d-4-item--next">\
+                      <svg class="tab-next-chevron form-icon-small"><use xlink:href="#icon-chevron-right"></use></svg>\
+                    </span>\
+                    <span class="carousel-3d-4-item--prev">\
+                      <svg class="form-icon-small"><use xlink:href="#icon-chevron-left"></use></svg>\
+                    </span>\
+                    <span class="carousel-3d-4-item--next-a">\
+                      <svg class="tab-next-chevron form-icon-small"><use xlink:href="#icon-chevron-right"></use></svg>\
+                    </span>\
+                    <span class="carousel-3d-4-item--prev-a">\
+                      <svg class="form-icon-small"><use xlink:href="#icon-chevron-left"></use></svg>\
+                    </span>\
+                  </div>';
+
+    return cal;    
+  }
+
+  function buildBusinessCardComponent() {
+    var cal = document.createElement("div");
+    cal.className = "carousel-3d-5";
+    cal.id = "business-card-id";
+    cal.innerHTML ='<div class="carousel-3d-5-axis">\
+                      <div class="carousel-3d-5-item f1-of-3d-5">\
+                        <div class="carousel-3d-5-content">\
+                          <div>\
+                            <img width="375" height="200" src="../img/pa2/digital-business-card/digital-business-card-nonjs-1.jpg" alt="Digital Business Card UI Component">\
+                          </div>\
+                        </div>\
+                      </div>\
+                      <div class="carousel-3d-5-item f2-of-3d-5">\
+                        <div class="carousel-3d-5-content">\
+                          <div>\
+                            <img width="375" height="200" src="../img/pa2/digital-business-card/digital-business-card-nonjs-2.jpg" alt="Digital Business Card UI Component">\
+                          </div>\
+                        </div>\
+                      </div>\
+                      <div class="carousel-3d-5-item f3-of-3d-5">\
+                        <div class="carousel-3d-5-content">\
+                          <div>\
+                            <video width="375" height="280" controls autoplay loop>\
+                              <source src="../img/pa2/digital-business-card/digital-business-card-nonjs.mp4">\
+                            </video>\
+                          </div>\
+                        </div>\
+                      </div>\
+                    </div>\
+                    <span class="carousel-3d-5-item--indicator itemsIn3d-5--active" id="c-3d-5-item-1"></span>\
+                    <span class="carousel-3d-5-item--indicator" id="c-3d-5-item-2"></span>\
+                    <span class="carousel-3d-5-item--indicator" id="c-3d-5-item-3"></span>\
+                    <span class="carousel-3d-5-item--next">\
+                      <svg class="tab-next-chevron form-icon-small"><use xlink:href="#icon-chevron-right"></use></svg>\
+                    </span>\
+                    <span class="carousel-3d-5-item--prev">\
+                      <svg class="form-icon-small"><use xlink:href="#icon-chevron-left"></use></svg>\
+                    </span>\
+                    <span class="carousel-3d-5-item--next-a">\
+                      <svg class="tab-next-chevron form-icon-small"><use xlink:href="#icon-chevron-right"></use></svg>\
+                    </span>\
+                    <span class="carousel-3d-5-item--prev-a">\
                       <svg class="form-icon-small"><use xlink:href="#icon-chevron-left"></use></svg>\
                     </span>\
                   </div>';
