@@ -158,6 +158,33 @@
       }
 
       /**
+       * build or load the ui-framework carousel component
+       */
+      if (document.getElementById("ui-framework-id") != null) {  
+
+        var aufi = document.getElementById("ui-framework-id");  
+        var auf = document.getElementById("accordion-ui-framework");  
+
+        /**
+         *  since ui-framework components already exist, append it to ui-framework components
+         */
+        auf.appendChild(aufi);  
+
+      } else {
+
+        /**
+         * build the ui-framework component when browser fires up
+         */
+        var uiFrameworkComponent = buildUIFrameworkComponent();
+        
+        /**
+         * load the ui-framework component on the ui-framework component 
+         */   
+        document.getElementById("accordion-ui-framework").appendChild(uiFrameworkComponent);      
+                
+      }
+
+      /**
        * build or load the calculator carousel component
        */
       if (document.getElementById("calculator-id") != null) {  
@@ -325,6 +352,33 @@
          * load the image-gallery component on the tab component
          */   
         document.getElementById("tab-business-card").appendChild(businessCardComponent);
+                  
+      }
+
+      /**
+       * build or load the ui-framework carousel components
+       */
+      if (document.getElementById("ui-framework-id") != null) {
+
+        var ufi = document.getElementById("ui-framework-id");
+        var tuf = document.getElementById("tab-ui-framework");
+
+        /**
+         *  since image-gallery components already exist, append it to tab components
+         */        
+        tuf.appendChild(ufi);       
+
+      } else {
+
+        /**
+         * build the image-gallery component when browser fires up
+         */
+        var uiframeworkComponent = buildUIFrameworkComponent();
+
+        /**
+         * load the image-gallery component on the tab component
+         */   
+        document.getElementById("tab-ui-framework").appendChild(uiframeworkComponent);
                   
       }
 
@@ -637,6 +691,55 @@
                       <svg class="tab-next-chevron form-icon-small"><use xlink:href="#icon-chevron-right"></use></svg>\
                     </span>\
                     <span class="carousel-3d-5-item--prev-a">\
+                      <svg class="form-icon-small"><use xlink:href="#icon-chevron-left"></use></svg>\
+                    </span>\
+                  </div>';
+
+    return cal;    
+  }
+
+  function buildUIFrameworkComponent() {
+    var cal = document.createElement("div");
+    cal.className = "carousel-3d-6";
+    cal.id = "ui-framework-id";
+    cal.innerHTML ='<div class="carousel-3d-6-axis">\
+                      <div class="carousel-3d-6-item f1-of-3d-6">\
+                        <div class="carousel-3d-6-content">\
+                          <div>\
+                            <img width="375" height="200" src="../img/pa2/ui-framework/ui-framework-nonjs-1.jpg" alt="Orchestra UI Framework">\
+                          </div>\
+                        </div>\
+                      </div>\
+                      <div class="carousel-3d-6-item f2-of-3d-6">\
+                        <div class="carousel-3d-6-content">\
+                          <div>\
+                            <img width="375" height="200" src="../img/pa2/ui-framework/ui-framework-nonjs-2.jpg" alt="Orchestra UI Framework">\
+                          </div>\
+                        </div>\
+                      </div>\
+                      <div class="carousel-3d-6-item f3-of-3d-6">\
+                        <div class="carousel-3d-6-content">\
+                          <div>\
+                            <video width="375" height="280" controls autoplay loop>\
+                              <source src="../img/pa2/ui-framework/ui-framework-nonjs.mp4">\
+                            </video>\
+                          </div>\
+                        </div>\
+                      </div>\
+                    </div>\
+                    <span class="carousel-3d-6-item--indicator itemsIn3d-6--active" id="c-3d-6-item-1"></span>\
+                    <span class="carousel-3d-6-item--indicator" id="c-3d-6-item-2"></span>\
+                    <span class="carousel-3d-6-item--indicator" id="c-3d-6-item-3"></span>\
+                    <span class="carousel-3d-6-item--next">\
+                      <svg class="tab-next-chevron form-icon-small"><use xlink:href="#icon-chevron-right"></use></svg>\
+                    </span>\
+                    <span class="carousel-3d-6-item--prev">\
+                      <svg class="form-icon-small"><use xlink:href="#icon-chevron-left"></use></svg>\
+                    </span>\
+                    <span class="carousel-3d-6-item--next-a">\
+                      <svg class="tab-next-chevron form-icon-small"><use xlink:href="#icon-chevron-right"></use></svg>\
+                    </span>\
+                    <span class="carousel-3d-6-item--prev-a">\
                       <svg class="form-icon-small"><use xlink:href="#icon-chevron-left"></use></svg>\
                     </span>\
                   </div>';
