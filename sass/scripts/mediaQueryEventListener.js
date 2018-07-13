@@ -237,7 +237,33 @@
         document.getElementById("accordion-calculator").appendChild(calculatorComponent);      
                 
       }        
-         
+       
+      /**
+       * build or load the product-listing carousel component
+       */
+      if (document.getElementById("product-listing-id") != null) {  
+
+        var pli = document.getElementById("product-listing-id");  
+        var apl = document.getElementById("accordion-product-listing");  
+
+        /**
+         *  since product-listing components already exist, append it to accordion components
+         */
+        apl.appendChild(pli);  
+
+      } else {
+
+        /**
+         * build the product-listing component when browser fires up
+         */
+        var productListingComponent = buildProductListingComponent();
+        
+        /**
+         * load the product-listing component on the accordion component 
+         */   
+        document.getElementById("accordion-product-listing").appendChild(productListingComponent);      
+                
+      }         
     }
 
     /**
@@ -463,6 +489,32 @@
                   
       }      
 
+      /**
+       * build or load the product-listing carousel components
+       */
+      if (document.getElementById("product-listing-id") != null) {
+
+        var pli = document.getElementById("product-listing-id");
+        var tpl = document.getElementById("tab-product-listing");
+
+        /**
+         *  since product-listing components already exist, append it to tab components
+         */        
+        tpl.appendChild(pli);       
+
+      } else {
+
+        /**
+         * build the product-listing component when browser fires up
+         */
+        var productListingComponent = buildProductListingComponent();
+
+        /**
+         * load the product-listing component on the tab component
+         */   
+        document.getElementById("tab-product-listing").appendChild(productListingComponent);
+                  
+      }
     }
 
 	}
@@ -945,5 +997,54 @@
 
     return cal;    
   }	
+
+  function buildProductListingComponent() {
+    var cal = document.createElement("div");
+    cal.className = "carousel-3d-9";
+    cal.id = "product-listing-id";
+    cal.innerHTML ='<div class="carousel-3d-9-axis">\
+                      <div class="carousel-3d-9-item f1-of-3d-9">\
+                        <div class="carousel-3d-9-content">\
+                          <div>\
+                            <img width="375" height="200" src="../img/pa2/product-listing/product-listing-1.jpg" alt="Product Listing Site 1">\
+                          </div>\
+                        </div>\
+                      </div>\
+                      <div class="carousel-3d-9-item f2-of-3d-9">\
+                        <div class="carousel-3d-9-content">\
+                          <div>\
+                            <img width="375" height="200" src="../img/pa2/product-listing/product-listing-2.jpg" alt="Product Listing Site 2">\
+                          </div>\
+                        </div>\
+                      </div>\
+                      <div class="carousel-3d-9-item f3-of-3d-9">\
+                        <div class="carousel-3d-9-content">\
+                          <div>\
+                            <video width="375" height="280" controls autoplay loop>\
+                              <source src="../img/pa2/product-listing/product-listing.mp4">\
+                            </video>\
+                          </div>\
+                        </div>\
+                      </div>\
+                    </div>\
+                    <span class="carousel-3d-9-item--indicator itemsIn3d-9--active" id="c-3d-9-item-1"></span>\
+                    <span class="carousel-3d-9-item--indicator" id="c-3d-9-item-2"></span>\
+                    <span class="carousel-3d-9-item--indicator" id="c-3d-9-item-3"></span>\
+                    <span class="carousel-3d-9-item--next">\
+                      <svg class="tab-next-chevron form-icon-small"><use xlink:href="#icon-chevron-right"></use></svg>\
+                    </span>\
+                    <span class="carousel-3d-9-item--prev">\
+                      <svg class="form-icon-small"><use xlink:href="#icon-chevron-left"></use></svg>\
+                    </span>\
+                    <span class="carousel-3d-9-item--next-a">\
+                      <svg class="tab-next-chevron form-icon-small"><use xlink:href="#icon-chevron-right"></use></svg>\
+                    </span>\
+                    <span class="carousel-3d-9-item--prev-a">\
+                      <svg class="form-icon-small"><use xlink:href="#icon-chevron-left"></use></svg>\
+                    </span>\
+                  </div>';
+
+    return cal;    
+  }
 
 })(window);
