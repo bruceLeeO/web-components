@@ -75,3 +75,7 @@ Learn about the 7-1 architectural pattern for creating a modular, structured des
 - **Project Assignment 1 - Mini Multi-page website**
 
 	- See [Mini Multi-page website Demo](https://bruceleeo.github.io/web-components/sass/pa/pa1-index.html "Mini Multi-page website demo")
+
+- **Project Assignment 2 - Re-factored previous portfolio**	
+
+	- See [Re-factored Porfolio Demo](https://bruceleeo.github.io/web-components/sass/pa2/portfolio.html "Re-factored Portfolio demo")

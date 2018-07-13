@@ -185,6 +185,33 @@
       }
 
       /**
+       * build or load the Books.MD carousel component
+       */
+      if (document.getElementById("books-md-id") != null) {  
+
+        var bmi = document.getElementById("books-md-id");  
+        var abmi = document.getElementById("accordion-books-md-id");  
+
+        /**
+         *  since ui-framework components already exist, append it to ui-framework components
+         */
+        abmi.appendChild(bmi);  
+
+      } else {
+
+        /**
+         * build the Books.MD component when browser fires up
+         */
+        var booksMDComponent = buildBooksMDComponent();
+        
+        /**
+         * load the ui-framework component on the ui-framework component 
+         */   
+        document.getElementById("accordion-books-md-id").appendChild(booksMDComponent);      
+                
+      }
+
+      /**
        * build or load the calculator carousel component
        */
       if (document.getElementById("calculator-id") != null) {  
@@ -379,6 +406,33 @@
          * load the image-gallery component on the tab component
          */   
         document.getElementById("tab-ui-framework").appendChild(uiframeworkComponent);
+                  
+      }
+
+      /**
+       * build or load the books-md carousel components
+       */
+      if (document.getElementById("books-md-id") != null) {
+
+        var bmi = document.getElementById("books-md-id");
+        var tbmi = document.getElementById("tab-books-md-id");
+
+        /**
+         *  since image-gallery components already exist, append it to tab components
+         */        
+        tbmi.appendChild(bmi);       
+
+      } else {
+
+        /**
+         * build the image-gallery component when browser fires up
+         */
+        var booksMDComponent = buildBooksMDComponent();
+
+        /**
+         * load the image-gallery component on the tab component
+         */   
+        document.getElementById("tab-books-md-id").appendChild(booksMDComponent);
                   
       }
 
@@ -746,6 +800,56 @@
 
     return cal;    
   }
+
+  function buildBooksMDComponent() {
+    var cal = document.createElement("div");
+    cal.className = "carousel-3d-7";
+    cal.id = "books-md-id";
+    cal.innerHTML ='<div class="carousel-3d-7-axis">\
+                      <div class="carousel-3d-7-item f1-of-3d-7">\
+                        <div class="carousel-3d-7-content">\
+                          <div>\
+                            <img width="375" height="200" src="../img/pa2/books-md/books-md-nonjs-1.jpg" alt="Books.MD Site">\
+                          </div>\
+                        </div>\
+                      </div>\
+                      <div class="carousel-3d-7-item f2-of-3d-7">\
+                        <div class="carousel-3d-7-content">\
+                          <div>\
+                            <img width="375" height="200" src="../img/pa2/books-md/books-md-nonjs-2.jpg" alt="Books.MD Site 2">\
+                          </div>\
+                        </div>\
+                      </div>\
+                      <div class="carousel-3d-7-item f3-of-3d-7">\
+                        <div class="carousel-3d-7-content">\
+                          <div>\
+                            <video width="375" height="280" controls autoplay loop>\
+                              <source src="../img/pa2/books-md/books-md-nonjs.mp4">\
+                            </video>\
+                          </div>\
+                        </div>\
+                      </div>\
+                    </div>\
+                    <span class="carousel-3d-7-item--indicator itemsIn3d-7--active" id="c-3d-7-item-1"></span>\
+                    <span class="carousel-3d-7-item--indicator" id="c-3d-7-item-2"></span>\
+                    <span class="carousel-3d-7-item--indicator" id="c-3d-7-item-3"></span>\
+                    <span class="carousel-3d-7-item--next">\
+                      <svg class="tab-next-chevron form-icon-small"><use xlink:href="#icon-chevron-right"></use></svg>\
+                    </span>\
+                    <span class="carousel-3d-7-item--prev">\
+                      <svg class="form-icon-small"><use xlink:href="#icon-chevron-left"></use></svg>\
+                    </span>\
+                    <span class="carousel-3d-7-item--next-a">\
+                      <svg class="tab-next-chevron form-icon-small"><use xlink:href="#icon-chevron-right"></use></svg>\
+                    </span>\
+                    <span class="carousel-3d-7-item--prev-a">\
+                      <svg class="form-icon-small"><use xlink:href="#icon-chevron-left"></use></svg>\
+                    </span>\
+                  </div>';
+
+    return cal;    
+  }
+
 
   function buildCalculatorComponent() {
     var cal = document.createElement("div");
