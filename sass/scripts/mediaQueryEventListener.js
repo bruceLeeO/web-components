@@ -534,7 +534,7 @@
                       <div class="carousel-3d-1-item f2-of-3d-1">\
                         <div class="carousel-3d-1-content">\
                           <div>\
-                            <video width="375" height="280" controls autoplay loop>\
+                            <video width="375" height="280" autoplay loop muted>\
                               <source src="../img/pa2/drop-down-menu/drop-down-menu.mp4">\
                             </video>\
                           </div>\
@@ -550,7 +550,7 @@
                       <div class="carousel-3d-1-item f4-of-3d-1">\
                         <div class="carousel-3d-1-content">\
                           <div>\
-                            <video width="375" height="280" controls autoplay loop>\
+                            <video width="375" height="280" autoplay loop muted>\
                               <source src="../img/pa2/flipnav/flipnav.mp4">\
                             </video>\
                           </div>\
@@ -593,7 +593,7 @@
                       <div class="carousel-3d-2-item f2-of-3d-2">\
                         <div class="carousel-3d-2-content">\
                           <div>\
-                            <video width="375" height="280" controls autoplay loop>\
+                            <video width="375" height="280" autoplay loop muted>\
                               <source src="../img/pa2/image-gallery/image-gallery-nonjs.mp4">\
                             </video>\
                           </div>\
@@ -609,7 +609,7 @@
                       <div class="carousel-3d-2-item f4-of-3d-2">\
                         <div class="carousel-3d-2-content">\
                           <div>\
-                            <video width="375" height="280" controls autoplay loop>\
+                            <video width="375" height="280" autoplay loop muted>\
                               <source src="../img/pa2/image-gallery/image-gallery.mp4">\
                             </video>\
                           </div>\
@@ -652,7 +652,7 @@
                       <div class="carousel-3d-3-item f2-of-3d-3">\
                         <div class="carousel-3d-3-content">\
                           <div>\
-                            <video width="375" height="280" controls autoplay loop>\
+                            <video width="375" height="280" autoplay loop muted>\
                               <source src="../img/pa2/tab/tab-nonjs.mp4">\
                             </video>\
                           </div>\
@@ -668,7 +668,7 @@
                       <div class="carousel-3d-3-item f4-of-3d-3">\
                         <div class="carousel-3d-3-content">\
                           <div>\
-                            <video width="375" height="280" controls autoplay loop>\
+                            <video width="375" height="280" autoplay loop muted>\
                               <source src="../img/pa2/tab/tab-nonjs2.mp4">\
                             </video>\
                           </div>\
@@ -711,7 +711,7 @@
                       <div class="carousel-3d-4-item f2-of-3d-4">\
                         <div class="carousel-3d-4-content">\
                           <div>\
-                            <video width="375" height="280" controls autoplay loop>\
+                            <video width="375" height="280" autoplay loop muted>\
                               <source src="../img/pa2/accordion/non-js/accordion2.mp4">\
                             </video>\
                           </div>\
@@ -727,7 +727,7 @@
                       <div class="carousel-3d-4-item f4-of-3d-4">\
                         <div class="carousel-3d-4-content">\
                           <div>\
-                            <video width="375" height="280" controls autoplay loop>\
+                            <video width="375" height="280" autoplay loop muted>\
                               <source src="../img/pa2/accordion/accordion4.mp4">\
                             </video>\
                           </div>\
@@ -777,7 +777,7 @@
                       <div class="carousel-3d-5-item f3-of-3d-5">\
                         <div class="carousel-3d-5-content">\
                           <div>\
-                            <video width="375" height="280" controls autoplay loop>\
+                            <video width="375" height="280" autoplay loop muted>\
                               <source src="../img/pa2/digital-business-card/digital-business-card-nonjs.mp4">\
                             </video>\
                           </div>\
@@ -826,7 +826,7 @@
                       <div class="carousel-3d-6-item f3-of-3d-6">\
                         <div class="carousel-3d-6-content">\
                           <div>\
-                            <video width="375" height="280" controls autoplay loop>\
+                            <video width="375" height="280" autoplay loop muted>\
                               <source src="../img/pa2/ui-framework/ui-framework-nonjs.mp4">\
                             </video>\
                           </div>\
@@ -875,7 +875,7 @@
                       <div class="carousel-3d-7-item f3-of-3d-7">\
                         <div class="carousel-3d-7-content">\
                           <div>\
-                            <video width="375" height="280" controls autoplay loop>\
+                            <video width="375" height="280" autoplay loop muted>\
                               <source src="../img/pa2/books-md/books-md-nonjs.mp4">\
                             </video>\
                           </div>\
@@ -925,7 +925,7 @@
 		                  <div class="carousel-3d-8-item f3-of-3d-8">\
 		                    <div class="carousel-3d-8-content">\
 		                      <div>\
-		                        <video width="375" height="280" controls autoplay loop>\
+		                        <video width="375" height="280" autoplay loop muted>\
 		                          <source src="../img/pa2/calculator/real-calc-video.mp4">\
 		                        </video>\
 		                      </div>\
@@ -1020,7 +1020,7 @@
                       <div class="carousel-3d-9-item f3-of-3d-9">\
                         <div class="carousel-3d-9-content">\
                           <div>\
-                            <video width="375" height="280" controls autoplay loop>\
+                            <video width="375" height="280" autoplay loop muted>\
                               <source src="../img/pa2/product-listing/product-listing.mp4">\
                             </video>\
                           </div>\
