@@ -1,520 +1,245 @@
 (function(window) {
 
-	go2();
+  console.log("populating carousel is intended to run only once at start up....");
+  populateCarousel();
 
-	window.addEventListener('resize', go2);
+  var onTrackWithAccordionComponent = false;
+  var onParWithTabComponent = false;    
+	window.addEventListener('resize', goAppendCarouselToChild);
 
-	function go2() {
-
-	/**
-	 * scale it down to .75 when below 500px width
-	 */
-	//if (document.documentElement.clientWidth < 500) {
-	//	console.log("document.documentElement.clientWidth < 500 "+document.documentElement.clientWidth);
-	//	document.getElementsByClassName("carousel-3d-8")[0].style.maxWidth = "300px";
-	//	document.getElementsByClassName("carousel-3d-8")[0].style.height = "200px"
-	//}
-
+  function goAppendCarouselToChild() { 
+    //console.log("do nothing.... for now...");
+  
     /**
-     * load or append the carousel component to the accordion component
+     * append the carousel component to the accordion component
      */
     if (document.documentElement.clientWidth < 700) {
-
+      onParWithTabComponent = false;
       //console.log("document.documentElement.clientWidth = "+document.documentElement.clientWidth);
 
-      /**
-       * build or load the menu carousel component
-       */
-      if (document.getElementById("menu-id") != null) {  
-
-        var mi = document.getElementById("menu-id");  
-        var am = document.getElementById("accordion-menu");  
+      if (onTrackWithAccordionComponent) {
+        //console.log("ontrack with accordion... do nothing...");
+      } else {
+        //console.log("it is not on track with accordion, onTrackWithAccordionComponent = "+onTrackWithAccordionComponent);
+        onTrackWithAccordionComponent = true;
 
         /**
          *  since menu components already exist, append it to accordion components
          */
-        am.appendChild(mi);  
-
-      } else {
-
-        /**
-         * build the menu component when browser fires up
-         */
-        var menuComponent = buildMenuComponent();
-        
-        /**
-         * load the menu component on the accordion component 
-         */   
-        document.getElementById("accordion-menu").appendChild(menuComponent);      
-                
-      }
-
-      /**
-       * build or load the image-gallery carousel component
-       */
-      if (document.getElementById("image-gallery-id") != null) {  
-
-        var igi = document.getElementById("image-gallery-id");  
-        var aig = document.getElementById("accordion-image-gallery");  
+        document.getElementById("accordion-menu").appendChild(document.getElementById("menu-id"));  
 
         /**
          *  since image-gallery components already exist, append it to accordion components
          */
-        aig.appendChild(igi);  
-
-      } else {
-
-        /**
-         * build the image-gallery component when browser fires up
-         */
-        var imageGalleryComponent = buildImageGalleryComponent();
-        
-        /**
-         * load the image-gallery component on the accordion component 
-         */   
-        document.getElementById("accordion-image-gallery").appendChild(imageGalleryComponent);      
-                
-      }
-
-      /**
-       * build or load the tabpanel carousel component
-       */
-      if (document.getElementById("tabpanel-id") != null) {  
-
-        var tpi = document.getElementById("tabpanel-id");  
-        var atp = document.getElementById("accordion-tabpanel");  
+        document.getElementById("accordion-image-gallery").appendChild(document.getElementById("image-gallery-id"));
 
         /**
          *  since tabpanel components already exist, append it to accordion components
          */
-        atp.appendChild(tpi);  
-
-      } else {
-
-        /**
-         * build the tabpanel component when browser fires up
-         */
-        var tabpanelComponent = buildTabpanelComponent();
-        
-        /**
-         * load the tabpanel component on the accordion component 
-         */   
-        document.getElementById("accordion-tabpanel").appendChild(tabpanelComponent);      
-                
-      }
-
-      /**
-       * build or load the accordion carousel component
-       */
-      if (document.getElementById("accordion-id") != null) {  
-
-        var ai = document.getElementById("accordion-id");  
-        var aa = document.getElementById("accordion-accordion");  
+        document.getElementById("accordion-tabpanel").appendChild(document.getElementById("tabpanel-id"));
 
         /**
          *  since accordion components already exist, append it to accordion components
          */
-        aa.appendChild(ai);  
-
-      } else {
-
-        /**
-         * build the accordion component when browser fires up
-         */
-        var accordionComponent = buildAccordionComponent();
-        
-        /**
-         * load the accordion component on the accordion component 
-         */   
-        document.getElementById("accordion-accordion").appendChild(accordionComponent);      
-                
-      }
-
-      /**
-       * build or load the business-card carousel component
-       */
-      if (document.getElementById("business-card-id") != null) {  
-
-        var ai = document.getElementById("business-card-id");  
-        var aa = document.getElementById("accordion-business-card");  
+        document.getElementById("accordion-accordion").appendChild(document.getElementById("accordion-id"));  
 
         /**
          *  since business-card components already exist, append it to business-card components
          */
-        aa.appendChild(ai);  
-
-      } else {
-
-        /**
-         * build the business-card component when browser fires up
-         */
-        var businessCardComponent = buildBusinessCardComponent();
-        
-        /**
-         * load the business-card component on the business-card component 
-         */   
-        document.getElementById("accordion-business-card").appendChild(businessCardComponent);      
-                
-      }
-
-      /**
-       * build or load the ui-framework carousel component
-       */
-      if (document.getElementById("ui-framework-id") != null) {  
-
-        var aufi = document.getElementById("ui-framework-id");  
-        var auf = document.getElementById("accordion-ui-framework");  
+        document.getElementById("accordion-business-card").appendChild(document.getElementById("business-card-id"));  
 
         /**
          *  since ui-framework components already exist, append it to ui-framework components
          */
-        auf.appendChild(aufi);  
-
-      } else {
-
-        /**
-         * build the ui-framework component when browser fires up
-         */
-        var uiFrameworkComponent = buildUIFrameworkComponent();
-        
-        /**
-         * load the ui-framework component on the ui-framework component 
-         */   
-        document.getElementById("accordion-ui-framework").appendChild(uiFrameworkComponent);      
-                
-      }
-
-      /**
-       * build or load the Books.MD carousel component
-       */
-      if (document.getElementById("books-md-id") != null) {  
-
-        var bmi = document.getElementById("books-md-id");  
-        var abmi = document.getElementById("accordion-books-md-id");  
+        document.getElementById("accordion-ui-framework").appendChild(document.getElementById("ui-framework-id"));  
 
         /**
          *  since ui-framework components already exist, append it to ui-framework components
          */
-        abmi.appendChild(bmi);  
-
-      } else {
-
-        /**
-         * build the Books.MD component when browser fires up
-         */
-        var booksMDComponent = buildBooksMDComponent();
-        
-        /**
-         * load the ui-framework component on the ui-framework component 
-         */   
-        document.getElementById("accordion-books-md-id").appendChild(booksMDComponent);      
-                
-      }
-
-      /**
-       * build or load the calculator carousel component
-       */
-      if (document.getElementById("calculator-id") != null) {  
-
-        var ci = document.getElementById("calculator-id");  
-        var ac = document.getElementById("accordion-calculator");  
+        document.getElementById("accordion-books-md-id").appendChild(document.getElementById("books-md-id"));  
 
         /**
          *  since calculator components already exist, append it to accordion components
          */
-        ac.appendChild(ci);  
-
-      } else {
-
-        /**
-         * build the calculator component when browser fires up
-         */
-        var calculatorComponent = buildCalculatorComponent();
-        
-        /**
-         * load the calculator component on the accordion component 
-         */   
-        document.getElementById("accordion-calculator").appendChild(calculatorComponent);      
-                
-      }        
-       
-      /**
-       * build or load the product-listing carousel component
-       */
-      if (document.getElementById("product-listing-id") != null) {  
-
-        var pli = document.getElementById("product-listing-id");  
-        var apl = document.getElementById("accordion-product-listing");  
+        document.getElementById("accordion-calculator").appendChild(document.getElementById("calculator-id"));  
 
         /**
          *  since product-listing components already exist, append it to accordion components
          */
-        apl.appendChild(pli);  
+        document.getElementById("accordion-product-listing").appendChild(document.getElementById("product-listing-id"));       
+      
+      }
+    
+    } else {
+    
+      /**
+       * client window width is > than 700, append the carousel component to the tab component
+       */
 
+      onTrackWithAccordionComponent = false;
+      
+      if (onParWithTabComponent) {
+        //console.log("on par with tab component... do nothing...");
       } else {
+        //console.log("it is not on par with tab, onParWithTabComponent = "+onParWithTabComponent);
+        onParWithTabComponent = true;
 
-        /**
-         * build the product-listing component when browser fires up
-         */
-        var productListingComponent = buildProductListingComponent();
-        
-        /**
-         * load the product-listing component on the accordion component 
-         */   
-        document.getElementById("accordion-product-listing").appendChild(productListingComponent);      
-                
-      }         
-    }
-
-    /**
-     * load or append the carousel component to the tab component
-     */
-    if (document.documentElement.clientWidth > 700) {
-
-    	//console.log("document.documentElement.clientWidth = "+document.documentElement.clientWidth);
-
-    	/**
-    	 * build or load the menu carousel components
-    	 */
-      if (document.getElementById("menu-id") != null) {
-
-        var mi = document.getElementById("menu-id");
-        var tm = document.getElementById("tab-menu");
+        //console.log("document.documentElement.clientWidth = "+document.documentElement.clientWidth);
 
         /**
          *  since menu components already exist, append it to tab components
          */        
-        tm.appendChild(mi);       
-
-      } else {
-
-        /**
-         * build the menu component when browser fires up
-         */
-        var menuComponent = buildMenuComponent();
-
-        /**
-         * load the menu component on the tab component
-         */   
-        document.getElementById("tab-menu").appendChild(menuComponent);
-                  
-      }
-
-      /**
-       * build or load the image-gallery carousel components
-       */
-      if (document.getElementById("image-gallery-id") != null) {
-
-        var igi = document.getElementById("image-gallery-id");
-        var tig = document.getElementById("tab-image-gallery");
+        document.getElementById("tab-menu").appendChild(document.getElementById("menu-id"));       
 
         /**
          *  since image-gallery components already exist, append it to tab components
          */        
-        tig.appendChild(igi);       
-
-      } else {
-
-        /**
-         * build the image-gallery component when browser fires up
-         */
-        var imageGalleryComponent = buildImageGalleryComponent();
-
-        /**
-         * load the image-gallery component on the tab component
-         */   
-        document.getElementById("tab-image-gallery").appendChild(imageGalleryComponent);
-                  
-      }
-
-      /**
-       * build or load the tabpanel carousel components
-       */
-      if (document.getElementById("tabpanel-id") != null) {
-
-        var tpi = document.getElementById("tabpanel-id");
-        var ttp = document.getElementById("tab-tabpanel");
+        document.getElementById("tab-image-gallery").appendChild(document.getElementById("image-gallery-id"));       
 
         /**
          *  since image-gallery components already exist, append it to tab components
          */        
-        ttp.appendChild(tpi);       
-
-      } else {
-
-        /**
-         * build the image-gallery component when browser fires up
-         */
-        var tabpanelComponent = buildTabpanelComponent();
-
-        /**
-         * load the image-gallery component on the tab component
-         */   
-        document.getElementById("tab-tabpanel").appendChild(tabpanelComponent);
-                  
-      }
-
-      /**
-       * build or load the accordion carousel components
-       */
-      if (document.getElementById("accordion-id") != null) {
-
-        var ai = document.getElementById("accordion-id");
-        var ta = document.getElementById("tab-accordion");
+        document.getElementById("tab-tabpanel").appendChild(document.getElementById("tabpanel-id"));       
 
         /**
          *  since image-gallery components already exist, append it to tab components
          */        
-        ta.appendChild(ai);       
-
-      } else {
-
-        /**
-         * build the image-gallery component when browser fires up
-         */
-        var accordionComponent = buildAccordionComponent();
-
-        /**
-         * load the image-gallery component on the tab component
-         */   
-        document.getElementById("tab-accordion").appendChild(accordionComponent);
-                  
-      }
-
-      /**
-       * build or load the business-card carousel components
-       */
-      if (document.getElementById("business-card-id") != null) {
-
-        var bci = document.getElementById("business-card-id");
-        var tbc = document.getElementById("tab-business-card");
+        document.getElementById("tab-accordion").appendChild(document.getElementById("accordion-id"));       
 
         /**
          *  since image-gallery components already exist, append it to tab components
          */        
-        tbc.appendChild(bci);       
-
-      } else {
-
-        /**
-         * build the image-gallery component when browser fires up
-         */
-        var businessCardComponent = buildBusinessCardComponent();
-
-        /**
-         * load the image-gallery component on the tab component
-         */   
-        document.getElementById("tab-business-card").appendChild(businessCardComponent);
-                  
-      }
-
-      /**
-       * build or load the ui-framework carousel components
-       */
-      if (document.getElementById("ui-framework-id") != null) {
-
-        var ufi = document.getElementById("ui-framework-id");
-        var tuf = document.getElementById("tab-ui-framework");
+        document.getElementById("tab-business-card").appendChild(document.getElementById("business-card-id"));       
 
         /**
          *  since image-gallery components already exist, append it to tab components
          */        
-        tuf.appendChild(ufi);       
-
-      } else {
-
-        /**
-         * build the image-gallery component when browser fires up
-         */
-        var uiframeworkComponent = buildUIFrameworkComponent();
-
-        /**
-         * load the image-gallery component on the tab component
-         */   
-        document.getElementById("tab-ui-framework").appendChild(uiframeworkComponent);
-                  
-      }
-
-      /**
-       * build or load the books-md carousel components
-       */
-      if (document.getElementById("books-md-id") != null) {
-
-        var bmi = document.getElementById("books-md-id");
-        var tbmi = document.getElementById("tab-books-md-id");
+        document.getElementById("tab-ui-framework").appendChild(document.getElementById("ui-framework-id"));       
 
         /**
          *  since image-gallery components already exist, append it to tab components
          */        
-        tbmi.appendChild(bmi);       
-
-      } else {
-
-        /**
-         * build the image-gallery component when browser fires up
-         */
-        var booksMDComponent = buildBooksMDComponent();
-
-        /**
-         * load the image-gallery component on the tab component
-         */   
-        document.getElementById("tab-books-md-id").appendChild(booksMDComponent);
-                  
-      }
-
-    	/**
-    	 * build or load the calculator carousel components
-    	 */
-      if (document.getElementById("calculator-id") != null) {
-
-        var ci = document.getElementById("calculator-id");
-        var tc = document.getElementById("tab-calculator");
+        document.getElementById("tab-books-md-id").appendChild(document.getElementById("books-md-id"));       
 
         /**
          *  since calculator components already exist, append it to tab components
          */        
-        tc.appendChild(ci);       
-
-      } else {
-
-        /**
-         * build the calculator component when browser fires up
-         */
-        var calculatorComponent = buildCalculatorComponent();
-
-        /**
-         * load the calculator component on the tab component
-         */   
-        document.getElementById("tab-calculator").appendChild(calculatorComponent);
-                  
-      }      
-
-      /**
-       * build or load the product-listing carousel components
-       */
-      if (document.getElementById("product-listing-id") != null) {
-
-        var pli = document.getElementById("product-listing-id");
-        var tpl = document.getElementById("tab-product-listing");
+        document.getElementById("tab-calculator").appendChild(document.getElementById("calculator-id"));       
 
         /**
          *  since product-listing components already exist, append it to tab components
          */        
-        tpl.appendChild(pli);       
+        document.getElementById("tab-product-listing").appendChild(document.getElementById("product-listing-id"));       
 
-      } else {
-
-        /**
-         * build the product-listing component when browser fires up
-         */
-        var productListingComponent = buildProductListingComponent();
-
-        /**
-         * load the product-listing component on the tab component
-         */   
-        document.getElementById("tab-product-listing").appendChild(productListingComponent);
-                  
       }
+    }
+  }
+
+	function populateCarousel() {
+
+    console.log("populate carousel once....");
+
+    /**
+     * load the carousel component to the accordion component
+     */
+    if (document.documentElement.clientWidth < 700) {
+
+      /**
+       * load the menu component on the accordion component 
+       */   
+      document.getElementById("accordion-menu").appendChild(buildMenuComponent());
+              
+      /**
+       * load the image-gallery component on the accordion component 
+       */   
+      document.getElementById("accordion-image-gallery").appendChild(buildImageGalleryComponent());      
+              
+      /**
+       * load the tabpanel component on the accordion component 
+       */   
+      document.getElementById("accordion-tabpanel").appendChild(buildTabpanelComponent());      
+                    
+      /**
+       * load the accordion component on the accordion component 
+       */   
+      document.getElementById("accordion-accordion").appendChild(buildAccordionComponent());      
+
+      /**
+       * load the business-card component on the business-card component 
+       */   
+      document.getElementById("accordion-business-card").appendChild(buildBusinessCardComponent());
+      
+      /**
+       * load the ui-framework component on the ui-framework component 
+       */   
+      document.getElementById("accordion-ui-framework").appendChild(buildUIFrameworkComponent());      
+
+      /**
+       * load the ui-framework component on the ui-framework component 
+       */   
+      document.getElementById("accordion-books-md-id").appendChild(buildBooksMDComponent());      
+
+      /**
+       * load the calculator component on the accordion component 
+       */   
+      document.getElementById("accordion-calculator").appendChild(buildCalculatorComponent());      
+      
+      /**
+       * load the product-listing component on the accordion component 
+       */   
+      document.getElementById("accordion-product-listing").appendChild(buildProductListingComponent());      
+              
+    }  else {       
+    
+      /**
+       * if client width is greater than 700, load the carousel component to the tab component
+       */
+
+      /**
+       * load the menu component on the tab component
+       */   
+      document.getElementById("tab-menu").appendChild(buildMenuComponent());
+                
+      /**
+       * load the image-gallery component on the tab component
+       */   
+      document.getElementById("tab-image-gallery").appendChild(buildImageGalleryComponent());
+                
+      /**
+       * load the image-gallery component on the tab component
+       */   
+      document.getElementById("tab-tabpanel").appendChild(buildTabpanelComponent());
+                
+      /**
+       * load the image-gallery component on the tab component
+       */   
+      document.getElementById("tab-accordion").appendChild(buildAccordionComponent());
+                
+      /**
+       * load the image-gallery component on the tab component
+       */   
+      document.getElementById("tab-business-card").appendChild(buildBusinessCardComponent());
+                
+      /**
+       * load the image-gallery component on the tab component
+       */   
+      document.getElementById("tab-ui-framework").appendChild(buildUIFrameworkComponent());
+                
+      /**
+       * load the image-gallery component on the tab component
+       */   
+      document.getElementById("tab-books-md-id").appendChild(buildBooksMDComponent());
+                
+      /**
+       * load the calculator component on the tab component
+       */   
+      document.getElementById("tab-calculator").appendChild(buildCalculatorComponent());
+                
+      /**
+       * load the product-listing component on the tab component
+       */   
+      document.getElementById("tab-product-listing").appendChild(buildProductListingComponent());
+         
     }
 
 	}

@@ -21,15 +21,15 @@ function updateAccordionContent(evt) {
    * height
    */
   var el = document.getElementById(evt.currentTarget.id.toLowerCase());
-  console.log("el.className = "+el.className);
-  console.log("el.id = "+el.id);
+  //console.log("el.className = "+el.className);
+  //console.log("el.id = "+el.id);
   var styleOfContent = window.getComputedStyle(el);
-  console.log("stylesOfContent = "+styleOfContent);
+  //console.log("stylesOfContent = "+styleOfContent);
   var heightOfContent = styleOfContent.getPropertyValue('height');
 
-  console.log("heigthOfContent = "+heightOfContent);
+  //console.log("heigthOfContent = "+heightOfContent);
   var carouselClassName = "carousel-3d-"+el.id.substring(15,16); 
-  console.log("carousel class name = "+carouselClassName);
+  //console.log("carousel class name = "+carouselClassName);
 
   //document.getElementsByClassName(carouselClassName)[0].style.transform = "scale(1)";
 

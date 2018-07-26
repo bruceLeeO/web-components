@@ -1,17 +1,17 @@
 /**
  * Accordion component is added on the sidenav component and now
- * requires a clilck event listener to handle its function.
+ * requires a click event listener to handle its function.
  *
  * Get the CSS class named project-accordion-label
  */
 var projectAccordionLabel = document.getElementsByClassName("project-accordion-label");
-
+//console.log("projectAccordionLabel.length = "+projectAccordionLabel.length);
 /**
  * add click event on the tab components
  */
-for (var i = 0; i < projectAccordionLabel.length; i++) {
-  projectAccordionLabel[i].addEventListener("click", updateProjectAccordionContent, false);
-}
+//for (var i = 0; i < projectAccordionLabel.length; i++) {
+  projectAccordionLabel[0].addEventListener("click", updateProjectAccordionContent, false);
+//}
 
 function updateProjectAccordionContent(evt) {
 
@@ -26,7 +26,7 @@ function updateProjectAccordionContent(evt) {
   //console.log("stylesOfContent = "+styleOfContent);
   var heightOfContent = styleOfContent.getPropertyValue('height');
 
-  console.log("heigthOfContent = "+heightOfContent);
+  //console.log("heigthOfContent = "+heightOfContent);
 
   /**
    * by default the height is reduced to 0, however, due to 
@@ -38,11 +38,11 @@ function updateProjectAccordionContent(evt) {
     /**
      * reset all the active CSS class
      */
-    for (i = 0; i < projectAccordionLabel.length; i++) {
-      projectAccordionLabel[i].className = projectAccordionLabel[i].className.replace(" project-accordion-label--active", "");
+    //for (i = 0; i < projectAccordionLabel.length; i++) {
+      projectAccordionLabel[0].className = projectAccordionLabel[0].className.replace(" project-accordion-label--active", "");
 
-      document.getElementById(projectAccordionLabel[i].id.toLowerCase()).style.height = "0";
-    }
+      document.getElementById(projectAccordionLabel[0].id.toLowerCase()).style.height = "0";
+    //}
 
     evt.currentTarget.className += " project-accordion-label--active";
 
@@ -67,6 +67,7 @@ function updateProjectAccordionContent(evt) {
  * When any menu is click sidenav shutdown and bring anchored link into focus
  */
 var sideNavMenu = document.getElementsByClassName("sidenav-menu");
+//console.log("sideNavMenu.length = "+sideNavMenu.length);
 for (var i = 0; i < sideNavMenu.length; i++) {
 	sideNavMenu[i].addEventListener("click", shutdownSideNav, false);
 }
@@ -78,8 +79,8 @@ function shutdownSideNav() {
   if (document.getElementById("mySidenav").style.width != "") {
   	document.getElementsByClassName("sidenav-icon")[0].classList.toggle("change");
     document.getElementById("mySidenav").style.width = "";
-    document.getElementById("topmain").style.marginLeft = "";
-    //document.getElementById("topmain").style.width = "";  
+    document.getElementsByClassName("sidenav-icon")[0].style.marginLeft = "";
+    document.getElementsByClassName("searchform")[0].style.display = "block";
   }	
 }
 
@@ -87,6 +88,7 @@ function shutdownSideNav() {
  * Add click event listener on sidenav-project-menu
  */
 var sideNavProjMenu = document.getElementsByClassName("sidenav-project-menu");
+//console.log("sideNavProjMenu.length = "+sideNavProjMenu.length);
 for (var i = 0; i < sideNavProjMenu.length; i++) {
 	sideNavProjMenu[i].addEventListener("click", shutdownSideNavProjMenu, false);
 }
@@ -97,8 +99,8 @@ function shutdownSideNavProjMenu() {
   if (document.getElementById("mySidenav").style.width != "") {
   	document.getElementsByClassName("sidenav-icon")[0].classList.toggle("change");
     document.getElementById("mySidenav").style.width = "";
-    document.getElementById("topmain").style.marginLeft = "";
-//    document.getElementById("topmain").style.width = "";  
+    document.getElementsByClassName("sidenav-icon")[0].style.marginLeft = "";
+    document.getElementsByClassName("searchform")[0].style.display = "block";
   }	
 }
 

@@ -10,7 +10,7 @@
 	padding-top: 23px;
 	padding-bottom: 15px;
 	//background-color: pink;
-	z-index: 2;
+	//z-index: 2;
 	margin-top: 5px;
 
 	a {
@@ -64,6 +64,9 @@
   //z-index: 2;
 }
 
+/**
+ * search form basic modal style
+ */
 .searchform-window-modal {
 	//border: 5px solid red;
 	display: none;
@@ -99,32 +102,36 @@
 	border: 1px solid #888;
 }
 
-/// size small
-/// @type svg dimension
+/** size small
+ * @type svg dimension
+ */
 .form-icon-small {
   //width: 1em;
   //height: 1em;
   @include size-small;
 }
 
-/// size medium
-/// @type svg dimension
+/** size medium
+ * @type svg dimension
+ */
 .form-icon-medium {
   //width: 1.5em;
   //height: 1.5em;
   @include size-medium;
 }
 
-/// size large
-/// @type svg dimension
+/** size large
+ * @type svg dimension
+ */
 .form-icon-large {
   //width: 2em;
   //height: 2em;
   @include size-large;
 }
 
-/// size large
-/// @type svg dimension
+/** size large
+ * @type svg dimension
+ */
 .form-icon-xlarge {
   //width: 3em;
   //height: 3em;

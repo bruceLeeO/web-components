@@ -96,7 +96,7 @@
   nex4[0].onclick = function(evt) {
 
     //document.getElementsByClassName("carousel-3d-4-axis")[0].style.transform = "scale(1)";
-    currdeg4 -= 90; console.log("currdeg: "+currdeg4);
+    currdeg4 -= 90; //console.log("currdeg: "+currdeg4);
     document.getElementsByClassName("carousel-3d-4-axis")[0].style.transform = "rotateY("+currdeg4+"deg)";
     //document.getElementsByClassName("carousel-3d-4-axis")[0].style.transform = "rotateY("+currdeg4+"deg) scale(2)";
 
@@ -120,9 +120,9 @@
   }
 
   pre4[0].onclick = function(evt) {
-    console.log("p is clicked");
+    //console.log("p is clicked");
     //document.getElementsByClassName("carousel-3d-4-axis")[0].style.transform = "scale(1)";
-    currdeg4 = currdeg4 + 90; //console.log("currdeg: "+currdeg4);
+    currdeg4 = currdeg4 + 90; ////console.log("currdeg: "+currdeg4);
     document.getElementsByClassName("carousel-3d-4-axis")[0].style.transform = "rotateY("+currdeg4+"deg)";
     //document.getElementsByClassName("carousel-3d-4-axis")[0].style.transform = "rotateY("+currdeg4+"deg) scale(2)";
 
@@ -148,7 +148,7 @@
   nex4a[0].onclick = function(evt) {
 
     //document.getElementsByClassName("carousel-3d-4-axis")[0].style.transform = "scale(1)";
-    currdeg4 -= 90; console.log("currdeg: "+currdeg4);
+    currdeg4 -= 90; //console.log("currdeg: "+currdeg4);
     document.getElementsByClassName("carousel-3d-4-axis")[0].style.transform = "rotateY("+currdeg4+"deg)";
     //document.getElementsByClassName("carousel-3d-4-axis")[0].style.transform = "rotateY("+currdeg4+"deg) scale(2)";
 
@@ -172,9 +172,9 @@
   }
 
   pre4a[0].onclick = function(evt) {
-    console.log("p is clicked");
+    //console.log("p is clicked");
     //document.getElementsByClassName("carousel-3d-4-axis")[0].style.transform = "scale(1)";
-    currdeg4 = currdeg4 + 90; //console.log("currdeg: "+currdeg4);
+    currdeg4 = currdeg4 + 90; ////console.log("currdeg: "+currdeg4);
     document.getElementsByClassName("carousel-3d-4-axis")[0].style.transform = "rotateY("+currdeg4+"deg)";
     //document.getElementsByClassName("carousel-3d-4-axis")[0].style.transform = "rotateY("+currdeg4+"deg) scale(2)";
 

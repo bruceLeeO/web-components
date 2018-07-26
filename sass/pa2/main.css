@@ -557,7 +557,6 @@ blockquote {
   height: 80px;
   padding-top: 23px;
   padding-bottom: 15px;
-  z-index: 2;
   margin-top: 5px;
 }
 .searchform a {
@@ -602,6 +601,9 @@ blockquote {
   color: #f3f4f5;
 }
 
+/**
+ * search form basic modal style
+ */
 .searchform-window-modal {
   display: none;
   position: fixed;
@@ -634,21 +636,33 @@ blockquote {
   border: 1px solid #888;
 }
 
+/** size small
+ * @type svg dimension
+ */
 .form-icon-small {
   width: 1em;
   height: 1em;
 }
 
+/** size medium
+ * @type svg dimension
+ */
 .form-icon-medium {
   width: 1.5em;
   height: 1.5em;
 }
 
+/** size large
+ * @type svg dimension
+ */
 .form-icon-large {
   width: 2em;
   height: 2em;
 }
 
+/** size large
+ * @type svg dimension
+ */
 .form-icon-xlarge {
   width: 2.5em;
   height: 2.5em;
@@ -1092,63 +1106,8 @@ blockquote {
 }
 
 /**
- * side tool for development purpose
- * useful during responsive design task 
+ * return-to-top navigator component
  */
-.screen-width {
-  display: none;
-  padding: 20px;
-  background-color: #51d0ef;
-  color: #34383c;
-  border-radius: 50%;
-  position: fixed;
-  top: 150px;
-  right: 20px;
-  cursor: pointer;
-  z-index: 3;
-}
-
-.scrollheight {
-  display: none;
-  padding: 20px;
-  background-color: #ffcb45;
-  color: #34383c;
-  border-radius: 50%;
-  position: fixed;
-  top: 220px;
-  right: 20px;
-  cursor: pointer;
-  z-index: 3;
-}
-
-.show-width-bubble {
-  display: block;
-  padding: 15px;
-  background-color: #51d0ef;
-  color: #34383c;
-  border-radius: 50%;
-  position: fixed;
-  top: 150px;
-  right: 20px;
-  cursor: pointer;
-  z-index: 3;
-  width: 5px;
-  height: 5px;
-}
-
-.show-scrollheight-bubble {
-  display: block;
-  padding: 15px;
-  background-color: #ffcb45;
-  color: #34383c;
-  border-radius: 50%;
-  position: fixed;
-  top: 220px;
-  right: 20px;
-  cursor: pointer;
-  z-index: 3;
-}
-
 #return-to-top {
   position: fixed;
   bottom: 20px;
@@ -1204,11 +1163,7 @@ blockquote {
   left: 0;
   background-color: #111;
   overflow: hidden;
-  transition: 0.25s width;
-}
-
-#topmain {
-  transition: 0.25s margin-left;
+  transition: 0.15s width ease;
 }
 
 .closebtn, .sidenav-x-icon {
@@ -1230,6 +1185,9 @@ blockquote {
   cursor: pointer;
   margin-top: 27px;
   margin-left: 10px;
+  width: 40px;
+  padding: 0;
+  transition: 0.15s margin-left ease;
 }
 
 .sidenav-icon-bar1, .sidenav-icon-bar3 {
@@ -1237,7 +1195,7 @@ blockquote {
   height: 5px;
   background-color: #ededed;
   margin: 6px 0;
-  transition: 0.25s;
+  transition: 0.15s ease;
 }
 
 .sidenav-icon-bar2 {
@@ -1245,7 +1203,7 @@ blockquote {
   height: 5px;
   background-color: #ededed;
   margin: 6px 0;
-  transition: 0.25s;
+  transition: 0.15s ease;
 }
 
 .change .sidenav-icon-bar1 {
@@ -1285,7 +1243,7 @@ blockquote {
   font-size: 85%;
   color: #818181;
   display: block;
-  transition: 0.3s;
+  transition: 0.05s;
   border-right: 5px solid #818181;
   padding: 8px 8px 8px 32px;
   margin: 5px;

@@ -16,18 +16,18 @@
   background-color: #111;
   //overflow-x: hidden;
   overflow: hidden;
-  //transition: 0.25s;
+  //transition: 0.05s;
   //padding-top: 60px;
   //opacity: 0.75;
   //border: 5px solid pink;
   //display: none;
-  //transition: ease 0.25s width;
-  transition: 0.25s width;
+  //transition: ease 0.05s width;
+  transition: 0.15s width ease;
 }
 
-#topmain {
-  transition: 0.25s margin-left;
-}
+//#topmain {
+//  transition: 0.05s margin-left;
+//}
 
 .closebtn, .sidenav-x-icon {
   position: absolute;
@@ -51,9 +51,11 @@
 .sidenav-icon {
     display: inline-block;
     cursor: pointer;
-    //border: 2px solid red;
     margin-top: 27px;
     margin-left: 10px;
+    width: 40px;
+    padding: 0;
+    transition: 0.15s margin-left ease;
 }
 
 .sidenav-icon-bar1, .sidenav-icon-bar3 {
@@ -62,8 +64,8 @@
     //background-color: #333;
     background-color: $light-grey;
     margin: 6px 0;
-    //transition: 0.25s ease;
-    transition: 0.25s;
+    //transition: 0.05s ease;
+    transition: 0.15s ease;
 }
 
 .sidenav-icon-bar2 {
@@ -72,8 +74,8 @@
     //background-color: #333;
     background-color: $light-grey;
     margin: 6px 0;
-    //transition: 0.25s ease;
-    transition: 0.25s;  
+    //transition: 0.05s ease;
+    transition: 0.15s ease;  
 }
 
 .change .sidenav-icon-bar1 {
@@ -112,7 +114,7 @@
     font-size: 85%;
     color: #818181;
     display: block;
-    transition: 0.3s;
+    transition: 0.05s;
     border-right: 5px solid #818181; 
     //padding: 0.25em;
     padding: 8px 8px 8px 32px;

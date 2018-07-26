@@ -1,11 +1,10 @@
 /**
- * navigatorComponents is comprised of scrolls component like scrollspy,
+ * navigatorComponents.js is comprised of scrolls component like scrollspy,
  * showWidth and showHeight bubble, and return-to-top clickable bubble; 
- * it also checks window resize to unset width of 'topmain' id to restore 
- * page responsiveness
+ * it also checks window resize to unset width of sideNav menu
  */
 
-// listen to the window resize, use to uset width of sidenav to restore responsive effect when topmain width > 600
+// listen to the window resize, to unset width of sidenav and restore search form
 window.addEventListener('resize', goUnsetTheWidth);
 
 //listen to the window scroll, use by scrollspy and return-to-top bubble component
@@ -14,16 +13,12 @@ window.addEventListener('scroll', goShowNavComponents);
 /**
  * go show the bubbles and navigation components 
  */
-function goShowNavComponents() {
-  /**
-   * show the width of the screen for development and debug purpose
-   */
-  document.querySelector('.screen-width').innerText = document.documentElement.clientWidth; 
+function goShowNavComponents() { 
 
   /**
    * show the height of the scroll for development and debug purpose
    */
-  document.querySelector('.scrollheight').innerText = window.scrollY;     
+  //document.querySelector('.scrollheight').innerText = window.scrollY;     
 
   /**
    * show the fixed scroll to return to top 
@@ -45,47 +40,43 @@ function goShowNavComponents() {
 
 
 }
-
+var isWidthUnset = false;
 /**
  * If sidenav is open and user resize the window, make sure to unset the topmain with to 
  * restore the responsiveness of the page; otherwise, it will stay lock on width=500px and 
  the page will rendered usresponsive to further window resize after it was opened
  */
 function goUnsetTheWidth() {
+
+  /**
+   * show the width of the screen for development and debug purpose
+   */
+  //document.querySelector('.screen-width').innerText = document.documentElement.clientWidth;
+
   /**
    * shut down sidenav when window screen is greater than 600px 
    */
   if (document.documentElement.clientWidth > 600) {
-    /**
-     * if sidenav is still open, then shut it off
-     * after shutting, make sure to unset screen width of 500px
-     * to restore responsive effect of the topmain container
-     */
-    if (document.getElementById("mySidenav").style.width != "") {
-      document.getElementsByClassName("sidenav-icon")[0].classList.toggle("change");
-      document.getElementById("mySidenav").style.width = "";
-      document.getElementById("topmain").style.marginLeft = "";
-      document.getElementById("topmain").style.width = "";  
+
+    if (isWidthUnset) {
+      //console.log("It's been unset... so do nothing...");
     } else {
       /**
-       * either way unset screen width of 500px
+       * if sidenav is still open, shut it off
+       * make sure to reset margin-left and re-display searchform
+       * and set marker to true
        */
-      document.getElementById("topmain").style.width = "";          
+      if (document.getElementById("mySidenav").style.width != "") {
+        document.getElementsByClassName("sidenav-icon")[0].classList.toggle("change");
+        document.getElementById("mySidenav").style.width = "";
+        document.getElementsByClassName("sidenav-icon")[0].style.marginLeft = "";
+        document.getElementsByClassName("searchform")[0].style.display = "block";
+        /* now that it is unset, check it off as true */
+        isWidthUnset = true;        
+      } else {
+        isWidthUnset = false; // return it to default setting
+      }
     }
-  } else {
-    /**
-     * here, it's okay to leave sidenav open and keep the container's
-     * screen width in check at 500px, so do nothing
-     */
-    if (document.getElementById("mySidenav").style.width != "") {
-        //do nothing
-    } else {
-      /**
-       * else, if sidenav is shut, then unset screen width of 500px 
-       * to return responsive effect
-       */           
-      document.getElementById("topmain").style.width = "";          
-    }       
   } 
 }
 
@@ -96,30 +87,30 @@ function goUnsetTheWidth() {
  * update the size of the window as the window is resized.  Clicking on it 
  * will pop the bubble off. 
  */
-var screenWidth = document.getElementsByClassName("screen-width")[0];
-var shoWidBubl = document.getElementsByClassName("show-width-bubble")[0];
-shoWidBubl.onclick = function () {
-  screenWidth.style.display = "block";
-}
+//var screenWidth = document.getElementsByClassName("screen-width")[0];
+//var shoWidBubl = document.getElementsByClassName("show-width-bubble")[0];
+//shoWidBubl.onclick = function () {
+//  screenWidth.style.display = "block";
+//}
 /* pop the width bubble off */
-screenWidth.onclick = function() {
-  screenWidth.style.display = "none";
-}
+//screenWidth.onclick = function() {
+//  screenWidth.style.display = "none";
+//}
 
 /**
  * Like the width bubble, when the page is scrolled up or down, the showHeight 
  * bubble displays the current position of the scroll starting at 0 position onward; 
  * likewise, clicking on the bubble will pop it off
  */ 
-var scrollHeight = document.getElementsByClassName("scrollheight")[0];
-var shoScrolHeightBubl = document.getElementsByClassName("show-scrollheight-bubble")[0];
-shoScrolHeightBubl.onclick = function () {
-  scrollHeight.style.display = "block";
-}
+//var scrollHeight = document.getElementsByClassName("scrollheight")[0];
+//var shoScrolHeightBubl = document.getElementsByClassName("show-scrollheight-bubble")[0];
+//shoScrolHeightBubl.onclick = function () {
+//  scrollHeight.style.display = "block";
+//}
 /* pop the height bubble off */
-scrollHeight.onclick = function() {
-  scrollHeight.style.display = "none";
-}
+//scrollHeight.onclick = function() {
+//  scrollHeight.style.display = "none";
+//}
 
 /** 
  * add an event listener to toggle between showing and unshowing 
@@ -132,25 +123,25 @@ sideNavIcon[0].addEventListener("click", toggleSideNav, false);
 //sideNavXIcon[0].addEventListener("click", closeSideNav, false);
 
 function toggleSideNav(evt) {
+//sideNavIcon[0].onclick = function(evt) {    
   //console.log("toggling side nav");
   //console.log("document.getElementById('mySidenav').style.width = "+document.getElementById("mySidenav").style.width);
+  /* toggle between change class */
   evt.currentTarget.classList.toggle("change");
   if (document.getElementById("mySidenav").style.width === "") {
     //console.log("opening side nav");
-    document.getElementById("mySidenav").style.width = "250px";
-    //document.getElementById("mySidenav").style.height = "100%";
-    document.getElementById("topmain").style.marginLeft = "250px";
-    document.getElementById("topmain").style.width = "375px"; 
+    document.getElementById("mySidenav").style.width = "250px";    
+    document.getElementsByClassName("sidenav-icon")[0].style.marginLeft = "250px";
+    document.getElementsByClassName("searchform")[0].style.display = "none"; 
+    /* shut the project menu in case user left it open */
     document.getElementById("project-accordion-panel1").style.height = "0";   
   } else {
     //console.log("closing side nav");
     document.getElementById("mySidenav").style.width = "";
-    //sdocument.getElementById("mySidenav").style.height = "";
-    document.getElementById("topmain").style.marginLeft = "";
-    document.getElementById("topmain").style.width = "";      
+    document.getElementsByClassName("sidenav-icon")[0].style.marginLeft = "";
+    document.getElementsByClassName("searchform")[0].style.display = "block";   
   }
 }
-
 
 /**
  * Now let's deal with the scrollspy's component, starting with
