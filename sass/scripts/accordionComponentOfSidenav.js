@@ -5,7 +5,7 @@
  * Get the CSS class named project-accordion-label
  */
 var projectAccordionLabel = document.getElementsByClassName("project-accordion-label");
-//console.log("projectAccordionLabel.length = "+projectAccordionLabel.length);
+////console.log("projectAccordionLabel.length = "+projectAccordionLabel.length);
 /**
  * add click event on the tab components
  */
@@ -15,18 +15,20 @@ var projectAccordionLabel = document.getElementsByClassName("project-accordion-l
 
 function updateProjectAccordionContent(evt) {
 
-  //console.log("what class: "+evt.currentTarget.id.toLowerCase());
+  ////console.log("what class: "+evt.currentTarget.id.toLowerCase());
   /**
    * get the current target element and then look up the value of its 
    * height
    */
   var el = document.getElementById(evt.currentTarget.id.toLowerCase());
-  //console.log("el.className = "+el.className);
+  ////console.log("el.className = "+el.className);
   var styleOfContent = window.getComputedStyle(el);
-  //console.log("stylesOfContent = "+styleOfContent);
+  ////console.log("stylesOfContent = "+styleOfContent);
   var heightOfContent = styleOfContent.getPropertyValue('height');
 
-  //console.log("heigthOfContent = "+heightOfContent);
+  ////console.log("heigthOfContent = "+heightOfContent);
+
+  ////console.log("evt.currentTarget.style.height: "+evt.currentTarget);
 
   /**
    * by default the height is reduced to 0, however, due to 
@@ -67,7 +69,7 @@ function updateProjectAccordionContent(evt) {
  * When any menu is click sidenav shutdown and bring anchored link into focus
  */
 var sideNavMenu = document.getElementsByClassName("sidenav-menu");
-//console.log("sideNavMenu.length = "+sideNavMenu.length);
+////console.log("sideNavMenu.length = "+sideNavMenu.length);
 for (var i = 0; i < sideNavMenu.length; i++) {
 	sideNavMenu[i].addEventListener("click", shutdownSideNav, false);
 }
@@ -88,7 +90,7 @@ function shutdownSideNav() {
  * Add click event listener on sidenav-project-menu
  */
 var sideNavProjMenu = document.getElementsByClassName("sidenav-project-menu");
-//console.log("sideNavProjMenu.length = "+sideNavProjMenu.length);
+////console.log("sideNavProjMenu.length = "+sideNavProjMenu.length);
 for (var i = 0; i < sideNavProjMenu.length; i++) {
 	sideNavProjMenu[i].addEventListener("click", shutdownSideNavProjMenu, false);
 }

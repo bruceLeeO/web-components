@@ -6,6 +6,12 @@
 	//border: 2px solid $dark-teal;
 	@include border2-solid($dull-black);
 	//text-align: center;
+
+	.header-p-spacer {
+		@media screen and (max-width: 700px) {
+			display: none;
+		}
+	}
 }
 
 .header-logo {
@@ -16,5 +22,9 @@
 
 	span {
 		color: $white;
+	}
+
+	@media screen and (max-width: 700px) {
+		display: none;
 	}
 }

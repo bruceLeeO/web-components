@@ -27,7 +27,7 @@ function updateTabContent(evt) {
 
   evt.currentTarget.className += " tab-index-label--active";
 
-  console.log("evt.currentTarget.className: "+evt.currentTarget.className+" & evt.currentTarget.id: "+evt.currentTarget.id);
+  //console.log("evt.currentTarget.className: "+evt.currentTarget.className+" & evt.currentTarget.id: "+evt.currentTarget.id);
   /**
    * perform a hack to retrieve a specific tab content id and then 
    * unblock its display style 

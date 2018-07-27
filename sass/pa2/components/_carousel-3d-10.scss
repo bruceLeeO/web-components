@@ -1,0 +1,273 @@
+.carousel-3d-10 {
+	position: relative;
+	margin: auto;
+	//top: 28.75%;
+	top: 22%;
+	max-width: 375px;
+	height: 275px;
+	//height: 215px;
+	perspective: 1300px;
+	//border: 4px solid pink;
+	border-radius: 0.25em;
+		//display:none;
+}		
+
+.carousel-3d-10-axis {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	transition: 1s;
+	//background-color: lime;
+}
+
+
+.carousel-3d-10-item  {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: block;
+	cursor: pointer;
+
+	div	{
+		width: 100%;
+		//height: 100%;
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+
+		video {
+			width: 100%;
+			height: auto;
+		}
+	}
+}
+
+.f1-of-3d-10 {
+	transform: rotateY(0deg	) translateZ(340px);
+	background-color: $light-grey;
+	//opacity: 0.5;
+}
+
+.f2-of-3d-10 {
+	transform: rotateY(60deg) translateZ(340px);
+	background-color: $light-grey;
+	//opacity: 0.5;	
+}
+
+.f3-of-3d-10 {
+	transform: rotateY(120deg) translateZ(340px);
+	background-color: $light-grey;
+	//opacity: 0.5;
+}
+
+.f4-of-3d-10 {
+	transform: rotateY(180deg) translateZ(340px);
+	background-color: $light-grey;
+	//opacity: 0.5;	
+}
+
+.f5-of-3d-10 {
+	transform: rotateY(240deg) translateZ(340px);
+	background-color: $light-grey;
+	//opacity: 0.5;	
+}
+
+.f6-of-3d-10 {
+	transform: rotateY(300deg) translateZ(340px);
+	background-color: $light-grey;
+	//opacity: 0.5;	
+}
+
+.carousel-3d-10-item--indicator {
+	position: absolute;
+	border: 1px solid $light-grey;
+	border-radius: 50px;
+	background-color: $dull-black;
+	margin-right: 0.25em;
+	width: 0.5em;
+	height: 0.5em;
+	z-index: 1;
+	cursor: pointer;	
+	&:hover {
+		background-color: orange;
+		border-color: silver;
+	}
+	&:first-of-type {
+		top: 285px;
+		left: 83px;
+	}
+
+	&:nth-of-type(2) {
+		top: 285px;
+		left: 123px;
+	}
+
+	&:nth-of-type(3) {
+		top: 285px;
+		left: 163px;
+	}
+
+	&:nth-of-type(4) {
+		top: 285px;
+		left: 203px;
+	}
+
+	&:nth-of-type(5) {
+		top: 285px;
+		left: 243px;
+	}
+
+	&:nth-of-type(6) {
+		top: 285px;
+		left: 283px;
+	}
+}
+
+.carousel-3d-10-item--next, .carousel-3d-10-item--next-a {
+	margin: 0;
+	cursor: pointer;
+	position: absolute;
+	top: 125px;
+	left: 346px;
+	padding: 6.25px 9.25px 0 9.25px;
+	border-radius: 50px;
+	background-color: yellow;
+	opacity: 0.5;		
+
+	svg {
+		padding: 1px;
+		margin: 0;
+		border: 1px solid;
+		border-radius: 50px;
+	}
+
+	&:hover {
+		background-color: black;
+		opacity: 1;
+
+		svg	{
+			color: yellow;
+			fill: currentColor;
+		}
+	}
+}
+
+.carousel-3d-10-item--prev, .carousel-3d-10-item--prev-a {
+	padding: 6.25px 9px 0 9.25px;
+	border-radius: 50px;
+	margin: 0;	
+	cursor: pointer;
+	position: absolute;
+	top: 125px;
+	left: -12px;
+	background-color: yellow;
+	opacity: 0.5;
+	
+	svg {
+		padding: 1px;
+		border: 1px solid;
+		border-radius: 50px;
+	}
+
+	&:hover {
+		background-color: black;
+		opacity: 1;
+
+		svg	{
+			color: yellow;
+			fill: currentColor;
+		}
+	}	
+}
+
+.carousel-3d-10-item--next-a, .carousel-3d-10-item--prev-a { display: none; }
+
+.carousel-3d-10-content {
+	position: absolute;
+	width:100%;
+	height: 100%;
+	border: 2px solid #e1332d;
+	overflow: hidden;
+
+	img {
+		width: 100%;
+	}
+}
+
+.itemsIn3d-10--active {
+	border-color: $dull-black;
+	background-color: $light-grey;
+}
+
+@media screen and (max-width: 700px) {	
+	.carousel-3d-10-item--next, .carousel-3d-10-item--prev { display: none; }
+	.carousel-3d-10-item--next-a, .carousel-3d-10-item--prev-a { display: block; }
+}
+
+@media screen and (max-width: 500px) {	
+	.carousel-3d-10 { 
+		max-width: 300px;
+		height: 245px;
+	}
+	.carousel-3d-10-item  {
+
+		div	{
+			width: 100%;
+
+			img {
+				width: 100%;
+				height: auto;
+			}
+
+			video {
+				width: 100%;
+				height: auto;
+			}
+		}
+
+	}
+	.carousel-3d-10-item--prev-a {
+		top: 100px;
+		left: -4px;
+	}
+	.carousel-3d-10-item--next-a {
+		top: 100px;
+		left: 260px;
+	}
+	.carousel-3d-10-item--indicator {
+
+		&:first-of-type {
+			top: 245px;
+			left: 43px;
+		}
+
+		&:nth-of-type(2) {
+			top: 245px;
+			left: 83px;
+		}
+
+		&:nth-of-type(3) {
+			top: 245px;
+			left: 123px;
+		}
+
+		&:nth-of-type(4) {
+			top: 245px;
+			left: 163px;
+		}	
+
+		&:nth-of-type(5) {
+			top: 245px;
+			left: 203px;
+		}
+
+		&:nth-of-type(6) {
+			top: 245px;
+			left: 243px;
+		}					
+	}
+
+}

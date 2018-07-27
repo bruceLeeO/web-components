@@ -1,15 +1,17 @@
 (function(window) {
 
-  console.log("populating carousel is intended to run only once at start up....");
+  //console.log("populating carousel is intended to run only once at start up....");
   populateCarousel();
 
-  var onTrackWithAccordionComponent = false;
-  var onParWithTabComponent = false;    
-	window.addEventListener('resize', goAppendCarouselToChild);
+  var onTrackWithAccordionComponent, onParWithTabComponent, isWidthUnset = false; 
 
-  function goAppendCarouselToChild() { 
-    //console.log("do nothing.... for now...");
-  
+  /* listen to window re-size and sparks up carousel component binding and sidenav component shut off */
+	window.addEventListener('resize', sparklers);
+
+  function sparklers() { 
+
+    //console.log("listening to window resize event....");
+
     /**
      * append the carousel component to the accordion component
      */
@@ -66,7 +68,12 @@
         /**
          *  since product-listing components already exist, append it to accordion components
          */
-        document.getElementById("accordion-product-listing").appendChild(document.getElementById("product-listing-id"));       
+        document.getElementById("accordion-product-listing").appendChild(document.getElementById("product-listing-id"));
+
+        /**
+         *  since multiple form components already exist, append it to accordion components
+         */
+        document.getElementById("accordion-multiple-form").appendChild(document.getElementById("multiple-form-id"));        
       
       }
     
@@ -75,6 +82,19 @@
       /**
        * client window width is > than 700, append the carousel component to the tab component
        */
+
+      //console.log("document.documentElement.clientWidth: "+document.documentElement.clientWidth);
+
+      //console.log("document.getElementById('mySidenav').style.width: "+document.getElementById("mySidenav").style.width);
+
+      if (document.getElementById("mySidenav").style.width === "250px") {
+        //console.log("sidenav is still open.... so close it...");
+        document.getElementById("mySidenav").style.width = "0px";
+        document.getElementsByClassName("sidenav-icon")[0].classList.toggle("change");
+        document.getElementsByClassName("sidenav-icon")[0].style.marginLeft = "0px";
+        document.getElementsByClassName("searchform")[0].style.display = "block";
+        /* now that it is unset, check it off as true */      
+      }
 
       onTrackWithAccordionComponent = false;
       
@@ -129,15 +149,21 @@
         /**
          *  since product-listing components already exist, append it to tab components
          */        
-        document.getElementById("tab-product-listing").appendChild(document.getElementById("product-listing-id"));       
+        document.getElementById("tab-product-listing").appendChild(document.getElementById("product-listing-id"));
+
+        /**
+         *  since multiple form components already exist, append it to tab components
+         */        
+        document.getElementById("tab-multiple-form").appendChild(document.getElementById("multiple-form-id"));               
 
       }
     }
+
   }
 
 	function populateCarousel() {
 
-    console.log("populate carousel once....");
+    //console.log("populate carousel once....");
 
     /**
      * load the carousel component to the accordion component
@@ -187,7 +213,12 @@
       /**
        * load the product-listing component on the accordion component 
        */   
-      document.getElementById("accordion-product-listing").appendChild(buildProductListingComponent());      
+      document.getElementById("accordion-product-listing").appendChild(buildProductListingComponent());
+
+      /**
+       * load the multiple form component on the accordion component 
+       */   
+      document.getElementById("accordion-multiple-form").appendChild(buildMultipleFormComponent());            
               
     }  else {       
     
@@ -239,6 +270,11 @@
        * load the product-listing component on the tab component
        */   
       document.getElementById("tab-product-listing").appendChild(buildProductListingComponent());
+
+      /**
+       * load the multiple form component on the tab component
+       */   
+      document.getElementById("tab-multiple-form").appendChild(buildMultipleFormComponent());      
          
     }
 
@@ -765,6 +801,85 @@
                       <svg class="tab-next-chevron form-icon-small"><use xlink:href="#icon-chevron-right"></use></svg>\
                     </span>\
                     <span class="carousel-3d-9-item--prev-a">\
+                      <svg class="form-icon-small"><use xlink:href="#icon-chevron-left"></use></svg>\
+                    </span>\
+                  </div>';
+
+    return cal;    
+  }
+
+  function buildMultipleFormComponent() {
+    var cal = document.createElement("div");
+    cal.className = "carousel-3d-10";
+    cal.id = "multiple-form-id";
+    cal.innerHTML ='<div class="carousel-3d-10-axis">\
+                      <div class="carousel-3d-10-item f1-of-3d-10">\
+                        <div class="carousel-3d-10-content">\
+                          <div>\
+                            <img width="375" height="200" src="../img/pa2/product-listing/product-listing-1.jpg" alt="Product Listing Site 1">\
+                          </div>\
+                        </div>\
+                      </div>\
+                      <div class="carousel-3d-10-item f2-of-3d-10">\
+                        <div class="carousel-3d-10-content">\
+                          <div>\
+                            <img width="375" height="200" src="../img/pa2/product-listing/product-listing-2.jpg" alt="Product Listing Site 2">\
+                          </div>\
+                        </div>\
+                      </div>\
+                      <div class="carousel-3d-10-item f3-of-3d-10">\
+                        <div class="carousel-3d-10-content">\
+                          <div>\
+                            <video width="375" height="280" autoplay loop muted>\
+                              <source src="../img/pa2/product-listing/product-listing.mp4">\
+                            </video>\
+                          </div>\
+                        </div>\
+                      </div>\
+                      <div class="carousel-3d-10-item f4-of-3d-10">\
+                        <div class="carousel-3d-10-content">\
+                          <div>\
+                            <video width="375" height="280" autoplay loop muted>\
+                              <source src="../img/pa2/image-gallery/image-gallery.mp4">\
+                            </video>\
+                          </div>\
+                        </div>\
+                      </div>\
+                      <div class="carousel-3d-10-item f5-of-3d-10">\
+                        <div class="carousel-3d-10-content">\
+                          <div>\
+                            <video width="375" height="280" autoplay loop muted>\
+                              <source src="../img/pa2/image-gallery/image-gallery.mp4">\
+                            </video>\
+                          </div>\
+                        </div>\
+                      </div>\
+                      <div class="carousel-3d-10-item f6-of-3d-10">\
+                        <div class="carousel-3d-10-content">\
+                          <div>\
+                            <video width="375" height="280" autoplay loop muted>\
+                              <source src="../img/pa2/image-gallery/image-gallery.mp4">\
+                            </video>\
+                          </div>\
+                        </div>\
+                      </div>\
+                    </div>\
+                    <span class="carousel-3d-10-item--indicator itemsIn3d-10--active" id="c-3d-10-item-1"></span>\
+                    <span class="carousel-3d-10-item--indicator" id="c-3d-10-item-2"></span>\
+                    <span class="carousel-3d-10-item--indicator" id="c-3d-10-item-3"></span>\
+                    <span class="carousel-3d-10-item--indicator" id="c-3d-10-item-4"></span>\
+                    <span class="carousel-3d-10-item--indicator" id="c-3d-10-item-5"></span>\
+                    <span class="carousel-3d-10-item--indicator" id="c-3d-10-item-6"></span>\
+                    <span class="carousel-3d-10-item--next">\
+                      <svg class="tab-next-chevron form-icon-small"><use xlink:href="#icon-chevron-right"></use></svg>\
+                    </span>\
+                    <span class="carousel-3d-10-item--prev">\
+                      <svg class="form-icon-small"><use xlink:href="#icon-chevron-left"></use></svg>\
+                    </span>\
+                    <span class="carousel-3d-10-item--next-a">\
+                      <svg class="tab-next-chevron form-icon-small"><use xlink:href="#icon-chevron-right"></use></svg>\
+                    </span>\
+                    <span class="carousel-3d-10-item--prev-a">\
                       <svg class="form-icon-small"><use xlink:href="#icon-chevron-left"></use></svg>\
                     </span>\
                   </div>';
