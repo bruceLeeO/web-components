@@ -1,5 +1,5 @@
 /**
- * search form style
+ * Search Form Style
  */
 .searchform {
 	position: relative;
@@ -65,7 +65,7 @@
 }
 
 /**
- * search form basic modal style
+ * Search Form Basic Modal Style
  */
 .searchform-window-modal {
 	//border: 5px solid red;
@@ -102,38 +102,22 @@
 	border: 1px solid #888;
 }
 
-/** size small
- * @type svg dimension
- */
+/* size small, @type svg dimension */
 .form-icon-small {
-  //width: 1em;
-  //height: 1em;
   @include size-small;
 }
 
-/** size medium
- * @type svg dimension
- */
+/* size medium, @type svg dimension */
 .form-icon-medium {
-  //width: 1.5em;
-  //height: 1.5em;
   @include size-medium;
 }
 
-/** size large
- * @type svg dimension
- */
+/* size large, @type svg dimension */
 .form-icon-large {
-  //width: 2em;
-  //height: 2em;
   @include size-large;
 }
 
-/** size large
- * @type svg dimension
- */
+/* size large, @type svg dimension */
 .form-icon-xlarge {
-  //width: 3em;
-  //height: 3em;
   @include size-xlarge;
 }

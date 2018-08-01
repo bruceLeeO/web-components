@@ -1,21 +1,14 @@
 (function(window) {
 	/** carousel 3d-10 */
-  var nex10 = document.getElementsByClassName("carousel-3d-10-item--next");
-  var pre10 = document.getElementsByClassName("carousel-3d-10-item--prev");
-  var nex10a = document.getElementsByClassName("carousel-3d-10-item--next-a");
-  var pre10a = document.getElementsByClassName("carousel-3d-10-item--prev-a");  
+  var nex10 = document.getElementsByClassName("c-3d-10-next");
+  var pre10 = document.getElementsByClassName("c-3d-10-prev");
+  var nex10a = document.getElementsByClassName("c-3d-10-next-a");
+  var pre10a = document.getElementsByClassName("c-3d-10-prev-a");  
   var currdeg10 = 0;
 
-  var itemsIn3d10 = document.getElementsByClassName("carousel-3d-10-item--indicator");
+  var itemsIn3d10 = document.getElementsByClassName("c-3d-10-indy");
 
-  var item1Of3d10 = document.getElementById("c-3d-10-item-1");
-  var item2Of3d10 = document.getElementById("c-3d-10-item-2");
-  var item3Of3d10 = document.getElementById("c-3d-10-item-3");
-  var item4Of3d10 = document.getElementById("c-3d-10-item-4");
-  var item5Of3d10 = document.getElementById("c-3d-10-item-5");
-  var item6Of3d10 = document.getElementById("c-3d-10-item-6");  
-
-  item1Of3d10.onclick = function(evt) {
+  itemsIn3d10[0].onclick = function(evt) {
     for (var i = 0; i < itemsIn3d10.length; i++) {
 
       if (isExpressionInArrs(itemsIn3d10[i].className,"itemsIn3d-10--active")) {
@@ -38,10 +31,10 @@
         evt.currentTarget.className += " itemsIn3d-10--active";
       }
     }
-    document.getElementsByClassName("carousel-3d-10-axis")[0].style.transform = "rotateY("+currdeg10+"deg)";
+    document.getElementsByClassName("c-3d-10-axis")[0].style.transform = "rotateY("+currdeg10+"deg)";
   }
 
-  item2Of3d10.onclick = function(evt) {
+  itemsIn3d10[1].onclick = function(evt) {
     for (var i = 0; i < itemsIn3d10.length; i++) {
 
       if (isExpressionInArrs(itemsIn3d10[i].className,"itemsIn3d-10--active")) {
@@ -64,10 +57,10 @@
         evt.currentTarget.className += " itemsIn3d-10--active";
       }
     }
-    document.getElementsByClassName("carousel-3d-10-axis")[0].style.transform = "rotateY("+currdeg10+"deg)";
+    document.getElementsByClassName("c-3d-10-axis")[0].style.transform = "rotateY("+currdeg10+"deg)";
   }
 
-  item3Of3d10.onclick = function(evt) {
+  itemsIn3d10[2].onclick = function(evt) {
     for (var i = 0; i < itemsIn3d10.length; i++) {
 
       if (isExpressionInArrs(itemsIn3d10[i].className,"itemsIn3d-10--active")) {
@@ -90,10 +83,10 @@
         evt.currentTarget.className += " itemsIn3d-10--active";
       }
     }
-    document.getElementsByClassName("carousel-3d-10-axis")[0].style.transform = "rotateY("+currdeg10+"deg)";
+    document.getElementsByClassName("c-3d-10-axis")[0].style.transform = "rotateY("+currdeg10+"deg)";
   }
 
-  item4Of3d10.onclick = function(evt) {
+  itemsIn3d10[3].onclick = function(evt) {
     for (var i = 0; i < itemsIn3d10.length; i++) {
 
       if (isExpressionInArrs(itemsIn3d10[i].className,"itemsIn3d-10--active")) {
@@ -116,10 +109,10 @@
         evt.currentTarget.className += " itemsIn3d-10--active";
       }
     }
-    document.getElementsByClassName("carousel-3d-10-axis")[0].style.transform = "rotateY("+currdeg10+"deg)";
+    document.getElementsByClassName("c-3d-10-axis")[0].style.transform = "rotateY("+currdeg10+"deg)";
   }
 
-  item5Of3d10.onclick = function(evt) {
+  itemsIn3d10[4].onclick = function(evt) {
     for (var i = 0; i < itemsIn3d10.length; i++) {
 
       if (isExpressionInArrs(itemsIn3d10[i].className,"itemsIn3d-10--active")) {
@@ -142,10 +135,10 @@
         evt.currentTarget.className += " itemsIn3d-10--active";
       }
     }
-    document.getElementsByClassName("carousel-3d-10-axis")[0].style.transform = "rotateY("+currdeg10+"deg)";
+    document.getElementsByClassName("c-3d-10-axis")[0].style.transform = "rotateY("+currdeg10+"deg)";
   }
 
-  item6Of3d10.onclick = function(evt) {
+  itemsIn3d10[5].onclick = function(evt) {
     for (var i = 0; i < itemsIn3d10.length; i++) {
 
       if (isExpressionInArrs(itemsIn3d10[i].className,"itemsIn3d-10--active")) {
@@ -168,15 +161,15 @@
         evt.currentTarget.className += " itemsIn3d-10--active";
       }
     }
-    document.getElementsByClassName("carousel-3d-10-axis")[0].style.transform = "rotateY("+currdeg10+"deg)";
+    document.getElementsByClassName("c-3d-10-axis")[0].style.transform = "rotateY("+currdeg10+"deg)";
   }
 
   nex10[0].onclick = function(evt) {
 
-    //document.getElementsByClassName("carousel-3d-10-axis")[0].style.transform = "scale(1)";
+    //document.getElementsByClassName("c-3d-10-axis")[0].style.transform = "scale(1)";
     currdeg10 -= 60; //console.log("currdeg: "+currdeg10);
-    document.getElementsByClassName("carousel-3d-10-axis")[0].style.transform = "rotateY("+currdeg10+"deg)";
-    //document.getElementsByClassName("carousel-3d-10-axis")[0].style.transform = "rotateY("+currdeg10+"deg) scale(2)";
+    document.getElementsByClassName("c-3d-10-axis")[0].style.transform = "rotateY("+currdeg10+"deg)";
+    //document.getElementsByClassName("c-3d-10-axis")[0].style.transform = "rotateY("+currdeg10+"deg) scale(2)";
 
     for (var i = 0; i < itemsIn3d10.length; i++) {
 
@@ -194,15 +187,15 @@
       }
     }
 
-    document.getElementsByClassName("carousel-3d-10")[0].style.transform = "scale(1.5)";
+    document.getElementsByClassName("c-3d-10")[0].style.transform = "scale(1.5)";
   }
 
   pre10[0].onclick = function(evt) {
     //console.log("p is clicked");
-    //document.getElementsByClassName("carousel-3d-10-axis")[0].style.transform = "scale(1)";
+    //document.getElementsByClassName("c-3d-10-axis")[0].style.transform = "scale(1)";
     currdeg10 = currdeg10 + 60; ////console.log("currdeg: "+currdeg10);
-    document.getElementsByClassName("carousel-3d-10-axis")[0].style.transform = "rotateY("+currdeg10+"deg)";
-    //document.getElementsByClassName("carousel-3d-10-axis")[0].style.transform = "rotateY("+currdeg10+"deg) scale(2)";
+    document.getElementsByClassName("c-3d-10-axis")[0].style.transform = "rotateY("+currdeg10+"deg)";
+    //document.getElementsByClassName("c-3d-10-axis")[0].style.transform = "rotateY("+currdeg10+"deg) scale(2)";
 
     for (var i = 0; i < itemsIn3d10.length; i++) {
 
@@ -220,15 +213,15 @@
       }
     }
 
-    document.getElementsByClassName("carousel-3d-10")[0].style.transform = "scale(1.5)";
+    document.getElementsByClassName("c-3d-10")[0].style.transform = "scale(1.5)";
   }
 
   nex10a[0].onclick = function(evt) {
 
-    //document.getElementsByClassName("carousel-3d-10-axis")[0].style.transform = "scale(1)";
+    //document.getElementsByClassName("c-3d-10-axis")[0].style.transform = "scale(1)";
     currdeg10 -= 60; //console.log("currdeg: "+currdeg10);
-    document.getElementsByClassName("carousel-3d-10-axis")[0].style.transform = "rotateY("+currdeg10+"deg)";
-    //document.getElementsByClassName("carousel-3d-10-axis")[0].style.transform = "rotateY("+currdeg10+"deg) scale(2)";
+    document.getElementsByClassName("c-3d-10-axis")[0].style.transform = "rotateY("+currdeg10+"deg)";
+    //document.getElementsByClassName("c-3d-10-axis")[0].style.transform = "rotateY("+currdeg10+"deg) scale(2)";
 
     for (var i = 0; i < itemsIn3d10.length; i++) {
 
@@ -246,15 +239,15 @@
       }
     }
 
-    //document.getElementsByClassName("carousel-3d-10")[0].style.transform = "scale(1.5)";
+    //document.getElementsByClassName("c-3d-10")[0].style.transform = "scale(1.5)";
   }
 
   pre10a[0].onclick = function(evt) {
     //console.log("p is clicked");
-    //document.getElementsByClassName("carousel-3d-10-axis")[0].style.transform = "scale(1)";
+    //document.getElementsByClassName("c-3d-10-axis")[0].style.transform = "scale(1)";
     currdeg10 = currdeg10 + 60; ////console.log("currdeg: "+currdeg10);
-    document.getElementsByClassName("carousel-3d-10-axis")[0].style.transform = "rotateY("+currdeg10+"deg)";
-    //document.getElementsByClassName("carousel-3d-10-axis")[0].style.transform = "rotateY("+currdeg10+"deg) scale(2)";
+    document.getElementsByClassName("c-3d-10-axis")[0].style.transform = "rotateY("+currdeg10+"deg)";
+    //document.getElementsByClassName("c-3d-10-axis")[0].style.transform = "rotateY("+currdeg10+"deg) scale(2)";
 
     for (var i = 0; i < itemsIn3d10.length; i++) {
 
@@ -272,30 +265,30 @@
       }
     }
 
-    //document.getElementsByClassName("carousel-3d-10")[0].style.transform = "scale(1.5)";
+    //document.getElementsByClassName("c-3d-10")[0].style.transform = "scale(1.5)";
   }
 
-  document.getElementsByClassName("carousel-3d-10-item")[0].onclick = function(evt) {
-    document.getElementsByClassName("carousel-3d-10")[0].style.transform = "scale(1)";
+  document.getElementsByClassName("c-3d-10-item")[0].onclick = function(evt) {
+    document.getElementsByClassName("c-3d-10")[0].style.transform = "scale(1)";
   }
 
-  document.getElementsByClassName("carousel-3d-10-item")[1].onclick = function(evt) {
-    document.getElementsByClassName("carousel-3d-10")[0].style.transform = "scale(1)";
+  document.getElementsByClassName("c-3d-10-item")[1].onclick = function(evt) {
+    document.getElementsByClassName("c-3d-10")[0].style.transform = "scale(1)";
   }
 
-  document.getElementsByClassName("carousel-3d-10-item")[2].onclick = function(evt) {
-    document.getElementsByClassName("carousel-3d-10")[0].style.transform = "scale(1)";
+  document.getElementsByClassName("c-3d-10-item")[2].onclick = function(evt) {
+    document.getElementsByClassName("c-3d-10")[0].style.transform = "scale(1)";
   }
 
-  document.getElementsByClassName("carousel-3d-10-item")[3].onclick = function(evt) {
-    document.getElementsByClassName("carousel-3d-10")[0].style.transform = "scale(1)";
+  document.getElementsByClassName("c-3d-10-item")[3].onclick = function(evt) {
+    document.getElementsByClassName("c-3d-10")[0].style.transform = "scale(1)";
   }
 
-  document.getElementsByClassName("carousel-3d-10-item")[4].onclick = function(evt) {
-    document.getElementsByClassName("carousel-3d-10")[0].style.transform = "scale(1)";
+  document.getElementsByClassName("c-3d-10-item")[4].onclick = function(evt) {
+    document.getElementsByClassName("c-3d-10")[0].style.transform = "scale(1)";
   }  
 
-  document.getElementsByClassName("carousel-3d-10-item")[5].onclick = function(evt) {
-    document.getElementsByClassName("carousel-3d-10")[0].style.transform = "scale(1)";
+  document.getElementsByClassName("c-3d-10-item")[5].onclick = function(evt) {
+    document.getElementsByClassName("c-3d-10")[0].style.transform = "scale(1)";
   }
 })(window);

@@ -12,7 +12,7 @@ Learn to manipulate the DOM and add functions to all previous web component proj
 
 ### `style-guide-driven-development`
 
-Learn about pattern or style guide driven approach in developing website and its ui components.  Introduced to the [Pattern-Primer-Jekyll](https://github.com/opattison/Pattern-Primer-Jekyll "Pattern-Primer-Jekyll") repository, where we see first hand how pattern or style guide is created.  Since the repository is highly customizable, it is a good starting point for those who want to expand on or create their own pattern or style guide.  We have, in fact, gone in that direction and the result is our very own [home-grown, generic style guide](https://bruceleeo.github.io/ "Home grown, generic style guide") which is constantly being developed and updated.
+Learn about pattern or style guide driven approach in developing website and its ui components.  Introduced to the [Pattern-Primer-Jekyll](https://github.com/opattison/Pattern-Primer-Jekyll "Pattern-Primer-Jekyll") repository, where we see first hand how pattern or style guide is created.  Since the repository is highly customizable, it is a good starting point for those who want to expand on or create their own pattern or style guide.  We have, in fact, gone in that direction and the result is our very own [home-grown, generic style guide](https://bruceleeo.github.io/pat_prime "Home grown, generic style guide") which is constantly being developed and updated.
 
 ### `mastering-html`
 

@@ -1,3 +1,5 @@
+/// Start of @mixin
+
 /// add 2px, solid border mixin
 @mixin border2-solid {
 	-web-kit-border: 2px solid $dull-black;
@@ -104,19 +106,19 @@
 	body {
 	  font-family: $other-nice-font-stack;
 	  //font-family: $text-font-stack;
-	  /*  -apple-system,
-	    BlinkMacSystemFont,
-	    "Karla",
-	    "Segoe UI",
-	    "Roboto",
-	    "Oxygen",
-	    "Ubuntu",
-	    "Cantarell",
-	    "Fira Sans",
-	    "Droid Sans",
-	    "Helvetica Neue",
-	    Arial,
-	    sans-serif;*/
+	  //  -apple-system,
+	  //  BlinkMacSystemFont,
+	  //  "Karla",
+	  //  "Segoe UI",
+	  //  "Roboto",
+	  //  "Oxygen",
+	  //  "Ubuntu",
+	  //  "Cantarell",
+	  //  "Fira Sans",
+	  //  "Droid Sans",
+	  //  "Helvetica Neue",
+	  //  Arial,
+	  //  sans-serif;*/
 	  //font-size: 135%;
 	  font-size: 1.75vw;
 	  line-height: 1.5vw;

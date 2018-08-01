@@ -1,0 +1,471 @@
+/**
+ * Carousel 3d Style
+ */
+.carousel-3d {
+	position: relative;
+	margin: auto;
+	//top: 28.75%;
+	top: 22%;
+	max-width: 375px;
+	height: 275px;
+	//height: 215px;
+	perspective: 1300px;
+	//border: 4px solid pink;
+	border-radius: 0.25em;
+		//display:none;
+}		
+
+.carousel-3d-axis {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	transition: 1s;
+	//background-color: lime;
+}
+
+.carousel-3d-item  {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: block;
+	cursor: pointer;
+
+	div	{
+		width: 100%;
+		//height: 100%;
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+
+		video {
+			width: 100%;
+			height: auto;
+		}
+	}
+}
+
+/* carousel 3d quad-face */
+.f1-of-3d-quad {
+	transform: rotateY(0deg	) translateZ(200px);
+	background-color: $light-grey;
+	//opacity: 0.5;
+}
+
+.f2-of-3d-quad {
+	transform: rotateY(90deg) translateZ(200px);
+	background-color: $light-grey;
+	//opacity: 0.5;	
+}
+
+.f3-of-3d-quad {
+	transform: rotateY(180deg) translateZ(200px);
+	background-color: $light-grey;
+	//opacity: 0.5;
+}
+
+.f4-of-3d-quad {
+	transform: rotateY(270deg) translateZ(200px);
+	background-color: $light-grey;
+	//opacity: 0.5;	
+}
+
+.carousel-3d-item--indicator-quad {
+	position: absolute;
+	border: 1px solid $light-grey;
+	border-radius: 50px;
+	background-color: $dull-black;
+	margin-right: 0.25em;
+	width: 0.5em;
+	height: 0.5em;
+	z-index: 5;
+	cursor: pointer;	
+	&:hover {
+		background-color: orange;
+		border-color: silver;
+	}
+	&:first-of-type {
+		top: 285px;
+		left: 123px;
+	}
+
+	&:nth-of-type(2) {
+		top: 285px;
+		left: 163px;
+	}
+
+	&:nth-of-type(3) {
+		top: 285px;
+		left: 203px;
+	}
+
+	&:nth-of-type(4) {
+		top: 285px;
+		left: 243px;
+	}
+}
+
+/* carousel 3d tri-face */
+.f1-of-3d-tri {
+	transform: rotateY(0deg	) translateZ(200px);
+	background-color: $light-grey;
+	//opacity: 0.5;
+}
+
+.f2-of-3d-tri {
+	transform: rotateY(120deg) translateZ(200px);
+	background-color: $light-grey;
+	//opacity: 0.5;	
+}
+
+.f3-of-3d-tri {
+	transform: rotateY(240deg) translateZ(200px);
+	background-color: $light-grey;
+	//opacity: 0.5;
+}
+
+.carousel-3d-item--indicator-tri {
+	position: absolute;
+	border: 1px solid $light-grey;
+	border-radius: 50px;
+	background-color: $dull-black;
+	margin-right: 0.25em;
+	width: 0.5em;
+	height: 0.5em;
+	z-index: 1;
+	cursor: pointer;	
+	&:hover {
+		background-color: orange;
+		border-color: silver;
+	}
+	&:first-of-type {
+		top: 285px;
+		left: 143px;
+	}
+
+	&:nth-of-type(2) {
+		top: 285px;
+		left: 183px;
+	}
+
+	&:nth-of-type(3) {
+		top: 285px;
+		left: 233px;
+	}
+}
+
+/* carousel 3d sexta-face */
+.f1-of-3d-sexta {
+	transform: rotateY(0deg	) translateZ(340px);
+	background-color: $light-grey;
+	//opacity: 0.5;
+}
+
+.f2-of-3d-sexta {
+	transform: rotateY(60deg) translateZ(340px);
+	background-color: $light-grey;
+	//opacity: 0.5;	
+}
+
+.f3-of-3d-sexta {
+	transform: rotateY(120deg) translateZ(340px);
+	background-color: $light-grey;
+	//opacity: 0.5;
+}
+
+.f4-of-3d-sexta {
+	transform: rotateY(180deg) translateZ(340px);
+	background-color: $light-grey;
+	//opacity: 0.5;	
+}
+
+.f5-of-3d-sexta {
+	transform: rotateY(240deg) translateZ(340px);
+	background-color: $light-grey;
+	//opacity: 0.5;	
+}
+
+.f6-of-3d-sexta {
+	transform: rotateY(300deg) translateZ(340px);
+	background-color: $light-grey;
+	//opacity: 0.5;	
+}
+
+.carousel-3d-item--indicator-sexta {
+	position: absolute;
+	border: 1px solid $light-grey;
+	border-radius: 50px;
+	background-color: $dull-black;
+	margin-right: 0.25em;
+	width: 0.5em;
+	height: 0.5em;
+	z-index: 1;
+	cursor: pointer;	
+	&:hover {
+		background-color: orange;
+		border-color: silver;
+	}
+	&:first-of-type {
+		top: 285px;
+		left: 83px;
+	}
+
+	&:nth-of-type(2) {
+		top: 285px;
+		left: 123px;
+	}
+
+	&:nth-of-type(3) {
+		top: 285px;
+		left: 163px;
+	}
+
+	&:nth-of-type(4) {
+		top: 285px;
+		left: 203px;
+	}
+
+	&:nth-of-type(5) {
+		top: 285px;
+		left: 243px;
+	}
+
+	&:nth-of-type(6) {
+		top: 285px;
+		left: 283px;
+	}
+}
+
+
+.carousel-3d-item--next, .carousel-3d-item--next-a {
+	margin: 0;
+	cursor: pointer;
+	position: absolute;
+	top: 125px;
+	left: 346px;
+	padding: 6.25px 9.25px 0 9.25px;
+	border-radius: 50px;
+	background-color: yellow;
+	opacity: 0.5;		
+
+	svg {
+		padding: 1px;
+		margin: 0;
+		border: 1px solid;
+		border-radius: 50px;
+	}
+
+	&:hover {
+		background-color: black;
+		opacity: 1;
+
+		svg	{
+			color: yellow;
+			fill: currentColor;
+		}
+	}
+}
+
+.carousel-3d-item--prev, .carousel-3d-item--prev-a {
+	padding: 6.25px 9px 0 9.25px;
+	border-radius: 50px;
+	margin: 0;	
+	cursor: pointer;
+	position: absolute;
+	top: 125px;
+	left: -12px;
+	background-color: yellow;
+	opacity: 0.5;
+	
+	svg {
+		padding: 1px;
+		border: 1px solid;
+		border-radius: 50px;
+	}
+
+	&:hover {
+		background-color: black;
+		opacity: 1;
+
+		svg	{
+			color: yellow;
+			fill: currentColor;
+		}
+	}	
+}
+
+.carousel-3d-item--next-a, .carousel-3d-item--prev-a { display: none; }
+
+.carousel-3d-content {
+	position: absolute;
+	width:100%;
+	height: 100%;
+	border: 2px solid #e1332d;
+	overflow: hidden;
+
+	img {
+		width: 100%;
+	}
+}
+
+.itemsIn3d-1--active {
+	border-color: $dull-black;
+	background-color: $light-grey;
+}
+
+.itemsIn3d-2--active {
+	border-color: $dull-black;
+	background-color: $light-grey;
+}
+
+.itemsIn3d-3--active {
+	border-color: $dull-black;
+	background-color: $light-grey;
+}
+
+.itemsIn3d-4--active {
+	border-color: $dull-black;
+	background-color: $light-grey;
+}
+
+.itemsIn3d-5--active {
+	border-color: $dull-black;
+	background-color: $light-grey;
+}
+
+.itemsIn3d-6--active {
+	border-color: $dull-black;
+	background-color: $light-grey;
+}
+
+.itemsIn3d-7--active {
+	border-color: $dull-black;
+	background-color: $light-grey;
+}
+
+.itemsIn3d-8--active {
+	border-color: $dull-black;
+	background-color: $light-grey;
+}
+
+.itemsIn3d-9--active {
+	border-color: $dull-black;
+	background-color: $light-grey;
+}
+
+.itemsIn3d-10--active {
+	border-color: $dull-black;
+	background-color: $light-grey;
+}
+
+@media screen and (max-width: 700px) {	
+	.carousel-3d-item--next, .carousel-3d-item--prev { display: none; }
+	.carousel-3d-item--next-a, .carousel-3d-item--prev-a { display: block; }
+}
+
+@media screen and (max-width: 500px) {	
+	.carousel-3d { 
+		max-width: 300px;
+		height: 245px;
+	}
+	.carousel-3d-item  {
+
+		div	{
+			width: 100%;
+
+			img {
+				width: 100%;
+				height: auto;
+			}
+
+			video {
+				width: 100%;
+				height: auto;
+			}
+		}
+
+	}
+	.carousel-3d-item--prev-a {
+		top: 100px;
+		left: -4px;
+	}
+	.carousel-3d-item--next-a {
+		top: 100px;
+		left: 260px;
+	}
+	.carousel-3d-item--indicator-quad {
+
+		&:first-of-type {
+			top: 245px;
+			left: 83px;
+		}
+
+		&:nth-of-type(2) {
+			top: 245px;
+			left: 123px;
+		}
+
+		&:nth-of-type(3) {
+			top: 245px;
+			left: 163px;
+		}
+
+		&:nth-of-type(4) {
+			top: 245px;
+			left: 203px;
+		}		
+	}
+	.carousel-3d-item--indicator-tri {
+
+		&:first-of-type {
+			top: 245px;
+			left: 103px;
+		}
+
+		&:nth-of-type(2) {
+			top: 245px;
+			left: 143px;
+		}
+
+		&:nth-of-type(3) {
+			top: 245px;
+			left: 183px;
+		}	
+	}
+	.carousel-3d-item--indicator-sexta {
+
+		&:first-of-type {
+			top: 245px;
+			left: 43px;
+		}
+
+		&:nth-of-type(2) {
+			top: 245px;
+			left: 83px;
+		}
+
+		&:nth-of-type(3) {
+			top: 245px;
+			left: 123px;
+		}
+
+		&:nth-of-type(4) {
+			top: 245px;
+			left: 163px;
+		}	
+
+		&:nth-of-type(5) {
+			top: 245px;
+			left: 203px;
+		}
+
+		&:nth-of-type(6) {
+			top: 245px;
+			left: 243px;
+		}					
+	}
+
+
+}
