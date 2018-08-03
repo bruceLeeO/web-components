@@ -2,8 +2,9 @@
  * Digital Business Card Component
  */
 .digital-business-card {
-	max-width: 550px;
-	height: 325px;
+	max-width: 498px;
+	//height: 325px;
+	height: 315px;
 	position: relative;
 	perspective: 1000px;
 	margin: auto;
@@ -13,7 +14,8 @@
 .digital-business-card-axis {
 	//width: 550px;
 	width: 100%;
-	height: 325px;
+	//height: 325px;
+	height: 100%;
 	position: absolute;
 	transform-style: preserve-3d;
 	transition: 2s;
@@ -26,30 +28,41 @@
 	width: 100%;
 	height: 100%;
 	//transform-style: preserve-3d;
-	background-color: blue;
+	//background-color: blue;
 	border-radius: 5px;
 }
 
 .frontside {
-	background-color: yellow;
+	//background-color: yellow;
+	background: url(../img/pa2/digital-business-card/bg2.png) no-repeat;
 	transform: rotateX(0deg) translateZ(.010px);
-	margin: auto;
-	border: 1px solid;
+	//margin: auto;
 }
 
 .backside {
-	background-color: green;
+	//background-color: green;
 	transform: rotateX(180deg) translateZ(.010px);
+	//background: url(../img/pa2/digital-business-card/aboutme-mercury-small.jpg) no-repeat;
+	//padding: 10px;
+	//position: relative;
+	//width: 100%;
+	//height: 100%;
+}
+
+.dbcard-backside-img {
+	width: 100%;
+	height: 100%;
 }
 
 .digital-business-card-rotate-icon {
 	@include size-large;
-	//position: absolute;
-	//top: 15px;
-	//left: 490px;
-	margin: 0 0 0 10px;
+	position: absolute;
+	top: 15px;
+	left: 450px;
+	//margin: 10px 10px 0 0;
 	//z-index: 2;
-	//border: 1px solid;
+	color: #fff;
+	fill: currentColor;
 	&:hover{
 		color: silver;
 		fill: currentColor;
@@ -85,6 +98,7 @@
 	width: 80%;
 	//float: left;
 	//@include clearfix;
+	color: $white;
 }
 
 .dbcard-title {
@@ -93,7 +107,7 @@
 	line-height: 1;
 	//border: 1px solid;
 	width: 80%;
-	color: $darker-mid-grey;
+	color: #babac5;
 	//border:1px solid;
 }
 
@@ -101,6 +115,7 @@
 	margin: 0 0 0 10px;
 	font-size: 90%;
 	line-height: 1.25;
+	color: #fff;
 }
 
 .dbcard-list {
@@ -135,6 +150,9 @@
 	padding: 5px;
 	margin: 1px;
 	//font-size: 80%;
+}
+.dbcard-enc-name, .dbcard-p-spacer {
+	color: #fff;
 }
 .dbcard-link {
 	margin: 0 0 0 10px;
@@ -186,6 +204,7 @@
 		padding: 4.5px;
 		padding-top: 12px;
 		padding-bottom: 12px;
+		text-decoration: none;
 		&:hover {
 			color: silver;
 			background-color: black;
