@@ -126,11 +126,12 @@ sideNavIcon[0].addEventListener("click", toggleSideNav, false);
 
 function toggleSideNav(evt) {
 //sideNavIcon[0].onclick = function(evt) {    
-  ////console.log("toggling side nav");
+  //console.log("toggling side nav... "+evt.currentTarget.className);
   ////console.log("document.getElementById('mySidenav').style.width = "+document.getElementById("mySidenav").style.width);
   /* toggle between change class */
-  evt.currentTarget.classList.toggle("change");
+  //evt.currentTarget.classList.toggle("change");
   if (document.getElementById("mySidenav").style.width === "") {
+    document.getElementsByClassName("sidenav-icon")[0].className += " change";
     //console.log("opening side nav: "+document.getElementById("mySidenav").style.width);
     document.getElementById("mySidenav").style.width = "250px";
     //console.log("sidenav-icon margin-left: "+document.getElementsByClassName("sidenav-icon")[0].style.marginLeft); 
@@ -141,6 +142,7 @@ function toggleSideNav(evt) {
     document.getElementById("project-accordion-panel1").style.height = "0";  
     document.getElementsByClassName("project-accordion-label")[0].className = document.getElementsByClassName("project-accordion-label")[0].className.replace(" project-accordion-label--active", ""); 
   } else {
+    document.getElementsByClassName("sidenav-icon")[0].className = document.getElementsByClassName("sidenav-icon")[0].className.replace(" change", "");
     //console.log("closing side nav: "+document.getElementById("mySidenav").style.width);
     document.getElementById("mySidenav").style.width = "";
     //console.log("sidenav-icon margin-left: "+document.getElementsByClassName("sidenav-icon")[0].style.marginLeft);

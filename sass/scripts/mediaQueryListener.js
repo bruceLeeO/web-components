@@ -90,7 +90,8 @@
       if (document.getElementById("mySidenav").style.width === "250px") {
         ////console.log("sidenav is still open.... so close it...");
         document.getElementById("mySidenav").style.width = "0px";
-        document.getElementsByClassName("sidenav-icon")[0].classList.toggle("change");
+        //document.getElementsByClassName("sidenav-icon")[0].classList.toggle("change");
+        document.getElementsByClassName("sidenav-icon")[0].className = document.getElementsByClassName("sidenav-icon")[0].className.replace(" change", "");
         document.getElementsByClassName("sidenav-icon")[0].style.marginLeft = "0px";
         document.getElementsByClassName("searchform")[0].style.display = "block";
         document.getElementsByClassName("project-accordion-label")[0].className = document.getElementsByClassName("project-accordion-label")[0].className.replace(" project-accordion-label--active", ""); 

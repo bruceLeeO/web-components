@@ -82,7 +82,8 @@ for (var i = 0; i < sideNavMenu.length; i++) {
  */
 function shutdownSideNav() {
   if (document.getElementById("mySidenav").style.width != "") {
-  	document.getElementsByClassName("sidenav-icon")[0].classList.toggle("change");
+  	//document.getElementsByClassName("sidenav-icon")[0].classList.toggle("change");
+    document.getElementsByClassName("sidenav-icon")[0].className = document.getElementsByClassName("sidenav-icon")[0].className.replace(" change", "");
     document.getElementById("mySidenav").style.width = "";
     document.getElementsByClassName("sidenav-icon")[0].style.marginLeft = "";
     document.getElementsByClassName("searchform")[0].style.display = "block";
@@ -103,7 +104,8 @@ for (var i = 0; i < sideNavProjMenu.length; i++) {
  */
 function shutdownSideNavProjMenu() {
   if (document.getElementById("mySidenav").style.width != "") {
-  	document.getElementsByClassName("sidenav-icon")[0].classList.toggle("change");
+  	//document.getElementsByClassName("sidenav-icon")[0].classList.toggle("change");
+    document.getElementsByClassName("sidenav-icon")[0].className = document.getElementsByClassName("sidenav-icon")[0].className.replace(" change", "");
     document.getElementById("mySidenav").style.width = "";
     document.getElementsByClassName("sidenav-icon")[0].style.marginLeft = "";
     document.getElementsByClassName("searchform")[0].style.display = "block";
