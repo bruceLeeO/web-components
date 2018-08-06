@@ -1,6 +1,6 @@
 (function(window) {
 
-  console.log("populating carousel is intended to run only once at start up....");
+  //console.log("populating carousel is intended to run only once at start up....");
   populateCarousel();
 
   var onTrackWithAccordionComponent, onParWithTabComponent, isWidthUnset = false; 
@@ -10,19 +10,19 @@
 
   function sparklers() { 
 
-    console.log("listening to window resize event....");
+    //console.log("listening to window resize event....");
 
     /**
      * append the carousel component to the accordion component
      */
     if (document.documentElement.clientWidth < 700) {
       onParWithTabComponent = false;
-      //console.log("document.documentElement.clientWidth = "+document.documentElement.clientWidth);
+      ////console.log("document.documentElement.clientWidth = "+document.documentElement.clientWidth);
 
       if (onTrackWithAccordionComponent) {
-        //console.log("ontrack with accordion... do nothing...");
+        ////console.log("ontrack with accordion... do nothing...");
       } else {
-        //console.log("it is not on track with accordion, onTrackWithAccordionComponent = "+onTrackWithAccordionComponent);
+        ////console.log("it is not on track with accordion, onTrackWithAccordionComponent = "+onTrackWithAccordionComponent);
         onTrackWithAccordionComponent = true;
 
         /**
@@ -83,28 +83,29 @@
        * client window width is > than 700, append the carousel component to the tab component
        */
 
-      //console.log("document.documentElement.clientWidth: "+document.documentElement.clientWidth);
+      ////console.log("document.documentElement.clientWidth: "+document.documentElement.clientWidth);
 
-      //console.log("document.getElementById('mySidenav').style.width: "+document.getElementById("mySidenav").style.width);
+      ////console.log("document.getElementById('mySidenav').style.width: "+document.getElementById("mySidenav").style.width);
 
       if (document.getElementById("mySidenav").style.width === "250px") {
-        //console.log("sidenav is still open.... so close it...");
+        ////console.log("sidenav is still open.... so close it...");
         document.getElementById("mySidenav").style.width = "0px";
         document.getElementsByClassName("sidenav-icon")[0].classList.toggle("change");
         document.getElementsByClassName("sidenav-icon")[0].style.marginLeft = "0px";
         document.getElementsByClassName("searchform")[0].style.display = "block";
+        document.getElementsByClassName("project-accordion-label")[0].className = document.getElementsByClassName("project-accordion-label")[0].className.replace(" project-accordion-label--active", ""); 
         /* now that it is unset, check it off as true */      
       }
 
       onTrackWithAccordionComponent = false;
       
       if (onParWithTabComponent) {
-        //console.log("on par with tab component... do nothing...");
+        ////console.log("on par with tab component... do nothing...");
       } else {
-        //console.log("it is not on par with tab, onParWithTabComponent = "+onParWithTabComponent);
+        ////console.log("it is not on par with tab, onParWithTabComponent = "+onParWithTabComponent);
         onParWithTabComponent = true;
 
-        //console.log("document.documentElement.clientWidth = "+document.documentElement.clientWidth);
+        ////console.log("document.documentElement.clientWidth = "+document.documentElement.clientWidth);
 
         /**
          *  since menu components already exist, append it to tab components
@@ -163,7 +164,7 @@
 
 	function populateCarousel() {
 
-    console.log("populate carousel once....");
+    //console.log("populate carousel once....");
 
     /**
      * load the carousel component to the accordion component
@@ -281,7 +282,7 @@
   }
 
   function buildCarouselComponent1() {
-  	console.log("building the menu carousel using buildMenuComponent1....");
+  	//console.log("building the menu carousel using buildMenuComponent1....");
     var cal = document.createElement("div");
     cal.className = "carousel-3d c-3d-1";
     cal.id = "menu-id";
@@ -341,7 +342,7 @@
   }
 
   function buildCarouselComponent2() {
-    console.log("building the menu carousel using buildCarouselComponent2....");
+    //console.log("building the menu carousel using buildCarouselComponent2....");
     var cal = document.createElement("div");
     cal.className = "carousel-3d c-3d-2";
     cal.id = "image-gallery-id";
@@ -401,7 +402,7 @@
   }
 
   function buildCarouselComponent3() {
-    console.log("building the menu carousel using buildCarouselComponent3....");
+    //console.log("building the menu carousel using buildCarouselComponent3....");
     var cal = document.createElement("div");
     cal.className = "carousel-3d c-3d-3";
     cal.id = "tabpanel-id";
@@ -461,7 +462,7 @@
   }
 
   function buildCarouselComponent4() {
-    console.log("building the menu carousel using buildCarouselComponent4....");
+    //console.log("building the menu carousel using buildCarouselComponent4....");
     var cal = document.createElement("div");
     cal.className = "carousel-3d c-3d-4";
     cal.id = "accordion-id";
@@ -521,7 +522,7 @@
   }
 
   function buildCarouselComponent5() {
-    console.log("building the menu carousel using buildCarouselComponent5....");
+    //console.log("building the menu carousel using buildCarouselComponent5....");
     var cal = document.createElement("div");
     cal.className = "carousel-3d c-3d-5";
     cal.id = "business-card-id";
@@ -571,7 +572,7 @@
   }
 
   function buildCarouselComponent6() {
-    console.log("building the menu carousel using buildCarouselComponent6....");
+    //console.log("building the menu carousel using buildCarouselComponent6....");
     var cal = document.createElement("div");
     cal.className = "carousel-3d c-3d-6";
     cal.id = "ui-framework-id";
@@ -621,7 +622,7 @@
   }
 
   function buildCarouselComponent7() {
-    console.log("building the menu carousel using buildCarouselComponent7....");
+    //console.log("building the menu carousel using buildCarouselComponent7....");
     var cal = document.createElement("div");
     cal.className = "carousel-3d c-3d-7";
     cal.id = "books-md-id";
@@ -671,7 +672,7 @@
   }
 
   function buildCarouselComponent8() {
-    console.log("building the menu carousel using buildCarouselComponent8....");
+    //console.log("building the menu carousel using buildCarouselComponent8....");
     var cal = document.createElement("div");
     cal.className = "carousel-3d c-3d-8";
     cal.id = "calculator-id";
@@ -767,7 +768,7 @@
   }
 
   function buildCarouselComponent9() {
-    console.log("building the menu carousel using buildCarouselComponent9....");
+    //console.log("building the menu carousel using buildCarouselComponent9....");
     var cal = document.createElement("div");
     cal.className = "carousel-3d c-3d-9";
     cal.id = "product-listing-id";
@@ -817,7 +818,7 @@
   }
   
   function buildCarouselComponent10() {
-    console.log("building the menu carousel using buildCarouselComponent10....");
+    //console.log("building the menu carousel using buildCarouselComponent10....");
     var cal = document.createElement("div");
     cal.className = "carousel-3d c-3d-10";
     cal.id = "multiple-form-id";

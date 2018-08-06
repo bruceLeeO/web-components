@@ -9,7 +9,7 @@ html, *, * ::before, * ::after {
  * TYPOGRAPHY
  */
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Karla", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 130%;
   line-height: 1.5;
   background-color: white;
@@ -521,6 +521,20 @@ blockquote {
   border: 2px solid #ededed;
 }
 
+.section-paragraph {
+  background-color: lime;
+}
+
+@media screen and (max-width: 700px) {
+  .section-paragraph {
+    display: none;
+  }
+
+  .article-subtitle:after {
+    content: '\002B';
+    float: right;
+  }
+}
 /**
  * Search Form Style
  */
@@ -548,7 +562,7 @@ blockquote {
   left: 0;
 }
 .searchform a svg:hover {
-  color: #ffcb45;
+  color: #ff9948;
   fill: currentColor;
 }
 
@@ -667,6 +681,56 @@ blockquote {
   padding: 0;
 }
 
+.t-link:hover {
+  color: #999999;
+}
+.t-link:after, .t-link:before {
+  backface-visibility: hidden;
+  border: 1px solid rgba(153, 153, 153, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+.t-link:hover:after {
+  backface-visibility: hidden;
+  border-color: #999999;
+  transition: width 350ms ease-in-out;
+  width: 100%;
+}
+
+/*
+.t-link:hover,
+.t-link:active {
+  //letter-spacing: 1px;
+  color: $mid-grey;
+}
+
+.t-link:after,
+.t-link:before {
+  backface-visibility: hidden;
+  border: 1px solid rgba($mid-grey, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+//.t-link:hover:after,
+//.t-link:hover:before {
+.t-link:hover:after {
+  backface-visibility: hidden;
+  border-color: $mid-grey;
+  transition: width 350ms ease-in-out;
+  width: 100%;
+}
+
+*/
 /**
  * Mobile 'topnav' component
  */
@@ -910,7 +974,10 @@ blockquote {
   }
 
   .digital-business-card-rotate-icon {
+    width: 2em;
+    height: 2em;
     font-size: 3vw;
+    left: 82vw;
   }
 
   .digital-business-card-bookopen-icon {
@@ -919,8 +986,10 @@ blockquote {
   }
 
   .digital-business-card-social-icon {
+    width: 1.5em;
+    height: 1.5em;
     font-size: 2.75vw;
-    padding: 0.233vw;
+    padding: 0;
     margin: 0;
   }
 
@@ -931,8 +1000,14 @@ blockquote {
   }
 
   .dbcard-title {
+    -web-kit-margin: 0 0 0 0.78vw;
+    -moz-margin: 0 0 0 0.78vw;
+    -ms-margin: 0 0 0 0.78vw;
     margin: 0 0 0 0.78vw;
-    font-size: 3.75vw;
+    -web-kit-font-size: 2.75vw;
+    -moz-font-size: 2.75vw;
+    -ms-font-size: 2.75vw;
+    font-size: 2.75vw;
   }
 
   .dbcard-desc {
@@ -955,9 +1030,10 @@ blockquote {
   }
 
   .dbcard-social-link {
-    padding: 0.38vw;
-    padding-top: 0.54vw;
-    padding-bottom: 0.54vw;
+    margin: .25vw;
+    padding: 0.88vw;
+    padding-left: 0.94vw;
+    padding-right: 0.94vw;
   }
   .dbcard-social-link svg {
     margin: 0;
@@ -1130,28 +1206,19 @@ blockquote {
   transition: 0.15s width ease;
 }
 
-.closebtn, .sidenav-x-icon {
-  position: absolute;
-  top: 0;
-  right: 5px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-.closebtn:hover, .sidenav-x-icon:hover {
-  color: #f1f1f1;
-}
-
 /**
  * create mobile 3-bar icon
  */
 .sidenav-icon {
-  display: inline-block;
   cursor: pointer;
   margin-top: 27px;
   margin-left: 10px;
   width: 40px;
   padding: 0;
   transition: 0.15s margin-left ease;
+}
+.sidenav-icon:hover .sidenav-icon-bar1, .sidenav-icon:hover .sidenav-icon-bar2, .sidenav-icon:hover .sidenav-icon-bar3 {
+  background-color: #ff9948;
 }
 
 .sidenav-icon-bar1, .sidenav-icon-bar3 {
@@ -1202,7 +1269,7 @@ blockquote {
   color: white;
 }
 
-.sidenav-navbar a {
+.sidenav-navbar .sidenav-menu {
   text-decoration: none;
   font-size: 85%;
   color: #818181;
@@ -1211,6 +1278,34 @@ blockquote {
   border-right: 5px solid #818181;
   padding: 8px 8px 8px 32px;
   margin: 5px;
+}
+.sidenav-navbar .sidenav-menu:hover {
+  color: violet;
+  border-right: 5px solid violet;
+}
+.sidenav-navbar .sidenav-menu:after, .sidenav-navbar .sidenav-menu:before {
+  backface-visibility: hidden;
+  border: 1px solid rgba(238, 130, 238, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+.sidenav-navbar .sidenav-menu:hover:after {
+  backface-visibility: hidden;
+  border-color: violet;
+  transition: width 350ms ease-in-out;
+  width: 100%;
+}
+
+.sidenav-label--active {
+  background-color: white;
+  border: 1px solid green;
+  border-right: 5px solid violet;
+  z-index: 1;
 }
 
 .sidenav-footer {
@@ -1292,7 +1387,7 @@ blockquote {
 }
 
 .tab-index-label {
-  margin-left: 0.95px;
+  margin-left: 1.25px;
   width: 100%;
   border: 1px solid #34383c;
   padding: 9px;
@@ -1305,12 +1400,30 @@ blockquote {
 .tab-index-label:hover {
   font-weight: 700;
   color: violet;
+  border-right: 5px solid violet;
+}
+.tab-index-label:after, .tab-index-label:before {
+  backface-visibility: hidden;
+  border: 1px solid rgba(238, 130, 238, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+.tab-index-label:hover:after {
+  backface-visibility: hidden;
+  border-color: violet;
+  transition: width 350ms ease-in-out;
+  width: 100%;
 }
 
 .tab-index-label--active {
   border-right-style: none;
   background-color: white;
-  z-index: 1;
+  z-index: 10;
 }
 
 .tab-body {
@@ -1476,8 +1589,25 @@ blockquote {
   padding: 0.25em;
 }
 .accordion-label:hover {
-  font-weight: 700;
+  letter-spacing: 2px;
   color: brown;
+}
+.accordion-label:after, .accordion-label:before {
+  backface-visibility: hidden;
+  border: 1px solid rgba(165, 42, 42, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+.accordion-label:hover:after {
+  backface-visibility: hidden;
+  border-color: brown;
+  transition: width 350ms ease-in-out;
+  width: 100%;
 }
 
 .accordion-content {
@@ -2164,12 +2294,78 @@ blockquote {
   margin: 0 5px 0 0;
   padding: 8px 8px 8px 32px;
 }
+.project-accordion-label:before {
+  content: '\002B';
+  color: #818181;
+  float: left;
+  margin-left: 10px;
+  padding-top: 5px;
+}
+
+.project-accordion-label--active:before {
+  content: '\2212';
+}
+
+.sidenav-menu-project:hover {
+  font-weight: 700;
+  color: violet;
+  border-right: 5px solid violet;
+}
+.sidenav-menu-project:after, .sidenav-menu-project:before {
+  backface-visibility: hidden;
+  border: 1px solid rgba(238, 130, 238, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+.sidenav-menu-project:hover:after {
+  backface-visibility: hidden;
+  border-color: violet;
+  transition: width 350ms ease-in-out;
+  width: 100%;
+}
 
 .project-accordion-content {
   height: auto;
   overflow: hidden;
-  background-color: silver;
+  background-color: #ededed;
   padding-left: 12px;
+}
+
+.sidenav-project-menu {
+  display: block;
+  text-decoration: none;
+  font-size: 85%;
+  color: #818181;
+  border-right: 5px solid #818181;
+  margin: 1px 5px 1px 0;
+  padding: 4px 8px 4px 32px;
+}
+.sidenav-project-menu:hover {
+  font-weight: 700;
+  color: #ff9948;
+  border-right: 5px solid #ff9948;
+}
+.sidenav-project-menu:after, .sidenav-project-menu:before {
+  backface-visibility: hidden;
+  border: 1px solid rgba(255, 153, 72, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+.sidenav-project-menu:hover:after {
+  backface-visibility: hidden;
+  border-color: #ff9948;
+  transition: width 350ms ease-in-out;
+  width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -40,13 +40,15 @@ function updateProjectAccordionContent(evt) {
     /**
      * reset all the active CSS class
      */
-    //for (i = 0; i < projectAccordionLabel.length; i++) {
+    for (i = 0; i < projectAccordionLabel.length; i++) {
       projectAccordionLabel[0].className = projectAccordionLabel[0].className.replace(" project-accordion-label--active", "");
 
       document.getElementById(projectAccordionLabel[0].id.toLowerCase()).style.height = "0";
-    //}
+    }
 
     evt.currentTarget.className += " project-accordion-label--active";
+
+    //this.classList.toggle("project-accordion-label--active");
 
     /**
      * perform a hack to retrieve a specific accordion content id and then reveal its content by increasing its height 
@@ -59,6 +61,7 @@ function updateProjectAccordionContent(evt) {
      * perform a hack to retrieve a specific accordion content id and 
      * then close it if its already opened
      */
+    projectAccordionLabel[0].className = projectAccordionLabel[0].className.replace(" project-accordion-label--active", "");
     document.getElementById(evt.currentTarget.id.toLowerCase()).style.height = "0";
     document.getElementById(evt.currentTarget.id.toLowerCase()).style.marginTop = "0";            
   }
@@ -83,6 +86,7 @@ function shutdownSideNav() {
     document.getElementById("mySidenav").style.width = "";
     document.getElementsByClassName("sidenav-icon")[0].style.marginLeft = "";
     document.getElementsByClassName("searchform")[0].style.display = "block";
+    projectAccordionLabel[0].className = projectAccordionLabel[0].className.replace(" project-accordion-label--active", "");
   }	
 }
 
@@ -103,6 +107,7 @@ function shutdownSideNavProjMenu() {
     document.getElementById("mySidenav").style.width = "";
     document.getElementsByClassName("sidenav-icon")[0].style.marginLeft = "";
     document.getElementsByClassName("searchform")[0].style.display = "block";
+    projectAccordionLabel[0].className = projectAccordionLabel[0].className.replace(" project-accordion-label--active", "");
   }	
 }
 

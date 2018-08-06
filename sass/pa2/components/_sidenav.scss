@@ -23,23 +23,24 @@
   //display: none;
   //transition: ease 0.05s width;
   transition: 0.15s width ease;
+
 }
 
 //#topmain {
 //  transition: 0.05s margin-left;
 //}
 
-.closebtn, .sidenav-x-icon {
-  position: absolute;
-  top: 0;
-  right: 5px;
-  font-size: 36px;
-  margin-left: 50px;     
+//.closebtn, .sidenav-x-icon {
+//  position: absolute;
+//  top: 0;
+//  right: 5px;
+//  font-size: 36px;
+//  margin-left: 50px;     
 
-  &:hover {
-    color: #f1f1f1; 
-  }
-}
+//  &:hover {
+//    color: #f1f1f1; 
+//  }
+//}
 
 //@media screen and (max-height: 450px) {
 //  .sidenav {padding-top: 15px;}
@@ -49,13 +50,21 @@
  * create mobile 3-bar icon
  */
 .sidenav-icon {
-    display: inline-block;
+    //display: inline-block;
     cursor: pointer;
     margin-top: 27px;
     margin-left: 10px;
     width: 40px;
     padding: 0;
     transition: 0.15s margin-left ease;
+
+    //border: 1px solid $mid-grey;
+
+    &:hover {
+      .sidenav-icon-bar1, .sidenav-icon-bar2, .sidenav-icon-bar3 { 
+        background-color: $mid-red-orange;
+      }
+    }    
 }
 
 .sidenav-icon-bar1, .sidenav-icon-bar3 {
@@ -108,7 +117,7 @@
 }
 
 .sidenav-navbar {
-  a {
+  .sidenav-menu {
     text-decoration: none;
     //font-size: 25px;
     font-size: 85%;
@@ -119,7 +128,46 @@
     //padding: 0.25em;
     padding: 8px 8px 8px 32px;
     margin: 5px;
+    &:hover {
+      //font-weight: 700;
+      color: violet;
+      border-right: 5px solid violet;      
+    }
+
+    &:after,
+    &:before {
+      backface-visibility: hidden;
+      border: 1px solid rgba(violet, 0);
+      bottom: 0px;
+      content: " ";
+      display: block;
+      margin: 0 auto;
+      position: relative;
+      transition: all 280ms ease-in-out;
+      width: 0;
+    }
+
+    &:hover:after {
+      backface-visibility: hidden;
+      border-color: violet;
+      transition: width 350ms ease-in-out;
+      width: 100%;
+    } 
+  
   }   
+}
+
+
+.sidenav-label--active {
+  //border-color: red;
+  //border-right-style: none;
+  //border-right: 2px solid $white; 
+  //background-color: $light-teal;
+  background-color: $white;
+  border: 1px solid green;  
+  border-right: 5px solid violet; 
+  //padding-right: 2px;
+  z-index: 1;
 }
 
 .sidenav-footer {

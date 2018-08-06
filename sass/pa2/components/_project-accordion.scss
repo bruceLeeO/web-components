@@ -26,6 +26,7 @@
 	//border: 1px solid violet;
 	cursor: pointer;
 	background-color: #111;
+	//background-color: yellow;
 	margin: 0;
 	padding: 0;
 	
@@ -37,10 +38,22 @@
 		padding: 8px 8px 8px 32px;			
 	}
 
-	&:hover {
-		//font-weight: 700;
-		//color: brown;
+	&:before {
+		content: '\002B';
+		color: #818181;
+		float: left;
+		margin-left: 10px;
+		//border: 1px solid white;
+		padding-top: 5px;
 	}
+}
+
+.project-accordion-label--active:before {
+   content: '\2212';
+}
+
+.sidenav-menu-project {	
+	@include fancy-animated-hover-effect(violet);
 }
 
 .project-accordion-content {
@@ -50,10 +63,20 @@
 	//height: 150px;
 	height: auto;
 	overflow: hidden;
-	background-color: silver;
+	background-color: $light-grey;
 	padding-left: 12px;
 }
 
-.project-accordion-label--active {
+.sidenav-project-menu {
+	display: block;
+	text-decoration: none;	
+	font-size: 85%;
+	color: #818181;
 
+	border-right: 5px solid #818181;
+	margin: 1px 5px 1px 0;
+	padding: 4px 8px 4px 32px;	
+
+	@include fancy-animated-hover-effect($mid-red-orange);
 }
+

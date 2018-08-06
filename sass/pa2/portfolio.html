@@ -71,18 +71,18 @@
     <div class="row-till-680 force-row">
       <nav class="topnav col8">
         <!--<ul class="topnav-list row force-row">-->
-          <ul class="topnav-list just-row">
+        <ul class="topnav-list just-row">
           <li class="topnav-item">
-            <a class="topnav-link" href="#about">About</a>
+            <a class="topnav-link t-link" href="#about">About</a>
           </li>
           <li class="topnav-item">
-            <a class="topnav-link" href="#projects">Projects</a>
+            <a class="topnav-link t-link" href="#projects">Projects</a>
           </li>
           <li class="topnav-item">
-            <a class="topnav-link" href="#skills">Skills</a>
+            <a class="topnav-link t-link" href="#skills">Skills</a>
           </li>
           <li class="topnav-item">
-            <a class="topnav-link" href="#contact">Contact</a>
+            <a class="topnav-link t-link" href="#contact">Contact</a>
           </li>
         </ul>
       </nav>
@@ -122,7 +122,7 @@
 		  <a class="sidenav-menu" href="#about">About</a>
 		  <div class="project-accordion">
 		  	<div class="project-accordion-panel">
-		  		<div class="project-accordion-label" id="Project-accordion-panel1"><p>Projects</p></div>
+		  		<div class="project-accordion-label" id="Project-accordion-panel1"><p class="sidenav-menu-project">Projects</p></div>
 		  		<div class="project-accordion-content" id="project-accordion-panel1">
 		  			<a class="sidenav-project-menu" href="#Accordion-panel1">Menu Bars</a>
 		  			<a class="sidenav-project-menu" href="#Accordion-panel2">Image Gallery</a>
@@ -147,7 +147,7 @@
   <section class="about-section container" id="about" tabindex="-1">
     <h1 class="section-title">About</h1>
     <h1></h1>
-    <blockquote class="font-size-150 centered italized"><q><cite>Can we build it! Yes we can!!!</cite></q> - Bob the Builder</blockquote>
+    <blockquote class="font-size-150 centered italized"><q><cite>Can we build it! Yes we can!</cite></q> - Bob the Builder</blockquote>
     <div class="row-till-680 force-stay-width-320 undo-force-stay-width-320">
       <article class="col3">
         <div>
@@ -157,9 +157,9 @@
       <article class="col9">
         <p class="article-title">Hi! My name is Leonardo.</p>
         <h2 class="article-subtitle">I am an aspiring Fullstack JavaScript Developer from Southern California, US.</h2> 
-        <p>I enjoy learning new web technology, solving programming problems, and using my web development skills to create beautiful user interface on the web.</p>
-        <p>I strive for excellence in what I do and that is why I am currently enrolled in the most rigorous, most comprehensive <a href="https://bovacademy.com/career-paths.html?id=cp5">Fullstack Engineer</a> course at <a href="https://bovacademy.com/">BOV Academy</a>.  I aspire to become a proficient, confident Fullstack JavaScript Developer.</p>
-        <p>When I am not busy coding and learning new skills, chances are I am having a nice cup of tea or cappuccino with friends in some nice coffee shop.</p>
+        <p class="section-paragraph">I enjoy learning new web technology, solving programming problems, and using my web development skills to create beautiful user interface on the web.</p>
+        <p class="section-paragraph">I strive for excellence in what I do and that is why I am currently enrolled in the most rigorous, most comprehensive <a href="https://bovacademy.com/career-paths.html?id=cp5">Fullstack Engineer</a> course at <a href="https://bovacademy.com/">BOV Academy</a>.  I aspire to become a proficient, confident Fullstack JavaScript Developer.</p>
+        <p class="section-paragraph">When I am not busy coding and learning new skills, chances are I am having a nice cup of tea or cappuccino with friends in some nice coffee shop.</p>
       </article>      
     </div>
   </section>
@@ -496,7 +496,8 @@
 <!--accordion component-->    
     <div class="accordion">
       <div class="accordion-panel">
-        <div class="accordion-label" id="Accordion-panel1">Menu Bars</div>
+        <div class="accordion-label" id="Accordion-panel1">Menu Bars
+        </div>
         <div class="accordion-content" id="accordion-panel1">
           <section class="accordion-content--carousel-section"> 
             <div class="build-accordion-carousel-content" id="accordion-menu"></div>
@@ -825,10 +826,10 @@
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 2" style="/*border: 1px solid orange*/">
         <defs>
           <linearGradient id="feedback-bar-1" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" style="stop-color:red;stop-opacity:1" />
-            <stop offset="70%" style="stop-color:red;stop-opacity:1" />
-            <stop offset="70%" style="stop-color:blue;stop-opacity:1" />
-            <stop offset="100%" style="stop-color:blue;stop-opacity:1" />
+            <stop offset="0%" style="stop-color:red;stop-opacity:1"></stop>
+            <stop offset="70%" style="stop-color:red;stop-opacity:1"></stop>
+            <stop offset="70%" style="stop-color:blue;stop-opacity:1"></stop>
+            <stop offset="100%" style="stop-color:blue;stop-opacity:1"></stop>
           </linearGradient>
          </defs>
          <rect x="0" y="0.15" width="100%" height="85%" fill="url(#feedback-bar-1)"></rect>
@@ -843,12 +844,12 @@
           <!--<svg xmlns="http://www.w3.org/2000/svg" id="svgbc2" width="480" height="400">-->
           <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">-->
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" style="/*border: 1px solid red*/">
-            <line style="stroke: black; stroke-width: 0.5px;" x1="1" y1="240" x2="475" y2="240" />
-            <line style="stroke: black; stroke-width: 0.1px;" x1="1" y1="200" x2="475" y2="200" />
-            <line style="stroke: black; stroke-width: 0.1px;" x1="1" y1="150" x2="475" y2="150" />
-            <line style="stroke: black; stroke-width: 0.1px;" x1="1" y1="100" x2="475" y2="100" />
-            <line style="stroke: black; stroke-width: 0.1px;" x1="1" y1="50" x2="475" y2="50" />
-            <line style="stroke: black; stroke-width: 0.1px;" x1="98" y1="1" x2="98" y2="240" />
+            <line style="stroke: black; stroke-width: 0.5px;" x1="1" y1="240" x2="475" y2="240"></line>
+            <line style="stroke: black; stroke-width: 0.1px;" x1="1" y1="200" x2="475" y2="200"></line>
+            <line style="stroke: black; stroke-width: 0.1px;" x1="1" y1="150" x2="475" y2="150"></line>
+            <line style="stroke: black; stroke-width: 0.1px;" x1="1" y1="100" x2="475" y2="100"></line>
+            <line style="stroke: black; stroke-width: 0.1px;" x1="1" y1="50" x2="475" y2="50"></line>
+            <line style="stroke: black; stroke-width: 0.1px;" x1="98" y1="1" x2="98" y2="240"></line>
             <text font-size="24px" dx="125" dy="30" fill="red">Frontend Developer</text>
             <text font-size="18px" dx="30" dy="240"></text>
             <text font-size="18px" dx="24" dy="230">Learning</text>
@@ -861,12 +862,12 @@
             <text font-size="18px" transform="rotate(45 336 198)" dx="345" dy="265">jQuery</text>
             <text font-size="18px" transform="rotate(45 366 198)" dx="390" dy="250">React</text>
             <text font-size="18px" transform="rotate(45 366 198)" dx="425" dy="215">Jest</text>
-            <rect fill="red" x="140" y="140" width="30" height="100" />
-            <rect fill="blue" x="190" y="140" width="30" height="100" />
-            <rect fill="green" x="240" y="155" width="30" height="85" />
-            <rect fill="yellow" x="290" y="199" width="30" height="40" />
-            <rect fill="orange" x="340" y="204" width="30" height="35" />
-            <rect fill="purple" x="389" y="210" width="30" height="30" />
+            <rect fill="red" x="140" y="140" width="30" height="100"></rect>
+            <rect fill="blue" x="190" y="140" width="30" height="100"></rect>
+            <rect fill="green" x="240" y="155" width="30" height="85"></rect>
+            <rect fill="yellow" x="290" y="199" width="30" height="40"></rect>
+            <rect fill="orange" x="340" y="204" width="30" height="35"></rect>
+            <rect fill="purple" x="389" y="210" width="30" height="30"></rect>
           </svg>  
           <span class="bc-tooltip" style="position: absolute; width: 30px; height: 100px; left: 130px; top: 135px;"><span class="bc-tooltiptext">I am proficient and efficient</span></span>
           <span class="bc-tooltip-decresendo" style="position: absolute; width: 22px; height: 69px; left: 90px; top: 98.5px;"><span class="bc-tooltiptext">I am proficient and efficient</span></span>          
@@ -887,12 +888,12 @@
           <!--<svg xmlns="http://www.w3.org/2000/svg" id="svgbc2" width="480" height="400">-->
           <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">-->
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
-            <line style="stroke: black; stroke-width: 0.5px;" x1="1" y1="240" x2="475" y2="240" />
-            <line style="stroke: black; stroke-width: 0.1px;" x1="1" y1="200" x2="475" y2="200" />
-            <line style="stroke: black; stroke-width: 0.1px;" x1="1" y1="150" x2="475" y2="150" />
-            <line style="stroke: black; stroke-width: 0.1px;" x1="1" y1="100" x2="475" y2="100" />
-            <line style="stroke: black; stroke-width: 0.1px;" x1="1" y1="50" x2="475" y2="50" />
-            <line style="stroke: black; stroke-width: 0.1px;" x1="98" y1="1" x2="98" y2="240" />
+            <line style="stroke: black; stroke-width: 0.5px;" x1="1" y1="240" x2="475" y2="240"></line>
+            <line style="stroke: black; stroke-width: 0.1px;" x1="1" y1="200" x2="475" y2="200"></line>
+            <line style="stroke: black; stroke-width: 0.1px;" x1="1" y1="150" x2="475" y2="150"></line>
+            <line style="stroke: black; stroke-width: 0.1px;" x1="1" y1="100" x2="475" y2="100"></line>
+            <line style="stroke: black; stroke-width: 0.1px;" x1="1" y1="50" x2="475" y2="50"></line>
+            <line style="stroke: black; stroke-width: 0.1px;" x1="98" y1="1" x2="98" y2="240"></line>
             <text font-size="24px" dx="125" dy="30" fill="blue">Backend Developer</text>
             <text font-size="18px" dx="30" dy="240"></text>
             <text font-size="18px" dx="24" dy="230">Learning</text>
@@ -904,11 +905,11 @@
             <text font-size="18px" transform="rotate(45 300 196)" dx="300" dy="275">MongoDB</text>
             <text font-size="18px" transform="rotate(45 336 196)" dx="345" dy="265">SQL</text>
             <text font-size="18px" transform="rotate(45 366 196)" dx="390" dy="250">Python</text>       
-            <rect fill="pink" x="140" y="214" width="30" height="25" />
-            <rect fill="teal" x="190" y="220" width="30" height="20" />
-            <rect fill="violet" x="240" y="224" width="30" height="15" />
-            <rect fill="indigo" x="290" y="185" width="30" height="55" />
-            <rect fill="brown" x="340" y="195" width="30" height="45" />
+            <rect fill="pink" x="140" y="214" width="30" height="25"></rect>
+            <rect fill="teal" x="190" y="220" width="30" height="20"></rect>
+            <rect fill="violet" x="240" y="224" width="30" height="15"></rect>
+            <rect fill="indigo" x="290" y="185" width="30" height="55"></rect>
+            <rect fill="brown" x="340" y="195" width="30" height="45"></rect>
           </svg>  
           <span class="bc-tooltip" style="position: absolute; width: 30px; height: 25px; left: 130px; top: 209px;"><span class="bc-tooltiptext">Learning! Soon I will be competent</span></span>
           <span class="bc-tooltip-decresendo" style="position: absolute; width: 22px; height: 19px; left: 90px; top: 149px;"><span class="bc-tooltiptext">Learning! Soon I will be competent</span></span>        
@@ -930,12 +931,12 @@
           <!--<svg xmlns="http://www.w3.org/2000/svg" id="svgbc2" width="480" height="400">-->
           <!--<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 600 600">-->
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
-            <line style="stroke: black; stroke-width: 0.5px;" x1="1" y1="240" x2="475" y2="240" />
-            <line style="stroke: black; stroke-width: 0.1px;" x1="1" y1="200" x2="475" y2="200" />
-            <line style="stroke: black; stroke-width: 0.1px;" x1="1" y1="150" x2="475" y2="150" />
-            <line style="stroke: black; stroke-width: 0.1px;" x1="1" y1="100" x2="475" y2="100" />
-            <line style="stroke: black; stroke-width: 0.1px;" x1="1" y1="50" x2="475" y2="50" />
-            <line style="stroke: black; stroke-width: 0.1px;" x1="98" y1="1" x2="98" y2="240" />
+            <line style="stroke: black; stroke-width: 0.5px;" x1="1" y1="240" x2="475" y2="240"></line>
+            <line style="stroke: black; stroke-width: 0.1px;" x1="1" y1="200" x2="475" y2="200"></line>
+            <line style="stroke: black; stroke-width: 0.1px;" x1="1" y1="150" x2="475" y2="150"></line>
+            <line style="stroke: black; stroke-width: 0.1px;" x1="1" y1="100" x2="475" y2="100"></line>
+            <line style="stroke: black; stroke-width: 0.1px;" x1="1" y1="50" x2="475" y2="50"></line>
+            <line style="stroke: black; stroke-width: 0.1px;" x1="98" y1="1" x2="98" y2="240"></line>
             <text font-size="24px" dx="125" dy="30">Other Skills</text>
             <text font-size="18px" dx="30" dy="240"></text>
             <text font-size="18px" dx="24" dy="230">Learning</text>
@@ -947,11 +948,11 @@
             <text font-size="18px" transform="rotate(45 300 196)" dx="300" dy="275">Project Management</text>
             <text font-size="18px" transform="rotate(45 336 196)" dx="345" dy="265">Research</text>
             <text font-size="18px" transform="rotate(45 366 196)" dx="390" dy="250">Public Speaking</text>        
-            <rect fill="lightblue" x="140" y="124" width="30" height="115" />
-            <rect fill="darkblue" x="190" y="114" width="30" height="125" />
-            <rect fill="saffron" x="240" y="204" width="30" height="35" />
-            <rect fill="indigo" x="290" y="144" width="30" height="95" />
-            <rect fill="brown" x="340" y="214" width="30" height="25" />
+            <rect fill="lightblue" x="140" y="124" width="30" height="115"></rect>
+            <rect fill="darkblue" x="190" y="114" width="30" height="125"></rect>
+            <rect fill="saffron" x="240" y="204" width="30" height="35"></rect>
+            <rect fill="indigo" x="290" y="144" width="30" height="95"></rect>
+            <rect fill="brown" x="340" y="214" width="30" height="25"></rect>
           </svg>  
           <span class="bc-tooltip" style="position: absolute; width: 30px; height: 115px; left: 130px; top: 120px;"><span class="bc-tooltiptext">I am proficient and efficient</span></span>
           <span class="bc-tooltip-decresendo" style="position: absolute; width: 22px; height: 80px; left: 90px; top: 88px;"><span class="bc-tooltiptext">I am proficient and efficient</span></span>        
@@ -971,7 +972,7 @@
     <h1 class="section-title">Contact</h1>
     <blockquote class="centered font-size-150">
     	<p>Need help with your web project?</p>
-    	<p>Let's connect and do it!</p>
+    	<p>Let's do it!</p>
     </blockquote>
     <h1></h1>
     <div class="digital-business-card">

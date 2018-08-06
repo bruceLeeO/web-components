@@ -138,7 +138,8 @@ function toggleSideNav(evt) {
     //console.log("undisplay searchform...");
     document.getElementsByClassName("searchform")[0].style.display = "none"; 
     /* shut the project menu in case user left it open */
-    document.getElementById("project-accordion-panel1").style.height = "0";   
+    document.getElementById("project-accordion-panel1").style.height = "0";  
+    document.getElementsByClassName("project-accordion-label")[0].className = document.getElementsByClassName("project-accordion-label")[0].className.replace(" project-accordion-label--active", ""); 
   } else {
     //console.log("closing side nav: "+document.getElementById("mySidenav").style.width);
     document.getElementById("mySidenav").style.width = "";

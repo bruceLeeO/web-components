@@ -23,7 +23,8 @@
 
 .tab-index-label {
 	//margin-left: 1.5px;
-	margin-left: 0.95px;
+	//margin-left: 0.95px;
+	margin-left: 1.25px;
 	//width: 101.5%;
 	width: 100%;
 	//border: 1px solid blue;
@@ -37,20 +38,17 @@
 	
 	background-color: $light-grey;
 
-
-	&:hover {
-		font-weight: 700;
-		color: violet;
-	}
+	@include fancy-animated-hover-effect(violet);		
 }
 
 .tab-index-label--active {
 	//border-color: red;
 	border-right-style: none;
-	//border-right: 2px solid $white;	
-	//background-color: $light-teal;
 	background-color: $white;
-	z-index: 1;
+	//border-right: 5px solid violet; 
+	z-index: 10;
+	//margin-left: 1.95px;
+
 }
 
 .tab-body {

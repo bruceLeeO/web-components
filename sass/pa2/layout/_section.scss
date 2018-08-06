@@ -47,3 +47,17 @@
 	background-color: $light-grey;
 	border: 2px solid $light-grey;
 }
+
+.section-paragraph {
+	background-color: lime;
+}
+
+@media screen and (max-width: 700px) {
+	.section-paragraph {
+		display: none;
+	}
+	.article-subtitle:after {
+		content: '\002B';
+		float: right;
+	}
+}

@@ -297,9 +297,11 @@
 		height: 55vw;
 	}
 	.digital-business-card-rotate-icon {	
-		//@include size-large;
+		@include size-large;
 		font-size: 3vw;
 		//border: 1px solid;
+		left: 82vw;
+
 		//float: right;
 	}
 	.digital-business-card-bookopen-icon {
@@ -310,11 +312,11 @@
 	}
 
 	.digital-business-card-social-icon {
-		//@include size-large;
+		@include size-medium;
 		font-size: 2.75vw;
-		padding: 0.233vw;
-		//padding-top: 0.01vw;
-		//padding-bottom: 0.01vw;
+		padding: 0;
+		//padding-left: 0.25vw;
+		//padding-right: 0.25vw;
 		margin: 0;
 	}
 
@@ -330,12 +332,18 @@
 	}
 
 	.dbcard-title {
+		-web-kit-margin: 0 0 0 0.78vw;
+		-moz-margin: 0 0 0 0.78vw;
+		-ms-margin: 0 0 0 0.78vw;		
 		margin: 0 0 0 0.78vw;
 		//font-size: 115%;
-		//line-height: 1.5;
-		font-size: 3.75vw;
+		//line-height: 1.5;		
 		//line-height: 1.85vw;
 		//border:1px solid;
+		-web-kit-font-size: 2.75vw;
+		-moz-font-size: 2.75vw;
+		-ms-font-size: 2.75vw;
+		font-size: 2.75vw;		
 	}
 
 	.dbcard-desc {
@@ -381,10 +389,10 @@
 		}
 	}
 	.dbcard-social-link {
-		//margin: 0;
-		padding: 0.38vw;
-		padding-top: 0.54vw;
-		padding-bottom: 0.54vw;
+		margin: .25vw;
+		padding: 0.88vw;
+		padding-left: 0.94vw;
+		padding-right: 0.94vw;
 		//text-decoration: none;
 		//@include border2-solid(red);
 		//@include clearfix();
