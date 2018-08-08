@@ -521,20 +521,25 @@ blockquote {
   border: 2px solid #ededed;
 }
 
+.section-paragraph:before {
+  content: '\002B';
+  float: left;
+  width: 40px;
+  height: 30px;
+  text-align: center;
+  z-index: 1;
+}
+
 .section-paragraph {
-  background-color: lime;
+  height: 30px;
+  cursor: pointer;
+  overflow: hidden;
 }
 
-@media screen and (max-width: 700px) {
-  .section-paragraph {
-    display: none;
-  }
-
-  .article-subtitle:after {
-    content: '\002B';
-    float: right;
-  }
+.section-paragraph--active:before {
+  content: '\2212';
 }
+
 /**
  * Search Form Style
  */
@@ -1278,8 +1283,36 @@ blockquote {
   border-right: 5px solid #818181;
   padding: 8px 8px 8px 32px;
   margin: 5px;
+    /*
+    &:hover {
+      //font-weight: 700;
+      color: violet;
+      border-right: 5px solid violet;      
+    }
+
+    &:after,
+    &:before {
+      backface-visibility: hidden;
+      border: 1px solid rgba(violet, 0);
+      bottom: 0px;
+      content: " ";
+      display: block;
+      margin: 0 auto;
+      position: relative;
+      transition: all 280ms ease-in-out;
+      width: 0;
+    }
+
+    &:hover:after {
+      backface-visibility: hidden;
+      border-color: violet;
+      transition: width 350ms ease-in-out;
+      width: 100%;
+    } 
+  */
 }
 .sidenav-navbar .sidenav-menu:hover {
+  font-weight: 700;
   color: violet;
   border-right: 5px solid violet;
 }

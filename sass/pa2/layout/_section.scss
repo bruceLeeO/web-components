@@ -47,17 +47,37 @@
 	background-color: $light-grey;
 	border: 2px solid $light-grey;
 }
-
+.section-paragraph:before {
+	content: '\002B';
+	float: left;
+	width: 40px;
+	height: 30px;
+	//border: 1px solid;
+	//padding: 0.005px;
+	text-align: center;
+	z-index: 1;	
+} 
 .section-paragraph {
-	background-color: lime;
+	//background-color: lime;
+	height: 30px;
+	cursor: pointer;	
+	overflow: hidden;
 }
 
+.section-paragraph--active:before {
+   content: '\2212';
+}
+
+//.section-paragraph:after {
+//	content: '... ';
+//}
+
 @media screen and (max-width: 700px) {
-	.section-paragraph {
-		display: none;
-	}
-	.article-subtitle:after {
-		content: '\002B';
-		float: right;
-	}
+	//.section-paragraph {
+	//	display: none;
+	//}
+	//.article-subtitle:after {
+	//	content: '\002B';
+	//	float: right;
+	//}
 }

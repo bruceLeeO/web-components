@@ -128,6 +128,9 @@
     //padding: 0.25em;
     padding: 8px 8px 8px 32px;
     margin: 5px;
+
+    @include fancy-animated-hover-effect(violet);
+    /*
     &:hover {
       //font-weight: 700;
       color: violet;
@@ -153,7 +156,7 @@
       transition: width 350ms ease-in-out;
       width: 100%;
     } 
-  
+  */
   }   
 }
 
