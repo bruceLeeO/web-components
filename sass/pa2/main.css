@@ -9,7 +9,7 @@ html, *, * ::before, * ::after {
  * TYPOGRAPHY
  */
 body {
-  font-family: "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Karla", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 130%;
   line-height: 1.5;
   background-color: white;
