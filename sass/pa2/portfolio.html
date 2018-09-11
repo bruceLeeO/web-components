@@ -7,6 +7,12 @@
   <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="main.css">
 </head>
+<style>
+  .botones-wrapper { width : 350px; margin: auto;}
+  .botones { width: 300px; padding: .5em .75em; border: 2px solid #A269C1; border-radius: 3px; background-color: #fff; cursor: pointer; }
+  .random-number-fact-text { text-align: center; }
+
+</style>
 <body>
   <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
     <symbol id="icon-search" viewBox="0 0 512 512">
@@ -147,7 +153,7 @@
   <section class="about-section container" id="about" tabindex="-1">
     <h1 class="section-title">About</h1>
     <h1></h1>
-    <blockquote class="font-size-150 centered italized"><q><cite>Can we build it! Yes we can!</cite></q> - Bob the Builder</blockquote>
+    <blockquote class="font-size-150 centered italized"><q><cite>Can we build it! Yes we can!</cite></q> - Bob the Builder</blockquote>    
     <div class="row-till-680 force-stay-width-320 undo-force-stay-width-320">
       <article class="col3">
         <div>
@@ -1040,6 +1046,12 @@
       </div>
     </div>
     <p></p>
+    <div  ng-app="example" ng-controller="append_random_number_to_url_display_panel">
+      <div class="botones-wrapper">
+       <button class="botones" type="submit" ng-click="append_random_number()">Random Number Fact</button>       
+      </div>
+      <p class="random-number-fact-text">{{myRandomNumberFact}}</p>
+    </div>    
   </section>
   <footer class="site-footer">
     <div>
@@ -1048,6 +1060,26 @@
     </div>
   </footer>
   </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+  <script>
+    (function () {
+      'use strict';
+
+      angular.module('example', []).controller('append_random_number_to_url_display_panel', ['$scope', '$http', function ($scope, $http) {
+          $scope.append_random_number = function () {
+            $scope.randomNumber = Math.floor(Math.random() * 100);
+            $http.get('http://numbersapi.com/'+$scope.randomNumber).then(function (response) {
+                console.log(response);
+                $scope.myRandomNumberFact = response.data;
+            });
+          };
+      }]);
+
+    }());
+  </script>
+
   <script src="../scripts/mediaQueryListener.js"></script>     
   <script src="../scripts/calculator/calculator.js"></script>
   <script src="../scripts/carousel-3d-1.js"></script>
